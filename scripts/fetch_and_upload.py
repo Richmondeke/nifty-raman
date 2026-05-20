@@ -27,9 +27,10 @@ except ImportError:
     print("Warning: gspread and google-auth are required.")
 
 try:
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types
 except ImportError:
-    print("Warning: google-generativeai is required.")
+    print("Warning: google-genai is required. Please run pip install google-genai.")
 
 def fetch_techcrunch_deals():
     print("Fetching TechCrunch Venture deals...")
@@ -103,7 +104,7 @@ def parse_with_gemini(articles):
         print("Error: GEMINI_API_KEY environment variable is not set. Cannot run LLM parsing.")
         sys.exit(1)
         
-    genai.configure(api_key=gemini_key)
+    client = genai.Client(api_key=gemini_key)
     input_text = json.dumps(articles, indent=2)
     
     prompt = f"""
@@ -115,7 +116,7 @@ def parse_with_gemini(articles):
     3. Clean Amount Raised (strictly formatted like "$110 Million", "$50 Billion", "$500 Thousand". If undisclosed, use "Undisclosed")
     4. Clean Stage (keep it extremely simple, e.g. "Preseed", "Seed", "Series A", "Series B", "Series C", "Series D", "Growth", "M&A", "Debt", "Undisclosed". Do not add extra words)
     5. Summary (2-4 sentences explaining what the company does and why it is notable)
-    6. Lead/Participating Investors
+    6. Lead/Participating Investors (If the article says "undisclosed", "unknown", or has missing investor details, you MUST use the GOOGLE SEARCH tool to research and find the actual lead/participating investors for this specific funding round. If they are still not found after searching, write "Undisclosed")
     7. Source Domain (e.g. "TechCrunch" or "Hacker News")
     8. URL
     9. Keywords (3-4 relevant tags, e.g. "healthtech", "AI-infrastructure", "saas")
@@ -129,13 +130,29 @@ def parse_with_gemini(articles):
     """
     
     try:
-        model = genai.GenerativeModel("gemini-2.5-flash")
-        response = model.generate_content(
-            prompt,
-            generation_config={"response_mime_type": "application/json"}
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
         )
         
-        deals = json.loads(response.text)
+        # Parse the JSON response robustly
+        text = response.text.strip()
+        if text.startswith("```json"):
+            text = text[7:]
+        elif text.startswith("```"):
+            text = text[3:]
+        if text.endswith("```"):
+            text = text[:-3]
+        text = text.strip()
+        
+        json_match = re.search(r'\[\s*\{.*\}\s*\]', text, re.DOTALL)
+        if json_match:
+            text = json_match.group(0)
+            
+        deals = json.loads(text)
         print(f"Gemini successfully extracted {len(deals)} deals.")
         return deals
     except Exception as e:
@@ -413,9 +430,10 @@ def generate_newsletter_html(deals, gemini_key):
     """
     Generates a premium, investor-centric newsletter HTML body using Gemini API.
     Highlights weekly HNWI / Family Office events and incorporates article image URLs.
+    Uses a relatable, simple writing style and embeds the logo.
     """
     print("Generating premium newsletter HTML via Gemini...")
-    genai.configure(api_key=gemini_key)
+    client = genai.Client(api_key=gemini_key)
     date_str = datetime.now().strftime("%B %d, %Y")
     
     # Structure deals data cleanly for the prompt
@@ -433,29 +451,29 @@ def generate_newsletter_html(deals, gemini_key):
         })
         
     prompt = f"""
-    You are a premium newsletter editor and financial journalist for "The Investor", an elite daily briefing sent to High-Net-Worth Individuals (HNWIs), Family Offices, and Venture Capitalists.
+    You are a friendly, down-to-earth financial editor for "The Investor", a daily venture briefing sent to HNWIs, Family Offices, and Venture Capitalists.
     
     Generate the HTML content for today's newsletter ({date_str}).
     Use inline CSS inside the HTML style attributes to ensure it renders beautifully in Gmail and other email clients.
     
     The newsletter must follow these design guidelines:
     - Palette: Deep rich blues (#0F172A), luxurious warm gold/amber accents (#D97706 or #B45309), slate gray for text (#475569), and clean ivory/white backgrounds (#FFFFFF).
-    - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) for a high-end editorial feel, and clean sans-serif body text (e.g. "Inter", "Helvetica Neue", Arial, sans-serif).
+    - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) and clean, easy-to-read sans-serif body text (e.g. "Inter", "Helvetica Neue", Arial, sans-serif).
     - Responsive layout with a max-width of 600px, centered, with comfortable padding (e.g., 20px-30px), soft borders, and premium-looking cards.
     
     The content structure must include:
-    1. Elegant Header: "The Investor" logo branding, edition date, and a tagline like "Private Capital & Elite Networking Briefing".
-    2. Editorial Intro: A sophisticated, professional, and conversational welcome from Richmond ("Richmond from The Investor"). Summarize the state of the market today, highlight trends in VC deal flows, and address HNWIs/Family Offices with insights on what these developments mean for direct investments.
+    1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
+    2. Editorial Intro: Write a friendly, relatable, and simple greeting from Richmond ("Richmond from The Investor"). Keep the tone conversational, down-to-earth, and clear, avoiding complex or pretentious venture capital/financial jargon. Explain what is happening in the venture market today in plain English.
     3. Top Deal of the Day:
-       - Since a visual card image was generated for the top deal, insert an image tag with `src="cid:top_deal_image"` to display it inline.
-       - Provide a comprehensive, premium write-up of this top deal below the image.
+       - Insert the visual card image with `src="cid:top_deal_image"` to display it inline.
+       - Provide a readable, relatable write-up of this top deal below the image.
     4. Other Tech/Venture Deals of the Day:
        - Format the remaining deals: {json.dumps(deals_data, indent=2)}
-       - For each deal, present a readable summary, investors, and sector/keywords.
+       - For each deal, present a simple summary, investors, and sector/keywords.
        - If a deal has a non-null/valid 'article_image_url', embed that image inside the deal card/section with style: `width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 12px 0;`. Do NOT use placeholders if 'article_image_url' is missing.
-    5. Events of the Week for HNWIs, Family Offices, and Elite Investors:
+    5. Events of the Week for HNWIs & Family Offices:
        - Create an exclusive events section highlighting 2-3 high-value events of the week (e.g., Private Wealth forums, family office roundtables, closed-door VC networking, startup pitch dinners).
-       - For each event, provide: Event Name, Date, Location, Target Audience (HNWIs, Family Offices, VCs), a short description, and clear booking/RSVP details with a beautifully styled "Book Seat" button/link.
+       - For each event, provide: Event Name, Date, Location, Target Audience (HNWIs, Family Offices, VCs), a short description, and clear booking/RSVP details with a beautifully styled "Book Seat" button/link. Keep the booking details simple.
        - Ensure these events look highly exclusive, relevant, and realistic.
     6. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
     
@@ -463,8 +481,10 @@ def generate_newsletter_html(deals, gemini_key):
     """
     
     try:
-        model = genai.GenerativeModel("gemini-2.5-flash")
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt
+        )
         html_code = response.text.strip()
         # Clean potential markdown output
         if html_code.startswith("```html"):
@@ -533,6 +553,8 @@ def send_gmail(deals, local_image_path=None):
         
         html_content = "\n".join(html_parts)
     
+    logo_path = os.path.join("assets", "TheInvestor.png")
+    
     try:
         # Connect to Gmail SMTP server once
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
@@ -548,6 +570,17 @@ def send_gmail(deals, local_image_path=None):
             # Attach HTML body
             msg_html = MIMEText(html_content, 'html')
             msg.attach(msg_html)
+            
+            # Attach logo if present
+            if os.path.exists(logo_path):
+                try:
+                    with open(logo_path, 'rb') as f:
+                        logo_data = f.read()
+                    msg_logo = MIMEImage(logo_data, name=os.path.basename(logo_path))
+                    msg_logo.add_header('Content-ID', '<logo_image>')
+                    msg.attach(msg_logo)
+                except Exception as e:
+                    print(f"Error attaching logo image for {recipient}: {e}")
             
             # Attach embedded image
             if local_image_path and os.path.exists(local_image_path):
@@ -568,17 +601,22 @@ def send_gmail(deals, local_image_path=None):
         print(f"Error sending emails via Gmail: {e}")
 
 if __name__ == "__main__":
-    # Load environment variables from .env file if it exists
-    if os.path.exists(".env"):
-        print("Loading environment variables from .env...")
-        with open(".env", "r") as f:
+    # Load environment variables from .env file if it exists at project root
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    env_path = os.path.join(project_root, ".env")
+    if os.path.exists(env_path):
+        print(f"Loading environment variables from {env_path}...")
+        with open(env_path, "r") as f:
             for line in f:
                 line = line.strip()
                 if not line or line.startswith("#"):
                     continue
                 if "=" in line:
                     k, v = line.split("=", 1)
-                    os.environ[k.strip()] = v.strip()
+                    # Strip quotes if present
+                    val = v.strip().strip("'\"")
+                    os.environ[k.strip()] = val
 
     # Check secrets/config
     spreadsheet = os.environ.get("SPREADSHEET_NAME")

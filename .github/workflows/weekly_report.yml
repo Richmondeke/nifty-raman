@@ -1,9 +1,9 @@
-name: Daily Fundraising News Report
+name: Weekly Fundraising News Roundup
 
 on:
   schedule:
-    # Runs at 8:00 AM UTC = 9:00 AM WAT (West Africa Time, UTC+1)
-    - cron: '0 8 * * *'
+    # Runs at 8:00 AM UTC = 9:00 AM WAT (West Africa Time, UTC+1) every Friday (day 5)
+    - cron: '0 8 * * 5'
   workflow_dispatch: # Allows manual trigger from the Actions tab
 
 jobs:
@@ -25,21 +25,15 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser beautifulsoup4 requests gspread google-auth google-genai
+          pip install google-genai
 
-      - name: Run Scraper and Upload to Sheets
+      - name: Run Weekly Newsletter Roundup
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-          SPREADSHEET_NAME: ${{ secrets.SPREADSHEET_NAME }}
-          TEMPLATED_API_KEY: ${{ secrets.TEMPLATED_API_KEY }}
-          TEMPLATED_TEMPLATE_ID: ${{ secrets.TEMPLATED_TEMPLATE_ID }}
-          CREATOMATE_API_KEY: ${{ secrets.CREATOMATE_API_KEY }}
-          CREATOMATE_TEMPLATE_ID: ${{ secrets.CREATOMATE_TEMPLATE_ID }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
-          python scripts/fetch_and_upload.py
+          python scripts/weekly_roundup.py
 
       - name: Commit and Push Report
         run: |
@@ -49,6 +43,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No new reports generated today."
           else
-            git commit -m "docs: Add daily news report $(date +'%Y-%m-%d')"
+            git commit -m "docs: Add weekly digest html $(date +'%Y-%m-%d')"
             git push
           fi
