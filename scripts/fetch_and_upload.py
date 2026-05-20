@@ -379,19 +379,16 @@ def send_gmail(deals, local_image_path=None):
         print("Warning: GMAIL_USER or GMAIL_APP_PASSWORD not set. Skipping Gmail notification.")
         return
         
-    print(f"Sending email notification to {gmail_user}...")
-    msg = MIMEMultipart('related')
+    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com"]
     date_str = datetime.now().strftime("%Y-%m-%d")
-    msg['Subject'] = f"Daily Fundraising News Report ({date_str})"
-    msg['From'] = gmail_user
-    msg['To'] = gmail_user
+    subject = f"The Investor's Daily Fundraising Report - {date_str}"
     
-    # HTML Email body
+    # HTML Email body content
     html_parts = [
         "<html>",
         "<body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>",
-        f"<h2 style='color: #004085;'>Daily Startup Fundraising News Report ({date_str})</h2>",
-        f"<p>Curated from TechCrunch and Hacker News. Contains {len(deals)} fundraising deals.</p>"
+        "<p>Hi Investor,</p>",
+        "<p>This is Richmond from <strong>The Investor</strong>. Here's our top news for today:</p>"
     ]
     
     # Embed top deal card image at the top of the email
@@ -415,32 +412,45 @@ def send_gmail(deals, local_image_path=None):
         html_parts.append(f"</div>")
         html_parts.append("<hr style='border: 0; border-top: 1px solid #eee; margin: 20px 0;'>")
         
-    html_parts.append(f"<p style='font-size: 11px; color: #888;'>Generated automatically by Daily News Report v3.0.</p>")
+    html_parts.append(f"<p style='font-size: 11px; color: #888;'>You are receiving this because you are subscribed to The Investor.</p>")
     html_parts.append("</body>")
     html_parts.append("</html>")
     
-    msg_html = MIMEText("\n".join(html_parts), 'html')
-    msg.attach(msg_html)
+    html_content = "\n".join(html_parts)
     
-    # Attach embedded image
-    if local_image_path and os.path.exists(local_image_path):
-        try:
-            with open(local_image_path, 'rb') as f:
-                img_data = f.read()
-            msg_img = MIMEImage(img_data, name=os.path.basename(local_image_path))
-            msg_img.add_header('Content-ID', '<top_deal_image>')
-            msg.attach(msg_img)
-        except Exception as e:
-            print(f"Error attaching inline image to Gmail: {e}")
-            
     try:
+        # Connect to Gmail SMTP server once
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.login(gmail_user, gmail_password)
-        server.sendmail(gmail_user, [gmail_user], msg.as_string())
+        
+        for recipient in recipients:
+            print(f"Sending email notification to {recipient}...")
+            msg = MIMEMultipart('related')
+            msg['Subject'] = subject
+            msg['From'] = f"The Investor <{gmail_user}>"
+            msg['To'] = recipient
+            
+            # Attach HTML body
+            msg_html = MIMEText(html_content, 'html')
+            msg.attach(msg_html)
+            
+            # Attach embedded image
+            if local_image_path and os.path.exists(local_image_path):
+                try:
+                    with open(local_image_path, 'rb') as f:
+                        img_data = f.read()
+                    msg_img = MIMEImage(img_data, name=os.path.basename(local_image_path))
+                    msg_img.add_header('Content-ID', '<top_deal_image>')
+                    msg.attach(msg_img)
+                except Exception as e:
+                    print(f"Error attaching inline image for {recipient}: {e}")
+            
+            server.sendmail(gmail_user, [recipient], msg.as_string())
+            
         server.close()
-        print("Daily report email sent successfully via Gmail!")
+        print("All emails sent successfully via Gmail!")
     except Exception as e:
-        print(f"Error sending email via Gmail: {e}")
+        print(f"Error sending emails via Gmail: {e}")
 
 if __name__ == "__main__":
     # Load environment variables from .env file if it exists
