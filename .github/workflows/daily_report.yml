@@ -2,7 +2,7 @@ name: Daily Fundraising News Report
 
 on:
   schedule:
-    # Runs at 8:00 AM UTC (9:00 AM CET / 8:00 AM local time approx depending on DST)
+    # Runs at 8:00 AM UTC (9:00 AM local time in West Africa Time / CET)
     - cron: '0 8 * * *'
   workflow_dispatch: # Allows manual trigger from the Actions tab
 

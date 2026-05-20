@@ -11,6 +11,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from datetime import datetime, timedelta
+from urllib.parse import urljoin
 
 # Import feedparser and bs4 if available
 try:
@@ -371,9 +372,116 @@ def download_image(url, save_path):
         print(f"Error downloading image: {e}")
     return False
 
+def extract_og_image(url):
+    """
+    Crawls the article URL to extract the og:image or twitter:image thumbnail
+    """
+    if not url or not url.startswith("http"):
+        return None
+    print(f"Extracting OG image for: {url}")
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        }
+        res = requests.get(url, headers=headers, timeout=5)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, "html.parser")
+            # Try og:image
+            og_img = soup.find("meta", property="og:image")
+            if og_img and og_img.get("content"):
+                full_url = urljoin(url, og_img["content"])
+                print(f"Found og:image: {full_url}")
+                return full_url
+            # Try twitter:image
+            tw_img = soup.find("meta", name="twitter:image")
+            if tw_img and tw_img.get("content"):
+                full_url = urljoin(url, tw_img["content"])
+                print(f"Found twitter:image: {full_url}")
+                return full_url
+            # Try standard image as fallback
+            for img in soup.find_all("img"):
+                src = img.get("src")
+                if src and ("featured" in src or "article" in src or "upload" in src) and not src.endswith(".gif"):
+                    full_url = urljoin(url, src)
+                    print(f"Found fallback image: {full_url}")
+                    return full_url
+    except Exception as e:
+        print(f"Error extracting OG image from {url}: {e}")
+    return None
+
+def generate_newsletter_html(deals, gemini_key):
+    """
+    Generates a premium, investor-centric newsletter HTML body using Gemini API.
+    Highlights weekly HNWI / Family Office events and incorporates article image URLs.
+    """
+    print("Generating premium newsletter HTML via Gemini...")
+    genai.configure(api_key=gemini_key)
+    date_str = datetime.now().strftime("%B %d, %Y")
+    
+    # Structure deals data cleanly for the prompt
+    deals_data = []
+    for d in deals:
+        deals_data.append({
+            "startup": d.get("startup"),
+            "deal_details": d.get("deal_details"),
+            "summary": d.get("summary"),
+            "investors": d.get("investors"),
+            "url": d.get("url"),
+            "article_image_url": d.get("article_image_url"),
+            "keywords": d.get("keywords"),
+            "score": d.get("score")
+        })
+        
+    prompt = f"""
+    You are a premium newsletter editor and financial journalist for "The Investor", an elite daily briefing sent to High-Net-Worth Individuals (HNWIs), Family Offices, and Venture Capitalists.
+    
+    Generate the HTML content for today's newsletter ({date_str}).
+    Use inline CSS inside the HTML style attributes to ensure it renders beautifully in Gmail and other email clients.
+    
+    The newsletter must follow these design guidelines:
+    - Palette: Deep rich blues (#0F172A), luxurious warm gold/amber accents (#D97706 or #B45309), slate gray for text (#475569), and clean ivory/white backgrounds (#FFFFFF).
+    - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) for a high-end editorial feel, and clean sans-serif body text (e.g. "Inter", "Helvetica Neue", Arial, sans-serif).
+    - Responsive layout with a max-width of 600px, centered, with comfortable padding (e.g., 20px-30px), soft borders, and premium-looking cards.
+    
+    The content structure must include:
+    1. Elegant Header: "The Investor" logo branding, edition date, and a tagline like "Private Capital & Elite Networking Briefing".
+    2. Editorial Intro: A sophisticated, professional, and conversational welcome from Richmond ("Richmond from The Investor"). Summarize the state of the market today, highlight trends in VC deal flows, and address HNWIs/Family Offices with insights on what these developments mean for direct investments.
+    3. Top Deal of the Day:
+       - Since a visual card image was generated for the top deal, insert an image tag with `src="cid:top_deal_image"` to display it inline.
+       - Provide a comprehensive, premium write-up of this top deal below the image.
+    4. Other Tech/Venture Deals of the Day:
+       - Format the remaining deals: {json.dumps(deals_data, indent=2)}
+       - For each deal, present a readable summary, investors, and sector/keywords.
+       - If a deal has a non-null/valid 'article_image_url', embed that image inside the deal card/section with style: `width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 12px 0;`. Do NOT use placeholders if 'article_image_url' is missing.
+    5. Events of the Week for HNWIs, Family Offices, and Elite Investors:
+       - Create an exclusive events section highlighting 2-3 high-value events of the week (e.g., Private Wealth forums, family office roundtables, closed-door VC networking, startup pitch dinners).
+       - For each event, provide: Event Name, Date, Location, Target Audience (HNWIs, Family Offices, VCs), a short description, and clear booking/RSVP details with a beautifully styled "Book Seat" button/link.
+       - Ensure these events look highly exclusive, relevant, and realistic.
+    6. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
+    
+    Return ONLY the raw HTML code. Do not include markdown code block backticks (like ```html ... ```) or any additional conversational text. Start with <html> or <!DOCTYPE html> and end with </html>.
+    """
+    
+    try:
+        model = genai.GenerativeModel("gemini-2.5-flash")
+        response = model.generate_content(prompt)
+        html_code = response.text.strip()
+        # Clean potential markdown output
+        if html_code.startswith("```html"):
+            html_code = html_code[7:]
+        elif html_code.startswith("```"):
+            html_code = html_code[3:]
+        if html_code.endswith("```"):
+            html_code = html_code[:-3]
+        return html_code.strip()
+    except Exception as e:
+        print(f"Error generating newsletter HTML via Gemini: {e}")
+        return None
+
 def send_gmail(deals, local_image_path=None):
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
+    gemini_key = os.environ.get("GEMINI_API_KEY")
     
     if not gmail_user or not gmail_password:
         print("Warning: GMAIL_USER or GMAIL_APP_PASSWORD not set. Skipping Gmail notification.")
@@ -383,40 +491,47 @@ def send_gmail(deals, local_image_path=None):
     date_str = datetime.now().strftime("%Y-%m-%d")
     subject = f"The Investor's Daily Fundraising Report - {date_str}"
     
-    # HTML Email body content
-    html_parts = [
-        "<html>",
-        "<body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>",
-        "<p>Hi Investor,</p>",
-        "<p>This is Richmond from <strong>The Investor</strong>. Here's our top news for today:</p>"
-    ]
-    
-    # Embed top deal card image at the top of the email
-    if local_image_path and os.path.exists(local_image_path):
-        html_parts.append("<div style='margin: 20px 0;'>")
-        html_parts.append("  <img src='cid:top_deal_image' style='max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>")
-        html_parts.append("</div>")
+    # Generate HTML content using Gemini
+    html_content = None
+    if gemini_key:
+        html_content = generate_newsletter_html(deals, gemini_key)
         
-    html_parts.append("<hr style='border: 0; border-top: 1px solid #ddd; margin: 20px 0;'>")
-    
-    for i, d in enumerate(deals, 1):
-        html_parts.append(f"<div style='margin-bottom: 25px;'>")
-        html_parts.append(f"  <h3 style='margin: 0 0 10px 0; color: #333;'>{i}. {d.get('startup')}: {d.get('deal_details')}</h3>")
-        html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Summary:</strong> {d.get('summary')}</p>")
-        html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Investors:</strong> {d.get('investors', 'Undisclosed')}</p>")
+    if not html_content:
+        # Fallback HTML body content if Gemini generation fails
+        print("Using fallback HTML template for email...")
+        html_parts = [
+            "<html>",
+            "<body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>",
+            "<p>Hi Investor,</p>",
+            "<p>This is Richmond from <strong>The Investor</strong>. Here's our top news for today:</p>"
+        ]
         
-        kws = d.get('keywords', [])
-        kw_str = ", ".join(kws) if isinstance(kws, list) else str(kws)
-        html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Sector Keywords:</strong> {kw_str}</p>")
-        html_parts.append(f"  <p style='margin: 0;'><strong>Source:</strong> <a href='{d.get('url')}' style='color: #007bff; text-decoration: none;'>{d.get('source')}</a></p>")
-        html_parts.append(f"</div>")
-        html_parts.append("<hr style='border: 0; border-top: 1px solid #eee; margin: 20px 0;'>")
+        # Embed top deal card image at the top of the email
+        if local_image_path and os.path.exists(local_image_path):
+            html_parts.append("<div style='margin: 20px 0;'>")
+            html_parts.append("  <img src='cid:top_deal_image' style='max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>")
+            html_parts.append("</div>")
+            
+        html_parts.append("<hr style='border: 0; border-top: 1px solid #ddd; margin: 20px 0;'>")
         
-    html_parts.append(f"<p style='font-size: 11px; color: #888;'>You are receiving this because you are subscribed to The Investor.</p>")
-    html_parts.append("</body>")
-    html_parts.append("</html>")
-    
-    html_content = "\n".join(html_parts)
+        for i, d in enumerate(deals, 1):
+            html_parts.append(f"<div style='margin-bottom: 25px;'>")
+            html_parts.append(f"  <h3 style='margin: 0 0 10px 0; color: #333;'>{i}. {d.get('startup')}: {d.get('deal_details')}</h3>")
+            html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Summary:</strong> {d.get('summary')}</p>")
+            html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Investors:</strong> {d.get('investors', 'Undisclosed')}</p>")
+            
+            kws = d.get('keywords', [])
+            kw_str = ", ".join(kws) if isinstance(kws, list) else str(kws)
+            html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Sector Keywords:</strong> {kw_str}</p>")
+            html_parts.append(f"  <p style='margin: 0;'><strong>Source:</strong> <a href='{d.get('url')}' style='color: #007bff; text-decoration: none;'>{d.get('source')}</a></p>")
+            html_parts.append(f"</div>")
+            html_parts.append("<hr style='border: 0; border-top: 1px solid #eee; margin: 20px 0;'>")
+            
+        html_parts.append(f"<p style='font-size: 11px; color: #888;'>You are receiving this because you are subscribed to The Investor.</p>")
+        html_parts.append("</body>")
+        html_parts.append("</html>")
+        
+        html_content = "\n".join(html_parts)
     
     try:
         # Connect to Gmail SMTP server once
@@ -485,6 +600,10 @@ if __name__ == "__main__":
         
     deals = parse_with_gemini(articles)
     if deals:
+        # Extract article image URL for each deal
+        for d in deals:
+            d["article_image_url"] = extract_og_image(d.get("url"))
+
         # Sort deals by quality score descending to find the top deal of the day
         try:
             deals.sort(key=lambda d: int(d.get("score", 0)), reverse=True)
