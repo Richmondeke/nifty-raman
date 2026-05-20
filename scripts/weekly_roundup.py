@@ -53,31 +53,7 @@ def load_recent_reports(days=7):
                 
     return "\n\n".join(reports_content)
 
-def generate_investor_image(gemini_key):
-    print("Generating investor spotlight image...")
-    client = genai.Client(api_key=gemini_key)
-    prompt = "ultra-realistic luxury fashion editorial, vintage 1970s executive office. confident top investor, relaxed pose, hands in pockets, against long wall of mid-century walnut cabinets. black sunglasses. oversized double-breasted grey suit, broad structured shoulders, wide-leg trousers, glossy black leather shoes. white crisp shirt, dark burgundy patterned tie, white pocket square. minimal metal desk lamp + neat document stacks on cabinet. muted mauve carpet. soft warm light on wood, diffused studio lighting, no harsh shadows. minimalist, centered, hyper-detailed, high-end fashion campaign"
-    try:
-        result = client.models.generate_images(
-            model='imagen-4.0-generate-001',
-            prompt=prompt,
-            config=types.GenerateImagesConfig(
-                number_of_images=1,
-                output_mime_type="image/jpeg",
-                aspect_ratio="3:4"
-            )
-        )
-        image_bytes = result.generated_images[0].image.image_bytes
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = os.path.dirname(script_dir)
-        img_path = os.path.join(project_root, "assets", "investor_spotlight.jpg")
-        with open(img_path, "wb") as f:
-            f.write(image_bytes)
-        print("Generated and saved investor spotlight image.")
-        return img_path
-    except Exception as e:
-        print(f"Error generating investor image: {e}")
-        return None
+
 
 def generate_weekly_html(reports_text, gemini_key):
     print("Compiling weekly roundup HTML via Gemini...")
@@ -95,12 +71,12 @@ def generate_weekly_html(reports_text, gemini_key):
     Use inline CSS inside the HTML style attributes to ensure it renders beautifully in Gmail and other email clients.
     
     The weekly newsletter must follow these design guidelines:
-    - Palette: Deep rich slate blues (#0F172A), luxurious warm gold/amber accents (#D97706 or #B45309), slate gray for text (#475569), and clean ivory/white backgrounds (#FFFFFF).
+    - Palette: Deep rich slate blues (#0F172A) for backgrounds/headers, bright grass green (#7ed957) for ALL accents, borders, links and highlights, slate gray for text (#475569), and clean ivory/white backgrounds (#FFFFFF). Do NOT use any brown, gold, or amber colors anywhere.
     - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) and clean, easy-to-read sans-serif body text (e.g. "Inter", "Helvetica Neue", Arial, sans-serif).
     - Responsive layout with a max-width of 600px, centered, with comfortable padding (20px-30px), soft borders, and premium-looking cards.
     
     The content structure must include:
-    1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Weekly private capital & events briefing".
+    1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 125px; display: block; margin: 0 auto 10px auto; max-width: 100%;">. Display the edition date and a subtitle below it: "Weekly private capital & events briefing".
     2. Weekly Roundup Intro: Write a friendly, relatable, and simple greeting from Richmond ("Richmond from The Investor"). Keep the tone conversational, down-to-earth, and clear, avoiding complex or pretentious venture capital jargon. Summarize the major themes, trends, or macroeconomic shifts observed in this week's deals in plain English.
     3. Top Investor / Dealmaker of the Week:
        - Write a short engaging bio/write-up of one of the top investors or dealmakers mentioned in the reports.
@@ -141,7 +117,7 @@ def generate_weekly_html(reports_text, gemini_key):
         print(f"Error generating weekly HTML via Gemini: {e}")
         return None
 
-def send_weekly_email(html_content, investor_image_path=None):
+def send_weekly_email(html_content, investor_image_path=None, test_only=False):
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     
@@ -149,7 +125,10 @@ def send_weekly_email(html_content, investor_image_path=None):
         print("Warning: GMAIL_USER or GMAIL_APP_PASSWORD not set. Skipping email sending.")
         return False
         
-    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com", "masiyerdakol@gmail.com", "troyhodinni@gmail.com"]
+    if test_only:
+        recipients = ["richmondeke@gmail.com"]
+    else:
+        recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com", "masiyerdakol@gmail.com", "troyhodinni@gmail.com"]
     date_str = datetime.now().strftime("%Y-%m-%d")
     subject = f"The Investor Weekly Briefing - {date_str}"
     
@@ -206,6 +185,7 @@ def send_weekly_email(html_content, investor_image_path=None):
 def main():
     parser = argparse.ArgumentParser(description="Generate and send the weekly investments newsletter roundup.")
     parser.add_argument("--dry-run", action="store_true", help="Compile and save the weekly report HTML locally without sending emails.")
+    parser.add_argument("--test", action="store_true", help="Send test email only to richmondeke@gmail.com")
     parser.add_argument("--days", type=int, default=7, help="Number of days of daily reports to compile (default: 7).")
     args = parser.parse_args()
     
@@ -242,10 +222,10 @@ def main():
     if args.dry_run:
         print("Dry run completed. Skipping email distribution.")
     else:
-        # Generate the investor image
-        investor_img_path = generate_investor_image(gemini_key)
+        # Use the static investor image
+        investor_img_path = os.path.join(project_root, "assets", "investor_spotlight.png")
         
-        send_weekly_email(html_content, investor_img_path)
+        send_weekly_email(html_content, investor_img_path, test_only=args.test)
 
 if __name__ == "__main__":
     main()
