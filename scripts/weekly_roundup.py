@@ -53,6 +53,32 @@ def load_recent_reports(days=7):
                 
     return "\n\n".join(reports_content)
 
+def generate_investor_image(gemini_key):
+    print("Generating investor spotlight image...")
+    client = genai.Client(api_key=gemini_key)
+    prompt = "ultra-realistic luxury fashion editorial, vintage 1970s executive office. confident top investor, relaxed pose, hands in pockets, against long wall of mid-century walnut cabinets. black sunglasses. oversized double-breasted grey suit, broad structured shoulders, wide-leg trousers, glossy black leather shoes. white crisp shirt, dark burgundy patterned tie, white pocket square. minimal metal desk lamp + neat document stacks on cabinet. muted mauve carpet. soft warm light on wood, diffused studio lighting, no harsh shadows. minimalist, centered, hyper-detailed, high-end fashion campaign"
+    try:
+        result = client.models.generate_images(
+            model='imagen-4.0-generate-001',
+            prompt=prompt,
+            config=types.GenerateImagesConfig(
+                number_of_images=1,
+                output_mime_type="image/jpeg",
+                aspect_ratio="3:4"
+            )
+        )
+        image_bytes = result.generated_images[0].image.image_bytes
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        img_path = os.path.join(project_root, "assets", "investor_spotlight.jpg")
+        with open(img_path, "wb") as f:
+            f.write(image_bytes)
+        print("Generated and saved investor spotlight image.")
+        return img_path
+    except Exception as e:
+        print(f"Error generating investor image: {e}")
+        return None
+
 def generate_weekly_html(reports_text, gemini_key):
     print("Compiling weekly roundup HTML via Gemini...")
     client = genai.Client(api_key=gemini_key)
@@ -76,19 +102,23 @@ def generate_weekly_html(reports_text, gemini_key):
     The content structure must include:
     1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Weekly private capital & events briefing".
     2. Weekly Roundup Intro: Write a friendly, relatable, and simple greeting from Richmond ("Richmond from The Investor"). Keep the tone conversational, down-to-earth, and clear, avoiding complex or pretentious venture capital jargon. Summarize the major themes, trends, or macroeconomic shifts observed in this week's deals in plain English.
-    3. Major Deals of the Week:
+    3. Top Investor / Dealmaker of the Week:
+       - Write a short engaging bio/write-up of one of the top investors or dealmakers mentioned in the reports.
+       - Place the following image EXACTLY above the text and summary of their bio:
+         <img src="cid:investor_image" alt="Top Investor" style="width: 100%; max-width: 600px; display: block; margin: 0 auto 15px auto; border-radius: 8px;">
+    4. Major Deals of the Week:
        - Summarize the top 3-5 deals of the week in a beautifully structured section.
        - Highlight the startup name, amount raised (e.g., "$110 Million"), investors, and a short 2-3 sentence summary of what they do.
-    4. Deal Directory (Early Stage & Others):
+    5. Deal Directory (Early Stage & Others):
        - Group or list the rest of the deals by stage or sectors. Keep it compact and clean.
-    5. Sponsorship Showcase (Monetization Block):
+    6. Sponsorship Showcase (Monetization Block):
        - Design a highly styled call-out card encouraging sponsorships.
        - It should look professional and invite sponsors (e.g., "Sponsor The Investor Weekly Briefing. Get in front of thousands of active VCs, HNWIs, and Family Office decision-makers. Contact richmondeke@gmail.com to learn about our sponsorship tiers.").
        - Add a beautiful, styled link/button for "Apply for Sponsorship" linking to `mailto:ekerichmond@gmail.com?subject=Sponsorship%20Inquiry%20-%20The%20Investor%20Weekly`.
-    6. HNWI & Family Office Events of the Week:
+    7. HNWI & Family Office Events of the Week:
        - Highlight 2-3 upcoming closed-door networking dinners, private wealth forums, family office summits, or investment syndicate pitch sessions.
        - For each event, provide: Event Name, Date, Location, Target Audience (HNWIs, Family Offices, VCs), a short description, and clear booking details with a styled "Book Seat" button/link. Keep the booking details simple.
-    7. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
+    8. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
     
     Return ONLY the raw HTML code. Do not include markdown code block backticks (like ```html ... ```) or any additional conversational text. Start with <html> or <!DOCTYPE html> and end with </html>.
     """
@@ -111,7 +141,7 @@ def generate_weekly_html(reports_text, gemini_key):
         print(f"Error generating weekly HTML via Gemini: {e}")
         return None
 
-def send_weekly_email(html_content):
+def send_weekly_email(html_content, investor_image_path=None):
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     
@@ -119,7 +149,7 @@ def send_weekly_email(html_content):
         print("Warning: GMAIL_USER or GMAIL_APP_PASSWORD not set. Skipping email sending.")
         return False
         
-    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com"]
+    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com", "masiyerdakol@gmail.com", "troyhodinni@gmail.com"]
     date_str = datetime.now().strftime("%Y-%m-%d")
     subject = f"The Investor Weekly Briefing - {date_str}"
     
@@ -152,6 +182,17 @@ def send_weekly_email(html_content):
                     msg.attach(msg_logo)
                 except Exception as e:
                     print(f"Error attaching logo image for {recipient}: {e}")
+                    
+            # Attach investor image if present
+            if investor_image_path and os.path.exists(investor_image_path):
+                try:
+                    with open(investor_image_path, 'rb') as f:
+                        investor_img_data = f.read()
+                    msg_investor_img = MIMEImage(investor_img_data, name=os.path.basename(investor_image_path))
+                    msg_investor_img.add_header('Content-ID', '<investor_image>')
+                    msg.attach(msg_investor_img)
+                except Exception as e:
+                    print(f"Error attaching investor image for {recipient}: {e}")
             
             server.sendmail(gmail_user, [recipient], msg.as_string())
             
@@ -201,7 +242,10 @@ def main():
     if args.dry_run:
         print("Dry run completed. Skipping email distribution.")
     else:
-        send_weekly_email(html_content)
+        # Generate the investor image
+        investor_img_path = generate_investor_image(gemini_key)
+        
+        send_weekly_email(html_content, investor_img_path)
 
 if __name__ == "__main__":
     main()
