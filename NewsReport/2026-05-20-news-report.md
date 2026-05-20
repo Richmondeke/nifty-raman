@@ -5,42 +5,42 @@
 
 ---
 
-## 1. Stilta: $10.5 Million Seed
+## 1. Sendcutsend: $110M
 
-- **Summary**: Stilta is an AI platform designed to automate the research and analytical work behind intellectual property (IP) cases. It helps companies rediscover forgotten patents, thereby streamlining the historically labor-intensive, slow, and expensive process of patent litigation.
+- **Summary**: Sendcutsend, a manufacturing company, has successfully raised $110 million in funding. This significant capital infusion marks a shift for the CEO, who previously avoided venture capital. The investment is expected to fuel the company's growth and expansion in its operational domain.
 - **Key Points**:
-  1. Investors: a16z, YC
-  2. Sector keywords: legal tech, AI, intellectual property, automation
-- **Source**: [TechCrunch](https://techcrunch.com/2026/05/19/legal-tech-announced-stilta-announces-10m-seed-backed-by-yc-and-a16z-months-after-launch/)
-- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/34feff18-7471-477c-a074-f79c12e78809.jpg)
+  1. Investors: Undisclosed
+  2. Sector keywords: manufacturing, venture capital, industrial tech
+- **Source**: [Hacker News](https://www.wsj.com/business/entrepreneurship/this-manufacturing-ceo-once-spurned-venture-capital-now-hes-taking-110-million-82f7aafb)
+- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/8aa07e39-424a-4d64-a5af-6c2d207e321a.jpg)
 
 ![Visual Card](images/2026-05-20-top-deal.jpg)
 
-- **Keywords**: `legal tech` `AI` `intellectual property` `automation`
+- **Keywords**: `manufacturing` `venture capital` `industrial tech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 2. Sendcutsend: $110 Million
+## 2. Status AI: $17M funding
 
-- **Summary**: Sendcutsend, a manufacturing company, has secured $110 million in venture capital. This significant funding round marks a strategic shift for the company, as its CEO had previously expressed reservations about taking external investment, indicating a strong growth trajectory and expansion plans.
+- **Summary**: Status AI is a social media platform aiming to transform passive content consumption into interactive entertainment. It enables users to engage with and 'live inside' stories, moving beyond traditional social media feeds. This approach seeks to usher in a new era of social networking by fostering deeper user immersion.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: manufacturing, venture capital, growth equity, industrial tech
-- **Source**: [Hacker News](https://www.wsj.com/business/entrepreneurship/this-manufacturing-ceo-once-spurned-venture-capital-now-hes-taking-110-million-82f7aafb)
-- **Keywords**: `manufacturing` `venture capital` `growth equity` `industrial tech`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 3. Status AI: $17 Million Series A
-
-- **Summary**: Status is an AI-powered social media platform focused on transforming online interaction into interactive entertainment. It aims to engage users by allowing them to participate in stories, rather than passively consume them, catering to a new generation's desire for immersive experiences.
-- **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: social media, AI, interactive entertainment, gamification
+  2. Sector keywords: social media, AI, interactive entertainment, consumer tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/)
-- **Keywords**: `social media` `AI` `interactive entertainment` `gamification`
+- **Keywords**: `social media` `AI` `interactive entertainment` `consumer tech`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 3. Stilta: $10.5M Seed
+
+- **Summary**: Stilta is an AI platform that automates the research and analytical work behind intellectual property (IP) cases. This aims to significantly reduce the labor-intensive, slow, and expensive nature of patent litigation. The platform helps companies rediscover and manage their forgotten patents more efficiently.
+- **Key Points**:
+  1. Investors: a16z, YC
+  2. Sector keywords: legal tech, AI, intellectual property, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/05/19/legal-tech-announced-stilta-announces-10m-seed-backed-by-yc-and-a16z-months-after-launch/)
+- **Keywords**: `legal tech` `AI` `intellectual property` `SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
