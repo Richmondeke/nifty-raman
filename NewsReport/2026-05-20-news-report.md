@@ -1,46 +1,58 @@
 # Daily News Report (2026-05-20)
 
-> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Stilta: $10.5 Million Seed
+## 1. Lucra: $20 Million Series B
 
-- **Summary**: Stilta is an AI platform that automates the complex research and analytical tasks involved in intellectual property cases. The company aims to streamline patent litigation by helping businesses efficiently rediscover and leverage their forgotten patents, thereby reducing the time and cost historically associated with IP disputes.
+- **Summary**: Lucra, an eSports gamification loyalty startup, raised $20 million to enhance brand engagement through peer-to-peer challenges and tournaments. The company provides a plug-and-play SDK that handles compliance, payments, and fraud prevention within brand apps and websites. This funding is notable for being secured in a venture capital landscape heavily focused on AI investments.
 - **Key Points**:
-  1. Investors: ['a16z', 'YC']
-  2. Sector keywords: legaltech, AI, intellectual property, automation
-- **Source**: [TechCrunch](https://techcrunch.com/2026/05/19/legal-tech-announced-stilta-announces-10m-seed-backed-by-yc-and-a16z-months-after-launch/)
-- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/0a36553c-07e1-4e44-9520-225ecf0564be.jpg)
+  1. Investors: ARK Invest Venture Fund, Alumni Ventures, Astralis Capital, Harlo Equity Partners, Simplex Ventures, SeventySix Capital, WTI
+  2. Sector keywords: esports, gamification, loyalty, fintech, B2B SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/podcast/how-lucra-raised-20m-as-an-esports-play-when-every-vc-only-wants-ai/)
+- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/299c6cb4-b352-45a7-ad3b-1176e5b23935.jpg)
 
 ![Visual Card](images/2026-05-20-top-deal.jpg)
 
-- **Keywords**: `legaltech` `AI` `intellectual property` `automation`
+- **Keywords**: `esports, gamification, loyalty, fintech, B2B SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 2. Sendcutsend: $110 Million Undisclosed Stage
+## 2. Stilta: $10.5 Million Seed
 
-- **Summary**: Sendcutsend, a manufacturing company specializing in custom sheet metal fabrication, has raised $110 million in funding. Notably, the CEO had previously expressed reluctance towards venture capital, marking a significant strategic shift in the company's financing approach for growth and expansion.
+- **Summary**: Stilta, an AI platform, raised $10.5 million in a seed round to automate the research and analytical work involved in intellectual property cases. The company aims to make patent litigation more efficient and cost-effective, helping businesses uncover and utilize patents they may have overlooked.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: manufacturing, industrial tech, venture capital, fabrication
-- **Source**: [WSJ](https://www.wsj.com/business/entrepreneurship/this-manufacturing-ceo-once-spurned-venture-capital-now-hes-taking-110-million-82f7aafb)
-- **Keywords**: `manufacturing` `industrial tech` `venture capital` `fabrication`
+  1. Investors: a16z, Y Combinator
+  2. Sector keywords: legal tech, AI, intellectual property, patent litigation, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/05/19/legal-tech-announced-stilta-announces-10m-seed-backed-by-yc-and-a16z-months-after-launch/)
+- **Keywords**: `legal tech, AI, intellectual property, patent litigation, SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Status AI: $17 Million Undisclosed Stage
+## 3. Boston Metal: $75 Million Series C
 
-- **Summary**: Status is building a gamified social media network designed for interactive engagement rather than passive consumption. The platform aims to allow users to 'live inside' stories, shifting the focus from traditional feeds to immersive entertainment experiences for the next generation of social media users.
+- **Summary**: Boston Metal, a green steel startup, has raised $75 million to scale its Molten Oxide Electrolysis (MOE) platform and expand the production of critical metals. This funding will accelerate the commercial deployment of their technology, which recovers high-value metals from waste streams and strengthens supply chains essential for electrification, advanced manufacturing, and AI, while aiming to decarbonize metals production.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: social media, AI, gamification, interactive entertainment
+  1. Investors: Tata Steel Limited, existing investors
+  2. Sector keywords: green steel, critical metals, deep tech, sustainable technology, industrial tech, cleantech
+- **Source**: [Technology Review](https://www.technologyreview.com/2026/05/20/1137523/boston-metal-funding-critical-metals/)
+- **Keywords**: `green steel, critical metals, deep tech, sustainable technology, industrial tech, cleantech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 4. Status AI: $17 Million Seed, Series A
+
+- **Summary**: Status AI secured $17 million in combined seed and Series A funding to revolutionize social media by transforming it into interactive entertainment. The platform enables users to create personas and immerse themselves in dynamic, AI-driven social worlds, fostering engaging and collaborative storytelling experiences beyond traditional passive feeds.
+- **Key Points**:
+  1. Investors: Abstract, General Catalyst, Union Square Ventures, Y Combinator, LightShed Partners
+  2. Sector keywords: social media, AI, gamification, interactive entertainment, consumer tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/)
-- **Keywords**: `social media` `AI` `gamification` `interactive entertainment`
+- **Keywords**: `social media, AI, gamification, interactive entertainment, consumer tech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
