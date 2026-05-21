@@ -1,0 +1,36 @@
+name: Daily Report Retry
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # every hour
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up GitHub CLI
+        run: |
+          sudo apt-get update && sudo apt-get install -y gh
+      - name: Check retry flag and re-trigger if needed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FLAG_PATH=".retry_needed"
+          if [ -f "$FLAG_PATH" ]; then
+            FLAG_TIME=$(date -r "$FLAG_PATH" +%s)
+            NOW=$(date +%s)
+            AGE=$((NOW - FLAG_TIME))
+            if [ $AGE -ge 7200 ]; then  # 2 hours
+              echo "Retry flag older than 2 hours, re-running daily_report workflow"
+              gh workflow run daily_report.yml
+              rm "$FLAG_PATH"
+            else
+              echo "Retry flag exists but not old enough (age=$AGE seconds)"
+            fi
+          else
+            echo "No retry flag found"
+          fi

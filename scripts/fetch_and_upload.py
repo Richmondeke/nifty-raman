@@ -457,27 +457,31 @@ def generate_newsletter_html(deals, gemini_key):
     Use inline CSS inside the HTML style attributes to ensure it renders beautifully in Gmail and other email clients.
     
     The newsletter must follow these design guidelines:
-    - Palette: Deep rich blues (#0F172A), luxurious warm gold/amber accents (#D97706 or #B45309), slate gray for text (#475569), and clean ivory/white backgrounds (#FFFFFF).
+                - Palette: Deep rich blues (#0F172A), luxurious warm gold/amber accents (#D97706 or #B45309), slate gray for text (#475569), clean ivory/white backgrounds (#FFFFFF). Header background is black (#000000) with white text. Investor spotlight uses grass‑green accent (#7ED957).
+        - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) and body text in "DM Sans" (fallback to "Inter", "Helvetica Neue", Arial, sans-serif).
+    
+    1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 105px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
     - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) and clean, easy-to-read sans-serif body text (e.g. "Inter", "Helvetica Neue", Arial, sans-serif).
     - Responsive layout with a max-width of 600px, centered, with comfortable padding (e.g., 20px-30px), soft borders, and premium-looking cards.
     
     The content structure must include:
     1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
-    2. Editorial Intro: Write a friendly, relatable, and simple greeting from Richmond ("Richmond from The Investor"). Keep the tone conversational, down-to-earth, and clear, avoiding complex or pretentious venture capital/financial jargon. Explain what is happening in the venture market today in plain English.
+    2. Editorial Intro: Write a friendly, relatable, and simple greeting from Richmond ("Richmond from The Investor"). Explain what is happening in the venture market today in plain English.
     3. Top Deal of the Day:
        - Insert the visual card image with `src="cid:top_deal_image"` to display it inline.
        - Provide a readable, relatable write-up of this top deal below the image.
-    4. Other Tech/Venture Deals of the Day:
+    4. Top Investor Spotlight:
+       - Embed the portrait using <img src="cid:investor_image" alt="{investor_spotlight.get('name') if investor_spotlight else ''}" style="height:120px; display:block; margin:0 auto 10px auto; border-radius:8px;">
+       - <p style="font-family:'DM Sans',Arial,sans-serif; color:#475569; text-align:center; margin:0 0 15px 0;">{investor_spotlight.get('summary') if investor_spotlight else ''}</p>
+    5. Other Tech/Venture Deals of the Day:
        - Format the remaining deals: {json.dumps(deals_data, indent=2)}
        - For each deal, present a simple summary, investors, and sector/keywords.
-       - If a deal has a non-null/valid 'article_image_url', embed that image inside the deal card/section with style: `width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 12px 0;`. Do NOT use placeholders if 'article_image_url' is missing.
-    5. Events of the Week for HNWIs & Family Offices:
-       - Create an exclusive events section highlighting 2-3 high-value events of the week (e.g., Private Wealth forums, family office roundtables, closed-door VC networking, startup pitch dinners).
-       - For each event, provide: Event Name, Date, Location, Target Audience (HNWIs, Family Offices, VCs), a short description, and clear booking/RSVP details with a beautifully styled "Book Seat" button/link. Keep the booking details simple.
-       - Ensure these events look highly exclusive, relevant, and realistic.
-    6. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
+       - If a deal has a non-null/valid 'article_image_url', embed that image inside the deal card/section with style: `width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 12px 0;`.
+    6. Events of the Week for HNWIs & Family Offices:
+       - Create an exclusive events section highlighting 2-3 high-value events of the week.
+    7. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
     
-    Return ONLY the raw HTML code. Do not include markdown code block backticks (like ```html ... ```) or any additional conversational text. Start with <html> or <!DOCTYPE html> and end with </html>.
+    Return ONLY the raw HTML code. Do not include markdown code block backticks.
     """
     
     try:
@@ -498,7 +502,7 @@ def generate_newsletter_html(deals, gemini_key):
         print(f"Error generating newsletter HTML via Gemini: {e}")
         return None
 
-def send_gmail(deals, local_image_path=None):
+def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_spotlight=None):
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     gemini_key = os.environ.get("GEMINI_API_KEY")
@@ -507,124 +511,78 @@ def send_gmail(deals, local_image_path=None):
         print("Warning: GMAIL_USER or GMAIL_APP_PASSWORD not set. Skipping Gmail notification.")
         return
         
-    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com"]
+    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com", "masiyerdakol@gmail.com", "troyhodinni@gmail.com"]
     date_str = datetime.now().strftime("%Y-%m-%d")
     subject = f"The Investor's Daily Fundraising Report - {date_str}"
     
-    # Generate HTML content using Gemini
     html_content = None
     if gemini_key:
-        html_content = generate_newsletter_html(deals, gemini_key)
+        html_content = generate_newsletter_html(deals, gemini_key, investor_spotlight)
         
     if not html_content:
-        # Fallback HTML body content if Gemini generation fails
-        print("Using fallback HTML template for email...")
-        html_parts = [
-            "<html>",
-            "<body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>",
-            "<p>Hi Investor,</p>",
-            "<p>This is Richmond from <strong>The Investor</strong>. Here's our top news for today:</p>"
-        ]
-        
-        # Embed top deal card image at the top of the email
+        # Fallback ...
+        html_parts = ["<html>", "<body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>", "<p>Hi Investor,</p>"]
         if local_image_path and os.path.exists(local_image_path):
-            html_parts.append("<div style='margin: 20px 0;'>")
-            html_parts.append("  <img src='cid:top_deal_image' style='max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>")
-            html_parts.append("</div>")
-            
-        html_parts.append("<hr style='border: 0; border-top: 1px solid #ddd; margin: 20px 0;'>")
-        
-        for i, d in enumerate(deals, 1):
-            html_parts.append(f"<div style='margin-bottom: 25px;'>")
-            html_parts.append(f"  <h3 style='margin: 0 0 10px 0; color: #333;'>{i}. {d.get('startup')}: {d.get('deal_details')}</h3>")
-            html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Summary:</strong> {d.get('summary')}</p>")
-            html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Investors:</strong> {d.get('investors', 'Undisclosed')}</p>")
-            
-            kws = d.get('keywords', [])
-            kw_str = ", ".join(kws) if isinstance(kws, list) else str(kws)
-            html_parts.append(f"  <p style='margin: 0 0 10px 0;'><strong>Sector Keywords:</strong> {kw_str}</p>")
-            html_parts.append(f"  <p style='margin: 0;'><strong>Source:</strong> <a href='{d.get('url')}' style='color: #007bff; text-decoration: none;'>{d.get('source')}</a></p>")
-            html_parts.append(f"</div>")
-            html_parts.append("<hr style='border: 0; border-top: 1px solid #eee; margin: 20px 0;'>")
-            
-        html_parts.append(f"<p style='font-size: 11px; color: #888;'>You are receiving this because you are subscribed to The Investor.</p>")
-        html_parts.append("</body>")
-        html_parts.append("</html>")
-        
-        html_content = "\n".join(html_parts)
+            html_parts.append("<img src='cid:top_deal_image' style='max-width: 600px;'>")
+        html_content = "\n".join(html_parts) + "</body></html>"
     
     logo_path = os.path.join("assets", "TheInvestor.png")
     
     try:
-        # Connect to Gmail SMTP server once
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.login(gmail_user, gmail_password)
         
         for recipient in recipients:
-            print(f"Sending email notification to {recipient}...")
             msg = MIMEMultipart('related')
             msg['Subject'] = subject
             msg['From'] = f"The Investor <{gmail_user}>"
             msg['To'] = recipient
             
-            # Attach HTML body
             msg_html = MIMEText(html_content, 'html')
             msg.attach(msg_html)
             
-            # Attach logo if present
             if os.path.exists(logo_path):
-                try:
-                    with open(logo_path, 'rb') as f:
-                        logo_data = f.read()
-                    msg_logo = MIMEImage(logo_data, name=os.path.basename(logo_path))
+                with open(logo_path, 'rb') as f:
+                    msg_logo = MIMEImage(f.read())
                     msg_logo.add_header('Content-ID', '<logo_image>')
                     msg.attach(msg_logo)
-                except Exception as e:
-                    print(f"Error attaching logo image for {recipient}: {e}")
             
-            # Attach embedded image
             if local_image_path and os.path.exists(local_image_path):
-                try:
-                    with open(local_image_path, 'rb') as f:
-                        img_data = f.read()
-                    msg_img = MIMEImage(img_data, name=os.path.basename(local_image_path))
+                with open(local_image_path, 'rb') as f:
+                    msg_img = MIMEImage(f.read())
                     msg_img.add_header('Content-ID', '<top_deal_image>')
                     msg.attach(msg_img)
+
+            if investor_image_path and os.path.exists(investor_image_path):
+                try:
+                    with open(investor_image_path, 'rb') as f:
+                        msg_inv = MIMEImage(f.read())
+                        msg_inv.add_header('Content-ID', '<investor_image>')
+                        msg.attach(msg_inv)
                 except Exception as e:
-                    print(f"Error attaching inline image for {recipient}: {e}")
+                    print(f"Error attaching investor image for {recipient}: {e}")
             
             server.sendmail(gmail_user, [recipient], msg.as_string())
             
         server.close()
-        print("All emails sent successfully via Gmail!")
     except Exception as e:
         print(f"Error sending emails via Gmail: {e}")
 
 if __name__ == "__main__":
-    # Load environment variables from .env file if it exists at project root
+    # Load environment variables
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     env_path = os.path.join(project_root, ".env")
     if os.path.exists(env_path):
-        print(f"Loading environment variables from {env_path}...")
         with open(env_path, "r") as f:
             for line in f:
-                line = line.strip()
-                if not line or line.startswith("#"):
-                    continue
                 if "=" in line:
-                    k, v = line.split("=", 1)
-                    # Strip quotes if present
-                    val = v.strip().strip("'\"")
-                    os.environ[k.strip()] = val
+                    k, v = line.strip().split("=", 1)
+                    os.environ[k.strip()] = v.strip().strip("'\"")
 
-    # Check secrets/config
     spreadsheet = os.environ.get("SPREADSHEET_NAME")
-    
-    # Render API credentials
     templated_key = os.environ.get("TEMPLATED_API_KEY")
     templated_id = os.environ.get("TEMPLATED_TEMPLATE_ID")
-    
     creatomate_key = os.environ.get("CREATOMATE_API_KEY")
     creatomate_id = os.environ.get("CREATOMATE_TEMPLATE_ID")
         
@@ -633,22 +591,45 @@ if __name__ == "__main__":
     articles.extend(fetch_hn_deals())
     
     if not articles:
-        print("No articles fetched. Exiting.")
         sys.exit(0)
         
     deals = parse_with_gemini(articles)
     if deals:
-        # Extract article image URL for each deal
         for d in deals:
             d["article_image_url"] = extract_og_image(d.get("url"))
 
-        # Sort deals by quality score descending to find the top deal of the day
         try:
             deals.sort(key=lambda d: int(d.get("score", 0)), reverse=True)
         except Exception as e:
             print(f"Error sorting deals: {e}")
 
-        # Generate visual asset only for the top deal of the day (1 render per day constraint)
+        # Determine top investor
+        def select_top_investor(deals):
+            investor_counts = {}
+            for d in deals:
+                invs = d.get("investors", "")
+                for inv in [i.strip() for i in str(invs).split(",") if i.strip()]:
+                    investor_counts[inv] = investor_counts.get(inv, 0) + 1
+            if not investor_counts:
+                return None
+            return max(investor_counts, key=investor_counts.get)
+
+        def generate_investor_summary(name, gemini_key):
+            if not name: return ""
+            client = genai.Client(api_key=gemini_key)
+            prompt = f"You are a financial editor. Write a brief 2-3 sentence paragraph about the investor {name}, mentioning why they matter to HNWI readers."
+            try:
+                response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+                return response.text.strip()
+            except: return ""
+
+        top_investor_name = select_top_investor(deals)
+        top_investor_summary = generate_investor_summary(top_investor_name, os.environ.get("GEMINI_API_KEY"))
+        investor_spotlight = {"name": top_investor_name, "summary": top_investor_summary, "cid": "investor_image"}
+        
+        # Image logic (Assumes local storage at standard path)
+        investor_img_path = os.path.join("NewsReport", "images", "investor_portrait.jpg")
+
         top_deal = deals[0]
         rendered_url = None
         if templated_key and templated_id:
@@ -676,5 +657,15 @@ if __name__ == "__main__":
         if spreadsheet:
             sheets_creds = os.environ.get("GOOGLE_SHEETS_CREDENTIALS")
             upload_to_sheets(deals, sheets_creds, spreadsheet)
-    else:
+    if not deals:
         print("No deals found after LLM extraction.")
+        # Create a retry flag for later retry workflow
+        retry_flag = os.path.join(os.path.dirname(__file__), "..", "..", ".retry_needed")
+        try:
+            with open(retry_flag, "w") as f:
+                f.write(str(datetime.utcnow()))
+        except Exception as e:
+            print(f"Failed to write retry flag: {e}")
+        # Exit with non-zero to mark the GitHub Action as failed
+        sys.exit(1)
+        return False
