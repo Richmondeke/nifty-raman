@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ subject }}</title>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #2c3e50;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: auto;
+      background: #ffffffdd;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #1a73e8;
+      text-align: center;
+    }
+    h2 {
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 4px;
+      margin-top: 30px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .video {
+      margin: 10px 0;
+    }
+    a {
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>{{ subject }}</h1>
+    <p style="text-align:center; color:#555;">{{ date }}</p>
+    {% for cat, content in sections.items() %}
+    <div class="section">
+      <h2>{{ cat }}</h2>
+      <p>{{ content | safe }}</p>
+    </div>
+    {% endfor %}
+    {% if videos %}
+    <h2>Recommended YouTube Videos</h2>
+    {% for video in videos %}
+    <div class="video">
+      <a href="{{ video.url }}" target="_blank">{{ video.title }}</a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <p style="margin-top:30px; text-align:center; color:#777;">Sent by {{ sender }}</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Configuration for SyncMaster newsletter automation
+# Adjust these values according to your environment
+
+# Email service configuration (example using SendGrid)
+sendgrid_api_key: "YOUR_SENDGRID_API_KEY"
+# Sender email address
+sender_email: "newsletter@syncmaster.live"
+# Recipient list file (CSV with columns: email,name)
+recipients_csv: "recipients.csv"
+
+# Source of sync licensing briefs (JSON file, API endpoint, etc.)
+briefs_source: "briefs.json"  # placeholder path or URL
+
+# YouTube recommendation strategy (static list file or API)
+youtube_recommendations: "youtube_recommendations.json"
+
+# Gemini API keys (rotate as fail‑safe). Provide as a list here or via GEMINI_KEYS env var.
+gemini_keys:
+  - "AIzaSyDG41fW-E5h3QnCPhFYaEXXwAHwCW5DnnA"
+  - "AIzaSyB87I6-g2VAbc_upqCuqNXOu-b9ilksTC4"
+  - "AIzaSyD_Hxblh7EwQembogaG3sdJuJ4L9cVTgfE"
+# Gmail SMTP credentials (use app password or OAuth token)
+gmail_user: "ekerichmond@gmail.com"
+gmail_app_password: "vwva xodp vzqc ohlx"
