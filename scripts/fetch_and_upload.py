@@ -99,12 +99,7 @@ def fetch_hn_deals():
 
 def parse_with_gemini(articles):
     print("Using Gemini API to extract and structure fundraising deals...")
-    gemini_key = os.environ.get("GEMINI_API_KEY")
-    if not gemini_key:
-        print("Error: GEMINI_API_KEY environment variable is not set. Cannot run LLM parsing.")
-        sys.exit(1)
-        
-    client = genai.Client(api_key=gemini_key)
+    
     input_text = json.dumps(articles, indent=2)
     
     prompt = f"""
@@ -129,35 +124,54 @@ def parse_with_gemini(articles):
     {input_text}
     """
     
-    try:
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                tools=[types.Tool(google_search=types.GoogleSearch())]
+    # Prepare a list of Gemini API keys: primary from env or default, plus any fallbacks from GEMINI_FALLBACK_KEYS (comma-separated)
+    primary_key = os.getenv("GEMINI_API_KEY") or "AIzaSyAJ8_n_DgKAFOvBPmmBFJj3MF2lux48TFk"
+    os.environ["GEMINI_API_KEY"] = primary_key  # Ensure primary is set for downstream uses
+    fallback_keys = []
+    extra = os.getenv("GEMINI_FALLBACK_KEYS")
+    if extra:
+        fallback_keys = [k.strip() for k in extra.split(",") if k.strip()]
+    all_keys = [primary_key] + fallback_keys
+
+    client = None
+    response = None
+    for key in all_keys:
+        try:
+            client = genai.Client(api_key=key)
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())]
+                )
             )
-        )
-        
-        # Parse the JSON response robustly
-        text = response.text.strip()
-        if text.startswith("```json"):
-            text = text[7:]
-        elif text.startswith("```"):
-            text = text[3:]
-        if text.endswith("```"):
-            text = text[:-3]
-        text = text.strip()
-        
-        json_match = re.search(r'\[\s*\{.*\}\s*\]', text, re.DOTALL)
-        if json_match:
-            text = json_match.group(0)
-            
-        deals = json.loads(text)
-        print(f"Gemini successfully extracted {len(deals)} deals.")
-        return deals
-    except Exception as e:
-        print(f"Error calling Gemini API: {e}")
+            # If we get a response, break out of the loop
+            break
+        except Exception as e:
+            print(f"Gemini API call failed with key {key[:5]}...: {e}")
+            # Continue to next key
+            continue
+    if not response:
+        print("All Gemini API keys failed. Returning empty result set.")
         return []
+
+    # Parse the JSON response robustly
+    text = response.text.strip()
+    if text.startswith("```json"):
+        text = text[7:]
+    elif text.startswith("```"):
+        text = text[3:]
+    if text.endswith("```"):
+        text = text[:-3]
+    text = text.strip()
+
+    json_match = re.search(r"\[\s*\{.*\}\s*\]", text, re.DOTALL)
+    if json_match:
+        text = json_match.group(0)
+
+    deals = json.loads(text)
+    print(f"Gemini successfully extracted {len(deals)} deals.")
+    return deals
 
 def render_templated_card(deal, api_key, template_id):
     """
@@ -668,4 +682,4 @@ if __name__ == "__main__":
             print(f"Failed to write retry flag: {e}")
         # Exit with non-zero to mark the GitHub Action as failed
         sys.exit(1)
-        return False
+
