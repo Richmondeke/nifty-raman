@@ -21,4 +21,4 @@ gemini_keys:
   - "AIzaSyD_Hxblh7EwQembogaG3sdJuJ4L9cVTgfE"
 # Gmail SMTP credentials (use app password or OAuth token)
 gmail_user: "ekerichmond@gmail.com"
-gmail_app_password: "vwva xodp vzqc ohlx"
+gmail_app_password: "vwvaxodpvzqcohlx"

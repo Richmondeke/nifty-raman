@@ -127,10 +127,18 @@ def parse_with_gemini(articles):
     # Prepare a list of Gemini API keys: primary from env or default, plus any fallbacks from GEMINI_FALLBACK_KEYS (comma-separated)
     primary_key = os.getenv("GEMINI_API_KEY") or "AIzaSyAJ8_n_DgKAFOvBPmmBFJj3MF2lux48TFk"
     os.environ["GEMINI_API_KEY"] = primary_key  # Ensure primary is set for downstream uses
-    fallback_keys = []
+    # Determine fallback Gemini API keys (additional keys)
     extra = os.getenv("GEMINI_FALLBACK_KEYS")
     if extra:
         fallback_keys = [k.strip() for k in extra.split(",") if k.strip()]
+    else:
+        # Hardcoded fallback keys as per user-provided list
+        fallback_keys = [
+            "AIzaSyDG41fW-E5h3QnCPhFYaEXXwAHwCW5DnnA",
+            "AIzaSyB87I6-g2VAbc_upqCuqNXOu-b9ilksTC4",
+            "AIzaSyD_Hxblh7EwQembogaG3sdJuJ4L9cVTgfE",
+            "AIzaSyByFGLPZC7ZLQnVImgUZC9TKD00My-VUyQ"
+        ]
     all_keys = [primary_key] + fallback_keys
 
     client = None
