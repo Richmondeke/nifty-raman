@@ -448,7 +448,7 @@ def extract_og_image(url):
         print(f"Error extracting OG image from {url}: {e}")
     return None
 
-def generate_newsletter_html(deals, gemini_key):
+def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     """
     Generates a premium, investor-centric newsletter HTML body using Gemini API.
     Highlights weekly HNWI / Family Office events and incorporates article image URLs.
