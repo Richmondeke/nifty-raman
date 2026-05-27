@@ -251,18 +251,26 @@ if __name__ == "__main__":
         
     # Parse command line arguments for newsletter type
     parser = argparse.ArgumentParser(description='Send Onionlabel newsletters')
-    parser.add_argument('--type', choices=['general', 'african'], default='general', help='Type of newsletter to send')
+    parser.add_argument('--type', choices=['general', 'african', 'auto'], default='auto', help='Type of newsletter to send')
     args = parser.parse_args()
+    
+    newsletter_type = args.type
+    if newsletter_type == 'auto':
+        current_hour = datetime.utcnow().hour
+        if current_hour < 12:
+            newsletter_type = 'african'
+            print("Auto-detected morning (UTC < 12): selecting 'african' newsletter.")
+        else:
+            newsletter_type = 'general'
+            print("Auto-detected afternoon/evening (UTC >= 12): selecting 'general' newsletter.")
     
     jobs = fetch_ai_jobs(gemini_keys)
     
     if not jobs:
         print("No jobs found today.")
         sys.exit(0)
-        print("No jobs found today.")
-        sys.exit(0)
         
-    html_content = generate_newsletter_html(jobs, gemini_keys, newsletter_type=args.type)
+    html_content = generate_newsletter_html(jobs, gemini_keys, newsletter_type=newsletter_type)
     
     if html_content:
         send_email(html_content)

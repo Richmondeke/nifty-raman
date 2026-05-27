@@ -1,36 +1,86 @@
-name: Daily Report Retry
+name: Daily Workflows Scheduler Fallback
 
 on:
   schedule:
-    - cron: '0 * * * *'  # every hour
+    - cron: '15 * * * *'  # Runs at minute 15 of every hour to check and recover runs
+  workflow_dispatch:      # Allows manual trigger to check and run missing jobs
+
+permissions:
+  actions: write
+  contents: read
 
 jobs:
-  retry:
+  self-healing-scheduler:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+
       - name: Set up GitHub CLI
         run: |
           sudo apt-get update && sudo apt-get install -y gh
-      - name: Check retry flag and re-trigger if needed
+
+      - name: Verify daily runs and trigger fallbacks if needed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          FLAG_PATH=".retry_needed"
-          if [ -f "$FLAG_PATH" ]; then
-            FLAG_TIME=$(date -r "$FLAG_PATH" +%s)
-            NOW=$(date +%s)
-            AGE=$((NOW - FLAG_TIME))
-            if [ $AGE -ge 7200 ]; then  # 2 hours
-              echo "Retry flag older than 2 hours, re-running daily_report workflow"
+          TODAY=$(date -u +%Y-%m-%d)
+          CURRENT_HOUR=$(date -u +%H)
+          CURRENT_HOUR=$((10#$CURRENT_HOUR)) # Safely parse as base-10 integer
+
+          echo "--------------------------------------------------------"
+          echo "Self-Healing Scheduler run at $(date -u)"
+          echo "Date: $TODAY | Hour (UTC): $CURRENT_HOUR"
+          echo "--------------------------------------------------------"
+
+          # 1. Check daily_report.yml (Fundraising News Scraper)
+          # Scheduled at 8:23 AM UTC -> Active check threshold: 9 AM UTC
+          if [ $CURRENT_HOUR -ge 9 ]; then
+            echo "Checking Daily Fundraising News Report..."
+            RUNS=$(gh run list --workflow daily_report.yml --json conclusion,createdAt -q ".[] | select(.createdAt >= \"${TODAY}T00:00:00Z\" and .conclusion == \"success\")")
+            if [ -z "$RUNS" ]; then
+              echo "⚠️ Daily Fundraising News Report has not run successfully today. Triggering workflow..."
               gh workflow run daily_report.yml
-              rm "$FLAG_PATH"
             else
-              echo "Retry flag exists but not old enough (age=$AGE seconds)"
+              echo "✅ Daily Fundraising News Report completed successfully today."
             fi
           else
-            echo "No retry flag found"
+            echo "🕒 Daily Fundraising News Report check deferred until 9:00 AM UTC (Scheduled: 8:23 AM UTC)."
           fi
+
+          echo "--------------------------------------------------------"
+
+          # 2. Check Daily AI Data Job Newsletter - African Edition
+          # Scheduled at 9:13 AM UTC -> Active check threshold: 10 AM UTC
+          if [ $CURRENT_HOUR -ge 10 ]; then
+            echo "Checking Daily AI Data Job Newsletter - African Edition..."
+            # Check if there is a successful run today that started before 12:00 UTC
+            RUNS_AFRICAN=$(gh run list --workflow daily_jobs_newsletter.yml --json conclusion,createdAt -q ".[] | select(.createdAt >= \"${TODAY}T00:00:00Z\" and .createdAt < \"${TODAY}T12:00:00Z\" and .conclusion == \"success\")")
+            if [ -z "$RUNS_AFRICAN" ]; then
+              echo "⚠️ Daily African Newsletter has not run successfully today. Triggering..."
+              gh workflow run daily_jobs_newsletter.yml -f type=african
+            else
+              echo "✅ Daily African Newsletter completed successfully today."
+            fi
+          else
+            echo "🕒 African Newsletter check deferred until 10:00 AM UTC (Scheduled: 9:13 AM UTC)."
+          fi
+
+          echo "--------------------------------------------------------"
+
+          # 3. Check Daily AI Data Job Newsletter - General Edition
+          # Scheduled at 3:27 PM UTC (15:27 UTC) -> Active check threshold: 4 PM UTC (16:00 UTC)
+          if [ $CURRENT_HOUR -ge 16 ]; then
+            echo "Checking Daily AI Data Job Newsletter - General Edition..."
+            # Check if there is a successful run today that started after 12:00 UTC
+            RUNS_GENERAL=$(gh run list --workflow daily_jobs_newsletter.yml --json conclusion,createdAt -q ".[] | select(.createdAt >= \"${TODAY}T12:00:00Z\" and .conclusion == \"success\")")
+            if [ -z "$RUNS_GENERAL" ]; then
+              echo "⚠️ Daily General Newsletter has not run successfully today. Triggering..."
+              gh workflow run daily_jobs_newsletter.yml -f type=general
+            else
+              echo "✅ Daily General Newsletter completed successfully today."
+            fi
+          else
+            echo "🕒 General Newsletter check deferred until 4:00 PM UTC (Scheduled: 3:27 PM UTC)."
+          fi
+          echo "--------------------------------------------------------"

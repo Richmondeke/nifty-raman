@@ -2,9 +2,25 @@ name: Daily AI Data Job Newsletter
 
 on:
   schedule:
-    # Runs at 9:00 AM UTC = 10:00 AM WAT (West Africa Time, UTC+1)
-    - cron: '0 9 * * *'
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+    # African Language Annotation Newsletter (scheduled at 9:13 AM UTC = 10:13 AM WAT)
+    - cron: '13 9 * * *'
+    # General AI Data Labeling Newsletter (scheduled at 3:27 PM UTC = 4:27 PM WAT)
+    - cron: '27 15 * * *'
+  workflow_dispatch:
+    inputs:
+      type:
+        description: 'Type of newsletter to send (auto, african, general)'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - african
+          - general
+
+permissions:
+  actions: write
+  contents: read
 
 jobs:
   run-newsletter:
@@ -28,9 +44,10 @@ jobs:
       - name: Run Jobs Scraper and Send Email
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
-          python scripts/daily_jobs_newsletter.py
+          python scripts/daily_jobs_newsletter.py --type ${{ github.event.inputs.type || 'auto' }}
