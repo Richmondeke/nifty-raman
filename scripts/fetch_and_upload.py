@@ -32,9 +32,13 @@ try:
 except ImportError:
     print("Warning: google-genai is required. Please run pip install google-genai.")
 
-def fetch_techcrunch_deals():
-    print("Fetching TechCrunch Venture deals...")
-    feed_url = "https://techcrunch.com/category/venture/feed/"
+def fetch_rss_deals(feed_url, source_name):
+    print(f"Fetching {source_name} deals...")
+    try:
+        import feedparser
+        from bs4 import BeautifulSoup
+    except ImportError:
+        return []
     feed = feedparser.parse(feed_url)
     articles = []
     cutoff = datetime.now() - timedelta(hours=36)
@@ -52,12 +56,12 @@ def fetch_techcrunch_deals():
                 "title": entry.title,
                 "link": entry.link,
                 "description": desc,
-                "source": "TechCrunch"
+                "source": source_name
             })
         except Exception as e:
-            print(f"Error parsing TC entry: {e}")
+            print(f"Error parsing {source_name} entry: {e}")
             
-    print(f"Retrieved {len(articles)} recent articles from TechCrunch.")
+    print(f"Retrieved {len(articles)} recent articles from {source_name}.")
     return articles
 
 def fetch_hn_deals():
@@ -116,9 +120,10 @@ def parse_with_gemini(articles):
     8. URL
     9. Keywords (3-4 relevant tags, e.g. "healthtech", "AI-infrastructure", "saas")
     10. Quality Score (1 to 5, where 5 is a massive/groundbreaking deal, 3 is standard, 1 is minor)
+    11. Is African (true if the startup is based in Africa or has African founders, false otherwise)
     
     Output the results strictly as a JSON array containing objects with these exact keys:
-    "startup", "deal_details", "amount", "stage", "summary", "investors", "source", "url", "keywords", "score"
+    "startup", "deal_details", "amount", "stage", "summary", "investors", "source", "url", "keywords", "score", "is_african"
     
     Articles Data:
     {input_text}
@@ -469,7 +474,8 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
             "url": d.get("url"),
             "article_image_url": d.get("article_image_url"),
             "keywords": d.get("keywords"),
-            "score": d.get("score")
+            "score": d.get("score"),
+            "is_african": d.get("is_african")
         })
         
     prompt = f"""
@@ -488,20 +494,25 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     
     The content structure must include:
     1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
-    2. Editorial Intro: Write a friendly, relatable, and simple greeting from Richmond ("Richmond from The Investor"). Explain what is happening in the venture market today in plain English.
+    2. Global Editorial Intro: Write a friendly, relatable greeting from Richmond ("Richmond from The Investor"). Explain what is happening in the global venture market today in plain English.
     3. Top Deal of the Day:
        - Insert the visual card image with `src="cid:top_deal_image"` to display it inline.
        - Provide a readable, relatable write-up of this top deal below the image.
     4. Top Investor Spotlight:
        - Embed the portrait using <img src="cid:investor_image" alt="{investor_spotlight.get('name') if investor_spotlight else ''}" style="height:120px; display:block; margin:0 auto 10px auto; border-radius:8px;">
        - <p style="font-family:'DM Sans',Arial,sans-serif; color:#475569; text-align:center; margin:0 0 15px 0;">{investor_spotlight.get('summary') if investor_spotlight else ''}</p>
-    5. Other Tech/Venture Deals of the Day:
-       - Format the remaining deals: {json.dumps(deals_data, indent=2)}
+    5. 🚀 Top Global Deals:
+       - Format the global deals (those with is_african = false or missing) from the following data: {json.dumps(deals_data, indent=2)}
        - For each deal, present a simple summary, investors, and sector/keywords.
        - If a deal has a non-null/valid 'article_image_url', embed that image inside the deal card/section with style: `width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 12px 0;`.
-    6. Events of the Week for HNWIs & Family Offices:
+    6. 🌍 African & Nigerian Spotlight:
+       - Start this section with a warm, friendly intro from Kamsy ("Kamsy from The Investor"). Have him share a brief thought on today's African tech news or ecosystem growth.
+       - Format the African deals (those with is_african = true) from the same data array.
+       - Render them distinctly in their own styled section.
+       - Follow the same card format rules as global deals.
+    7. Events of the Week for HNWIs & Family Offices:
        - Create an exclusive events section highlighting 2-3 high-value events of the week.
-    7. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
+    8. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
     
     Return ONLY the raw HTML code. Do not include markdown code block backticks.
     """
@@ -609,7 +620,9 @@ if __name__ == "__main__":
     creatomate_id = os.environ.get("CREATOMATE_TEMPLATE_ID")
         
     articles = []
-    articles.extend(fetch_techcrunch_deals())
+    articles.extend(fetch_rss_deals("https://techcrunch.com/category/venture/feed/", "TechCrunch"))
+    articles.extend(fetch_rss_deals("https://techcabal.com/feed/", "TechCabal"))
+    articles.extend(fetch_rss_deals("https://disrupt-africa.com/feed/", "Disrupt Africa"))
     articles.extend(fetch_hn_deals())
     
     if not articles:

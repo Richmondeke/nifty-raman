@@ -24,7 +24,7 @@ except ImportError:
 #     return genai.Client(api_key=keys[index % len(keys)])
 
 # Load recipient list from the JSON file in the brain directory
-RECIPIENTS_PATH = pathlib.Path(__file__).resolve().parents[2] / "recipients.json"
+RECIPIENTS_PATH = pathlib.Path("/Users/mac/.gemini/antigravity/brain/f0fe31a1-3f28-486e-b1ae-f57b4c7371b5/recipients.json")
 
 def load_recipients():
     try:
@@ -67,30 +67,41 @@ def fetch_ai_jobs(gemini_keys):
     - "url": The direct application link
     - "score": A score from 1-5 rating the quality/desirability of the job (5 being highest)
     """
-                config=types.GenerateContentConfig(
-                    tools=[types.Tool(google_search=types.GoogleSearch())]
+    for key_index, api_key in enumerate(gemini_keys):
+        client = genai.Client(api_key=api_key)
+        attempts = 0
+        backoff = 1
+        while attempts < 3:
+            attempts += 1
+            try:
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        tools=[types.Tool(google_search=types.GoogleSearch())]
+                    )
                 )
-            )
-            
-            text = response.text.strip()
-            if text.startswith("```json"):
-                text = text[7:]
-            elif text.startswith("```"):
-                text = text[3:]
-            if text.endswith("```"):
-                text = text[:-3]
-            text = text.strip()
-            
-            json_match = re.search(r'\[\s*\{.*\}\s*\]', text, re.DOTALL)
-            if json_match:
-                text = json_match.group(0)
+                text = response.text.strip()
+                if text.startswith("```json"):
+                    text = text[7:]
+                elif text.startswith("```"):
+                    text = text[3:]
+                if text.endswith("```"):
+                    text = text[:-3]
+                text = text.strip()
                 
-            jobs = json.loads(text)
-            print(f"Successfully extracted {len(jobs)} jobs.")
-            return jobs
-        except Exception as e:
-            print(f"Attempt {attempts} failed for job fetch with key #{key_index+1}: {e}")
-            time.sleep(backoff)
+                json_match = re.search(r'\[\s*\{.*\}\s*\]', text, re.DOTALL)
+                if json_match:
+                    text = json_match.group(0)
+                    
+                jobs = json.loads(text)
+                print(f"Successfully extracted {len(jobs)} jobs using key #{key_index+1}.")
+                return jobs
+            except Exception as e:
+                print(f"Key #{key_index+1} attempt {attempts} failed for job fetch: {e}")
+                time.sleep(backoff)
+                backoff *= 2
+        print(f"Exhausted attempts for key #{key_index+1}, moving to next key.")
     return []
 
 def generate_newsletter_html(jobs, gemini_keys, newsletter_type='general'):

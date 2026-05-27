@@ -42,15 +42,19 @@ jobs:
 
       - name: Install Postiz CLI
         run: npm install -g postiz
-      - name: Authenticate Postiz CLI
-        env:
-          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
-        run: postiz auth:login --api-key $POSTIZ_API_KEY
+
       - name: Schedule Social Post via Postiz
         env:
           POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
           POSTIZ_INTEGRATION_ID: ${{ secrets.POSTIZ_INTEGRATION_ID }}
         run: python scripts/postiz_schedule.py
+
+      - name: Generate and Schedule Caricatures
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
+          POSTIZ_INTEGRATION_ID: ${{ secrets.POSTIZ_INTEGRATION_ID }}
+        run: python scripts/generate_caricatures.py
       - name: Commit and Push Report
         run: |
           git config --global user.name "github-actions[bot]"
