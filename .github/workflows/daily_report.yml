@@ -2,8 +2,8 @@ name: Daily Fundraising News Report
 
 on:
   schedule:
-    # Runs at 8:17 AM UTC = 9:17 AM WAT (West Africa Time, UTC+1) to avoid cron queue limits
-    - cron: '17 8 * * *'
+    # Runs at 8:23 AM UTC = 9:23 AM WAT (West Africa Time, UTC+1)
+    - cron: '23 8 * * *'
   workflow_dispatch: # Allows manual trigger from the Actions tab
 
 jobs:
