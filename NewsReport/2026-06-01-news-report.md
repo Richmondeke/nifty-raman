@@ -5,18 +5,18 @@
 
 ---
 
-## 1. Spiro: $215 million in equity funding
+## 1. Spiro: $215 Million Series A
 
-- **Summary**: Spiro, an electric mobility company, has successfully raised $215 million in equity funding to expand its battery-swapping infrastructure for motorcycles across Africa. The company is actively working to electrify urban transport and currently operates in multiple African countries, including Kenya, Rwanda, Uganda, Togo, Benin, Nigeria, and Cameroon, with plans for further expansion.
+- **Summary**: Spiro, an electric mobility company, has raised $215 million in equity funding to expand its battery-swapping infrastructure for motorcycles across Africa. The company focuses on electrifying urban transport and operates in several African countries, including Kenya, Rwanda, Uganda, Togo, Benin, Nigeria, and Cameroon. This investment will accelerate the deployment of its battery-swapping network and manufacturing capabilities.
 - **Key Points**:
   1. Investors: Impact Fund Denmark, Equitane
-  2. Sector keywords: electric mobility, EV, battery-swapping, Africa, clean energy
+  2. Sector keywords: electric mobility, EV, battery-swapping, Africa
 - **Source**: [TechCabal](https://techcabal.com/2026/06/01/spiro-raises-215-million-to-expand/)
-- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/6cb0bba5-a6fc-4e5b-b87b-b6591f689ad6.jpg)
+- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/301c7a23-0d5e-444c-9ab5-27c1170cb4c1.jpg)
 
 ![Visual Card](images/2026-06-01-top-deal.jpg)
 
-- **Keywords**: `electric mobility, EV, battery-swapping, Africa, clean energy`
+- **Keywords**: `electric mobility` `EV` `battery-swapping` `Africa`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
