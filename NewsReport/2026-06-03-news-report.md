@@ -5,43 +5,43 @@
 
 ---
 
-## 1. Spiro: $215 Million Equity
+## 1. SpaceX: $75 Billion IPO
 
-- **Summary**: Spiro, an African electric mobility company, secured $215 million in equity funding to accelerate the expansion of its electric vehicle and battery-swapping infrastructure across the African continent. The company operates in seven active markets, including Kenya, Rwanda, Uganda, Togo, Benin, Nigeria, and Cameroon, and plans to enter new high-growth markets like the Democratic Republic of Congo and Ethiopia. This investment aims to meet the surging demand for sustainable and affordable electric transportation solutions, contributing to reduced dependence on imported fossil fuels and modernized urban transport systems in Africa.
+- **Summary**: SpaceX, the aerospace manufacturer and space transportation services company founded by Elon Musk, is planning an initial public offering (IPO) targeting a record $75 billion raise at a price of $135 per share. The company is a leader in reusable rocket technology and satellite internet services, aiming for a valuation of about $1.75 trillion.
 - **Key Points**:
-  1. Investors: Impact Fund Denmark, Equitane, FEDA (long-standing investor)
-  2. Sector keywords: electric vehicles, e-mobility, battery-swapping, Africa, sustainability, infrastructure, climate tech
-- **Source**: [TechCabal](https://techcabal.com/2026/06/02/techcabal-daily-brass-gets-stacked/)
-- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/c0c39a36-46f1-4d04-b2e0-5f93a8731161.jpg)
+  1. Investors: Goldman Sachs, Morgan Stanley, BofA Securities, Citigroup, J.P.Morgan
+  2. Sector keywords: aerospace, space, satellite internet, IPO
+- **Source**: [Hacker News](https://www.reuters.com/business/media-telecom/spacex-plans-raise-75-billion-ipo-135-per-share-source-says-2026-06-03/)
+- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/b25f0615-23fb-42f5-a83c-bb06bcc971c8.jpg)
 
 ![Visual Card](images/2026-06-03-top-deal.jpg)
 
-- **Keywords**: `electric vehicles, e-mobility, battery-swapping, Africa, sustainability, infrastructure, climate tech`
+- **Keywords**: `aerospace, space, satellite internet, IPO`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Archestra.AI: $10 Million Seed
+## 2. Spiro: $215 Million Equity Funding
 
-- **Summary**: Archestra.AI, a London-based startup, raised $10 million in a Seed funding round to build an open-source platform that securely connects AI agents to sensitive corporate data. The company's technology aims to provide essential guardrails and governance, enabling enterprises to safely integrate AI into legal, managerial, procurement, and operations workflows without risking data exfiltration. The platform addresses the critical need for secure AI agent deployment as companies move from pilot programs to production.
+- **Summary**: Spiro, an African electric mobility company, has secured $215 million in fresh equity financing. The investment aims to expand its battery-swapping networks, increase vehicle assembly, and develop energy infrastructure across Africa, addressing the demand for affordable and sustainable transportation solutions.
 - **Key Points**:
-  1. Investors: 20VC (lead), 20 Product, Visible Ventures, Tenacity Capital, Commit Fund, Olivier Pomel (CEO of Datadog), Kieran Flanagan (SVP of Agentic GTM and Systems at HubSpot), Carolyn Everson (Permira board member)
-  2. Sector keywords: AI security, open-source, enterprise AI, data governance, cybersecurity, AI agents
-- **Source**: [Hacker News](https://archestra.ai/blog/archestra-announces-10m-seed)
-- **Keywords**: `AI security, open-source, enterprise AI, data governance, cybersecurity, AI agents`
-- **Score**: ⭐⭐⭐ (3/5)
+  1. Investors: Impact Fund Denmark, Equitane
+  2. Sector keywords: e-mobility, electric vehicles, Africa, sustainability
+- **Source**: [TechCabal](https://techcabal.com/2026/06/02/techcabal-daily-brass-gets-stacked/)
+- **Keywords**: `e-mobility, electric vehicles, Africa, sustainability`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Rudus: Undisclosed Preseed
+## 3. Brass: Undisclosed M&A
 
-- **Summary**: Rudus, a Y Combinator (P26 batch) startup, launched its AI-powered platform for concrete contractors. The company's solution aims to revolutionize the concrete estimation process by significantly reducing the time spent on manual takeoffs and quantity calculations. Rudus helps estimators bid on 3-5 times more projects by providing faster, more accurate measurements and a streamlined workflow, integrating seamlessly with existing construction software.
+- **Summary**: Brass, an African startup providing financial services for small and medium-sized businesses, is being acquired and integrated into Paystack MFB. This strategic move is expected to consolidate the Nigerian fintech market and expand Paystack's offerings.
 - **Key Points**:
-  1. Investors: Y Combinator
-  2. Sector keywords: construction tech, AI, concrete, SaaS, estimation software, Y Combinator
-- **Source**: [Hacker News](https://news.ycombinator.com/item?id=48374528)
-- **Keywords**: `construction tech, AI, concrete, SaaS, estimation software, Y Combinator`
-- **Score**: ⭐⭐ (2/5)
+  1. Investors: Paystack
+  2. Sector keywords: fintech, M&A, SME finance, Nigeria
+- **Source**: [TechCabal](https://techcabal.com/2026/06/02/techcabal-daily-brass-gets-stacked/)
+- **Keywords**: `fintech, M&A, SME finance, Nigeria`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
