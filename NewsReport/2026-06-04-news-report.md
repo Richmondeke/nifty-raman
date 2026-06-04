@@ -1,46 +1,58 @@
 # Daily News Report (2026-06-04)
 
-> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Suno: $400 Million Series D
+## 1. Impulse Space: $500 Million Series D
 
-- **Summary**: Suno is an AI music company that allows users to generate customized music, including vocals, instrumentation, and production, based on natural language prompts. The company has seen significant growth in user adoption, surpassing 2 million paid subscribers by February 2026. This funding round will be used to accelerate new product development, expand its platform capabilities for artists and creators, and increase hiring.
+- **Summary**: Impulse Space is an in-space mobility company founded by former SpaceX propulsion chief Tom Mueller. It specializes in building spacecraft and propulsion systems designed to move satellites and payloads after they reach orbit, providing 'last-mile' delivery services. The company aims to scale production of its orbital transfer vehicles and expand its team to support the evolving space economy.
 - **Key Points**:
-  1. Investors: Bond Capital (Lead), IVP, Forerunner, Union Square Ventures, Alkeon Capital Management, Quiet Capital, Matrix Partners, Lightspeed Venture Partners, Menlo Ventures, Schroders Capital
-  2. Sector keywords: AI, Music Generation, Generative AI, Music Tech
-- **Source**: [Suno.com](https://suno.com/blog/series-d-announcement)
-- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/8dd41a39-9bf4-4ac4-a928-351c3ad6050d.jpg)
+  1. Investors: 137 Ventures, BANNER VC (co-led); Founders Fund, Lux Capital, Linse Capital (participating)
+  2. Sector keywords: space tech, orbital mobility, defense tech, propulsion systems
+- **Source**: [Hacker News](https://arstechnica.com/space/2026/06/impulse-space-raises-500-million-as-orbital-maneuvering-race-heats-up/)
+- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/c45d8622-92bb-475d-b094-33685330650a.jpg)
 
 ![Visual Card](images/2026-06-04-top-deal.jpg)
 
-- **Keywords**: `AI, Music Generation, Generative AI, Music Tech`
+- **Keywords**: `space tech, orbital mobility, defense tech, propulsion systems`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Impulse Space: $500 Million Series D
+## 2. Suno: Over $400 Million Series D
 
-- **Summary**: Impulse Space is a California-based aerospace company, founded by former SpaceX employee Tom Mueller, that specializes in advanced in-space mobility. The company develops and operates vehicles like Mira, a precision maneuvering spacecraft, and Helios, a high-energy kick stage, which enable rapid, precise, and affordable movement of payloads after launch. The significant Series D funding will be utilized to expand hiring and manufacturing, scaling up the production of its spacecraft and propulsion systems.
+- **Summary**: Suno is an AI music generation company that empowers users to create customized music, including vocals, instrumentation, and production, simply from text prompts. This significant Series D funding will be utilized to accelerate hiring, develop new products, and further expand its reach and platform capabilities for a broad range of artists and creators.
 - **Key Points**:
-  1. Investors: 137 Ventures (Co-Lead), BANNER VC (Co-Lead), Founders Fund, Lux Capital, Linse Capital
-  2. Sector keywords: Space, In-space mobility, Aerospace, Propulsion, Deep Tech
-- **Source**: [Arstechnica.com](https://arstechnica.com/space/2026/06/impulse-space-raises-500-million-as-orbital-maneuvering-race-heats-up/)
-- **Keywords**: `Space, In-space mobility, Aerospace, Propulsion, Deep Tech`
+  1. Investors: Bond Capital (lead); IVP, Forerunner, Union Square Ventures, Alkeon, Quiet, Matrix, Lightspeed, Menlo Ventures, Schroders Capital (participating)
+  2. Sector keywords: AI music, music generation, generative AI, music technology
+- **Source**: [Hacker News](https://suno.com/blog/series-d-announcement)
+- **Keywords**: `AI music, music generation, generative AI, music technology`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 3. Hyper: Undisclosed Seed
 
-- **Summary**: Hyper is a Y Combinator Spring 2026 batch startup that is building an AI-powered 'company brain'. This system silently learns from all company updates across various tools (e.g., Notion, Slack, GitHub) and synthesizes this information into real-time, shareable knowledge. This knowledge is then integrated into existing AI tools, aiming to make the entire company smarter.
+- **Summary**: Hyper is a Y Combinator-backed startup (YC P26) that is developing an AI-powered 'company brain'. This platform integrates information from various internal tools like Slack, Email, and documents to create a comprehensive knowledge graph, enhancing the effectiveness of AI agents and automations within an organization.
 - **Key Points**:
   1. Investors: Y Combinator
-  2. Sector keywords: AI, Developer Tools, Productivity, Agentic AI, SaaS
+  2. Sector keywords: AI, enterprise software, agentic AI, knowledge management
 - **Source**: [Hacker News](https://news.ycombinator.com/item?id=48387095)
-- **Keywords**: `AI, Developer Tools, Productivity, Agentic AI, SaaS`
+- **Keywords**: `AI, enterprise software, agentic AI, knowledge management`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 4. Extract: Undisclosed Seed
+
+- **Summary**: Extract is a Y Combinator-backed startup (YC P25) focused on providing fast and accurate document parsing solutions. The company aims to streamline the process of extracting and structuring data from various document types, likely leveraging advanced AI technologies for improved efficiency and precision in data handling. [cite: original article 29]
+- **Key Points**:
+  1. Investors: Y Combinator
+  2. Sector keywords: document parsing, AI, data extraction, SaaS
+- **Source**: [Hacker News](https://extract.page)
+- **Keywords**: `document parsing, AI, data extraction, SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
