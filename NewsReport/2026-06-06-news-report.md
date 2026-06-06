@@ -5,19 +5,19 @@
 
 ---
 
-## 1. Generalist AI: $400 Million funding at a $2 Billion valuation
+## 1. General Instinct: $500 Thousand Seed (Y Combinator P26)
 
-- **Summary**: Generalist AI is a robotics startup that develops general-purpose AI models for robots to operate in physical environments such as factories, warehouses, and laboratories. The company's latest model, GEN-1, is designed to perform dexterous physical tasks with high reliability and speed, and to recover from unexpected situations. Generalist AI was founded by veterans from Google DeepMind and Boston Dynamics.
+- **Summary**: General Instinct is a startup focused on deploying large frontier AI models onto edge devices, including drones, old PCs, and robots. The company provides a custom, no-code pipeline called 'Instinct Edge' to distill, quantize, and deploy these AI models to work reliably in production on limited hardware. This solution addresses challenges in getting advanced AI to function effectively in real-world physical AI applications.
 - **Key Points**:
-  1. Investors: Radical Ventures (lead), 8VC, Union Square Ventures, Norwest, Hanabi Capital, Nvidia (NVentures), Bezos Expeditions, Lin Bin (Xiaomi co-founder), Fei-Fei Li, Naval Ravikant, Eric Yuan (Zoom Communications CEO).
-  2. Sector keywords: Robotics, AI, Machine Learning, Industrial Automation, Edge AI
-- **Source**: [Quartz](https://quartz.com/news/generalist-ai-raises-400-million-2-billion-valuation-nvidia-bezos-expeditions-1850123456)
-- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/7bbad6c8-3f22-44bd-9376-afff7f9d5ee2.jpg)
+  1. Investors: Y Combinator
+  2. Sector keywords: AI, Edge Computing, Machine Learning, Robotics, Infrastructure
+- **Source**: [Hacker News](https://news.ycombinator.com/item?id=48414869)
+- **Generated Card**: [View Rendered Image](https://templated-assets.s3.amazonaws.com/render/b7dea918-53eb-4a39-9326-fedfcc36f960.jpg)
 
 ![Visual Card](images/2026-06-06-top-deal.jpg)
 
-- **Keywords**: `Robotics, AI, Machine Learning, Industrial Automation, Edge AI`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+- **Keywords**: `AI, Edge Computing, Machine Learning, Robotics, Infrastructure`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
