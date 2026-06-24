@@ -178,11 +178,57 @@ def parse_with_gemini(articles):
         text = text[:-3]
     text = text.strip()
 
-    json_match = re.search(r"\[\s*\{.*\}\s*\]", text, re.DOTALL)
-    if json_match:
-        text = json_match.group(0)
+    # Attempt to parse the JSON, with robust fallback on failure
+    def try_parse_json(raw_text):
+        """Try to parse JSON, with regex extraction fallback."""
+        try:
+            return json.loads(raw_text)
+        except json.JSONDecodeError:
+            pass
+        # Fallback: try to extract just the JSON array via regex
+        json_match = re.search(r"\[\s*\{.*\}\s*\]", raw_text, re.DOTALL)
+        if json_match:
+            try:
+                return json.loads(json_match.group(0))
+            except json.JSONDecodeError:
+                pass
+        return None
 
-    deals = json.loads(text)
+    deals = try_parse_json(text)
+
+    # If parsing failed, retry the Gemini call once more with the next available key
+    if deals is None:
+        print("JSON parse failed on first attempt. Retrying Gemini call...")
+        retry_response = None
+        for key in all_keys:
+            try:
+                retry_client = genai.Client(api_key=key)
+                retry_response = retry_client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        tools=[types.Tool(google_search=types.GoogleSearch())]
+                    )
+                )
+                break
+            except Exception as e:
+                print(f"Retry Gemini call failed with key {key[:5]}...: {e}")
+                continue
+        if retry_response:
+            retry_text = retry_response.text.strip()
+            if retry_text.startswith("```json"):
+                retry_text = retry_text[7:]
+            elif retry_text.startswith("```"):
+                retry_text = retry_text[3:]
+            if retry_text.endswith("```"):
+                retry_text = retry_text[:-3]
+            retry_text = retry_text.strip()
+            deals = try_parse_json(retry_text)
+
+    if deals is None:
+        print("Failed to parse Gemini response as JSON after retries. Returning empty.")
+        return []
+
     print(f"Gemini successfully extracted {len(deals)} deals.")
     return deals
 

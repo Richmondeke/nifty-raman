@@ -1,0 +1,6 @@
+requests
+google-genai
+feedparser
+beautifulsoup4
+gspread
+google-auth

@@ -23,18 +23,30 @@ except ImportError:
 # def get_client(keys, index):
 #     return genai.Client(api_key=keys[index % len(keys)])
 
-# Load recipient list from the JSON file in the brain directory
-RECIPIENTS_PATH = pathlib.Path("/Users/mac/.gemini/antigravity/brain/f0fe31a1-3f28-486e-b1ae-f57b4c7371b5/recipients.json")
+# Load recipient list from the repo's recipients.csv file (works in both local dev and CI)
+_SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+RECIPIENTS_CSV_PATH = _PROJECT_ROOT / "recipients.csv"
 
 def load_recipients():
+    """Load recipient emails from recipients.csv (first column) or fall back to hardcoded list."""
     try:
-        with open(RECIPIENTS_PATH, "r") as f:
-            data = json.load(f)
-            if isinstance(data, list):
-                return data
+        with open(RECIPIENTS_CSV_PATH, "r") as f:
+            recipients = []
+            for line in f:
+                line = line.strip()
+                if line and "," in line:
+                    email = line.split(",")[0].strip()
+                    if email and "@" in email:
+                        recipients.append(email)
+                elif line and "@" in line:
+                    recipients.append(line.strip())
+            if recipients:
+                print(f"Loaded {len(recipients)} recipients from {RECIPIENTS_CSV_PATH}")
+                return recipients
     except Exception as e:
-        print(f"Warning: could not load recipients.json ({e}); falling back to hard‑coded list")
-    # Fallback list if the JSON is missing or malformed
+        print(f"Warning: could not load recipients.csv ({e}); falling back to hard-coded list")
+    # Fallback list if the CSV is missing or malformed
     return [
         "ekerichmond@gmail.com",
         "Oskarrated@gmail.com",
