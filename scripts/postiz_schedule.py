@@ -68,8 +68,7 @@ def schedule_post():
             print(f"Post successfully scheduled for {int_id}!")
             
     if any_failed:
-        print("One or more posts failed to schedule.")
-        sys.exit(1)
+        print("⚠️ One or more posts failed to schedule. Continuing workflow (non-fatal).")
 
 if __name__ == "__main__":
     schedule_post()
