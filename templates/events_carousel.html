@@ -39,12 +39,12 @@
       align-items: center;
       width: 100%;
       border-bottom: 3px solid var(--text-black);
-      padding-bottom: 40px;
+      padding-bottom: 30px;
     }
     
     .logo-container {
-      width: 160px;
-      height: 160px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       border: 3px solid var(--text-black);
       background-color: #ffffff;
@@ -55,8 +55,8 @@
     }
     
     .logo-container img {
-      height: 100px;
-      width: 100px;
+      height: 80px;
+      width: 80px;
       object-fit: contain;
       display: block;
     }
@@ -70,25 +70,52 @@
       padding: 10px 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      border-radius: 9999px;
     }
     
     .main-content {
       position: relative;
       display: flex;
-      flex-direction: column;
-      gap: 40px;
+      align-items: stretch;
+      border: 4px solid var(--text-black);
+      border-radius: 24px;
+      background: #ffffff;
+      overflow: hidden;
+      height: 800px;
+      box-shadow: 8px 8px 0px var(--text-black);
       margin: auto 0;
     }
     
+    .ticket-main {
+      flex: 1.8;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .ticket-stub {
+      flex: 1;
+      background: #fafafa;
+      border-left: 4px dashed var(--text-black);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+    
     .section-tag {
-      font-size: 24px;
+      font-size: 16px;
       font-weight: 900;
       color: var(--text-black);
       text-transform: uppercase;
       letter-spacing: 3px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 8px;
+      margin-bottom: 20px;
     }
     
     .section-tag::after {
@@ -99,68 +126,86 @@
     }
     
     .event-title {
-      font-size: 60px;
+      font-size: 54px;
       font-weight: 900;
       letter-spacing: -1.5px;
       color: var(--text-black);
       line-height: 1.1;
+      margin-bottom: 20px;
     }
     
     .details-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
     }
     
     .detail-card {
-      background: #ffffff;
-      border: 3px solid var(--text-black);
-      padding: 24px;
       display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    
-    .detail-card.highlight {
-      background: var(--accent-green);
-    }
-    
-    .detail-label {
-      font-size: 14px;
-      color: var(--text-black);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 700;
-    }
-    
-    .detail-value {
-      font-size: 32px;
-      font-weight: 900;
-      color: var(--text-black);
-    }
-    
-    .description-card {
-      background: #ffffff;
-      border: 3px solid var(--text-black);
-      padding: 30px;
-      box-shadow: 8px 8px 0px var(--text-black);
-    }
-    
-    .description-title {
-      font-size: 24px;
-      font-weight: 900;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      border-bottom: 3px solid var(--text-black);
+      justify-content: space-between;
+      border-bottom: 2px solid #eaeaea;
       padding-bottom: 8px;
     }
     
-    .description-text {
-      font-size: 22px;
+    .detail-label {
+      font-size: 13px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 900;
+    }
+    
+    .detail-value {
+      font-size: 20px;
+      font-weight: 900;
+      text-align: right;
+    }
+    
+    .description-box {
+      font-size: 20px;
       line-height: 1.5;
       color: var(--text-black);
       font-weight: 500;
+      background: #fafafa;
+      padding: 20px;
+      border: 2px solid var(--text-black);
+      border-radius: 12px;
+    }
+    
+    .stub-header {
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .stub-barcode {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      margin: 20px 0;
+    }
+    
+    .barcode-line {
+      background: #000;
+      height: 100%;
+    }
+    
+    .stub-badge {
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      padding: 10px 20px;
+      border-radius: 9999px;
+      display: inline-block;
+      box-shadow: 4px 4px 0px var(--text-black);
     }
     
     .footer {
@@ -169,7 +214,7 @@
       justify-content: space-between;
       align-items: center;
       border-top: 3px solid var(--text-black);
-      padding-top: 40px;
+      padding-top: 30px;
       width: 100%;
     }
     
@@ -190,6 +235,7 @@
       font-weight: 700;
       text-decoration: none;
       letter-spacing: 0.5px;
+      border-radius: 9999px;
     }
   </style>
   <title>Events Showcase Card</title>
@@ -203,31 +249,58 @@
   </div>
   
   <div class="main-content">
-    <div class="section-tag">Capital & Networking</div>
-    <div class="event-title">{event_title}</div>
-    
-    <div class="details-grid">
-      <div class="detail-card highlight">
-        <span class="detail-label">Organizer</span>
-        <span class="detail-value">{organizer}</span>
+    <div class="ticket-main">
+      <div>
+        <div class="section-tag">Access Briefing</div>
+        <div class="event-title">{event_title}</div>
       </div>
-      <div class="detail-card">
-        <span class="detail-label">Date & Time</span>
-        <span class="detail-value">{date_time}</span>
+      
+      <div class="details-grid">
+        <div class="detail-card">
+          <span class="detail-label">Organizer</span>
+          <span class="detail-value">{organizer}</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">Date & Time</span>
+          <span class="detail-value">{date_time}</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">Location / City</span>
+          <span class="detail-value">{location}</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">Venue</span>
+          <span class="detail-value">{venue}</span>
+        </div>
       </div>
-      <div class="detail-card">
-        <span class="detail-label">Location / City</span>
-        <span class="detail-value">{location}</span>
-      </div>
-      <div class="detail-card">
-        <span class="detail-label">Venue</span>
-        <span class="detail-value">{venue}</span>
+      
+      <div class="description-box">
+        {description}
       </div>
     </div>
     
-    <div class="description-card">
-      <h3 class="description-title">Event Overview & Access</h3>
-      <p class="description-text">{description}</p>
+    <div class="ticket-stub">
+      <div class="stub-header">Admit One</div>
+      
+      <div class="stub-barcode">
+        <!-- Mock barcode using simple lines -->
+        <div class="barcode-line" style="width: 4px;"></div>
+        <div class="barcode-line" style="width: 2px;"></div>
+        <div class="barcode-line" style="width: 8px;"></div>
+        <div class="barcode-line" style="width: 1px;"></div>
+        <div class="barcode-line" style="width: 3px;"></div>
+        <div class="barcode-line" style="width: 6px;"></div>
+        <div class="barcode-line" style="width: 2px;"></div>
+        <div class="barcode-line" style="width: 8px;"></div>
+        <div class="barcode-line" style="width: 4px;"></div>
+        <div class="barcode-line" style="width: 1px;"></div>
+        <div class="barcode-line" style="width: 3px;"></div>
+        <div class="barcode-line" style="width: 5px;"></div>
+        <div class="barcode-line" style="width: 2px;"></div>
+        <div class="barcode-line" style="width: 7px;"></div>
+      </div>
+      
+      <div class="stub-badge">VIP INVITE</div>
     </div>
   </div>
   

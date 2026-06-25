@@ -39,12 +39,12 @@
       align-items: center;
       width: 100%;
       border-bottom: 3px solid var(--text-black);
-      padding-bottom: 40px;
+      padding-bottom: 30px;
     }
     
     .logo-container {
-      width: 160px;
-      height: 160px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       border: 3px solid var(--text-black);
       background-color: #ffffff;
@@ -55,8 +55,8 @@
     }
     
     .logo-container img {
-      height: 100px;
-      width: 100px;
+      height: 80px;
+      width: 80px;
       object-fit: contain;
       display: block;
     }
@@ -70,25 +70,26 @@
       padding: 10px 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      border-radius: 9999px;
     }
     
     .main-content {
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
       margin: auto 0;
     }
     
     .section-tag {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 900;
       color: var(--text-black);
       text-transform: uppercase;
       letter-spacing: 3px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 8px;
     }
     
     .section-tag::after {
@@ -98,56 +99,91 @@
       background: var(--text-black);
     }
     
+    .split-layout {
+      display: flex;
+      gap: 30px;
+      align-items: stretch;
+      width: 100%;
+    }
+    
+    .left-col {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
     .role-title {
-      font-size: 60px;
+      font-size: 54px;
       font-weight: 900;
       letter-spacing: -1.5px;
       color: var(--text-black);
-      line-height: 1.1;
+      line-height: 1.15;
     }
     
-    .details-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+    .company-card {
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 6px 6px 0px var(--text-black);
+    }
+    
+    .company-label {
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    
+    .company-name {
+      font-size: 32px;
+      font-weight: 900;
+    }
+    
+    .right-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
     
     .detail-card {
       background: #ffffff;
       border: 3px solid var(--text-black);
-      padding: 24px;
+      border-radius: 16px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
-    }
-    
-    .detail-card.highlight {
-      background: var(--accent-green);
+      gap: 4px;
     }
     
     .detail-label {
-      font-size: 14px;
-      color: var(--text-black);
+      font-size: 11px;
+      color: #666;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 700;
+      font-weight: 900;
     }
     
     .detail-value {
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 900;
-      color: var(--text-black);
     }
     
     .requirements-card {
       background: #ffffff;
       border: 3px solid var(--text-black);
+      border-radius: 20px;
       padding: 30px;
-      box-shadow: 8px 8px 0px var(--text-black);
+      box-shadow: 6px 6px 0px var(--text-black);
     }
     
     .requirements-title {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 900;
       margin-bottom: 15px;
       text-transform: uppercase;
@@ -163,13 +199,34 @@
       font-weight: 500;
     }
     
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .apply-btn {
+      font-size: 28px;
+      color: var(--text-black);
+      background: var(--accent-green);
+      border: 4px solid var(--text-black);
+      padding: 16px 48px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      box-shadow: 6px 6px 0px var(--text-black);
+      text-decoration: none;
+      display: inline-block;
+    }
+    
     .footer {
       position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-top: 3px solid var(--text-black);
-      padding-top: 40px;
+      padding-top: 30px;
       width: 100%;
     }
     
@@ -190,6 +247,7 @@
       font-weight: 700;
       text-decoration: none;
       letter-spacing: 0.5px;
+      border-radius: 9999px;
     }
   </style>
   <title>Jobs Showcase Card</title>
@@ -203,31 +261,42 @@
   </div>
   
   <div class="main-content">
-    <div class="section-tag">Opportunity Spotlight</div>
-    <div class="role-title">{role_title}</div>
-    
-    <div class="details-grid">
-      <div class="detail-card highlight">
-        <span class="detail-label">Company</span>
-        <span class="detail-value">{company}</span>
+    <div class="split-layout">
+      <div class="left-col">
+        <div>
+          <div class="section-tag">Opportunity Spotlight</div>
+          <div class="role-title">{role_title}</div>
+        </div>
+        
+        <div class="company-card">
+          <span class="company-label">Hiring Company</span>
+          <span class="company-name">{company}</span>
+        </div>
       </div>
-      <div class="detail-card">
-        <span class="detail-label">Salary / Compensation</span>
-        <span class="detail-value">{salary}</span>
-      </div>
-      <div class="detail-card">
-        <span class="detail-label">Location</span>
-        <span class="detail-value">{location}</span>
-      </div>
-      <div class="detail-card">
-        <span class="detail-label">Sector</span>
-        <span class="detail-value">{sector}</span>
+      
+      <div class="right-col">
+        <div class="detail-card">
+          <span class="detail-label">Salary / Compensation</span>
+          <span class="detail-value">{salary}</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">Location / Work Mode</span>
+          <span class="detail-value">{location}</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">Industry Sector</span>
+          <span class="detail-value">{sector}</span>
+        </div>
       </div>
     </div>
     
     <div class="requirements-card">
       <h3 class="requirements-title">Role Overview & Core Requirements</h3>
       <p class="requirements-text">{requirements}</p>
+    </div>
+    
+    <div class="cta-row">
+      <a href="#" class="apply-btn">Apply Now</a>
     </div>
   </div>
   

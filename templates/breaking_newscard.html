@@ -6,10 +6,10 @@
     @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
     
     :root {
-      --bg-primary: #0d0d0d;
-      --accent-red: #ff3b30;
+      --bg-primary: #000000;
+      --accent-green: #7ed957;
       --text-white: #ffffff;
-      --border-color: #ff3b30;
+      --border-color: #7ed957;
     }
     
     * {
@@ -39,12 +39,12 @@
       align-items: center;
       width: 100%;
       border-bottom: 3px solid var(--border-color);
-      padding-bottom: 40px;
+      padding-bottom: 30px;
     }
     
     .logo-container {
-      width: 160px;
-      height: 160px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       border: 3px solid var(--border-color);
       background-color: #ffffff;
@@ -55,37 +55,39 @@
     }
     
     .logo-container img {
-      height: 100px;
-      width: 100px;
+      height: 80px;
+      width: 80px;
       object-fit: contain;
       display: block;
     }
     
     .date-badge {
       border: 3px solid var(--border-color);
-      background: var(--accent-red);
+      background: var(--accent-green);
       color: #000000;
       font-weight: 900;
       font-size: 20px;
       padding: 10px 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      border-radius: 9999px;
     }
     
     .main-content {
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
       margin: auto 0;
     }
     
     .featured-image-container {
       width: 100%;
-      height: 400px;
+      height: 380px;
       overflow: hidden;
       border: 3px solid var(--border-color);
-      background: #1a1a1a;
+      border-radius: 20px;
+      background: #111111;
     }
     
     .featured-image-container img {
@@ -96,9 +98,9 @@
     }
     
     .spotlight-tag {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 900;
-      color: var(--accent-red);
+      color: var(--accent-green);
       text-transform: uppercase;
       letter-spacing: 3px;
       display: flex;
@@ -114,59 +116,60 @@
     }
     
     .startup-name {
-      font-size: 64px;
+      font-size: 72px;
       font-weight: 900;
-      letter-spacing: -1px;
+      letter-spacing: -2px;
       color: var(--text-white);
-      line-height: 1.1;
+      line-height: 1.0;
+      margin: 10px 0;
     }
     
-    .metrics-grid {
+    .metrics-pills {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      gap: 20px;
     }
     
-    .metric-card {
-      background: #1a1a1a;
-      border: 3px solid var(--border-color);
-      padding: 24px;
+    .metric-pill {
+      background: #000000;
+      border: 2px solid var(--border-color);
+      border-radius: 9999px;
+      padding: 14px 28px;
       display: flex;
-      flex-direction: column;
-      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
     }
     
-    .metric-card.highlight {
-      background: var(--accent-red);
+    .metric-pill.highlight {
+      background: var(--accent-green);
+      border-color: var(--accent-green);
+    }
+    
+    .metric-pill.highlight .metric-label,
+    .metric-pill.highlight .metric-value {
       color: #000000;
     }
     
     .metric-label {
-      font-size: 14px;
-      color: var(--text-white);
+      font-size: 13px;
+      color: var(--accent-green);
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 700;
-    }
-    
-    .metric-card.highlight .metric-label {
-      color: #000000;
+      font-weight: 900;
     }
     
     .metric-value {
-      font-size: 32px;
+      font-size: 22px;
       font-weight: 900;
       color: var(--text-white);
-    }
-    
-    .metric-card.highlight .metric-value {
-      color: #000000;
+      text-align: right;
     }
     
     .summary-card {
-      background: #1a1a1a;
+      background: #111111;
       border: 3px solid var(--border-color);
-      padding: 24px;
+      border-radius: 20px;
+      padding: 24px 30px;
     }
     
     .summary-text {
@@ -182,7 +185,7 @@
       justify-content: space-between;
       align-items: center;
       border-top: 3px solid var(--border-color);
-      padding-top: 40px;
+      padding-top: 30px;
       width: 100%;
     }
     
@@ -197,12 +200,13 @@
     .footer-link {
       font-size: 20px;
       color: #000000;
-      background: var(--accent-red);
+      background: var(--accent-green);
       border: 3px solid var(--border-color);
       padding: 6px 16px;
       font-weight: 700;
       text-decoration: none;
       letter-spacing: 0.5px;
+      border-radius: 9999px;
     }
   </style>
   <title>Breaking News Card Template</title>
@@ -220,23 +224,25 @@
       <img src="{deal_image}" alt="Deal Image">
     </div>
     
-    <div class="spotlight-tag">Breaking News Flash</div>
-    <div class="startup-name">{startup}</div>
+    <div>
+      <div class="spotlight-tag">Alert Flash</div>
+      <div class="startup-name">{startup}</div>
+    </div>
     
-    <div class="metrics-grid">
-      <div class="metric-card highlight">
+    <div class="metrics-pills">
+      <div class="metric-pill highlight">
         <span class="metric-label">Amount Raised</span>
         <span class="metric-value">{amount}</span>
       </div>
-      <div class="metric-card">
+      <div class="metric-pill">
         <span class="metric-label">Funding Stage</span>
         <span class="metric-value">{stage}</span>
       </div>
-      <div class="metric-card">
+      <div class="metric-pill">
         <span class="metric-label">Sector</span>
         <span class="metric-value">{industry}</span>
       </div>
-      <div class="metric-card">
+      <div class="metric-pill">
         <span class="metric-label">Key Investors</span>
         <span class="metric-value">{investors}</span>
       </div>
