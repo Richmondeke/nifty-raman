@@ -23,7 +23,10 @@ def get_wikipedia_portrait(name):
     try:
         formatted_name = urllib.parse.quote(name.strip().replace(" ", "_"))
         url = f"https://en.wikipedia.org/w/api.php?action=query&titles={formatted_name}&prop=pageimages&format=json&pithumbsize=1000"
-        r = requests.get(url, timeout=15)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        }
+        r = requests.get(url, headers=headers, timeout=15)
         if r.status_code == 200:
             data = r.json()
             pages = data.get("query", {}).get("pages", {})
