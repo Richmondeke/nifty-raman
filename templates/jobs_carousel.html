@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+    
+    :root {
+      --bg-primary: #ffffff;
+      --accent-green: #7ed957;
+      --text-black: #000000;
+      --border-color: #000000;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Satoshi', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-black);
+      width: 1080px;
+      height: 1350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 3px solid var(--text-black);
+      padding-bottom: 40px;
+    }
+    
+    .logo-container {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid var(--text-black);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .logo-container img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .date-badge {
+      border: 3px solid var(--text-black);
+      background: var(--accent-green);
+      color: var(--text-black);
+      font-weight: 700;
+      font-size: 20px;
+      padding: 10px 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .main-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: auto 0;
+    }
+    
+    .section-tag {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--text-black);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .section-tag::after {
+      content: '';
+      flex-grow: 1;
+      height: 3px;
+      background: var(--text-black);
+    }
+    
+    .role-title {
+      font-size: 60px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: var(--text-black);
+      line-height: 1.1;
+    }
+    
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    
+    .detail-card {
+      background: #ffffff;
+      border: 3px solid var(--text-black);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .detail-card.highlight {
+      background: var(--accent-green);
+    }
+    
+    .detail-label {
+      font-size: 14px;
+      color: var(--text-black);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    
+    .detail-value {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-black);
+    }
+    
+    .requirements-card {
+      background: #ffffff;
+      border: 3px solid var(--text-black);
+      padding: 30px;
+      box-shadow: 8px 8px 0px var(--text-black);
+    }
+    
+    .requirements-title {
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 3px solid var(--text-black);
+      padding-bottom: 8px;
+    }
+    
+    .requirements-text {
+      font-size: 22px;
+      line-height: 1.5;
+      color: var(--text-black);
+      font-weight: 500;
+    }
+    
+    .footer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 3px solid var(--text-black);
+      padding-top: 40px;
+      width: 100%;
+    }
+    
+    .footer-text {
+      font-size: 18px;
+      color: var(--text-black);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .footer-link {
+      font-size: 20px;
+      color: var(--text-black);
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      padding: 6px 16px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <title>Jobs Showcase Card</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="{logo_path}" alt="The Investor">
+    </div>
+    <div class="date-badge">Featured Role</div>
+  </div>
+  
+  <div class="main-content">
+    <div class="section-tag">Opportunity Spotlight</div>
+    <div class="role-title">{role_title}</div>
+    
+    <div class="details-grid">
+      <div class="detail-card highlight">
+        <span class="detail-label">Company</span>
+        <span class="detail-value">{company}</span>
+      </div>
+      <div class="detail-card">
+        <span class="detail-label">Salary / Compensation</span>
+        <span class="detail-value">{salary}</span>
+      </div>
+      <div class="detail-card">
+        <span class="detail-label">Location</span>
+        <span class="detail-value">{location}</span>
+      </div>
+      <div class="detail-card">
+        <span class="detail-label">Sector</span>
+        <span class="detail-value">{sector}</span>
+      </div>
+    </div>
+    
+    <div class="requirements-card">
+      <h3 class="requirements-title">Role Overview & Core Requirements</h3>
+      <p class="requirements-text">{requirements}</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <span class="footer-text">Daily Private Capital & Career Briefing</span>
+    <span class="footer-link">theinvestor.news</span>
+  </div>
+</body>
+</html>
