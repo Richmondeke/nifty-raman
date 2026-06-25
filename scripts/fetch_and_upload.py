@@ -41,7 +41,7 @@ def fetch_rss_deals(feed_url, source_name):
         return []
     feed = feedparser.parse(feed_url)
     articles = []
-    cutoff = datetime.now() - timedelta(hours=36)
+    cutoff = datetime.now() - timedelta(days=7)
     
     for entry in feed.entries:
         try:
@@ -734,36 +734,59 @@ def send_gmail(deals, local_image_paths=None, investor_image_path=None, investor
         server.login(gmail_user, gmail_password)
         
         for recipient in recipients:
-            msg = MIMEMultipart('related')
+            # Create top-level mixed container (allows standard downloadable attachments)
+            msg = MIMEMultipart('mixed')
             msg['Subject'] = subject
             msg['From'] = f"The Investor <{gmail_user}>"
             msg['To'] = recipient
             
-            msg_html = MIMEText(html_content, 'html')
-            msg.attach(msg_html)
+            # Create nested related container (for HTML and inline images)
+            msg_related = MIMEMultipart('related')
+            msg.attach(msg_related)
             
+            # Attach the HTML body to the related container
+            msg_html = MIMEText(html_content, 'html')
+            msg_related.attach(msg_html)
+            
+            # Attach the inline logo to the related container
             if os.path.exists(logo_path):
                 with open(logo_path, 'rb') as f:
                     msg_logo = MIMEImage(f.read())
                     msg_logo.add_header('Content-ID', '<logo_image>')
-                    msg.attach(msg_logo)
+                    msg_related.attach(msg_logo)
             
+            # Attach deal cards / resolved images
             if local_image_paths:
                 for idx, img_path in enumerate(local_image_paths):
                     if img_path and os.path.exists(img_path):
                         with open(img_path, 'rb') as f:
-                            msg_img = MIMEImage(f.read())
-                            msg_img.add_header('Content-ID', f'<top_deal_image_{idx}>')
-                            msg_img.add_header('Content-Disposition', 'attachment', filename=os.path.basename(img_path))
-                            msg.attach(msg_img)
+                            img_data = f.read()
+                            
+                            # Attach inline version to related container
+                            msg_img_inline = MIMEImage(img_data)
+                            msg_img_inline.add_header('Content-ID', f'<top_deal_image_{idx}>')
+                            msg_related.attach(msg_img_inline)
+                            
+                            # Attach standalone downloadable version to mixed container
+                            msg_img_attach = MIMEImage(img_data)
+                            msg_img_attach.add_header('Content-Disposition', 'attachment', filename=os.path.basename(img_path))
+                            msg.attach(msg_img_attach)
 
+            # Attach investor portrait
             if investor_image_path and os.path.exists(investor_image_path):
                 try:
                     with open(investor_image_path, 'rb') as f:
-                        msg_inv = MIMEImage(f.read())
-                        msg_inv.add_header('Content-ID', '<investor_image>')
-                        msg_inv.add_header('Content-Disposition', 'attachment', filename=os.path.basename(investor_image_path))
-                        msg.attach(msg_inv)
+                        inv_data = f.read()
+                        
+                        # Attach inline version to related container
+                        msg_inv_inline = MIMEImage(inv_data)
+                        msg_inv_inline.add_header('Content-ID', '<investor_image>')
+                        msg_related.attach(msg_inv_inline)
+                        
+                        # Attach standalone downloadable version to mixed container
+                        msg_inv_attach = MIMEImage(inv_data)
+                        msg_inv_attach.add_header('Content-Disposition', 'attachment', filename=os.path.basename(investor_image_path))
+                        msg.attach(msg_inv_attach)
                 except Exception as e:
                     print(f"Error attaching investor image for {recipient}: {e}")
             
