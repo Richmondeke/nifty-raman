@@ -93,6 +93,37 @@ def resolve_deal_image(deal, project_root):
         return fallback
     return os.path.join(project_root, "assets", "TheInvestor.png")
 
+import subprocess
+
+def ensure_playwright():
+    try:
+        import playwright
+        print("Playwright library is already installed.")
+    except ImportError:
+        print("Playwright not found. Installing playwright package...")
+        try:
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "playwright"])
+            print("Playwright package installed successfully.")
+        except Exception as e:
+            print(f"Failed to install playwright package: {e}")
+            return False
+
+    # Now verify if chromium is installed. Playwright command line tool can check or install.
+    try:
+        print("Ensuring Playwright chromium browser is installed...")
+        subprocess.check_call([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"])
+        print("Playwright chromium browser installation completed.")
+        return True
+    except Exception as e:
+        print(f"Failed to install Playwright chromium browser with dependencies: {e}")
+        try:
+            print("Attempting to install chromium without system dependencies...")
+            subprocess.check_call([sys.executable, "-m", "playwright", "install", "chromium"])
+            return True
+        except Exception as e2:
+            print(f"Fallback install also failed: {e2}")
+            return False
+
 def render_newscard(deal, save_path):
     """
     Renders an HTML newscard template to an image using Playwright.
@@ -100,6 +131,9 @@ def render_newscard(deal, save_path):
     save_path: absolute path where the rendered image should be saved
     """
     print(f"Rendering newscard for {deal.get('startup')} via Playwright...")
+    if not ensure_playwright():
+        print("Skipping Playwright render: environment setup failed.")
+        return False
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     template_path = os.path.join(project_root, "templates", "newscard.html")
