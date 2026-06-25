@@ -46,8 +46,7 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 3px solid var(--text-black);
-      background-color: #ffffff;
+      background-color: #191919; /* Match logo background */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -55,14 +54,13 @@
     }
     
     .logo-container img {
-      height: 80px;
-      width: 80px;
+      height: 90px;
+      width: 90px;
       object-fit: contain;
       display: block;
     }
     
     .date-badge {
-      border: 3px solid var(--text-black);
       background: var(--accent-green);
       color: var(--text-black);
       font-weight: 700;
@@ -77,12 +75,10 @@
       position: relative;
       display: flex;
       align-items: stretch;
-      border: 4px solid var(--text-black);
-      border-radius: 24px;
+      border-radius: 32px;
       background: #ffffff;
       overflow: hidden;
       height: 800px;
-      box-shadow: 8px 8px 0px var(--text-black);
       margin: auto 0;
     }
     
@@ -92,12 +88,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      background: #fafafa;
     }
     
     .ticket-stub {
       flex: 1;
-      background: #fafafa;
-      border-left: 4px dashed var(--text-black);
+      background: #f6f6f3;
+      border-left: 2px dashed #dddddd;
       padding: 40px;
       display: flex;
       flex-direction: column;
@@ -121,8 +118,9 @@
     .section-tag::after {
       content: '';
       flex-grow: 1;
-      height: 3px;
+      height: 1px;
       background: var(--text-black);
+      opacity: 0.15;
     }
     
     .event-title {
@@ -144,7 +142,7 @@
     .detail-card {
       display: flex;
       justify-content: space-between;
-      border-bottom: 2px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
       padding-bottom: 8px;
     }
     
@@ -167,9 +165,8 @@
       line-height: 1.5;
       color: var(--text-black);
       font-weight: 500;
-      background: #fafafa;
+      background: #ffffff;
       padding: 20px;
-      border: 2px solid var(--text-black);
       border-radius: 12px;
     }
     
@@ -191,7 +188,7 @@
     }
     
     .barcode-line {
-      background: #000;
+      background: #000000;
       height: 100%;
     }
     
@@ -201,11 +198,9 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       background: var(--accent-green);
-      border: 3px solid var(--text-black);
-      padding: 10px 20px;
+      padding: 10px 24px;
       border-radius: 9999px;
       display: inline-block;
-      box-shadow: 4px 4px 0px var(--text-black);
     }
     
     .footer {
@@ -213,7 +208,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 3px solid var(--text-black);
+      border-top: 1px solid #eeeeee;
       padding-top: 30px;
       width: 100%;
     }
@@ -230,7 +225,6 @@
       font-size: 20px;
       color: var(--text-black);
       background: var(--accent-green);
-      border: 3px solid var(--text-black);
       padding: 6px 16px;
       font-weight: 700;
       text-decoration: none;
@@ -299,14 +293,12 @@
         <div class="barcode-line" style="width: 2px;"></div>
         <div class="barcode-line" style="width: 7px;"></div>
       </div>
-      
-      <div class="stub-badge">VIP INVITE</div>
     </div>
   </div>
   
   <div class="footer">
     <span class="footer-text">Daily Private Capital & Events Briefing</span>
-    <span class="footer-link">theinvestor.news</span>
+    <span class="footer-link">The Investor</span>
   </div>
 </body>
 </html>

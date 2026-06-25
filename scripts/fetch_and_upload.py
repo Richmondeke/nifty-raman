@@ -907,7 +907,7 @@ if __name__ == "__main__":
                 "investors": "Vanguard, Tiger Global",
                 "summary": "The Investor is a premium capital briefing platform that delivers curated venture funding news and family office insights to HNWI readers.",
                 "source": "TechCrunch",
-                "url": "https://theinvestor.news",
+                "url": "#",
                 "article_image_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
                 "is_african": False,
                 "score": 5

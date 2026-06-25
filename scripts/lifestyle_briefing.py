@@ -162,7 +162,7 @@ def send_lifestyle_email(item, image_path, recipient):
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="center" style="background-color: #d4af37; border: 2px solid #d4af37; padding: 10px 24px;">
-                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
+                      <a href="#" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
                         Explore Collection
                       </a>
                     </td>

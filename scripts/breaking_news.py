@@ -296,7 +296,7 @@ def send_breaking_email(deal, image_path, test_recipient=None):
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="center" style="background-color: #ff3b30; border: 2px solid #ff3b30; padding: 10px 24px;">
-                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
+                      <a href="#" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
                         View details online
                       </a>
                     </td>

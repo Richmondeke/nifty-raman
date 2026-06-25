@@ -4,6 +4,7 @@ import sys
 import tempfile
 import pathlib
 import smtplib
+import json
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
@@ -140,8 +141,8 @@ def send_design_email(subject, item_name, image_path, recipient):
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="center" style="background-color: #7ED957; border: 2px solid #000000; padding: 10px 24px;">
-                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
-                        theinvestor.news
+                      <a href="#" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
+                        The Investor
                       </a>
                     </td>
                   </tr>
@@ -192,6 +193,175 @@ def send_design_email(subject, item_name, image_path, recipient):
     except Exception as e:
         print(f"Failed to send email for {item_name}: {e}")
 
+def get_pinterest_image_or_fallback(query, fallback_url):
+    try:
+        from pinterest_search import query_pinterest_search
+        pins = query_pinterest_search(query, limit=1)
+        if pins and pins[0].get("image_url"):
+            print(f"Pinterest Search match for '{query}': {pins[0]['image_url']}")
+            return pins[0]["image_url"]
+    except Exception as e:
+        print(f"Error fetching from Pinterest for '{query}': {e}")
+    return fallback_url
+
+def fetch_live_data_via_gemini():
+    """
+    Uses Gemini API with Google Search to fetch real live data for:
+    - Daily Deal (Tech venture fundraising round in the last 7 days)
+    - Breaking Deal (Tech venture fundraising round or M&A in the last 48 hours)
+    - Job Role (Real remote/hybrid tech VC or AI job)
+    - Event (Real upcoming finance, tech, startup or family office networking event in 2026)
+    - Lifestyle (Real luxury item like Rolex/AP watch or sports car with pricing and specs)
+    """
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        print("GEMINI_API_KEY not found in environment. Using fallback mock data.")
+        return None
+        
+    try:
+        from google import genai
+        from google.genai import types
+        client = genai.Client(api_key=api_key)
+    except Exception as e:
+        print(f"Failed to import/initialize Gemini Client: {e}. Using fallback mock data.")
+        return None
+
+    data = {}
+    
+    # 1. Fetch Daily Deal
+    print("Fetching live Daily Deal data...")
+    prompt_daily = """
+    Search for a real, major tech/AI startup fundraising round (e.g. seed, Series A/B/C/D/E/F) announced within the last 7 days.
+    Find one with a known startup name, amount, stage, industry, and investors.
+    Format your response strictly as a JSON object with keys:
+    "startup", "amount", "stage", "industry", "investors", "summary"
+    Ensure "summary" is 2-3 sentences describing the startup's product and what they do. Do not include markdown code block ticks.
+    """
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt_daily,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
+        )
+        text = response.text.strip()
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        data["daily_deal"] = json.loads(text)
+    except Exception as e:
+        print(f"Error fetching live daily deal: {e}")
+
+    # 2. Fetch Breaking Deal
+    print("Fetching live Breaking Deal data...")
+    prompt_breaking = """
+    Search for a very recent, major tech startup funding announcement, acquisition, or IPO within the last 48 hours.
+    Format your response strictly as a JSON object with keys:
+    "startup", "amount", "stage", "industry", "investors", "summary"
+    Ensure "summary" is a high-impact, 2-3 sentence overview of the news. Do not include markdown code block ticks.
+    """
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt_breaking,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
+        )
+        text = response.text.strip()
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        data["breaking_deal"] = json.loads(text)
+    except Exception as e:
+        print(f"Error fetching live breaking deal: {e}")
+
+    # 3. Fetch Job Role
+    print("Fetching live Job Role data...")
+    prompt_job = """
+    Search for a real, active remote or hybrid venture capital analyst/associate job, or AI prompt engineer/data labeling job posted recently.
+    Format your response strictly as a JSON object with keys:
+    "role_title", "company", "salary", "location", "sector", "requirements"
+    - "salary": specify real salary range if found, or "Competitive"
+    - "requirements": a 2-3 sentence summary of requirements and criteria.
+    Do not include markdown code block ticks.
+    """
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt_job,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
+        )
+        text = response.text.strip()
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        data["job_role"] = json.loads(text)
+    except Exception as e:
+        print(f"Error fetching live job role: {e}")
+
+    # 4. Fetch Event
+    print("Fetching live Event data...")
+    prompt_event = """
+    Search for a real, upcoming finance, tech, startup, or family office conference or networking event (e.g. in Lagos, London, or New York) scheduled for 2026.
+    Format your response strictly as a JSON object with keys:
+    "event_title", "organizer", "location", "venue", "description"
+    - "description": 2-3 sentences overview of who should attend and what will be discussed.
+    Do not include markdown code block ticks.
+    """
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt_event,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
+        )
+        text = response.text.strip()
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        data["event_data"] = json.loads(text)
+    except Exception as e:
+        print(f"Error fetching live event: {e}")
+
+    # 5. Fetch Lifestyle Item
+    print("Fetching live Lifestyle Item data...")
+    prompt_lifestyle = """
+    Search for a real luxury item released or popular recently (e.g. a specific high-end watch model like Rolex GMT-Master II, Audemars Piguet Royal Oak, or a luxury sports car like Porsche 911 GT3).
+    Format your response strictly as a JSON object with keys:
+    "price", "category", "item_name", "maker", "model", "spec_val_1", "spec_val_2", "description"
+    - "spec_val_1": e.g. dial color or engine size/horsepower
+    - "spec_val_2": e.g. case material or acceleration/top speed
+    - "description": 2-3 sentences highlighting its luxury appeal.
+    Do not include markdown code block ticks.
+    """
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt_lifestyle,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
+        )
+        text = response.text.strip()
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        data["lifestyle_item"] = json.loads(text)
+    except Exception as e:
+        print(f"Error fetching live lifestyle item: {e}")
+
+    return data
+
 def main():
     recipient = "richmondeke@gmail.com"
     if len(sys.argv) > 1 and "@" in sys.argv[1]:
@@ -204,27 +374,49 @@ def main():
     images_dir = os.path.join(project_root, "NewsReport", "images")
     os.makedirs(images_dir, exist_ok=True)
     
-    # Mock Data Sets
+    # 1. Fetch live data
+    live_data = fetch_live_data_via_gemini() or {}
+    
+    # 2. Build Daily Deal Card data
     daily_deal = {
         "startup": "Shield AI",
-        "deal_image": "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80",
         "amount": "$200 Million",
         "stage": "Series F",
         "industry": "Defense Tech",
         "investors": "U.S. Innovative Technology Fund, Riot Ventures",
         "summary": "Shield AI builds autonomous pilot software for military aircraft. Their technology enables jet fighters and quadcopters to navigate and complete tactical missions without GPS or communications links."
     }
+    if "daily_deal" in live_data:
+        daily_deal.update(live_data["daily_deal"])
     
+    # Query Pinterest for daily deal image using the actual startup name or industry
+    daily_deal_query = f"{daily_deal['startup']} logo startup"
+    daily_deal_img = get_pinterest_image_or_fallback(
+        daily_deal_query,
+        "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80"
+    )
+    daily_deal["deal_image"] = daily_deal_img
+    
+    # 3. Build Breaking News Card data
     breaking_deal = {
         "startup": "Retool Corp",
-        "deal_image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
         "amount": "$45 Million",
         "stage": "Series C",
         "industry": "Developer Tools",
         "investors": "Sequoia Capital, Y Combinator, Patrick Collison",
         "summary": "Retool is a low-code platform that lets developers construct internal database dashboards and client administration tools up to 10x faster."
     }
+    if "breaking_deal" in live_data:
+        breaking_deal.update(live_data["breaking_deal"])
+        
+    breaking_deal_query = f"{breaking_deal['startup']} startup technology"
+    breaking_deal_img = get_pinterest_image_or_fallback(
+        breaking_deal_query,
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+    )
+    breaking_deal["deal_image"] = breaking_deal_img
     
+    # 4. Build Jobs Card data
     job_role = {
         "role_title": "Lead Venture Analyst",
         "company": "The Investor Ventures",
@@ -233,7 +425,17 @@ def main():
         "sector": "Private Capital",
         "requirements": "Looking for a high-performing VC analyst with 3+ years experience evaluating African tech series A deals. Must be proficient in financial modeling and cap table audit workflows."
     }
+    if "job_role" in live_data:
+        job_role.update(live_data["job_role"])
+        
+    job_query = f"{job_role['company']} office workspace"
+    job_workplace_img = get_pinterest_image_or_fallback(
+        job_query,
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    )
+    job_role["job_image"] = job_workplace_img
     
+    # 5. Build Events Card data
     event_data = {
         "event_title": "Family Office Private Dinner",
         "organizer": "The Investor Board",
@@ -241,10 +443,12 @@ def main():
         "venue": "The Capital Club Lounge",
         "description": "An invite-only private dining experience connecting Nigerian family office managers, HNWI allocators, and top venture fund GPs to discuss stealth private capital deals."
     }
-    
+    if "event_data" in live_data:
+        event_data.update(live_data["event_data"])
+        
+    # 6. Build Lifestyle Card data
     lifestyle_item = {
         "price": "$28,000",
-        "item_image": "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80",
         "category": "Horology",
         "item_name": "Royal Oak Green Dial",
         "maker": "Audemars Piguet",
@@ -253,6 +457,15 @@ def main():
         "spec_val_2": "Stainless Steel Bracelet",
         "description": "This Audemars Piguet Royal Oak Selfwinding features a stainless steel case, an integrated bracelet, and an elegant forest green dial with the signature Tapisserie guilloché pattern."
     }
+    if "lifestyle_item" in live_data:
+        lifestyle_item.update(live_data["lifestyle_item"])
+        
+    lifestyle_query = f"{lifestyle_item['maker']} {lifestyle_item['item_name']} aesthetic"
+    lifestyle_watch_img = get_pinterest_image_or_fallback(
+        lifestyle_query,
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80"
+    )
+    lifestyle_item["item_image"] = lifestyle_watch_img
     
     # Render & Send Daily Deal Card
     daily_img = os.path.join(images_dir, "showcase_daily_deal.jpg")

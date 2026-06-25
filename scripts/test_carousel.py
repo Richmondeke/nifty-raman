@@ -98,7 +98,7 @@ def send_carousel_email(deal, image_paths, pdf_path, recipient):
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="center" style="background-color: #7ED957; border: 2px solid #000000; padding: 10px 24px;">
-                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
+                      <a href="#" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
                         Visit platform
                       </a>
                     </td>

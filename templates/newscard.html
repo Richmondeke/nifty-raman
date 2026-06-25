@@ -46,8 +46,7 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 3px solid var(--text-black);
-      background-color: #ffffff;
+      background-color: #191919; /* Match logo background */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -55,14 +54,13 @@
     }
     
     .logo-container img {
-      height: 80px;
-      width: 80px;
+      height: 90px;
+      width: 90px;
       object-fit: contain;
       display: block;
     }
     
     .date-badge {
-      border: 3px solid var(--text-black);
       background: var(--accent-green);
       color: var(--text-black);
       font-weight: 900;
@@ -76,118 +74,108 @@
     .main-content {
       position: relative;
       display: flex;
-      flex-direction: column;
-      gap: 30px;
+      gap: 50px;
+      align-items: stretch;
+      height: auto;
+      min-height: 940px;
       margin: auto 0;
     }
     
-    .split-layout {
-      display: flex;
-      gap: 30px;
-      align-items: stretch;
-      width: 100%;
-    }
-    
-    .image-block {
-      flex: 1.3;
-      height: 480px;
+    .image-panel {
+      flex: 1.1;
+      height: 100%;
       overflow: hidden;
-      border: 3px solid var(--text-black);
-      background: #f8fafc;
-      border-radius: 20px;
+      border-radius: 32px;
+      background: #fafafa;
     }
     
-    .image-block img {
+    .image-panel img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
     
-    .info-block {
+    .detail-panel {
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 16px;
       justify-content: space-between;
+      padding: 10px 0;
     }
     
     .spotlight-tag {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 900;
       color: var(--text-black);
       text-transform: uppercase;
       letter-spacing: 3px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .spotlight-tag::after {
-      content: '';
-      flex-grow: 1;
-      height: 3px;
-      background: var(--text-black);
+      margin-bottom: 10px;
     }
     
     .startup-name {
-      font-size: 52px;
+      font-size: 60px;
       font-weight: 900;
-      letter-spacing: -1.5px;
+      letter-spacing: -2px;
       color: var(--text-black);
-      line-height: 1.1;
-      margin-bottom: 8px;
+      line-height: 1.05;
+      margin-bottom: 25px;
     }
     
-    .metrics-stack {
+    .metrics-list {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      flex-grow: 1;
     }
     
-    .metric-card {
-      background: #ffffff;
-      border: 3px solid var(--text-black);
-      border-radius: 16px;
-      padding: 16px 20px;
+    .metric-row {
+      border-left: 5px solid var(--accent-green);
+      padding-left: 15px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .metric-card.highlight {
-      background: var(--accent-green);
+      flex-direction: column;
+      gap: 4px;
     }
     
     .metric-label {
-      font-size: 13px;
-      color: var(--text-black);
+      font-size: 12px;
+      color: #555;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 900;
     }
     
     .metric-value {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 900;
       color: var(--text-black);
-      text-align: right;
     }
     
-    .summary-card {
-      background: #ffffff;
-      border: 3px solid var(--text-black);
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 6px 6px 0px var(--text-black);
+    .summary-box {
+      border-top: 2px solid #eee;
+      padding-top: 25px;
+      margin-top: 25px;
     }
     
     .summary-text {
-      font-size: 24px;
+      font-size: 18px;
       line-height: 1.5;
       color: var(--text-black);
       font-weight: 500;
+    }
+    
+    .cta-btn {
+      font-size: 24px;
+      color: var(--text-black);
+      background: var(--accent-green);
+      padding: 14px 36px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      margin-top: 20px;
     }
     
     .footer {
@@ -212,7 +200,6 @@
       font-size: 20px;
       color: var(--text-black);
       background: var(--accent-green);
-      border: 3px solid var(--text-black);
       padding: 6px 16px;
       font-weight: 700;
       text-decoration: none;
@@ -231,46 +218,47 @@
   </div>
   
   <div class="main-content">
-    <div class="split-layout">
-      <div class="image-block">
-        <img src="{deal_image}" alt="Deal Image">
-      </div>
-      
-      <div class="info-block">
-        <div>
-          <div class="spotlight-tag">Deal Spotlight</div>
-          <div class="startup-name">{startup}</div>
-        </div>
+    <div class="image-panel">
+      <img src="{deal_image}" alt="Deal Image">
+    </div>
+    
+    <div class="detail-panel">
+      <div>
+        <div class="spotlight-tag">Deal Spotlight</div>
+        <div class="startup-name">{startup}</div>
         
-        <div class="metrics-stack">
-          <div class="metric-card highlight">
+        <div class="metrics-list">
+          <div class="metric-row">
             <span class="metric-label">Amount Raised</span>
             <span class="metric-value">{amount}</span>
           </div>
-          <div class="metric-card">
+          <div class="metric-row">
             <span class="metric-label">Funding Stage</span>
             <span class="metric-value">{stage}</span>
           </div>
-          <div class="metric-card">
+          <div class="metric-row">
             <span class="metric-label">Sector</span>
             <span class="metric-value">{industry}</span>
           </div>
-          <div class="metric-card">
+          <div class="metric-row">
             <span class="metric-label">Key Investors</span>
             <span class="metric-value">{investors}</span>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="summary-card">
-      <p class="summary-text">{summary}</p>
+      
+      <div>
+        <div class="summary-box">
+          <p class="summary-text">{summary}</p>
+        </div>
+        <a href="#" class="cta-btn">View Full Deal</a>
+      </div>
     </div>
   </div>
   
   <div class="footer">
     <span class="footer-text">Daily Private Capital & Events Briefing</span>
-    <span class="footer-link">theinvestor.news</span>
+    <span class="footer-link">The Investor</span>
   </div>
 </body>
 </html>
