@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+    
+    :root {
+      --bg-primary: #ffffff;
+      --accent-green: #7ed957;
+      --text-black: #000000;
+      --border-color: #000000;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Satoshi', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-black);
+      width: 1080px;
+      height: 1350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 3px solid var(--text-black);
+      padding-bottom: 40px;
+    }
+    
+    .logo-container {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid var(--text-black);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .logo-container img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .date-badge {
+      border: 3px solid var(--text-black);
+      background: var(--accent-green);
+      color: var(--text-black);
+      font-weight: 700;
+      font-size: 20px;
+      padding: 10px 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .main-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin: auto 0;
+      text-align: center;
+    }
+    
+    .cta-logo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 6px solid var(--text-black);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 12px 12px 0px var(--text-black);
+      margin-bottom: 20px;
+    }
+    
+    .cta-logo img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+    }
+    
+    .cta-tagline {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: var(--text-black);
+      line-height: 1.2;
+      max-width: 800px;
+    }
+    
+    .cta-subtext {
+      font-size: 28px;
+      color: var(--text-black);
+      font-weight: 500;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+    
+    .cta-button {
+      font-size: 32px;
+      color: var(--text-black);
+      background: var(--accent-green);
+      border: 4px solid var(--text-black);
+      padding: 18px 48px;
+      font-weight: 900;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      box-shadow: 8px 8px 0px var(--text-black);
+      text-transform: uppercase;
+    }
+    
+    .footer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 3px solid var(--text-black);
+      padding-top: 40px;
+      width: 100%;
+    }
+    
+    .footer-text {
+      font-size: 18px;
+      color: var(--text-black);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .footer-link {
+      font-size: 20px;
+      color: var(--text-black);
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      padding: 6px 16px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <title>Carousel CTA Template</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="{logo_path}" alt="The Investor">
+    </div>
+    <div class="date-badge">{date}</div>
+  </div>
+  
+  <div class="main-content">
+    <div class="cta-logo">
+      <img src="{logo_path}" alt="The Investor">
+    </div>
+    <h2 class="cta-tagline">Private Capital & Venture News Delivered Daily</h2>
+    <p class="cta-subtext">Join thousands of HNWI readers, family offices, and venture capitalists receiving curated market insights directly to their inbox.</p>
+    <a href="https://theinvestor.news" class="cta-button">Subscribe Now</a>
+  </div>
+  
+  <div class="footer">
+    <span class="footer-text">Daily Private Capital & Events Briefing</span>
+    <span class="footer-link">theinvestor.news</span>
+  </div>
+</body>
+</html>

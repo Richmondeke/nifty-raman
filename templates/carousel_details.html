@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+    
+    :root {
+      --bg-primary: #ffffff;
+      --accent-green: #7ed957;
+      --text-black: #000000;
+      --border-color: #000000;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Satoshi', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-black);
+      width: 1080px;
+      height: 1350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 3px solid var(--text-black);
+      padding-bottom: 40px;
+    }
+    
+    .logo-container {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid var(--text-black);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .logo-container img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .date-badge {
+      border: 3px solid var(--text-black);
+      background: var(--accent-green);
+      color: var(--text-black);
+      font-weight: 700;
+      font-size: 20px;
+      padding: 10px 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .main-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin: auto 0;
+    }
+    
+    .section-tag {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--text-black);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .section-tag::after {
+      content: '';
+      flex-grow: 1;
+      height: 3px;
+      background: var(--text-black);
+    }
+    
+    .startup-name {
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: var(--text-black);
+      line-height: 1.1;
+    }
+    
+    .details-card {
+      background: #ffffff;
+      border: 3px solid var(--text-black);
+      padding: 40px;
+      box-shadow: 8px 8px 0px var(--text-black);
+    }
+    
+    .details-title {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 3px solid var(--text-black);
+      padding-bottom: 10px;
+    }
+    
+    .details-text {
+      font-size: 26px;
+      line-height: 1.6;
+      color: var(--text-black);
+      font-weight: 500;
+    }
+    
+    .thesis-card {
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      padding: 40px;
+      box-shadow: 8px 8px 0px var(--text-black);
+    }
+    
+    .thesis-title {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 3px solid var(--text-black);
+      padding-bottom: 10px;
+    }
+    
+    .thesis-text {
+      font-size: 26px;
+      line-height: 1.6;
+      color: var(--text-black);
+      font-weight: 700;
+    }
+    
+    .footer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 3px solid var(--text-black);
+      padding-top: 40px;
+      width: 100%;
+    }
+    
+    .footer-text {
+      font-size: 18px;
+      color: var(--text-black);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .footer-link {
+      font-size: 20px;
+      color: var(--text-black);
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      padding: 6px 16px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <title>Carousel Details Template</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="{logo_path}" alt="The Investor">
+    </div>
+    <div class="date-badge">{date}</div>
+  </div>
+  
+  <div class="main-content">
+    <div class="section-tag">Transaction Details</div>
+    <div class="startup-name">{startup}</div>
+    
+    <div class="details-card">
+      <h3 class="details-title">Company Overview & Raise</h3>
+      <p class="details-text">{summary}</p>
+    </div>
+    
+    <div class="thesis-card">
+      <h3 class="thesis-title">Investor Spotlight & Impact</h3>
+      <p class="thesis-text">This raise of {amount} ({stage}) backed by {investors} highlights the growing institutional demand in the {industry} space.</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <span class="footer-text">Daily Private Capital & Events Briefing</span>
+    <span class="footer-link">theinvestor.news</span>
+  </div>
+</body>
+</html>
