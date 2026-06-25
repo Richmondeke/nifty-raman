@@ -5,14 +5,14 @@
 
 ---
 
-## 1. Daya: $2.4 Million Pre-Seed
+## 1. Daya: $2.4 million Pre-Seed
 
-- **Summary**: Daya is a Nigerian fintech startup building stablecoin-powered payment infrastructure to help African businesses manage cross-border transactions. The platform aims to provide faster, more transparent, and cost-effective international payments by enabling businesses to receive dollar payments, settle transactions using stablecoins, and move funds globally. Daya also offers APIs for developers to embed programmable payment infrastructure into their products.
+- **Summary**: Daya is a Nigerian fintech startup building a financial operating layer for African businesses to manage cross-border payments more efficiently. Its platform consolidates financial operations, offering stablecoin settlement, local fiat on/off-ramps, virtual multi-currency accounts, and APIs to reduce the cost and complexity of international money transfers. The company aims to address challenges like high fees, slow settlement times, and fragmented systems in African cross-border commerce.
 - **Key Points**:
-  1. Investors: Hivemind Capital (led the round), Lattice Fund, Alliance DAO, Aptos Foundation, Globelink Investment
-  2. Sector keywords: fintech, stablecoin, payments, blockchain, cross-border payments
+  1. Investors: Hivemind Capital (lead), Lattice, Alliance, Globelink, Aptos Foundation
+  2. Sector keywords: fintech, stablecoin, cross-border payments, Africa
 - **Source**: [TechCabal](https://techcabal.com/2026/06/24/daya-pre-seed-raise/)
-- **Keywords**: `fintech` `stablecoin` `payments` `blockchain` `cross-border payments`
+- **Keywords**: `fintech` `stablecoin` `cross-border payments` `Africa`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
