@@ -637,6 +637,7 @@ def send_gmail(deals, local_image_paths=None, investor_image_path=None, investor
                         with open(img_path, 'rb') as f:
                             msg_img = MIMEImage(f.read())
                             msg_img.add_header('Content-ID', f'<top_deal_image_{idx}>')
+                            msg_img.add_header('Content-Disposition', 'attachment', filename=os.path.basename(img_path))
                             msg.attach(msg_img)
 
             if investor_image_path and os.path.exists(investor_image_path):
@@ -644,6 +645,7 @@ def send_gmail(deals, local_image_paths=None, investor_image_path=None, investor
                     with open(investor_image_path, 'rb') as f:
                         msg_inv = MIMEImage(f.read())
                         msg_inv.add_header('Content-ID', '<investor_image>')
+                        msg_inv.add_header('Content-Disposition', 'attachment', filename=os.path.basename(investor_image_path))
                         msg.attach(msg_inv)
                 except Exception as e:
                     print(f"Error attaching investor image for {recipient}: {e}")
