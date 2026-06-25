@@ -5,15 +5,15 @@
 
 ---
 
-## 1. Daya: $2.4 Million Pre-seed
+## 1. Daya: $2.4 million pre-Seed
 
-- **Summary**: Daya is an African fintech startup that raised $2.4 million in pre-seed funding to build stablecoin-powered payment and treasury infrastructure for businesses operating across borders. Its platform aims to simplify international payments, foreign exchange, and settlement by integrating local payment rails, stablecoin settlement, and compliance processes into a single system. The company helps African businesses manage increasingly global operations and engage in the global dollar economy.
+- **Summary**: Daya is an Africa-focused fintech startup that raised $2.4 million in a pre-Seed round. The company is building stablecoin payment rails to facilitate cross-border business payments, positioning stablecoins as a mainstream solution between African and global markets. It recently graduated from the Alliance DAO ALL15 cohort.
 - **Key Points**:
   1. Investors: Hivemind Capital (lead), Lattice, Alliance, Globelink, Aptos Foundation
-  2. Sector keywords: fintech, stablecoin, cross-border payments, blockchain, Africa
+  2. Sector keywords: fintech, stablecoin, payments, Africa, web3
 - **Source**: [TechCabal](https://techcabal.com/2026/06/24/daya-pre-seed-raise/)
-- **Keywords**: `fintech, stablecoin, cross-border payments, blockchain, Africa`
-- **Score**: ⭐⭐⭐ (3/5)
+- **Keywords**: `fintech` `stablecoin` `payments` `Africa` `web3`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
