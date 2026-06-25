@@ -9,6 +9,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from datetime import datetime
+import requests
+import urllib.parse
 
 # Import render component
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -204,6 +206,24 @@ def get_pinterest_image_or_fallback(query, fallback_url):
         print(f"Error fetching from Pinterest for '{query}': {e}")
     return fallback_url
 
+def get_wikipedia_portrait(name):
+    print(f"Fetching Wikipedia portrait for: {name}...")
+    try:
+        formatted_name = urllib.parse.quote(name.strip().replace(" ", "_"))
+        url = f"https://en.wikipedia.org/w/api.php?action=query&titles={formatted_name}&prop=pageimages&format=json&pithumbsize=1000"
+        r = requests.get(url, timeout=10)
+        if r.status_code == 200:
+            data = r.json()
+            pages = data.get("query", {}).get("pages", {})
+            for page_id, page in pages.items():
+                if "thumbnail" in page:
+                    img_url = page["thumbnail"]["source"]
+                    print(f"Wikipedia portrait found: {img_url}")
+                    return img_url
+    except Exception as e:
+        print(f"Error fetching Wikipedia portrait: {e}")
+    return None
+
 def fetch_live_data_via_gemini():
     """
     Uses Gemini API with Google Search to fetch real live data for:
@@ -360,6 +380,37 @@ def fetch_live_data_via_gemini():
     except Exception as e:
         print(f"Error fetching live lifestyle item: {e}")
 
+    # 6. Fetch Billionaire Spotlight
+    print("Fetching live Billionaire Spotlight data...")
+    prompt_spotlight = """
+    Search for a famous tech or finance billionaire (e.g. Warren Buffett, Elon Musk, Aliko Dangote, Bernard Arnault, Jeff Bezos).
+    Find their details and a famous quote about business, investing, or life.
+    Format your response strictly as a JSON object with keys:
+    "person_name", "person_title", "net_worth", "source_wealth", "quote"
+    - "person_name": e.g. "Aliko Dangote"
+    - "person_title": e.g. "Founder, Chairman & CEO of Dangote Group"
+    - "net_worth": e.g. "$13.9 Billion"
+    - "source_wealth": e.g. "Cement, Sugar, Flour"
+    - "quote": A short inspiring quote.
+    Do not include markdown code block ticks.
+    """
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt_spotlight,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            )
+        )
+        text = response.text.strip()
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        data["spotlight_item"] = json.loads(text)
+    except Exception as e:
+        print(f"Error fetching live spotlight item: {e}")
+
     return data
 
 def main():
@@ -448,14 +499,14 @@ def main():
         
     # 6. Build Lifestyle Card data
     lifestyle_item = {
-        "price": "$28,000",
+        "price": "$380,000",
         "category": "Horology",
-        "item_name": "Royal Oak Green Dial",
-        "maker": "Audemars Piguet",
-        "model": "Ref. 15510ST.OO.1320ST.04",
-        "spec_val_1": "Forest Green 'Grande Tapisserie'",
-        "spec_val_2": "Stainless Steel Bracelet",
-        "description": "This Audemars Piguet Royal Oak Selfwinding features a stainless steel case, an integrated bracelet, and an elegant forest green dial with the signature Tapisserie guilloché pattern."
+        "item_name": "Cosmograph Daytona Platinum",
+        "maker": "Rolex",
+        "model": "Ref. 126506-0001",
+        "spec_val_1": "Ice Blue Dial",
+        "spec_val_2": "Chestnut Brown Ceramic",
+        "description": "The Rolex Cosmograph Daytona in 950 platinum features an ice blue dial and a chestnut brown Cerachrom bezel. It is equipped with the calibre 4131 chronograph movement and features a transparent sapphire case back."
     }
     if "lifestyle_item" in live_data:
         lifestyle_item.update(live_data["lifestyle_item"])
@@ -466,6 +517,22 @@ def main():
         "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80"
     )
     lifestyle_item["item_image"] = lifestyle_watch_img
+    
+    # 7. Build Billionaire Spotlight & Quote Card data
+    spotlight_item = {
+        "person_name": "Aliko Dangote",
+        "person_title": "Founder, Chairman & CEO of Dangote Group",
+        "net_worth": "$13.9 Billion",
+        "source_wealth": "Cement, Sugar, Flour, Oil",
+        "quote": "If you don't have ambition, you shouldn't be alive. Nothing is going to be handed to you on a silver platter."
+    }
+    if "spotlight_item" in live_data:
+        spotlight_item.update(live_data["spotlight_item"])
+        
+    portrait_url = get_wikipedia_portrait(spotlight_item["person_name"])
+    if not portrait_url:
+        portrait_url = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+    spotlight_item["portrait_image"] = portrait_url
     
     # Render & Send Daily Deal Card
     daily_img = os.path.join(images_dir, "showcase_daily_deal.jpg")
@@ -491,6 +558,11 @@ def main():
     lifestyle_img = os.path.join(images_dir, "showcase_lifestyle.jpg")
     if render_template_to_image(lifestyle_item, lifestyle_img, "lifestyle_newscard.html"):
         send_design_email("💎 [DESIGN SHOWCASE] Luxury Lifestyle Segment Layout", "Lifestyle Card", lifestyle_img, recipient)
+        
+    # Render & Send Spotlight Card
+    spotlight_img = os.path.join(images_dir, "showcase_spotlight.jpg")
+    if render_template_to_image(spotlight_item, spotlight_img, "spotlight_card.html"):
+        send_design_email("🏢 [DESIGN SHOWCASE] Billionaire Spotlight & Quote Layout", "Spotlight Card", spotlight_img, recipient)
 
 if __name__ == "__main__":
     # Load .env if present
