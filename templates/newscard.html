@@ -3,17 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap');
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
     
     :root {
-      --bg-primary: #0b0f19;
-      --bg-card: rgba(15, 23, 42, 0.65);
-      --accent-purple: #b696d3;
+      --bg-primary: #ffffff;
       --accent-green: #7ed957;
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      --border-glow: rgba(126, 217, 87, 0.15);
+      --text-black: #000000;
+      --border-color: #000000;
     }
     
     * {
@@ -23,9 +19,9 @@
     }
     
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Satoshi', sans-serif;
       background-color: var(--bg-primary);
-      color: var(--text-primary);
+      color: var(--text-black);
       width: 1080px;
       height: 1350px;
       display: flex;
@@ -36,78 +32,60 @@
       overflow: hidden;
     }
     
-    /* Background grid effect */
-    body::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      background-size: 60px 60px;
-      z-index: 1;
-    }
-    
-    /* Radial glow in the background */
-    body::after {
-      content: '';
-      position: absolute;
-      top: -300px;
-      right: -300px;
-      width: 800px;
-      height: 800px;
-      background: radial-gradient(circle, rgba(126, 217, 87, 0.08) 0%, transparent 70%);
-      z-index: 1;
-      pointer-events: none;
-    }
-
     .header {
       position: relative;
-      z-index: 2;
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 3px solid var(--text-black);
       padding-bottom: 40px;
     }
     
     .logo-container img {
-      height: 70px;
+      height: 140px;
       object-fit: contain;
       display: block;
     }
     
     .date-badge {
-      background: rgba(126, 217, 87, 0.1);
-      border: 1px solid rgba(126, 217, 87, 0.2);
-      color: var(--accent-green);
-      font-family: 'Outfit', sans-serif;
-      font-weight: 600;
+      border: 3px solid var(--text-black);
+      background: var(--accent-green);
+      color: var(--text-black);
+      font-weight: 700;
       font-size: 20px;
       padding: 10px 24px;
-      border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
     
     .main-content {
       position: relative;
-      z-index: 2;
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 40px;
       margin: auto 0;
     }
     
+    .featured-image-container {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      border: 3px solid var(--text-black);
+      background: #f8fafc;
+    }
+    
+    .featured-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
     .spotlight-tag {
-      font-family: 'Outfit', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--accent-purple);
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--text-black);
       text-transform: uppercase;
       letter-spacing: 3px;
       display: flex;
@@ -118,99 +96,89 @@
     .spotlight-tag::after {
       content: '';
       flex-grow: 1;
-      height: 1px;
-      background: linear-gradient(90deg, var(--accent-purple), transparent);
+      height: 3px;
+      background: var(--text-black);
     }
     
     .startup-name {
-      font-family: 'Outfit', sans-serif;
-      font-size: 72px;
-      font-weight: 800;
+      font-size: 64px;
+      font-weight: 900;
       letter-spacing: -1px;
-      background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--text-black);
       line-height: 1.1;
     }
     
     .metrics-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      gap: 24px;
     }
     
     .metric-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      padding: 30px;
+      background: #ffffff;
+      border: 3px solid var(--text-black);
+      padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      gap: 8px;
     }
     
     .metric-card.highlight {
-      border-color: var(--border-glow);
-      box-shadow: 0 8px 30px rgba(126, 217, 87, 0.05);
+      background: var(--accent-green);
     }
     
     .metric-label {
-      font-size: 16px;
-      color: var(--text-secondary);
+      font-size: 14px;
+      color: var(--text-black);
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 500;
+      font-weight: 700;
     }
     
     .metric-value {
-      font-family: 'Outfit', sans-serif;
-      font-size: 38px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-    
-    .metric-card.highlight .metric-value {
-      color: var(--accent-green);
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-black);
     }
     
     .summary-card {
-      background: rgba(255, 255, 255, 0.02);
-      border-left: 4px solid var(--accent-purple);
-      padding: 30px;
-      border-radius: 0 16px 16px 0;
+      background: #ffffff;
+      border: 3px solid var(--text-black);
+      padding: 24px;
     }
     
     .summary-text {
-      font-size: 26px;
-      line-height: 1.6;
-      color: #e2e8f0;
-      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.5;
+      color: var(--text-black);
+      font-weight: 500;
     }
     
     .footer {
       position: relative;
-      z-index: 2;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 3px solid var(--text-black);
       padding-top: 40px;
       width: 100%;
     }
     
     .footer-text {
       font-size: 18px;
-      color: var(--text-muted);
-      font-weight: 500;
+      color: var(--text-black);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     
     .footer-link {
-      font-family: 'Outfit', sans-serif;
       font-size: 20px;
-      color: var(--accent-green);
-      font-weight: 600;
+      color: var(--text-black);
+      background: var(--accent-green);
+      border: 3px solid var(--text-black);
+      padding: 6px 16px;
+      font-weight: 700;
       text-decoration: none;
       letter-spacing: 0.5px;
     }
@@ -226,6 +194,10 @@
   </div>
   
   <div class="main-content">
+    <div class="featured-image-container">
+      <img src="{deal_image}" alt="Deal Image">
+    </div>
+    
     <div class="spotlight-tag">Deal Spotlight</div>
     <div class="startup-name">{startup}</div>
     
