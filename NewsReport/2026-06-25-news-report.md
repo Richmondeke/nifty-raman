@@ -1,19 +1,55 @@
 # Daily News Report (2026-06-25)
 
-> Curated from TechCrunch and Hacker News. Contains 1 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Daya: $2.4 million pre-Seed
+## 1. General Intuition: $320 Million Series A
 
-- **Summary**: Daya is an Africa-focused fintech startup that raised $2.4 million in a pre-Seed round. The company is building stablecoin payment rails to facilitate cross-border business payments, positioning stablecoins as a mainstream solution between African and global markets. It recently graduated from the Alliance DAO ALL15 cohort.
+- **Summary**: General Intuition, an AI research lab spun out of video game clip-sharing platform Medal, secured a massive $320 million Series A round at a valuation exceeding $2 billion. The company aims to leverage billions of video game clips into training data to teach AI to act in the physical world, focusing on spatial-temporal reasoning for real-world AI agents.
 - **Key Points**:
-  1. Investors: Hivemind Capital (lead), Lattice, Alliance, Globelink, Aptos Foundation
-  2. Sector keywords: fintech, stablecoin, payments, Africa, web3
-- **Source**: [TechCabal](https://techcabal.com/2026/06/24/daya-pre-seed-raise/)
-- **Keywords**: `fintech` `stablecoin` `payments` `Africa` `web3`
+  1. Investors: Khosla Ventures (Lead), General Catalyst, Jeff Bezos, Eric Schmidt
+  2. Sector keywords: AI agents, gamer data, AI, deep tech
+- **Source**: [Runtimewire](https://runtimewire.com/article/general-intuition-320m-series-a-pim-de-witte-medal-gameplay-agents)
+- **Keywords**: `AI agents, gamer data, AI, deep tech`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 2. Mirendil: $200 Million Seed Round
+
+- **Summary**: Mirendil, a new AI lab co-founded by veterans from Anthropic, OpenAI, Google DeepMind, and xAI, has successfully closed a substantial $200 million Seed round at a reported $1 billion valuation. The company is focused on 'self-accelerating R&D,' developing AI systems capable of accelerating AI research itself.
+- **Key Points**:
+  1. Investors: Andreessen Horowitz (a16z) (Co-lead), Kleiner Perkins (Co-lead), NVIDIA
+  2. Sector keywords: R&D, deep tech, AI, frontier AI
+- **Source**: [a16z.com](https://a16z.com/announcement/investing-in-mirendil/)
+- **Keywords**: `R&D, deep tech, AI, frontier AI`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Patronus AI: $50 Million Series B
+
+- **Summary**: Patronus AI, founded by former Meta AI researchers, raised $50 million in Series B funding. The company specializes in building 'digital worlds' to stress-test AI agents, addressing the high demand for robust AI testing solutions. They aim to help leading technology companies and enterprises ship top-tier AI products.
+- **Key Points**:
+  1. Investors: Lightspeed Venture Partners (Lead), Greenfield Partners (Lead), Notable Capital, Stanford University, Datadog, Gokul Rajaram
+  2. Sector keywords: AI, AI testing, AI agents, enterprise AI
+- **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
+- **Keywords**: `AI, AI testing, AI agents, enterprise AI`
 - **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 4. Sazabi: $8 Million Seed Round
+
+- **Summary**: Sazabi, a San Francisco-based startup, has announced an $8 million Seed funding round. The company is developing an AI-native observability platform for engineering teams, focusing on a logs-first architecture and autonomous agents to detect, investigate, and fix production issues faster.
+- **Key Points**:
+  1. Investors: J2 Ventures (Co-lead), Village Global (Co-lead), Y Combinator (Co-lead), Orange Collective, and over 60 angel investors
+  2. Sector keywords: AI, observability, developer tools, AI agents
+- **Source**: [Sazabi.com](https://www.sazabi.com/blog/seed-round)
+- **Keywords**: `AI, observability, developer tools, AI agents`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
