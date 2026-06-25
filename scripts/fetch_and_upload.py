@@ -501,7 +501,7 @@ def extract_og_image(url):
 
 def format_deal_list(deals_list):
     if not deals_list:
-        return '<p style="font-family: \'Inter\', Arial, sans-serif; font-size: 13px; color: #94A3B8; font-style: italic;">No other major rounds reported today.</p>'
+        return '<p style="font-family: \'Satoshi\', Arial, sans-serif; font-size: 13px; color: #94A3B8; font-style: italic;">No other major rounds reported today.</p>'
     
     html_blocks = []
     for d in deals_list:
@@ -510,20 +510,20 @@ def format_deal_list(deals_list):
             keywords = [k.strip() for k in keywords.split(",") if k.strip()]
         
         keywords_tags = "".join([
-            f'<span style="background-color: #F1F5F9; color: #475569; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 5px; font-weight: 600; display: inline-block; margin-bottom: 4px;">{k}</span>' 
+            f'<span style="background-color: #7ED957; color: #000000; font-size: 11px; padding: 2px 8px; border: 1px solid #000000; margin-right: 5px; font-weight: 700; display: inline-block; margin-bottom: 4px;">{k}</span>' 
             for k in keywords if k
         ])
         
         html_blocks.append(f"""
-        <div style="border: 1px solid #E2E8F0; border-radius: 6px; padding: 15px; margin-bottom: 15px; background-color: #FFFFFF;">
-          <h4 style="font-family: 'Georgia', serif; font-size: 16px; color: #0F172A; margin: 0 0 5px 0; font-weight: 700;">
+        <div style="border: 2px solid #000000; padding: 15px; margin-bottom: 15px; background-color: #FFFFFF; box-shadow: 4px 4px 0px #000000;">
+          <h4 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 16px; color: #000000; margin: 0 0 5px 0; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px;">
             {d.get('startup')} — <span style="color: #B45309;">{d.get('amount')} ({d.get('stage')})</span>
           </h4>
-          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">
+          <p style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; margin: 0 0 10px 0; line-height: 1.5; font-weight: 500;">
             {d.get('summary')}
           </p>
-          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #64748B; margin: 0 0 10px 0;">
-            <strong>Investors</strong>: {d.get('investors')}
+          <p style="font-family: 'Satoshi', Arial, sans-serif; font-size: 13px; color: #000000; margin: 0 0 10px 0; font-weight: 700;">
+            Investors: {d.get('investors')}
           </p>
           <div style="margin-top: 5px;">
             {keywords_tags}
@@ -621,16 +621,17 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     top_deals_html = []
     for idx, deal in enumerate(deals[:3]):
         top_deals_html.append(f"""
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 25px; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden; background-color: #FFFFFF;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px; border: 3px solid #000000; overflow: hidden; background-color: #FFFFFF; box-shadow: 6px 6px 0px #000000;">
           <tr>
             <td align="center">
-              <img src="cid:top_deal_image_{idx}" alt="{deal.get('startup')} card" style="width: 100%; max-width: 540px; display: block; border-bottom: 1px solid #E2E8F0;" />
+              <img src="cid:top_deal_image_{idx}" alt="{deal.get('startup')} card" style="width: 100%; max-width: 540px; display: block; border-bottom: 3px solid #000000;" />
             </td>
           </tr>
           <tr>
-            <td style="padding: 15px; font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #475569; line-height: 1.6;">
-              <strong style="color: #0F172A; font-size: 16px;">{deal.get('startup')}</strong> — {deal.get('summary')}
-              <br/><span style="font-size: 12px; color: #94A3B8; margin-top: 5px; display: inline-block;">Source: {deal.get('source')}</span>
+            <td style="padding: 20px; font-family: 'Satoshi', Arial, sans-serif; font-size: 15px; color: #000000; line-height: 1.6; font-weight: 500;">
+              <strong style="color: #000000; font-size: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 5px;">{deal.get('startup')}</strong>
+              {deal.get('summary')}
+              <br/><span style="font-size: 12px; color: #94A3B8; margin-top: 10px; display: inline-block; font-weight: 700; text-transform: uppercase;">Source: {deal.get('source')}</span>
             </td>
           </tr>
         </table>
@@ -641,22 +642,17 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     if investor_spotlight and investor_spotlight.get("name"):
         spotlight_section = f"""
         <tr>
-          <td align="left" valign="top" style="padding: 20px 30px 10px 30px; background-color: #F0FDF4; border-left: 4px solid #7ED957;">
-            <h3 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin: 0 0 12px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+          <td align="left" valign="top" style="padding: 20px 40px 10px 40px; background-color: #FFFFFF; border-top: 3px solid #000000; border-bottom: 3px solid #000000;">
+            <h3 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 22px; color: #000000; margin: 0 0 15px 0; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">
               ✨ Investor Spotlight: {investor_spotlight.get('name')}
             </h3>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px; border: 2px solid #000000; padding: 20px; background-color: #F8FAFC; box-shadow: 4px 4px 0px #000000;">
               <tr>
-                <td valign="top" style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #475569; line-height: 1.6;">
+                <td valign="top" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; line-height: 1.6; font-weight: 500;">
                   {investor_spotlight.get('summary')}
                 </td>
               </tr>
             </table>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 0 30px;">
-            <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;" />
           </td>
         </tr>
         """
@@ -675,14 +671,14 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     events_html = []
     for ev in events_list:
         events_html.append(f"""
-        <div style="margin-bottom: 15px; border-bottom: 1px dashed #E2E8F0; padding-bottom: 10px;">
-          <h4 style="font-family: 'Georgia', serif; font-size: 15px; color: #0F172A; margin: 0 0 3px 0; font-weight: 700;">
+        <div style="margin-bottom: 20px; border: 2px solid #000000; padding: 20px; background-color: #FFFFFF; box-shadow: 4px 4px 0px #000000;">
+          <h4 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 16px; color: #000000; margin: 0 0 5px 0; font-weight: 900; text-transform: uppercase;">
             {ev.get('title')}
           </h4>
-          <span style="font-family: 'Inter', Arial, sans-serif; font-size: 11px; background-color: #FEF3C7; color: #B45309; padding: 2px 6px; border-radius: 4px; font-weight: 700; text-transform: uppercase; display: inline-block;">
+          <span style="font-family: 'Satoshi', Arial, sans-serif; font-size: 11px; background-color: #7ED957; color: #000000; border: 1px solid #000000; padding: 2px 8px; font-weight: 900; text-transform: uppercase; display: inline-block; margin-bottom: 10px;">
             {ev.get('date')}
           </span>
-          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #475569; margin: 5px 0 0 0; line-height: 1.5;">
+          <p style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; margin: 0; line-height: 1.5; font-weight: 500;">
             {ev.get('description')}
           </p>
         </div>
@@ -1008,6 +1004,22 @@ if __name__ == "__main__":
                     if download_image(rendered_url, local_img_path):
                         deal["local_image_path"] = local_img_path
                         render_success = True
+            
+            if not render_success or not os.path.exists(local_img_path):
+                resolved_path = deal.get("resolved_image_path")
+                if not resolved_path:
+                    try:
+                        from scripts.render_newscard import resolve_deal_image
+                    except ImportError:
+                        from render_newscard import resolve_deal_image
+                    script_dir = os.path.dirname(os.path.abspath(__file__))
+                    project_root = os.path.dirname(script_dir)
+                    resolved_path = resolve_deal_image(deal, project_root)
+                
+                if resolved_path and os.path.exists(resolved_path):
+                    local_img_path = resolved_path
+                    render_success = True
+                    print(f"Card render failed. Using clean resolved news image as fallback for {deal['startup']}: {local_img_path}")
             
             if render_success:
                 local_image_paths.append(local_img_path)

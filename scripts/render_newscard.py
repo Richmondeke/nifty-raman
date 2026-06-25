@@ -117,6 +117,8 @@ def render_newscard(deal, save_path):
     
     # Resolve the deal featured image
     deal_image_path = resolve_deal_image(deal, project_root)
+    if deal_image_path:
+        deal["resolved_image_path"] = deal_image_path
     deal_image_uri = pathlib.Path(deal_image_path).as_uri() if deal_image_path else ""
     
     # Format today's date

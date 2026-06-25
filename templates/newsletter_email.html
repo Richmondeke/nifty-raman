@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Investor Daily Briefing</title>
   <style type="text/css">
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+    
     body {
       margin: 0;
       padding: 0;
       width: 100% !important;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-      background-color: #F8FAFC;
-      font-family: "Georgia", "Garamond", serif;
+      background-color: #FFFFFF;
+      font-family: 'Satoshi', 'Helvetica Neue', Arial, sans-serif;
     }
     img {
       border: 0;
@@ -25,64 +27,50 @@
       border-collapse: collapse !important;
     }
     td {
-      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-family: 'Satoshi', 'Helvetica Neue', Arial, sans-serif;
     }
   </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #F8FAFC;">
+<body style="margin: 0; padding: 0; background-color: #FFFFFF; color: #000000;">
   <center>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8FAFC; padding: 20px 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF; padding: 40px 0;">
       <tr>
         <td align="center" valign="top">
           <!-- Main Email Container -->
-          <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+          <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #FFFFFF; border: 3px solid #000000; overflow: hidden; box-shadow: 8px 8px 0px #000000;">
             
             <!-- Brand Header -->
             <tr>
-              <td align="center" valign="top" style="background-color: #000000; padding: 30px 20px; border-bottom: 4px solid #7ED957;">
-                <img src="cid:logo_image" alt="The Investor" style="height: 55px; width: auto; display: block; max-width: 250px;" />
-                <p style="font-family: 'Inter', Arial, sans-serif; color: #94A3B8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 12px 0 0 0;">
+              <td align="center" valign="top" style="background-color: #000000; padding: 40px 20px; border-bottom: 3px solid #000000;">
+                <img src="cid:logo_image" alt="The Investor" style="height: 110px; width: auto; display: block; max-width: 250px;" />
+                <p style="font-family: 'Satoshi', Arial, sans-serif; color: #7ED957; font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: 3px; margin: 15px 0 0 0;">
                   Daily Private Capital & Events Briefing
                 </p>
-                <p style="font-family: 'Inter', Arial, sans-serif; color: #FFFFFF; font-size: 12px; margin: 5px 0 0 0; letter-spacing: 0.5px;">
+                <div style="display: inline-block; margin-top: 15px; border: 2px solid #7ED957; background-color: #7ED957; color: #000000; font-family: 'Satoshi', Arial, sans-serif; font-size: 13px; font-weight: 900; padding: 6px 16px; text-transform: uppercase; letter-spacing: 1px;">
                   {date}
-                </p>
+                </div>
               </td>
             </tr>
 
             <!-- Editorial Intro Section -->
             <tr>
-              <td align="left" valign="top" style="padding: 30px 30px 20px 30px; line-height: 1.6;">
-                <h2 style="font-family: 'Georgia', serif; font-size: 22px; color: #0F172A; margin: 0 0 15px 0; font-weight: 700;">
+              <td align="left" valign="top" style="padding: 40px 40px 20px 40px; line-height: 1.6;">
+                <h2 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 24px; color: #000000; margin: 0 0 20px 0; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; border-bottom: 3px solid #000000; padding-bottom: 10px;">
                   Richmond from The Investor
                 </h2>
-                <div style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; color: #475569; margin: 0; line-height: 1.6;">
+                <div style="font-family: 'Satoshi', Arial, sans-serif; font-size: 16px; color: #000000; margin: 0; line-height: 1.6; font-weight: 500;">
                   {editorial_intro}
                 </div>
               </td>
             </tr>
 
-            <!-- Divider -->
-            <tr>
-              <td style="padding: 0 30px;">
-                <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;" />
-              </td>
-            </tr>
-
             <!-- Top Deals Cards Section (Embedded Playwright Images) -->
             <tr>
-              <td align="left" valign="top" style="padding: 10px 30px 20px 30px;">
-                <h3 style="font-family: 'Georgia', serif; font-size: 20px; color: #0F172A; margin: 0 0 20px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-                  🔥 Top Deals of the Day
+              <td align="left" valign="top" style="padding: 20px 40px 20px 40px;">
+                <h3 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 22px; color: #000000; margin: 0 0 25px 0; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center;">
+                  Deal Spotlight
                 </h3>
                 {top_deals_section}
-              </td>
-            </tr>
-
-            <!-- Divider -->
-            <tr>
-              <td style="padding: 0 30px;">
-                <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;" />
               </td>
             </tr>
 
@@ -91,9 +79,9 @@
 
             <!-- Global Deals List Section -->
             <tr>
-              <td align="left" valign="top" style="padding: 10px 30px 20px 30px;">
-                <h3 style="font-family: 'Georgia', serif; font-size: 20px; color: #0F172A; margin: 0 0 15px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-                  🚀 Global Funding Rounds
+              <td align="left" valign="top" style="padding: 20px 40px 20px 40px;">
+                <h3 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 22px; color: #000000; margin: 0 0 20px 0; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">
+                  Global Funding Rounds
                 </h3>
                 {global_deals_section}
               </td>
@@ -101,14 +89,14 @@
 
             <!-- African & Nigerian Spotlight Section -->
             <tr>
-              <td align="left" valign="top" style="padding: 20px 30px 20px 30px; background-color: #F8FAFC; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;">
-                <h2 style="font-family: 'Georgia', serif; font-size: 22px; color: #0F172A; margin: 0 0 5px 0; font-weight: 700;">
-                  🌍 African & Nigerian Spotlight
+              <td align="left" valign="top" style="padding: 30px 40px 30px 40px; background-color: #FFFFFF; border-top: 3px solid #000000; border-bottom: 3px solid #000000;">
+                <h2 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 24px; color: #000000; margin: 0 0 5px 0; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px;">
+                  African & Nigerian Spotlight
                 </h2>
-                <h4 style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #7ED957; font-weight: 700; text-transform: uppercase; margin: 0 0 15px 0; letter-spacing: 1px;">
+                <h4 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 13px; color: #7ED957; font-weight: 900; text-transform: uppercase; margin: 0 0 20px 0; letter-spacing: 1.5px; background-color: #000000; display: inline-block; padding: 4px 10px;">
                   Kamsy from The Investor
                 </h4>
-                <div style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; color: #475569; margin: 0 0 20px 0; line-height: 1.6; font-style: italic;">
+                <div style="font-family: 'Satoshi', Arial, sans-serif; font-size: 16px; color: #000000; margin: 0 0 25px 0; line-height: 1.6; font-weight: 500; font-style: italic; border-left: 4px solid #7ED957; padding-left: 15px;">
                   "{african_intro}"
                 </div>
                 {african_deals_section}
@@ -117,9 +105,9 @@
 
             <!-- Events Section -->
             <tr>
-              <td align="left" valign="top" style="padding: 30px 30px 20px 30px;">
-                <h3 style="font-family: 'Georgia', serif; font-size: 20px; color: #0F172A; margin: 0 0 15px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-                  📅 HNWI & Family Office Events
+              <td align="left" valign="top" style="padding: 30px 40px 30px 40px;">
+                <h3 style="font-family: 'Satoshi', Arial, sans-serif; font-size: 22px; color: #000000; margin: 0 0 20px 0; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">
+                  HNWI & Family Office Events
                 </h3>
                 {events_section}
               </td>
@@ -127,18 +115,18 @@
 
             <!-- Footer -->
             <tr>
-              <td align="center" valign="top" style="background-color: #0F172A; padding: 40px 30px; border-top: 1px solid #1E293B;">
-                <p style="font-family: 'Inter', Arial, sans-serif; color: #FFFFFF; font-size: 15px; font-weight: 700; margin: 0 0 10px 0; letter-spacing: 1px; text-transform: uppercase;">
+              <td align="center" valign="top" style="background-color: #000000; padding: 50px 40px; border-top: 3px solid #000000;">
+                <p style="font-family: 'Satoshi', Arial, sans-serif; color: #FFFFFF; font-size: 18px; font-weight: 900; margin: 0 0 15px 0; letter-spacing: 2px; text-transform: uppercase;">
                   The Investor
                 </p>
-                <p style="font-family: 'Inter', Arial, sans-serif; color: #94A3B8; font-size: 12px; margin: 0 0 20px 0; line-height: 1.6;">
+                <p style="font-family: 'Satoshi', Arial, sans-serif; color: #94A3B8; font-size: 13px; margin: 0 0 30px 0; line-height: 1.6; font-weight: 500;">
                   You are receiving this because you subscribed to The Investor daily fundraising updates.<br/>
                   © 2026 The Investor. All rights reserved.
                 </p>
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td align="center" style="background-color: #7ED957; border-radius: 4px; padding: 8px 18px;">
-                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #000000; font-weight: 700; text-decoration: none; display: inline-block;">
+                    <td align="center" style="background-color: #7ED957; border: 2px solid #000000; padding: 10px 24px;">
+                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Satoshi', Arial, sans-serif; font-size: 14px; color: #000000; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
                         Visit Our Platform
                       </a>
                     </td>
