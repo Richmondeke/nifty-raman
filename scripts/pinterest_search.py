@@ -40,7 +40,7 @@ def query_pinterest_search(query, limit=5):
             
             # Go to pinterest search
             page.goto(search_url, timeout=45000)
-            page.wait_for_load_state("networkidle")
+            page.wait_for_load_state("domcontentloaded")
             page.wait_for_timeout(3000)  # Wait for dynamic grids to fully render
             
             # Find image tags

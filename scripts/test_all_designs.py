@@ -444,7 +444,7 @@ def main():
     daily_deal_query = f"{daily_deal['startup']} logo startup"
     daily_deal_img = get_pinterest_image_or_fallback(
         daily_deal_query,
-        "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80"
     )
     daily_deal["deal_image"] = daily_deal_img
     
@@ -463,7 +463,7 @@ def main():
     breaking_deal_query = f"{breaking_deal['startup']} startup technology"
     breaking_deal_img = get_pinterest_image_or_fallback(
         breaking_deal_query,
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
     )
     breaking_deal["deal_image"] = breaking_deal_img
     
@@ -482,7 +482,7 @@ def main():
     job_query = f"{job_role['company']} office workspace"
     job_workplace_img = get_pinterest_image_or_fallback(
         job_query,
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
     )
     job_role["job_image"] = job_workplace_img
     
