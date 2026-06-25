@@ -33,10 +33,23 @@ def schedule_post():
     date_str = datetime.now().strftime("%Y-%m-%d")
     image_path = os.path.join("NewsReport", "images", f"{date_str}-top-deal.jpg")
     
+    # Fallback to dynamically finding the first newscard for today
+    if not os.path.exists(image_path):
+        images_dir = os.path.join("NewsReport", "images")
+        if os.path.exists(images_dir):
+            today_cards = [
+                f for f in os.listdir(images_dir)
+                if f.startswith(date_str) and f.endswith("-card.jpg")
+            ]
+            if today_cards:
+                today_cards.sort()
+                image_path = os.path.join(images_dir, today_cards[0])
+                print(f"Dynamically found today's newscard: {image_path}")
+    
     post_text = f"📰 Today's Venture Capital Briefing is out!\n\nCheck out the top startup deals of the day! 📈💸\n\n#VentureCapital #Startups #Fundraising #TechNews"
     
     uploaded_url = None
-    if os.path.exists(image_path):
+    if image_path and os.path.exists(image_path):
         uploaded_url = upload_to_postiz(os.path.abspath(image_path))
 
     # Schedule for 15 minutes from now

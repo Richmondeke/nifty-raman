@@ -541,9 +541,9 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     The content structure must include:
     1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
     2. Global Editorial Intro: Write a friendly, relatable greeting from Richmond ("Richmond from The Investor"). Explain what is happening in the global venture market today in plain English.
-    3. Top Deal of the Day:
-       - Insert the visual card image with `src="cid:top_deal_image"` to display it inline.
-       - Provide a readable, relatable write-up of this top deal below the image.
+    3. Top Deals of the Day (Top 3):
+       - We have generated visual card images for the top 3 deals. You must embed them inline using `<img src="cid:top_deal_image_0" style="width: 100%; border-radius: 8px; margin: 15px 0;">` for the first deal, `<img src="cid:top_deal_image_1" style="width: 100%; border-radius: 8px; margin: 15px 0;">` for the second deal, and `<img src="cid:top_deal_image_2" style="width: 100%; border-radius: 8px; margin: 15px 0;">` for the third deal.
+       - Present each of the top 3 deals sequentially. For each deal, place its visual card image above its readable, relatable write-up.
     4. Top Investor Spotlight:
        - Embed the portrait using <img src="cid:investor_image" alt="{investor_spotlight.get('name') if investor_spotlight else ''}" style="height:120px; display:block; margin:0 auto 10px auto; border-radius:8px;">
        - <p style="font-family:'DM Sans',Arial,sans-serif; color:#475569; text-align:center; margin:0 0 15px 0;">{investor_spotlight.get('summary') if investor_spotlight else ''}</p>
@@ -581,7 +581,7 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
         print(f"Error generating newsletter HTML via Gemini: {e}")
         return None
 
-def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_spotlight=None, test_recipient=None):
+def send_gmail(deals, local_image_paths=None, investor_image_path=None, investor_spotlight=None, test_recipient=None):
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     gemini_key = os.environ.get("GEMINI_API_KEY")
@@ -604,8 +604,10 @@ def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_
     if not html_content:
         # Fallback ...
         html_parts = ["<html>", "<body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>", "<p>Hi Investor,</p>"]
-        if local_image_path and os.path.exists(local_image_path):
-            html_parts.append("<img src='cid:top_deal_image' style='max-width: 600px;'>")
+        if local_image_paths:
+            for idx, img_path in enumerate(local_image_paths):
+                if img_path and os.path.exists(img_path):
+                    html_parts.append(f"<div style='margin-bottom: 30px;'><img src='cid:top_deal_image_{idx}' style='max-width: 600px;'></div>")
         html_content = "\n".join(html_parts) + "</body></html>"
     
     logo_path = os.path.join("assets", "TheInvestor.png")
@@ -629,11 +631,13 @@ def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_
                     msg_logo.add_header('Content-ID', '<logo_image>')
                     msg.attach(msg_logo)
             
-            if local_image_path and os.path.exists(local_image_path):
-                with open(local_image_path, 'rb') as f:
-                    msg_img = MIMEImage(f.read())
-                    msg_img.add_header('Content-ID', '<top_deal_image>')
-                    msg.attach(msg_img)
+            if local_image_paths:
+                for idx, img_path in enumerate(local_image_paths):
+                    if img_path and os.path.exists(img_path):
+                        with open(img_path, 'rb') as f:
+                            msg_img = MIMEImage(f.read())
+                            msg_img.add_header('Content-ID', f'<top_deal_image_{idx}>')
+                            msg.attach(msg_img)
 
             if investor_image_path and os.path.exists(investor_image_path):
                 try:
@@ -645,8 +649,10 @@ def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_
                     print(f"Error attaching investor image for {recipient}: {e}")
             
             server.sendmail(gmail_user, [recipient], msg.as_string())
+            print(f"Successfully sent email to {recipient}")
             
         server.close()
+        print("Gmail SMTP server connection closed.")
     except Exception as e:
         print(f"Error sending emails via Gmail: {e}")
 
@@ -681,20 +687,50 @@ if __name__ == "__main__":
         
     deals = []
     if use_mock:
-        deals = [{
-            "startup": "The Investor",
-            "deal_details": "raised $10 Million Series A",
-            "amount": "$10 Million",
-            "stage": "Series A",
-            "keywords": ["Fintech", "Media"],
-            "investors": "Vanguard, Tiger Global",
-            "summary": "The Investor is a premium capital briefing platform that delivers curated venture funding news and family office insights to HNWI readers.",
-            "source": "TechCrunch",
-            "url": "https://theinvestor.news",
-            "article_image_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
-            "is_african": False,
-            "score": 5
-        }]
+        deals = [
+            {
+                "startup": "The Investor",
+                "deal_details": "raised $10 Million Series A",
+                "amount": "$10 Million",
+                "stage": "Series A",
+                "keywords": ["Fintech", "Media"],
+                "investors": "Vanguard, Tiger Global",
+                "summary": "The Investor is a premium capital briefing platform that delivers curated venture funding news and family office insights to HNWI readers.",
+                "source": "TechCrunch",
+                "url": "https://theinvestor.news",
+                "article_image_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+                "is_african": False,
+                "score": 5
+            },
+            {
+                "startup": "Raman AI",
+                "deal_details": "raised $5 Million Seed",
+                "amount": "$5 Million",
+                "stage": "Seed",
+                "keywords": ["AI Infrastructure", "SaaS"],
+                "investors": "Y Combinator, Sequoia Capital",
+                "summary": "Raman AI builds high-performance agentic pipelines and developer tools designed to streamline corporate workflows and LLM fine-tuning.",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com",
+                "article_image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+                "is_african": False,
+                "score": 4
+            },
+            {
+                "startup": "Antigravity Corp",
+                "deal_details": "raised $20 Million Series B",
+                "amount": "$20 Million",
+                "stage": "Series B",
+                "keywords": ["Deeptech", "Aerospace"],
+                "investors": "Founders Fund, Andreessen Horowitz",
+                "summary": "Antigravity Corp is pioneering advanced propulsion systems and orbital logistics platforms to support commercial space missions.",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com",
+                "article_image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+                "is_african": False,
+                "score": 5
+            }
+        ]
     else:
         articles = []
         articles.extend(fetch_rss_deals("https://techcrunch.com/category/venture/feed/", "TechCrunch"))
@@ -744,44 +780,53 @@ if __name__ == "__main__":
         # Image logic (Assumes local storage at standard path)
         investor_img_path = os.path.join("NewsReport", "images", "investor_portrait.jpg")
 
-        top_deal = deals[0]
+        # Generate newscards for the top deals (up to 3)
+        local_image_paths = []
         date_str = datetime.now().strftime("%Y-%m-%d")
-        image_filename = f"{date_str}-top-deal.jpg"
-        local_img_path = os.path.join("NewsReport", "images", image_filename)
         
-        # Try local Playwright newscard generation first
-        render_success = False
         try:
+            from scripts.render_newscard import render_newscard
+        except ImportError:
+            sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+            from render_newscard import render_newscard
+
+        for idx, deal in enumerate(deals[:3]):
+            startup_clean = deal.get("startup", f"deal_{idx}").replace(" ", "_").replace("/", "_")
+            image_filename = f"{date_str}-{startup_clean}-card.jpg"
+            local_img_path = os.path.join("NewsReport", "images", image_filename)
+            
+            render_success = False
             try:
-                from scripts.render_newscard import render_newscard
-            except ImportError:
-                sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-                from render_newscard import render_newscard
+                render_success = render_newscard(deal, local_img_path)
+                if render_success:
+                    deal["local_image_path"] = local_img_path
+                    print(f"Successfully generated local HTML newscard for {deal['startup']}")
+            except Exception as e:
+                print(f"Failed to generate local HTML newscard for {deal.get('startup')}: {e}. Falling back to API card generation.")
                 
-            render_success = render_newscard(top_deal, local_img_path)
+            if not render_success:
+                rendered_url = None
+                if templated_key and templated_id:
+                    rendered_url = render_templated_card(deal, templated_key, templated_id)
+                elif creatomate_key and creatomate_id:
+                    rendered_url = render_creatomate_card(deal, creatomate_key, creatomate_id)
+                
+                if rendered_url:
+                    deal["rendered_image_url"] = rendered_url
+                    print(f"Deal visual card generated successfully via API for: {deal['startup']}")
+                    if download_image(rendered_url, local_img_path):
+                        deal["local_image_path"] = local_img_path
+                        render_success = True
+            
             if render_success:
-                top_deal["local_image_path"] = local_img_path
-                print(f"Successfully generated local HTML newscard for {top_deal['startup']}")
-        except Exception as e:
-            print(f"Failed to generate local HTML newscard: {e}. Falling back to API card generation.")
-            
-        if not render_success:
-            rendered_url = None
-            if templated_key and templated_id:
-                rendered_url = render_templated_card(top_deal, templated_key, templated_id)
-            elif creatomate_key and creatomate_id:
-                rendered_url = render_creatomate_card(top_deal, creatomate_key, creatomate_id)
-            
-            if rendered_url:
-                top_deal["rendered_image_url"] = rendered_url
-                print(f"Top deal visual card generated successfully via API for: {top_deal['startup']}")
-                if download_image(rendered_url, local_img_path):
-                    top_deal["local_image_path"] = local_img_path
+                local_image_paths.append(local_img_path)
+            else:
+                local_image_paths.append(None)
                 
         write_markdown_report(deals)
         
         # Send notifications via Gmail
-        send_gmail(deals, local_img_path, investor_img_path, investor_spotlight, test_recipient)
+        send_gmail(deals, local_image_paths, investor_img_path, investor_spotlight, test_recipient)
         
         if spreadsheet:
             sheets_creds = os.environ.get("GOOGLE_SHEETS_CREDENTIALS")
