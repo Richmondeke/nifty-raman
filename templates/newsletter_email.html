@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Investor Daily Briefing</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      background-color: #F8FAFC;
+      font-family: "Georgia", "Garamond", serif;
+    }
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    table {
+      border-collapse: collapse !important;
+    }
+    td {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F8FAFC;">
+  <center>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8FAFC; padding: 20px 0;">
+      <tr>
+        <td align="center" valign="top">
+          <!-- Main Email Container -->
+          <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+            
+            <!-- Brand Header -->
+            <tr>
+              <td align="center" valign="top" style="background-color: #000000; padding: 30px 20px; border-bottom: 4px solid #7ED957;">
+                <img src="cid:logo_image" alt="The Investor" style="height: 55px; width: auto; display: block; max-width: 250px;" />
+                <p style="font-family: 'Inter', Arial, sans-serif; color: #94A3B8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 12px 0 0 0;">
+                  Daily Private Capital & Events Briefing
+                </p>
+                <p style="font-family: 'Inter', Arial, sans-serif; color: #FFFFFF; font-size: 12px; margin: 5px 0 0 0; letter-spacing: 0.5px;">
+                  {date}
+                </p>
+              </td>
+            </tr>
+
+            <!-- Editorial Intro Section -->
+            <tr>
+              <td align="left" valign="top" style="padding: 30px 30px 20px 30px; line-height: 1.6;">
+                <h2 style="font-family: 'Georgia', serif; font-size: 22px; color: #0F172A; margin: 0 0 15px 0; font-weight: 700;">
+                  Richmond from The Investor
+                </h2>
+                <div style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; color: #475569; margin: 0; line-height: 1.6;">
+                  {editorial_intro}
+                </div>
+              </td>
+            </tr>
+
+            <!-- Divider -->
+            <tr>
+              <td style="padding: 0 30px;">
+                <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;" />
+              </td>
+            </tr>
+
+            <!-- Top Deals Cards Section (Embedded Playwright Images) -->
+            <tr>
+              <td align="left" valign="top" style="padding: 10px 30px 20px 30px;">
+                <h3 style="font-family: 'Georgia', serif; font-size: 20px; color: #0F172A; margin: 0 0 20px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                  🔥 Top Deals of the Day
+                </h3>
+                {top_deals_section}
+              </td>
+            </tr>
+
+            <!-- Divider -->
+            <tr>
+              <td style="padding: 0 30px;">
+                <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;" />
+              </td>
+            </tr>
+
+            <!-- Spotlight Section -->
+            {spotlight_section}
+
+            <!-- Global Deals List Section -->
+            <tr>
+              <td align="left" valign="top" style="padding: 10px 30px 20px 30px;">
+                <h3 style="font-family: 'Georgia', serif; font-size: 20px; color: #0F172A; margin: 0 0 15px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                  🚀 Global Funding Rounds
+                </h3>
+                {global_deals_section}
+              </td>
+            </tr>
+
+            <!-- African & Nigerian Spotlight Section -->
+            <tr>
+              <td align="left" valign="top" style="padding: 20px 30px 20px 30px; background-color: #F8FAFC; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;">
+                <h2 style="font-family: 'Georgia', serif; font-size: 22px; color: #0F172A; margin: 0 0 5px 0; font-weight: 700;">
+                  🌍 African & Nigerian Spotlight
+                </h2>
+                <h4 style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #7ED957; font-weight: 700; text-transform: uppercase; margin: 0 0 15px 0; letter-spacing: 1px;">
+                  Kamsy from The Investor
+                </h4>
+                <div style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; color: #475569; margin: 0 0 20px 0; line-height: 1.6; font-style: italic;">
+                  "{african_intro}"
+                </div>
+                {african_deals_section}
+              </td>
+            </tr>
+
+            <!-- Events Section -->
+            <tr>
+              <td align="left" valign="top" style="padding: 30px 30px 20px 30px;">
+                <h3 style="font-family: 'Georgia', serif; font-size: 20px; color: #0F172A; margin: 0 0 15px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                  📅 HNWI & Family Office Events
+                </h3>
+                {events_section}
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td align="center" valign="top" style="background-color: #0F172A; padding: 40px 30px; border-top: 1px solid #1E293B;">
+                <p style="font-family: 'Inter', Arial, sans-serif; color: #FFFFFF; font-size: 15px; font-weight: 700; margin: 0 0 10px 0; letter-spacing: 1px; text-transform: uppercase;">
+                  The Investor
+                </p>
+                <p style="font-family: 'Inter', Arial, sans-serif; color: #94A3B8; font-size: 12px; margin: 0 0 20px 0; line-height: 1.6;">
+                  You are receiving this because you subscribed to The Investor daily fundraising updates.<br/>
+                  © 2026 The Investor. All rights reserved.
+                </p>
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center" style="background-color: #7ED957; border-radius: 4px; padding: 8px 18px;">
+                      <a href="https://theinvestor.news" target="_blank" style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #000000; font-weight: 700; text-decoration: none; display: inline-block;">
+                        Visit Our Platform
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>

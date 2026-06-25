@@ -25,7 +25,14 @@ def resolve_deal_image(deal, project_root):
     
     # 1. Check if we have a scraped article image
     url = deal.get("article_image_url")
+    is_watermarked = False
     if url:
+        url_lower = url.lower()
+        if "techcabal" in url_lower or "disrupt-africa" in url_lower:
+            is_watermarked = True
+            print(f"Scraped image from {url} belongs to a known watermarked domain. Skipping download to generate clean AI fallback.")
+
+    if url and not is_watermarked:
         save_path = os.path.join(images_dir, f"{startup}-scraped.jpg")
         print(f"Attempting to download news image for {startup} from: {url}...")
         if download_image(url, save_path):

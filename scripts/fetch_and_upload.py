@@ -499,87 +499,208 @@ def extract_og_image(url):
         print(f"Error extracting OG image from {url}: {e}")
     return None
 
+def format_deal_list(deals_list):
+    if not deals_list:
+        return '<p style="font-family: \'Inter\', Arial, sans-serif; font-size: 13px; color: #94A3B8; font-style: italic;">No other major rounds reported today.</p>'
+    
+    html_blocks = []
+    for d in deals_list:
+        keywords = d.get("keywords", [])
+        if isinstance(keywords, str):
+            keywords = [k.strip() for k in keywords.split(",") if k.strip()]
+        
+        keywords_tags = "".join([
+            f'<span style="background-color: #F1F5F9; color: #475569; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 5px; font-weight: 600; display: inline-block; margin-bottom: 4px;">{k}</span>' 
+            for k in keywords if k
+        ])
+        
+        html_blocks.append(f"""
+        <div style="border: 1px solid #E2E8F0; border-radius: 6px; padding: 15px; margin-bottom: 15px; background-color: #FFFFFF;">
+          <h4 style="font-family: 'Georgia', serif; font-size: 16px; color: #0F172A; margin: 0 0 5px 0; font-weight: 700;">
+            {d.get('startup')} — <span style="color: #B45309;">{d.get('amount')} ({d.get('stage')})</span>
+          </h4>
+          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">
+            {d.get('summary')}
+          </p>
+          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #64748B; margin: 0 0 10px 0;">
+            <strong>Investors</strong>: {d.get('investors')}
+          </p>
+          <div style="margin-top: 5px;">
+            {keywords_tags}
+          </div>
+        </div>
+        """)
+    return "\n".join(html_blocks)
+
 def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
     """
-    Generates a premium, investor-centric newsletter HTML body using Gemini API.
-    Highlights weekly HNWI / Family Office events and incorporates article image URLs.
-    Uses a relatable, simple writing style and embeds the logo.
+    Generates a premium, uniform, investor-centric newsletter HTML body.
+    Uses Gemini to write the editorial copy (Richmond's greeting and Kamsy's African intro)
+    and structures them into a standard HTML template.
     """
-    print("Generating premium newsletter HTML via Gemini...")
+    print("Generating uniform newsletter HTML using standard template...")
+    
+    # Load the email template
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    template_path = os.path.join(project_root, "templates", "newsletter_email.html")
+    
+    if not os.path.exists(template_path):
+        print(f"Error: Newsletter template not found at {template_path}. Returning empty.")
+        return None
+        
+    with open(template_path, "r", encoding="utf-8") as f:
+        template_content = f.read()
+        
+    # Generate the copywriting sections (intros and events) using Gemini
     client = genai.Client(api_key=gemini_key)
     date_str = datetime.now().strftime("%B %d, %Y")
     
-    # Structure deals data cleanly for the prompt
-    deals_data = []
+    deals_summary = []
     for d in deals:
-        deals_data.append({
-            "startup": d.get("startup"),
-            "deal_details": d.get("deal_details"),
-            "summary": d.get("summary"),
-            "investors": d.get("investors"),
-            "url": d.get("url"),
-            "article_image_url": d.get("article_image_url"),
-            "keywords": d.get("keywords"),
-            "score": d.get("score"),
-            "is_african": d.get("is_african")
-        })
-        
+        deals_summary.append(f"- {d.get('startup')} ({d.get('amount')}, {d.get('stage')}): {d.get('summary')}")
+    deals_text = "\n".join(deals_summary)
+    
     prompt = f"""
-    You are a friendly, down-to-earth financial editor for "The Investor", a daily venture briefing sent to HNWIs, Family Offices, and Venture Capitalists.
+    You are the writing assistant for "The Investor" newsletter. Based on today's venture capital deals:
+    {deals_text}
     
-    Generate the HTML content for today's newsletter ({date_str}).
-    Use inline CSS inside the HTML style attributes to ensure it renders beautifully in Gmail and other email clients.
+    Generate three copywriting elements as JSON. Output exactly a JSON object (no markdown backticks, no comments) with these keys:
+    1. "editorial_intro": A friendly, high-quality, professional yet down-to-earth greeting from Richmond ("Richmond from The Investor") to our HNWI/Family Office readers. Summarize the major trends of today's venture capital activities in 2 paragraphs. Do not use HTML tags in this text except standard paragraph tags (<p>...</p>) if needed.
+    2. "african_intro": A warm, insightful 1-paragraph thought from Kamsy ("Kamsy from The Investor") focusing on the African startup and VC landscape today.
+    3. "events": A list of 2-3 exclusive high-value events of the week for HNWIs and Family Offices (e.g. VIP investor summits, private wealth conferences, venture showcase dinners). For each event, include: "title", "date", and "description".
     
-    The newsletter must follow these design guidelines:
-                - Palette: Deep rich blues (#0F172A), luxurious warm gold/amber accents (#D97706 or #B45309), slate gray for text (#475569), clean ivory/white backgrounds (#FFFFFF). Header background is black (#000000) with white text. Investor spotlight uses grass‑green accent (#7ED957).
-        - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) and body text in "DM Sans" (fallback to "Inter", "Helvetica Neue", Arial, sans-serif).
-    
-    1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 105px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
-    - Typography: Serif headers (e.g. "Georgia", "Garamond", serif) and clean, easy-to-read sans-serif body text (e.g. "Inter", "Helvetica Neue", Arial, sans-serif).
-    - Responsive layout with a max-width of 600px, centered, with comfortable padding (e.g., 20px-30px), soft borders, and premium-looking cards.
-    
-    The content structure must include:
-    1. Elegant Header: Embed the logo using <img src="cid:logo_image" alt="The Investor" style="height: 50px; display: block; margin: 0 auto 10px auto; max-width: 250px;">. Display the edition date and a subtitle below it: "Daily private capital & events briefing".
-    2. Global Editorial Intro: Write a friendly, relatable greeting from Richmond ("Richmond from The Investor"). Explain what is happening in the global venture market today in plain English.
-    3. Top Deals of the Day (Top 3):
-       - We have generated visual card images for the top 3 deals. You must embed them inline using `<img src="cid:top_deal_image_0" style="width: 100%; border-radius: 8px; margin: 15px 0;">` for the first deal, `<img src="cid:top_deal_image_1" style="width: 100%; border-radius: 8px; margin: 15px 0;">` for the second deal, and `<img src="cid:top_deal_image_2" style="width: 100%; border-radius: 8px; margin: 15px 0;">` for the third deal.
-       - Present each of the top 3 deals sequentially. For each deal, place its visual card image above its readable, relatable write-up.
-    4. Top Investor Spotlight:
-       - Embed the portrait using <img src="cid:investor_image" alt="{investor_spotlight.get('name') if investor_spotlight else ''}" style="height:120px; display:block; margin:0 auto 10px auto; border-radius:8px;">
-       - <p style="font-family:'DM Sans',Arial,sans-serif; color:#475569; text-align:center; margin:0 0 15px 0;">{investor_spotlight.get('summary') if investor_spotlight else ''}</p>
-    5. 🚀 Top Global Deals:
-       - Format the global deals (those with is_african = false or missing) from the following data: {json.dumps(deals_data, indent=2)}
-       - For each deal, present a simple summary, investors, and sector/keywords.
-       - If a deal has a non-null/valid 'article_image_url', embed that image inside the deal card/section with style: `width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 12px 0;`.
-    6. 🌍 African & Nigerian Spotlight:
-       - Start this section with a warm, friendly intro from Kamsy ("Kamsy from The Investor"). Have him share a brief thought on today's African tech news or ecosystem growth.
-       - Format the African deals (those with is_african = true) from the same data array.
-       - Render them distinctly in their own styled section.
-       - Follow the same card format rules as global deals.
-    7. Events of the Week for HNWIs & Family Offices:
-       - Create an exclusive events section highlighting 2-3 high-value events of the week.
-    8. Premium Footer: Standard newsletter footer with branding, disclaimers, and subscription terms.
-    
-    Return ONLY the raw HTML code. Do not include markdown code block backticks.
+    JSON format:
+    {{
+      "editorial_intro": "...",
+      "african_intro": "...",
+      "events": [
+        {{
+          "title": "...",
+          "date": "...",
+          "description": "..."
+        }}
+      ]
+    }}
     """
+    
+    editorial_intro = "<p>Welcome to today's edition of The Investor briefing. Today we highlight major movements in capital markets, private equity allocations, and notable fundraising rounds.</p>"
+    african_intro = "Great momentum is building across the African venture space today."
+    events_list = [
+        {"title": "HNWI Wealth & Venture Summit", "date": "July 12, 2026", "description": "An exclusive gathering of family offices and venture capitalists discussing private equity allocations."},
+        {"title": "African Tech Angel Showcase", "date": "July 15, 2026", "description": "Private virtual pitching session with pre-vetted high-growth startups from Lagos, Nairobi, and Cape Town."}
+    ]
     
     try:
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=prompt
         )
-        html_code = response.text.strip()
-        # Clean potential markdown output
-        if html_code.startswith("```html"):
-            html_code = html_code[7:]
-        elif html_code.startswith("```"):
-            html_code = html_code[3:]
-        if html_code.endswith("```"):
-            html_code = html_code[:-3]
-        return html_code.strip()
+        text = response.text.strip()
+        
+        # Clean markdown codeblocks
+        if text.startswith("```json"):
+            text = text[7:]
+        elif text.startswith("```"):
+            text = text[3:]
+        if text.endswith("```"):
+            text = text[:-3]
+        text = text.strip()
+        
+        data = json.loads(text)
+        editorial_intro = data.get("editorial_intro", editorial_intro)
+        african_intro = data.get("african_intro", african_intro)
+        events_list = data.get("events", events_list)
+        print("Gemini successfully generated intros and events copy.")
     except Exception as e:
-        print(f"Error generating newsletter HTML via Gemini: {e}")
-        return None
+        print(f"Error calling Gemini or parsing JSON copy: {e}. Using fallback copywriting.")
+        
+    # Format the sections in Python
+    
+    # 1. Top deals section (highlight top 3 deals)
+    top_deals_html = []
+    for idx, deal in enumerate(deals[:3]):
+        top_deals_html.append(f"""
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 25px; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden; background-color: #FFFFFF;">
+          <tr>
+            <td align="center">
+              <img src="cid:top_deal_image_{idx}" alt="{deal.get('startup')} card" style="width: 100%; max-width: 540px; display: block; border-bottom: 1px solid #E2E8F0;" />
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 15px; font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #475569; line-height: 1.6;">
+              <strong style="color: #0F172A; font-size: 16px;">{deal.get('startup')}</strong> — {deal.get('summary')}
+              <br/><span style="font-size: 12px; color: #94A3B8; margin-top: 5px; display: inline-block;">Source: {deal.get('source')}</span>
+            </td>
+          </tr>
+        </table>
+        """)
+    top_deals_section = "\n".join(top_deals_html)
+    
+    # 2. Spotlight section
+    if investor_spotlight and investor_spotlight.get("name"):
+        spotlight_section = f"""
+        <tr>
+          <td align="left" valign="top" style="padding: 20px 30px 10px 30px; background-color: #F0FDF4; border-left: 4px solid #7ED957;">
+            <h3 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin: 0 0 12px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+              ✨ Investor Spotlight: {investor_spotlight.get('name')}
+            </h3>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;">
+              <tr>
+                <td valign="top" style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #475569; line-height: 1.6;">
+                  {investor_spotlight.get('summary')}
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 0 30px;">
+            <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;" />
+          </td>
+        </tr>
+        """
+    else:
+        spotlight_section = ""
+        
+    # 3. Global and African deals lists (skip top 3)
+    other_deals = deals[3:] if len(deals) > 3 else []
+    global_list = [d for d in other_deals if not d.get("is_african")]
+    african_list = [d for d in other_deals if d.get("is_african")]
+    
+    global_deals_section = format_deal_list(global_list)
+    african_deals_section = format_deal_list(african_list)
+    
+    # 4. Events section
+    events_html = []
+    for ev in events_list:
+        events_html.append(f"""
+        <div style="margin-bottom: 15px; border-bottom: 1px dashed #E2E8F0; padding-bottom: 10px;">
+          <h4 style="font-family: 'Georgia', serif; font-size: 15px; color: #0F172A; margin: 0 0 3px 0; font-weight: 700;">
+            {ev.get('title')}
+          </h4>
+          <span style="font-family: 'Inter', Arial, sans-serif; font-size: 11px; background-color: #FEF3C7; color: #B45309; padding: 2px 6px; border-radius: 4px; font-weight: 700; text-transform: uppercase; display: inline-block;">
+            {ev.get('date')}
+          </span>
+          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #475569; margin: 5px 0 0 0; line-height: 1.5;">
+            {ev.get('description')}
+          </p>
+        </div>
+        """)
+    events_section = "\n".join(events_html)
+    
+    # Compile the final newsletter HTML
+    html_body = template_content
+    html_body = html_body.replace("{date}", date_str)
+    html_body = html_body.replace("{editorial_intro}", editorial_intro)
+    html_body = html_body.replace("{top_deals_section}", top_deals_section)
+    html_body = html_body.replace("{spotlight_section}", spotlight_section)
+    html_body = html_body.replace("{global_deals_section}", global_deals_section)
+    html_body = html_body.replace("{african_intro}", african_intro)
+    html_body = html_body.replace("{african_deals_section}", african_deals_section)
+    html_body = html_body.replace("{events_section}", events_section)
+    
+    return html_body
 
 def send_gmail(deals, local_image_paths=None, investor_image_path=None, investor_spotlight=None, test_recipient=None):
     gmail_user = os.environ.get("GMAIL_USER")
@@ -657,6 +778,74 @@ def send_gmail(deals, local_image_paths=None, investor_image_path=None, investor
         print("Gmail SMTP server connection closed.")
     except Exception as e:
         print(f"Error sending emails via Gmail: {e}")
+
+def send_whatsapp(deals, test_recipient=None):
+    """
+    Sends a WhatsApp notification summarizing today's venture report.
+    Supports CallMeBot (free, simple) and Twilio (professional).
+    """
+    phone = os.environ.get("WHATSAPP_PHONE")
+    apikey = os.environ.get("WHATSAPP_API_KEY") # CallMeBot API key
+    
+    twilio_sid = os.environ.get("TWILIO_ACCOUNT_SID")
+    twilio_token = os.environ.get("TWILIO_AUTH_TOKEN")
+    twilio_from = os.environ.get("TWILIO_FROM_NUMBER") # Twilio WhatsApp sender e.g. whatsapp:+14155238886
+    
+    if not (phone and apikey) and not (twilio_sid and twilio_token and twilio_from and phone):
+        print("WhatsApp credentials not fully set. Skipping WhatsApp notification.")
+        return
+        
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    message = f"🚀 *The Investor Daily Fundraising Report - {date_str}* is out!\n\n"
+    message += f"Total Deals: {len(deals)}\n\n"
+    
+    if deals:
+        message += "*Top Deals Today:*\n"
+        for idx, d in enumerate(deals[:3], 1):
+            message += f"{idx}. {d.get('startup')} raised {d.get('amount')} ({d.get('stage')})\n"
+            
+    message += "\n📧 Full newsletter report has been sent to your inbox!"
+    
+    # 1. Try CallMeBot (Free, HTTP-based API)
+    if phone and apikey:
+        print("Sending WhatsApp notification via CallMeBot...")
+        url = "https://api.callmebot.com/whatsapp.php"
+        params = {
+            "phone": phone,
+            "apikey": apikey,
+            "text": message
+        }
+        try:
+            res = requests.get(url, params=params, timeout=15)
+            if res.status_code == 200:
+                print("WhatsApp notification sent successfully via CallMeBot.")
+                return
+            else:
+                print(f"CallMeBot failed with status {res.status_code}: {res.text}")
+        except Exception as e:
+            print(f"Error sending WhatsApp via CallMeBot: {e}")
+            
+    # 2. Try Twilio (Professional API)
+    if twilio_sid and twilio_token and twilio_from and phone:
+        print("Sending WhatsApp notification via Twilio...")
+        to_number = phone if phone.startswith("whatsapp:") else f"whatsapp:{phone}"
+        from_number = twilio_from if twilio_from.startswith("whatsapp:") else f"whatsapp:{twilio_from}"
+        
+        try:
+            url = f"https://api.twilio.com/2010-04-01/Accounts/{twilio_sid}/Messages.json"
+            auth = (twilio_sid, twilio_token)
+            payload = {
+                "From": from_number,
+                "To": to_number,
+                "Body": message
+            }
+            res = requests.post(url, data=payload, auth=auth, timeout=15)
+            if res.status_code in (200, 201):
+                print("WhatsApp notification sent successfully via Twilio.")
+            else:
+                print(f"Twilio WhatsApp failed with status {res.status_code}: {res.text}")
+        except Exception as e:
+            print(f"Error sending WhatsApp via Twilio: {e}")
 
 if __name__ == "__main__":
     # Load environment variables
@@ -829,6 +1018,9 @@ if __name__ == "__main__":
         
         # Send notifications via Gmail
         send_gmail(deals, local_image_paths, investor_img_path, investor_spotlight, test_recipient)
+        
+        # Send notifications via WhatsApp
+        send_whatsapp(deals, test_recipient)
         
         if spreadsheet:
             sheets_creds = os.environ.get("GOOGLE_SHEETS_CREDENTIALS")
