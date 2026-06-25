@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap');
+    
+    :root {
+      --bg-primary: #0b0f19;
+      --bg-card: rgba(15, 23, 42, 0.65);
+      --accent-purple: #b696d3;
+      --accent-green: #7ed957;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border-glow: rgba(126, 217, 87, 0.15);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      width: 1080px;
+      height: 1350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Background grid effect */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 1;
+    }
+    
+    /* Radial glow in the background */
+    body::after {
+      content: '';
+      position: absolute;
+      top: -300px;
+      right: -300px;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(126, 217, 87, 0.08) 0%, transparent 70%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .header {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 40px;
+    }
+    
+    .logo-container img {
+      height: 70px;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .date-badge {
+      background: rgba(126, 217, 87, 0.1);
+      border: 1px solid rgba(126, 217, 87, 0.2);
+      color: var(--accent-green);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 10px 24px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .main-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin: auto 0;
+    }
+    
+    .spotlight-tag {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent-purple);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .spotlight-tag::after {
+      content: '';
+      flex-grow: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent-purple), transparent);
+    }
+    
+    .startup-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 72px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+    
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    
+    .metric-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .metric-card.highlight {
+      border-color: var(--border-glow);
+      box-shadow: 0 8px 30px rgba(126, 217, 87, 0.05);
+    }
+    
+    .metric-label {
+      font-size: 16px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .metric-card.highlight .metric-value {
+      color: var(--accent-green);
+    }
+    
+    .summary-card {
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 4px solid var(--accent-purple);
+      padding: 30px;
+      border-radius: 0 16px 16px 0;
+    }
+    
+    .summary-text {
+      font-size: 26px;
+      line-height: 1.6;
+      color: #e2e8f0;
+      font-weight: 400;
+    }
+    
+    .footer {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 40px;
+      width: 100%;
+    }
+    
+    .footer-text {
+      font-size: 18px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    
+    .footer-link {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      color: var(--accent-green);
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <title>Newscard Template</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="{logo_path}" alt="The Investor">
+    </div>
+    <div class="date-badge">{date}</div>
+  </div>
+  
+  <div class="main-content">
+    <div class="spotlight-tag">Deal Spotlight</div>
+    <div class="startup-name">{startup}</div>
+    
+    <div class="metrics-grid">
+      <div class="metric-card highlight">
+        <span class="metric-label">Amount Raised</span>
+        <span class="metric-value">{amount}</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Funding Stage</span>
+        <span class="metric-value">{stage}</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Sector</span>
+        <span class="metric-value">{industry}</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Key Investors</span>
+        <span class="metric-value">{investors}</span>
+      </div>
+    </div>
+    
+    <div class="summary-card">
+      <p class="summary-text">{summary}</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <span class="footer-text">Daily Private Capital & Events Briefing</span>
+    <span class="footer-link">theinvestor.news</span>
+  </div>
+</body>
+</html>

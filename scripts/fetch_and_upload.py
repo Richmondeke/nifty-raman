@@ -581,7 +581,7 @@ def generate_newsletter_html(deals, gemini_key, investor_spotlight=None):
         print(f"Error generating newsletter HTML via Gemini: {e}")
         return None
 
-def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_spotlight=None):
+def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_spotlight=None, test_recipient=None):
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     gemini_key = os.environ.get("GEMINI_API_KEY")
@@ -590,7 +590,10 @@ def send_gmail(deals, local_image_path=None, investor_image_path=None, investor_
         print("Warning: GMAIL_USER or GMAIL_APP_PASSWORD not set. Skipping Gmail notification.")
         return
         
-    recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com", "masiyerdakol@gmail.com", "troyhodinni@gmail.com"]
+    if test_recipient:
+        recipients = [test_recipient]
+    else:
+        recipients = ["richmondeke@gmail.com", "kamsyosakwe@gmail.com", "masiyerdakol@gmail.com", "troyhodinni@gmail.com"]
     date_str = datetime.now().strftime("%Y-%m-%d")
     subject = f"The Investor's Daily Fundraising Report - {date_str}"
     
@@ -659,25 +662,54 @@ if __name__ == "__main__":
                     k, v = line.strip().split("=", 1)
                     os.environ[k.strip()] = v.strip().strip("'\"")
 
+    test_recipient = None
+    use_mock = False
+    if len(sys.argv) > 1:
+        for arg in sys.argv[1:]:
+            if "@" in arg:
+                test_recipient = arg
+                print(f"Test mode active. Test recipient set to: {test_recipient}")
+            elif arg in ("--mock", "-m"):
+                use_mock = True
+                print("Mock mode active. Bypassing live feeds and Gemini extraction.")
+
     spreadsheet = os.environ.get("SPREADSHEET_NAME")
     templated_key = os.environ.get("TEMPLATED_API_KEY")
     templated_id = os.environ.get("TEMPLATED_TEMPLATE_ID")
     creatomate_key = os.environ.get("CREATOMATE_API_KEY")
     creatomate_id = os.environ.get("CREATOMATE_TEMPLATE_ID")
         
-    articles = []
-    articles.extend(fetch_rss_deals("https://techcrunch.com/category/venture/feed/", "TechCrunch"))
-    articles.extend(fetch_rss_deals("https://techcabal.com/feed/", "TechCabal"))
-    articles.extend(fetch_rss_deals("https://disrupt-africa.com/feed/", "Disrupt Africa"))
-    articles.extend(fetch_hn_deals())
-    
-    if not articles:
-        sys.exit(0)
+    deals = []
+    if use_mock:
+        deals = [{
+            "startup": "The Investor",
+            "deal_details": "raised $10 Million Series A",
+            "amount": "$10 Million",
+            "stage": "Series A",
+            "keywords": ["Fintech", "Media"],
+            "investors": "Vanguard, Tiger Global",
+            "summary": "The Investor is a premium capital briefing platform that delivers curated venture funding news and family office insights to HNWI readers.",
+            "source": "TechCrunch",
+            "url": "https://theinvestor.news",
+            "is_african": False,
+            "score": 5
+        }]
+    else:
+        articles = []
+        articles.extend(fetch_rss_deals("https://techcrunch.com/category/venture/feed/", "TechCrunch"))
+        articles.extend(fetch_rss_deals("https://techcabal.com/feed/", "TechCabal"))
+        articles.extend(fetch_rss_deals("https://disrupt-africa.com/feed/", "Disrupt Africa"))
+        articles.extend(fetch_hn_deals())
         
-    deals = parse_with_gemini(articles)
+        if not articles:
+            sys.exit(0)
+            
+        deals = parse_with_gemini(articles)
+        if deals:
+            for d in deals:
+                d["article_image_url"] = extract_og_image(d.get("url"))
+
     if deals:
-        for d in deals:
-            d["article_image_url"] = extract_og_image(d.get("url"))
 
         try:
             deals.sort(key=lambda d: int(d.get("score", 0)), reverse=True)
@@ -712,28 +744,43 @@ if __name__ == "__main__":
         investor_img_path = os.path.join("NewsReport", "images", "investor_portrait.jpg")
 
         top_deal = deals[0]
-        rendered_url = None
-        if templated_key and templated_id:
-            rendered_url = render_templated_card(top_deal, templated_key, templated_id)
-        elif creatomate_key and creatomate_id:
-            rendered_url = render_creatomate_card(top_deal, creatomate_key, creatomate_id)
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        image_filename = f"{date_str}-top-deal.jpg"
+        local_img_path = os.path.join("NewsReport", "images", image_filename)
         
-        local_img_path = None
-        if rendered_url:
-            top_deal["rendered_image_url"] = rendered_url
-            print(f"Top deal visual card generated successfully for: {top_deal['startup']}")
-            
-            # Download and save the image locally
-            date_str = datetime.now().strftime("%Y-%m-%d")
-            image_filename = f"{date_str}-top-deal.jpg"
-            local_img_path = os.path.join("NewsReport", "images", image_filename)
-            if download_image(rendered_url, local_img_path):
+        # Try local Playwright newscard generation first
+        render_success = False
+        try:
+            try:
+                from scripts.render_newscard import render_newscard
+            except ImportError:
+                sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+                from render_newscard import render_newscard
+                
+            render_success = render_newscard(top_deal, local_img_path)
+            if render_success:
                 top_deal["local_image_path"] = local_img_path
+                print(f"Successfully generated local HTML newscard for {top_deal['startup']}")
+        except Exception as e:
+            print(f"Failed to generate local HTML newscard: {e}. Falling back to API card generation.")
+            
+        if not render_success:
+            rendered_url = None
+            if templated_key and templated_id:
+                rendered_url = render_templated_card(top_deal, templated_key, templated_id)
+            elif creatomate_key and creatomate_id:
+                rendered_url = render_creatomate_card(top_deal, creatomate_key, creatomate_id)
+            
+            if rendered_url:
+                top_deal["rendered_image_url"] = rendered_url
+                print(f"Top deal visual card generated successfully via API for: {top_deal['startup']}")
+                if download_image(rendered_url, local_img_path):
+                    top_deal["local_image_path"] = local_img_path
                 
         write_markdown_report(deals)
         
         # Send notifications via Gmail
-        send_gmail(deals, local_img_path)
+        send_gmail(deals, local_img_path, investor_img_path, investor_spotlight, test_recipient)
         
         if spreadsheet:
             sheets_creds = os.environ.get("GOOGLE_SHEETS_CREDENTIALS")
