@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+    
+    :root {
+      --bg-primary: #0d0d0d;
+      --accent-red: #ff3b30;
+      --text-white: #ffffff;
+      --border-color: #ff3b30;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Satoshi', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-white);
+      width: 1080px;
+      height: 1350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 3px solid var(--border-color);
+      padding-bottom: 40px;
+    }
+    
+    .logo-container {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid var(--border-color);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .logo-container img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .date-badge {
+      border: 3px solid var(--border-color);
+      background: var(--accent-red);
+      color: #000000;
+      font-weight: 900;
+      font-size: 20px;
+      padding: 10px 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .main-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: auto 0;
+    }
+    
+    .featured-image-container {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      border: 3px solid var(--border-color);
+      background: #1a1a1a;
+    }
+    
+    .featured-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .spotlight-tag {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--accent-red);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .spotlight-tag::after {
+      content: '';
+      flex-grow: 1;
+      height: 3px;
+      background: var(--border-color);
+    }
+    
+    .startup-name {
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: var(--text-white);
+      line-height: 1.1;
+    }
+    
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    
+    .metric-card {
+      background: #1a1a1a;
+      border: 3px solid var(--border-color);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .metric-card.highlight {
+      background: var(--accent-red);
+      color: #000000;
+    }
+    
+    .metric-label {
+      font-size: 14px;
+      color: var(--text-white);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    
+    .metric-card.highlight .metric-label {
+      color: #000000;
+    }
+    
+    .metric-value {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-white);
+    }
+    
+    .metric-card.highlight .metric-value {
+      color: #000000;
+    }
+    
+    .summary-card {
+      background: #1a1a1a;
+      border: 3px solid var(--border-color);
+      padding: 24px;
+    }
+    
+    .summary-text {
+      font-size: 24px;
+      line-height: 1.5;
+      color: var(--text-white);
+      font-weight: 500;
+    }
+    
+    .footer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 3px solid var(--border-color);
+      padding-top: 40px;
+      width: 100%;
+    }
+    
+    .footer-text {
+      font-size: 18px;
+      color: var(--text-white);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .footer-link {
+      font-size: 20px;
+      color: #000000;
+      background: var(--accent-red);
+      border: 3px solid var(--border-color);
+      padding: 6px 16px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <title>Breaking News Card Template</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="{logo_path}" alt="The Investor">
+    </div>
+    <div class="date-badge">Breaking News</div>
+  </div>
+  
+  <div class="main-content">
+    <div class="featured-image-container">
+      <img src="{deal_image}" alt="Deal Image">
+    </div>
+    
+    <div class="spotlight-tag">Breaking News Flash</div>
+    <div class="startup-name">{startup}</div>
+    
+    <div class="metrics-grid">
+      <div class="metric-card highlight">
+        <span class="metric-label">Amount Raised</span>
+        <span class="metric-value">{amount}</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Funding Stage</span>
+        <span class="metric-value">{stage}</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Sector</span>
+        <span class="metric-value">{industry}</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Key Investors</span>
+        <span class="metric-value">{investors}</span>
+      </div>
+    </div>
+    
+    <div class="summary-card">
+      <p class="summary-text">{summary}</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <span class="footer-text">The Investor Breaking Capital Alert</span>
+    <span class="footer-link">theinvestor.news</span>
+  </div>
+</body>
+</html>

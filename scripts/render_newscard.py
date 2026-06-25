@@ -124,19 +124,19 @@ def ensure_playwright():
             print(f"Fallback install also failed: {e2}")
             return False
 
-def render_newscard(deal, save_path):
+def render_newscard(deal, save_path, template_name="newscard.html"):
     """
     Renders an HTML newscard template to an image using Playwright.
     deal: dictionary with keys 'startup', 'amount', 'stage', 'industry', 'investors', 'summary'
     save_path: absolute path where the rendered image should be saved
     """
-    print(f"Rendering newscard for {deal.get('startup')} via Playwright...")
+    print(f"Rendering newscard for {deal.get('startup')} via Playwright using template: {template_name}...")
     if not ensure_playwright():
         print("Skipping Playwright render: environment setup failed.")
         return False
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
-    template_path = os.path.join(project_root, "templates", "newscard.html")
+    template_path = os.path.join(project_root, "templates", template_name)
     
     if not os.path.exists(template_path):
         print(f"Error: Template not found at {template_path}")
