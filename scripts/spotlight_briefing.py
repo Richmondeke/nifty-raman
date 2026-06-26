@@ -182,19 +182,36 @@ def send_spotlight_email(item, image_path, recipient):
 
 def main():
     recipient = "richmondeke@gmail.com"
-    if len(sys.argv) > 1 and "@" in sys.argv[1]:
-        recipient = sys.argv[1]
-        
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    
-    # 1. Target Spotlight Person
+    # Find recipient if passed in args
+    for arg in sys.argv[1:]:
+        if "@" in arg:
+            recipient = arg
+            
+    # Default Target
     person_name = "Aliko Dangote"
     person_title = "Founder, Chairman & CEO of Dangote Group"
     net_worth = "$13.9 Billion"
     source_wealth = "Cement, Sugar, Flour, Oil"
     quote = "If you don't have ambition, you shouldn't be alive. Nothing is going to be handed to you on a silver platter."
     
+    # Check if a specific person is requested
+    target_person = None
+    for arg in sys.argv[1:]:
+        if "@" not in arg:
+            target_person = arg
+            break
+            
+    if target_person and "elumelu" in target_person.lower():
+        person_name = "Tony Elumelu"
+        person_title = "Chairman of Heirs Holdings & United Bank for Africa"
+        net_worth = "$700 Million"
+        source_wealth = "Banking, Energy, Real Estate"
+        quote = "Nobody is going to develop Africa except us. We must execute our ideas to create sustainable value."
+        
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    
+    # 1. Target Spotlight Person
     portrait_url = get_wikipedia_portrait(person_name)
     if not portrait_url:
         # Premium fallback portrait (generic business suit profile)

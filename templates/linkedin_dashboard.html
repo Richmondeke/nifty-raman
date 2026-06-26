@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Investor — Social Media Scheduling Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    
+    :root {
+      --bg-primary: #f3f3f3;
+      --bg-secondary: #ffffff;
+      --bg-glass: rgba(255, 255, 255, 0.7);
+      --bg-glass-card: rgba(255, 255, 255, 0.85);
+      --accent-brand: #635bff;
+      --accent-brand-light: rgba(99, 91, 255, 0.08);
+      --accent-success: #10b981;
+      --accent-linkedin: #0077b5;
+      --accent-x: #0f1419;
+      --accent-meta: #0668e1;
+      --text-primary: #000000;
+      --text-secondary: #737373;
+      --text-muted: #a3a3a3;
+      --border-color: rgba(0, 0, 0, 0.04);
+      --font-family: 'DM Sans', sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+    }
+    
+    /* Background Dot Grid */
+    #grid-dots {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      pointer-events: none;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1.2px, transparent 1.5px);
+      background-size: 24px 24px;
+      mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+    }
+
+
+
+    /* Left Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(24px) saturate(140%);
+      border-right: 1px solid var(--border-color);
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 100;
+      box-shadow: 5px 0 25px rgba(0, 0, 0, 0.02);
+    }
+    
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 2.5rem;
+    }
+    
+    .sidebar-logo {
+      width: 36px;
+      height: 36px;
+      background: var(--accent-brand);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 15px rgba(99, 91, 255, 0.3);
+    }
+    
+    .sidebar-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      color: var(--text-primary);
+    }
+
+    /* Sidebar Navigation Links */
+    .sidebar-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 2rem;
+    }
+    
+    .menu-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      padding-left: 8px;
+      font-weight: 700;
+    }
+    
+    .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 16px;
+      border-radius: 12px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+      background: transparent;
+    }
+    
+    .menu-item svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--text-secondary);
+      stroke-width: 2;
+      fill: none;
+      transition: stroke 0.2s;
+    }
+    
+    .menu-item:hover {
+      color: var(--text-primary);
+      background: rgba(0, 0, 0, 0.03);
+    }
+    
+    .menu-item.active {
+      color: #fff;
+      background: var(--accent-brand);
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(99, 91, 255, 0.25);
+    }
+    
+    .menu-item.active svg {
+      stroke: #fff;
+    }
+    
+    /* Connected Channels Section */
+    .channels-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+      margin-top: 1rem;
+    }
+    
+    .channel-capsule {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+    }
+    
+    .channel-capsule:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.03);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+    
+    .channel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .channel-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .channel-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .channel-icon.linkedin { background-color: var(--accent-linkedin); }
+    .channel-icon.x { background-color: #000; }
+    .channel-icon.meta { background-color: var(--accent-meta); }
+    
+    .channel-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: #fff;
+    }
+    
+    .channel-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .channel-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    
+    .pulse-dot.active {
+      background-color: var(--accent-success);
+      box-shadow: 0 0 8px var(--accent-success);
+      animation: pulse 2s infinite;
+    }
+    
+    .pulse-dot.inactive {
+      background-color: var(--text-muted);
+    }
+    
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+      70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+    
+    .channel-details {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background: rgba(0, 0, 0, 0.02);
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    
+    .btn-connect-sm {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    
+    .btn-connect-sm:hover {
+      background: var(--accent-brand);
+      color: #fff;
+      border-color: var(--accent-brand);
+    }
+
+    /* Main Content Layout */
+    .main-content {
+      margin-left: 300px;
+      flex-grow: 1;
+      padding: 2.5rem 3rem;
+      max-width: calc(100vw - 300px);
+    }
+    
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    
+    .page-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -1.2px;
+      color: var(--text-primary);
+    }
+    
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+      font-weight: 300;
+    }
+
+    /* Views Containers */
+    .view-container {
+      display: none;
+    }
+    
+    .view-container.active {
+      display: block;
+      animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; filter: blur(5px); transform: translateY(8px); }
+      to { opacity: 1; filter: blur(0); transform: translateY(0); }
+    }
+
+    /* Panel Card Styles */
+    .glass-panel {
+      background: var(--bg-glass-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    }
+
+    /* Composer Layout */
+    .composer-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    label {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    
+    input[type="text"], input[type="datetime-local"], textarea, select {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      padding: 12px 16px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+    
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--accent-brand);
+      box-shadow: 0 0 10px rgba(99, 91, 255, 0.08);
+    }
+    
+    .btn-submit {
+      background-color: var(--accent-brand);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 28px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 15px rgba(99, 91, 255, 0.25);
+      transition: all 0.2s;
+    }
+    
+    .btn-submit:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(99, 91, 255, 0.35);
+    }
+    
+    .btn-submit:active {
+      transform: scale(0.98);
+    }
+    
+    /* Image Selector Styles */
+    .image-selector-wrapper {
+      max-height: 250px;
+      overflow-y: auto;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.01);
+      margin-bottom: 8px;
+    }
+    
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    
+    .image-option {
+      border: 2px solid transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      height: 75px;
+      position: relative;
+      background: #eee;
+      transition: all 0.2s;
+    }
+    
+    .image-option img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+      transition: all 0.2s;
+    }
+    
+    .image-option:hover img {
+      opacity: 1;
+    }
+    
+    .image-option.selected {
+      border-color: var(--accent-brand);
+      box-shadow: 0 0 10px rgba(99, 91, 255, 0.15);
+    }
+    
+    .image-option.selected img {
+      opacity: 1;
+    }
+    
+    .image-tag {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      font-size: 0.65rem;
+      padding: 4px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    
+    /* Live Mockup LinkedIn Preview */
+    .preview-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 16px;
+      padding: 18px;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    }
+    
+    .preview-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    
+    .preview-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--accent-brand);
+      font-size: 1rem;
+    }
+    
+    .preview-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .preview-author {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .preview-desc {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+    }
+    
+    .preview-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .preview-text {
+      font-size: 0.88rem;
+      line-height: 1.45;
+      color: #333333;
+      margin-bottom: 12px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    
+    .preview-image-box {
+      width: 100%;
+      height: 240px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      position: relative;
+    }
+    
+    .preview-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .preview-image-placeholder {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .preview-actions {
+      border-top: 1px solid rgba(0, 0, 0, 0.04);
+      margin-top: 12px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .preview-action-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .preview-action-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--text-secondary);
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* Calendar View Styles */
+    .calendar-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .calendar-title-txt {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    
+    .calendar-btn-group {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .btn-cal {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+    
+    .btn-cal:hover {
+      background: rgba(0, 0, 0, 0.02);
+    }
+    
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+    
+    .calendar-day-header {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-secondary);
+      padding: 10px 0;
+      font-weight: 700;
+    }
+    
+    .calendar-cell {
+      min-height: 120px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    
+    .calendar-cell:hover {
+      border-color: rgba(0, 0, 0, 0.12);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    }
+    
+    .calendar-cell.today {
+      border-color: var(--accent-brand);
+      background: var(--accent-brand-light);
+    }
+    
+    .calendar-cell.empty {
+      opacity: 0.25;
+      pointer-events: none;
+    }
+    
+    .cell-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    
+    .calendar-cell.today .cell-date {
+      color: var(--accent-brand);
+    }
+    
+    .calendar-item {
+      background: var(--accent-brand-light);
+      border: 1px solid rgba(99, 91, 255, 0.15);
+      border-radius: 6px;
+      padding: 5px 8px;
+      font-size: 0.72rem;
+      color: var(--accent-brand);
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: all 0.2s;
+      font-weight: bold;
+    }
+    
+    .calendar-item:hover {
+      background: var(--accent-brand);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    
+    .calendar-item.published {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.15);
+      color: var(--accent-success);
+    }
+    
+    .calendar-item.published:hover {
+      background: var(--accent-success);
+      color: #fff;
+    }
+    
+    .calendar-item.failed {
+      background: rgba(239, 68, 68, 0.08);
+      border-color: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+    }
+    
+    .calendar-item.failed:hover {
+      background: #ef4444;
+      color: #fff;
+    }
+
+    /* Kanban View Styles */
+    .kanban-board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+    
+    .kanban-col {
+      background: rgba(0, 0, 0, 0.015);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 1.2rem;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .kanban-col-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+      padding-bottom: 10px;
+    }
+    
+    .kanban-col-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .kanban-count {
+      font-size: 0.75rem;
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-secondary);
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-weight: bold;
+    }
+    
+    .kanban-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: all 0.25s;
+      cursor: grab;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.01);
+    }
+    
+    .kanban-card:hover {
+      border-color: rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+    }
+    
+    .kanban-card-preview {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #eee;
+    }
+    
+    .kanban-card-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .kanban-card-commentary {
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: var(--text-primary);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .kanban-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      border-top: 1px solid rgba(0, 0, 0, 0.03);
+      padding-top: 10px;
+    }
+    
+    .kanban-card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    
+    .kanban-btn {
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      flex-grow: 1;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    
+    .kanban-btn:hover {
+      background: rgba(0, 0, 0, 0.03);
+      color: var(--text-primary);
+    }
+    
+    .kanban-btn.danger {
+      color: #ef4444;
+      border-color: rgba(239, 68, 68, 0.15);
+    }
+    
+    .kanban-btn.danger:hover {
+      background: #ef4444;
+      color: #fff;
+      border-color: #ef4444;
+    }
+    
+    .kanban-btn.primary {
+      color: var(--accent-brand);
+      border-color: rgba(99, 91, 255, 0.15);
+    }
+    
+    .kanban-btn.primary:hover {
+      background: var(--accent-brand);
+      color: #fff;
+      border-color: var(--accent-brand);
+    }
+
+    /* Modal Dialog Window */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+    
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .modal-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      width: 90%;
+      max-width: 500px;
+      padding: 2rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+      transform: translateY(20px);
+      transition: all 0.3s;
+    }
+    
+    .modal-overlay.active .modal-box {
+      transform: translateY(0);
+    }
+    
+    .modal-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.5px;
+    }
+    
+    .modal-body {
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    
+    .btn-modal {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-modal.cancel {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+    }
+    
+    .btn-modal.cancel:hover {
+      background: rgba(0, 0, 0, 0.02);
+    }
+    
+    .btn-modal.confirm {
+      background: var(--accent-brand);
+      border: none;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(99, 91, 255, 0.2);
+    }
+    
+    .btn-modal.confirm:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Grid Dots -->
+  <div id="grid-dots"></div>
+
+
+
+  <!-- Left Sidebar -->
+  <div class="sidebar">
+    <div>
+      <div class="sidebar-header">
+        <div class="sidebar-logo">I</div>
+        <div class="sidebar-title">THE INVESTOR</div>
+      </div>
+      
+      <div class="sidebar-menu">
+        <div class="menu-label">Console</div>
+        <button class="menu-item active" onclick="switchView('composer', this)">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Composer
+        </button>
+        <button class="menu-item" onclick="switchView('calendar', this)">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Calendar View
+        </button>
+        <button class="menu-item" onclick="switchView('kanban', this)">
+          <svg viewBox="0 0 24 24"><path d="M3 3h7v9H3zm11 0h7v5h-7zm0 9h7v9h-7zM3 16h7v5H3z"/></svg>
+          Kanban Board
+        </button>
+      </div>
+    </div>
+    
+    <div>
+      <div class="menu-label" style="margin-top: 1.5rem;">Connected Channels</div>
+      <div class="channels-section">
+        <!-- LinkedIn Capsule -->
+        <div class="channel-capsule">
+          <div class="channel-header">
+            <div class="channel-info">
+              <div class="channel-icon linkedin">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <span class="channel-name">LinkedIn</span>
+            </div>
+            <div class="channel-status">
+              {% if has_token %}
+                <span class="pulse-dot active"></span> Active
+              {% else %}
+                <span class="pulse-dot inactive"></span> Offline
+              {% endif %}
+            </div>
+          </div>
+          {% if has_token %}
+            {% if pages %}
+              <div class="channel-details">{{ pages[0].name }}</div>
+            {% else %}
+              <div class="channel-details">Connected</div>
+            {% endif %}
+          {% else %}
+            <a href="/login"><button class="btn-connect-sm">Connect Profile</button></a>
+          {% endif %}
+        </div>
+        
+        <!-- Twitter / X Capsule -->
+        <div class="channel-capsule" id="channel-x">
+          <div class="channel-header">
+            <div class="channel-info">
+              <div class="channel-icon x">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <span class="channel-name">Twitter / X</span>
+            </div>
+            <div class="channel-status" id="status-x">
+              <span class="pulse-dot inactive"></span> Offline
+            </div>
+          </div>
+          <div class="channel-details" style="display:none;" id="details-x"></div>
+          <button class="btn-connect-sm" onclick="openConnectModal('x')" id="btn-x">Connect Account</button>
+        </div>
+        
+        <!-- Meta Capsule -->
+        <div class="channel-capsule" id="channel-meta">
+          <div class="channel-header">
+            <div class="channel-info">
+              <div class="channel-icon meta">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v7.009C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </div>
+              <span class="channel-name">Meta (FB / IG)</span>
+            </div>
+            <div class="channel-status" id="status-meta">
+              <span class="pulse-dot inactive"></span> Offline
+            </div>
+          </div>
+          <div class="channel-details" style="display:none;" id="details-meta"></div>
+          <button class="btn-connect-sm" onclick="openConnectModal('meta')" id="btn-meta">Connect Page</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="header-section">
+      <div>
+        <h1 class="page-title" id="view-title">Composer Console</h1>
+        <p class="page-subtitle" id="view-subtitle">Draft, customize, and queue your daily investment briefings.</p>
+      </div>
+    </div>
+
+    <!-- VIEW 1: COMPOSER -->
+    <div id="view-composer" class="view-container active">
+      <div class="composer-grid">
+        <!-- Left: Form -->
+        <div class="glass-panel">
+          {% if not has_token %}
+            <div style="text-align: center; padding: 40px 0;">
+              <p style="color: var(--text-secondary); margin-bottom: 25px;">Please connect your LinkedIn account to access the automated scheduler and posting queue.</p>
+              <a href="/login"><button class="btn-submit">Connect LinkedIn</button></a>
+            </div>
+          {% else %}
+            <form action="/schedule" method="POST" id="compose-form">
+              <div class="form-group">
+                <label for="page">Publish Channel Page</label>
+                <select name="page_urn" id="page" onchange="updatePreviewAuthor(this)">
+                  {% for p in pages %}
+                    <option value="{{ p.urn }}">{{ p.name }} (LinkedIn)</option>
+                  {% endfor %}
+                  <option value="stub_x" id="opt-x" style="display:none;"></option>
+                  <option value="stub_meta" id="opt-meta" style="display:none;"></option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label>Select Card Attachment</label>
+                <div class="image-selector-wrapper">
+                  <div class="image-grid">
+                    {% for img in images %}
+                      <div class="image-option" onclick="selectImage('{{ img.filename }}', this)">
+                        <img src="/images/{{ img.filename }}" alt="Attachment">
+                        <div class="image-tag">{{ img.label }}</div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <input type="hidden" name="image_filename" id="selected_image" value="">
+              </div>
+              
+              <div class="form-group">
+                <label for="commentary">Post Commentary</label>
+                <textarea name="commentary" id="commentary" rows="5" placeholder="Share today's financial insights and capital indicators..." required oninput="updatePreviewText(this.value)"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="scheduled_time">Schedule Time (Date & Time)</label>
+                <input type="datetime-local" name="scheduled_time" id="scheduled_time" required>
+              </div>
+              
+              <button type="submit" class="btn-submit">Schedule Briefing</button>
+            </form>
+          {% endif %}
+        </div>
+
+        <!-- Right: Live Mockup LinkedIn Preview -->
+        <div>
+          <label style="margin-left: 20px; margin-bottom: 10px;">Real-Time Post Preview</label>
+          <div class="preview-card">
+            <div class="preview-header">
+              <div class="preview-avatar" id="preview-avatar">TI</div>
+              <div class="preview-meta">
+                <span class="preview-author" id="preview-author-name">The Investor</span>
+                <span class="preview-desc" id="preview-author-desc">Media/News Company</span>
+                <span class="preview-time">
+                  Just now • 
+                  <svg viewBox="0 0 24 24" style="width:12px; height:12px; stroke:#9ca3af; stroke-width:2; fill:none; display:inline;"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </span>
+              </div>
+            </div>
+            
+            <div class="preview-text" id="preview-text-box">Share today's financial insights and capital indicators...</div>
+            
+            <div class="preview-image-box" id="preview-image-box">
+              <div class="preview-image-placeholder" id="preview-placeholder">
+                <svg viewBox="0 0 24 24" style="width:48px; height:48px; stroke:var(--text-muted); stroke-width:1.5; fill:none;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>No Card Selected</span>
+              </div>
+              <img src="" alt="Attachment Preview" id="preview-image-element" style="display: none;">
+            </div>
+            
+            <div class="preview-actions">
+              <button class="preview-action-btn"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg> Like</button>
+              <button class="preview-action-btn"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Comment</button>
+              <button class="preview-action-btn"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23 3 19l4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Repost</button>
+              <button class="preview-action-btn"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 2: CALENDAR -->
+    <div id="view-calendar" class="view-container">
+      <div class="glass-panel">
+        <div class="calendar-controls">
+          <h3 class="calendar-title-txt" id="calendar-month-year">June 2026</h3>
+          <div class="calendar-btn-group">
+            <button class="btn-cal" onclick="changeMonth(-1)">&larr;</button>
+            <button class="btn-cal" onclick="setCalendarToday()">Today</button>
+            <button class="btn-cal" onclick="changeMonth(1)">&rarr;</button>
+          </div>
+        </div>
+        
+        <div class="calendar-grid" id="calendar-days-container">
+          <!-- Calendar Days and Dates will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 3: KANBAN -->
+    <div id="view-kanban" class="view-container">
+      <div class="kanban-board">
+        <!-- Column 1: Scheduled -->
+        <div class="kanban-col" id="col-pending">
+          <div class="kanban-col-header">
+            <h3 class="kanban-col-title">
+              <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:var(--accent-brand); stroke-width:2.5; fill:none; display:inline;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Scheduled
+            </h3>
+            <span class="kanban-count" id="count-pending">0</span>
+          </div>
+          <div class="kanban-cards-list" id="list-pending" style="display:flex; flex-direction:column; gap:12px;"></div>
+        </div>
+        
+        <!-- Column 2: Published -->
+        <div class="kanban-col" id="col-published">
+          <div class="kanban-col-header">
+            <h3 class="kanban-col-title">
+              <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:var(--accent-success); stroke-width:2.5; fill:none; display:inline;"><polyline points="20 6 9 17 4 12"/></svg>
+              Published
+            </h3>
+            <span class="kanban-count" id="count-published">0</span>
+          </div>
+          <div class="kanban-cards-list" id="list-published" style="display:flex; flex-direction:column; gap:12px;"></div>
+        </div>
+        
+        <!-- Column 3: Failed -->
+        <div class="kanban-col" id="col-failed">
+          <div class="kanban-col-header">
+            <h3 class="kanban-col-title">
+              <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:#ef4444; stroke-width:2.5; fill:none; display:inline;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              Failed
+            </h3>
+            <span class="kanban-count" id="count-failed">0</span>
+          </div>
+          <div class="kanban-cards-list" id="list-failed" style="display:flex; flex-direction:column; gap:12px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connect Channel Modal -->
+  <div class="modal-overlay" id="connect-modal">
+    <div class="modal-box">
+      <h3 class="modal-title" id="modal-channel-title">
+        Connect Account
+      </h3>
+      <div class="modal-body">
+        <div class="form-group">
+          <label id="lbl-modal-page">Page / Handle Name</label>
+          <input type="text" id="modal-input-name" placeholder="e.g. The Investor" required>
+        </div>
+        <div class="form-group" id="group-modal-secret">
+          <label>Access Token / API Secret</label>
+          <input type="text" id="modal-input-secret" placeholder="Enter credential key...">
+        </div>
+        <input type="hidden" id="modal-channel-type" value="">
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal cancel" onclick="closeConnectModal()">Cancel</button>
+        <button class="btn-modal confirm" onclick="submitConnectModal()">Link Channel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Details Modal (from Calendar) -->
+  <div class="modal-overlay" id="post-detail-modal">
+    <div class="modal-box" style="max-width: 550px;">
+      <h3 class="modal-title">Briefing Details</h3>
+      <div class="modal-body">
+        <div style="display:flex; gap:15px; margin-bottom:15px;">
+          <div style="width:120px; height:120px; border-radius:10px; overflow:hidden; background:#111; flex-shrink:0;" id="detail-img-box">
+            <img src="" id="detail-img" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div style="flex-grow:1; display:flex; flex-direction:column; gap:8px;">
+            <p id="detail-commentary" style="font-size:0.9rem; line-height:1.4; color:var(--text-primary); max-height:80px; overflow-y:auto;"></p>
+            <div style="font-size:0.75rem; color:var(--text-secondary); display:flex; flex-direction:column; gap:4px;">
+              <div><strong>Channel:</strong> <span id="detail-channel">LinkedIn</span></div>
+              <div><strong>Time:</strong> <span id="detail-time">2026-06-25 12:00</span></div>
+              <div><strong>Status:</strong> <span id="detail-status" style="text-transform:uppercase; font-weight:bold;">pending</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group" id="detail-reschedule-group" style="display:none;">
+          <label for="detail-reschedule-time">Reschedule Posting Time</label>
+          <input type="datetime-local" id="detail-reschedule-time">
+        </div>
+      </div>
+      <div class="modal-footer" id="detail-modal-footer">
+        <!-- Action buttons will be injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Injected queue data from server
+    let rawQueue = {{ queue|tojson }};
+    let connectedPages = {{ pages|tojson }};
+    
+    // Switch between dashboard tabs
+    function switchView(viewName, buttonElement) {
+      document.querySelectorAll('.view-container').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
+      
+      document.getElementById('view-' + viewName).classList.add('active');
+      buttonElement.classList.add('active');
+      
+      const titleEl = document.getElementById('view-title');
+      const subtitleEl = document.getElementById('view-subtitle');
+      
+      if (viewName === 'composer') {
+        titleEl.innerText = "Composer Console";
+        subtitleEl.innerText = "Draft, customize, and queue your daily investment briefings.";
+      } else if (viewName === 'calendar') {
+        titleEl.innerText = "Editorial Calendar";
+        subtitleEl.innerText = "Monitor daily outputs and schedule distribution across dates.";
+        renderCalendar();
+      } else if (viewName === 'kanban') {
+        titleEl.innerText = "Kanban Workflow";
+        subtitleEl.innerText = "Track compilation progress, delivery states, and system logs.";
+        renderKanban();
+      }
+    }
+    
+    // Composer Image Selection
+    function selectImage(filename, element) {
+      document.querySelectorAll('.image-option').forEach(el => el.classList.remove('selected'));
+      element.classList.add('selected');
+      document.getElementById('selected_image').value = filename;
+      
+      // Update Live Mockup Preview
+      const previewImg = document.getElementById('preview-image-element');
+      const previewPlaceholder = document.getElementById('preview-placeholder');
+      
+      previewImg.src = "/images/" + filename;
+      previewImg.style.display = "block";
+      previewPlaceholder.style.display = "none";
+    }
+    
+    // Live Mockup updates
+    function updatePreviewText(val) {
+      const box = document.getElementById('preview-text-box');
+      box.innerText = val ? val : "Share today's financial insights and capital indicators...";
+    }
+    
+    function updatePreviewAuthor(selectEl) {
+      const text = selectEl.options[selectEl.selectedIndex].text;
+      const cleanName = text.split(' (')[0];
+      document.getElementById('preview-author-name').innerText = cleanName;
+      
+      // Initials for avatar
+      const initials = cleanName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+      document.getElementById('preview-avatar').innerText = initials;
+    }
+    
+    // X and Meta connection modal logic
+    function openConnectModal(channelType) {
+      const overlay = document.getElementById('connect-modal');
+      const title = document.getElementById('modal-channel-title');
+      const lblPage = document.getElementById('lbl-modal-page');
+      const inputName = document.getElementById('modal-input-name');
+      
+      document.getElementById('modal-channel-type').value = channelType;
+      
+      if (channelType === 'x') {
+        title.innerHTML = 'Connect Twitter / X';
+        lblPage.innerText = 'X Handle / Profile Name';
+        inputName.placeholder = 'e.g. @TheInvestorNews';
+      } else {
+        title.innerHTML = 'Connect Meta Page';
+        lblPage.innerText = 'Facebook Page or Instagram Handle';
+        inputName.placeholder = 'e.g. The Investor Page';
+      }
+      
+      overlay.classList.add('active');
+    }
+    
+    function closeConnectModal() {
+      document.getElementById('connect-modal').classList.remove('active');
+      document.getElementById('modal-input-name').value = '';
+      document.getElementById('modal-input-secret').value = '';
+    }
+    
+    function submitConnectModal() {
+      const channel = document.getElementById('modal-channel-type').value;
+      const name = document.getElementById('modal-input-name').value.trim();
+      const secret = document.getElementById('modal-input-secret').value.trim();
+      
+      if (!name) {
+        alert('Please enter a name/handle.');
+        return;
+      }
+      
+      // Send mock connection payload to backend
+      fetch('/connect-channel', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ channel: channel, name: name, secret: secret })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          // Update Sidebar UI state
+          const capsule = document.getElementById('channel-' + channel);
+          const status = document.getElementById('status-' + channel);
+          const details = document.getElementById('details-' + channel);
+          const btn = document.getElementById('btn-' + channel);
+          
+          status.innerHTML = '<span class="pulse-dot active"></span> Active';
+          details.innerText = name;
+          details.style.display = 'block';
+          btn.style.display = 'none';
+          
+          // Add to dropdown options in Composer form if they exist
+          const pageSelect = document.getElementById('page');
+          if (pageSelect) {
+            const opt = document.getElementById('opt-' + channel);
+            opt.value = "stub_" + channel;
+            opt.innerText = name + " (" + (channel === 'x' ? 'Twitter/X' : 'Meta') + ")";
+            opt.style.display = 'block';
+          }
+          
+          closeConnectModal();
+          alert('Successfully connected ' + (channel === 'x' ? 'Twitter/X' : 'Meta') + ' channel!');
+        } else {
+          alert('Failed to connect: ' + data.error);
+        }
+      });
+    }
+
+    // CHECK and restore connected channels on page load
+    window.onload = function() {
+      // Check X and Meta connection status from backend
+      fetch('/get-channels-status')
+      .then(res => res.json())
+      .then(data => {
+        ['x', 'meta'].forEach(channel => {
+          if (data[channel] && data[channel].connected) {
+            const name = data[channel].name;
+            const capsule = document.getElementById('channel-' + channel);
+            const status = document.getElementById('status-' + channel);
+            const details = document.getElementById('details-' + channel);
+            const btn = document.getElementById('btn-' + channel);
+            
+            status.innerHTML = '<span class="pulse-dot active"></span> Active';
+            details.innerText = name;
+            details.style.display = 'block';
+            btn.style.display = 'none';
+            
+            const opt = document.getElementById('opt-' + channel);
+            if (opt) {
+              opt.value = "stub_" + channel;
+              opt.innerText = name + " (" + (channel === 'x' ? 'Twitter/X' : 'Meta') + ")";
+              opt.style.display = 'block';
+            }
+          }
+        });
+      });
+    };
+
+    /* Kanban View Renderer */
+    function renderKanban() {
+      const pendingList = document.getElementById('list-pending');
+      const publishedList = document.getElementById('list-published');
+      const failedList = document.getElementById('list-failed');
+      
+      pendingList.innerHTML = '';
+      publishedList.innerHTML = '';
+      failedList.innerHTML = '';
+      
+      let countPending = 0, countPublished = 0, countFailed = 0;
+      
+      rawQueue.forEach(post => {
+        const card = document.createElement('div');
+        card.className = 'kanban-card';
+        card.innerHTML = `
+          ${post.image ? `<div class="kanban-card-preview"><img src="/images/${post.image}" alt="Card"></div>` : ''}
+          <div class="kanban-card-commentary">${post.commentary}</div>
+          <div class="kanban-card-meta">
+            <span>${post.page_name}</span>
+            <span>${post.time}</span>
+          </div>
+          <div class="kanban-card-actions">
+            ${post.status === 'pending' ? `
+              <button class="kanban-btn primary" onclick="publishPostNow('${post.id}')">Publish Now</button>
+              <button class="kanban-btn danger" onclick="deletePostItem('${post.id}')">Delete</button>
+            ` : ''}
+            ${post.status === 'failed' ? `
+              <button class="kanban-btn primary" onclick="publishPostNow('${post.id}')">Retry</button>
+              <button class="kanban-btn danger" onclick="deletePostItem('${post.id}')">Delete</button>
+            ` : ''}
+            ${post.status === 'published' ? `
+              <button class="kanban-btn" onclick="viewPostDetail('${post.id}')">View Details</button>
+            ` : ''}
+          </div>
+        `;
+        
+        if (post.status === 'pending') {
+          pendingList.appendChild(card);
+          countPending++;
+        } else if (post.status === 'published') {
+          publishedList.appendChild(card);
+          countPublished++;
+        } else if (post.status === 'failed') {
+          failedList.appendChild(card);
+          countFailed++;
+        }
+      });
+      
+      document.getElementById('count-pending').innerText = countPending;
+      document.getElementById('count-published').innerText = countPublished;
+      document.getElementById('count-failed').innerText = countFailed;
+    }
+
+    /* Actions on Posts */
+    function publishPostNow(postId) {
+      if (confirm('Are you sure you want to publish this briefing immediately?')) {
+        fetch(`/publish-now/${postId}`, { method: 'POST' })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            alert('Briefing published successfully!');
+            window.location.reload();
+          } else {
+            alert('Failed to publish: ' + data.error);
+          }
+        });
+      }
+    }
+    
+    function deletePostItem(postId) {
+      if (confirm('Are you sure you want to delete this scheduled briefing?')) {
+        fetch(`/delete-post/${postId}`, { method: 'POST' })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            window.location.reload();
+          }
+        });
+      }
+    }
+
+    /* Calendar View State & Renderer */
+    let currentYear = 2026;
+    let currentMonth = 5; // 0-indexed, so 5 = June
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    function renderCalendar() {
+      const grid = document.getElementById('calendar-days-container');
+      grid.innerHTML = '';
+      
+      // Update Month title
+      document.getElementById('calendar-month-year').innerText = monthNames[currentMonth] + " " + currentYear;
+      
+      // Calendar Headers
+      const headers = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      headers.forEach(h => {
+        const cell = document.createElement('div');
+        cell.className = 'calendar-day-header';
+        cell.innerText = h;
+        grid.appendChild(cell);
+      });
+      
+      const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+      const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+      
+      // Empty cells before first day
+      for (let i = 0; i < firstDay; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'calendar-cell empty';
+        grid.appendChild(cell);
+      }
+      
+      // Calendar Days
+      const today = new Date();
+      for (let day = 1; day <= daysInMonth; day++) {
+        const cell = document.createElement('div');
+        cell.className = 'calendar-cell';
+        
+        const dateStr = currentYear + "-" + String(currentMonth + 1).padStart(2, '0') + "-" + String(day).padStart(2, '0');
+        
+        // Highlight today
+        if (today.getFullYear() === currentYear && today.getMonth() === currentMonth && today.getDate() === day) {
+          cell.classList.add('today');
+        }
+        
+        cell.innerHTML = `<span class="cell-date">${day}</span>`;
+        
+        // Find posts scheduled for this day
+        rawQueue.forEach(post => {
+          if (post.time.startsWith(dateStr)) {
+            const item = document.createElement('div');
+            item.className = 'calendar-item ' + post.status;
+            item.innerText = post.commentary;
+            item.onclick = (e) => {
+              e.stopPropagation();
+              viewPostDetail(post.id);
+            };
+            cell.appendChild(item);
+          }
+        });
+        
+        grid.appendChild(cell);
+      }
+    }
+    
+    function changeMonth(dir) {
+      currentMonth += dir;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      } else if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      renderCalendar();
+    }
+    
+    function setCalendarToday() {
+      const today = new Date();
+      currentYear = today.getFullYear();
+      currentMonth = today.getMonth();
+      renderCalendar();
+    }
+
+    /* Post Detail Modal */
+    function viewPostDetail(postId) {
+      const post = rawQueue.find(p => p.id === postId);
+      if (!post) return;
+      
+      const overlay = document.getElementById('post-detail-modal');
+      const img = document.getElementById('detail-img');
+      const commentary = document.getElementById('detail-commentary');
+      const channel = document.getElementById('detail-channel');
+      const time = document.getElementById('detail-time');
+      const status = document.getElementById('detail-status');
+      
+      commentary.innerText = post.commentary;
+      channel.innerText = post.page_name;
+      time.innerText = post.time;
+      status.innerText = post.status;
+      status.className = ''; // reset class
+      
+      if (post.image) {
+        img.src = "/images/" + post.image;
+        document.getElementById('detail-img-box').style.display = 'block';
+      } else {
+        document.getElementById('detail-img-box').style.display = 'none';
+      }
+      
+      const footer = document.getElementById('detail-modal-footer');
+      footer.innerHTML = '';
+      
+      // Add action buttons based on status
+      if (post.status === 'pending') {
+        document.getElementById('detail-reschedule-group').style.display = 'block';
+        document.getElementById('detail-reschedule-time').value = post.time;
+        
+        footer.innerHTML = `
+          <button class="btn-modal cancel" onclick="closePostDetailModal()">Close</button>
+          <button class="btn-modal cancel" onclick="deletePostItem('${post.id}')" style="color:#ef4444; border-color:rgba(239,68,68,0.2);">Delete</button>
+          <button class="btn-modal confirm" onclick="reschedulePost('${post.id}')">Reschedule</button>
+          <button class="btn-modal confirm" onclick="publishPostNow('${post.id}')" style="background-color:var(--accent-success);">Publish Now</button>
+        `;
+      } else {
+        document.getElementById('detail-reschedule-group').style.display = 'none';
+        footer.innerHTML = `
+          <button class="btn-modal cancel" onclick="closePostDetailModal()">Close</button>
+          <button class="btn-modal cancel" onclick="deletePostItem('${post.id}')" style="color:#ef4444; border-color:rgba(239,68,68,0.2);">Delete Record</button>
+        `;
+      }
+      
+      overlay.classList.add('active');
+    }
+    
+    function closePostDetailModal() {
+      document.getElementById('post-detail-modal').classList.remove('active');
+    }
+    
+    function reschedulePost(postId) {
+      const newTime = document.getElementById('detail-reschedule-time').value;
+      if (!newTime) {
+        alert('Please select a valid date & time.');
+        return;
+      }
+      
+      fetch('/reschedule-post', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: postId, time: newTime })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          alert('Briefing rescheduled successfully!');
+          window.location.reload();
+        } else {
+          alert('Failed to reschedule: ' + data.error);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
