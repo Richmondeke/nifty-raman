@@ -7,60 +7,60 @@
 
 ## 1. Exa: $250 Million Series C
 
-- **Summary**: Exa is an AI-native search infrastructure company that builds search tools specifically for AI agents and large language models. Its technology moves beyond traditional keyword matching, using neural search to understand meaning and context across live web data, allowing autonomous applications to retrieve high-fidelity, real-time internet information.
+- **Summary**: Exa is an AI research lab building an AI-native search engine tailored for artificial intelligence applications. It offers a developer Search API, web crawling and content extraction tools, and deep research infrastructure for AI systems, serving over 5,000 companies and 400,000 developers worldwide.
 - **Key Points**:
-  1. Investors: Andreessen Horowitz (a16z) (lead), Benchmark, Lightspeed Venture Partners, Y Combinator, Scott Wu, Igor Babuschkin, Tal Broda
-  2. Sector keywords: AI, AI search engine, AI infrastructure, LLMs, neural search
+  1. Investors: Andreessen Horowitz (lead), Benchmark, Lightspeed Venture Partners, Y Combinator, Scott Wu, Igor Babuschkin, Tal Broda
+  2. Sector keywords: AI, search engine, generative AI, AI infrastructure, developer tools
 - **Source**: [Hacker News](https://exa.ai/blog/announcing-series-c)
-- **Keywords**: `AI` `AI search engine` `AI infrastructure` `LLMs` `neural search`
+- **Keywords**: `AI, search engine, generative AI, AI infrastructure, developer tools`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. General Intuition: $320 Million Series A
 
-- **Summary**: General Intuition is an AI research lab spun out of video game clip-sharing platform Medal. The company focuses on training AI foundation models by leveraging action-labeled gameplay data from millions of hours of gaming footage, aiming to teach AI agents intuition and spatial-temporal reasoning for real-world applications in robotics, simulation, and gaming.
+- **Summary**: General Intuition is an AI research lab that trains AI agents using human gameplay data from billions of video clips, with applications in robotics, simulation, and gaming environments. The company aims to teach AI agents spatial-temporal reasoning that transfers to real-world physical interactions.
 - **Key Points**:
-  1. Investors: Khosla Ventures (lead), General Catalyst, Jeff Bezos, Eric Schmidt, Nico Rosberg, Google DeepMind researchers, MIT researchers
-  2. Sector keywords: AI, AI agents, robotics, gaming data, world models
-- **Source**: [Hacker News](https://runtimewire.com/article/general-intuition-320m-series-a-pim-de-witte-medal-gameplay-agents)
-- **Keywords**: `AI` `AI agents` `robotics` `gaming data` `world models`
+  1. Investors: Khosla Ventures (lead), General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt, Nico Rosberg, co-founders of Remote, co-founders of Cradle, researchers at Google Deepmind and MIT
+  2. Sector keywords: AI, AI agents, gaming, robotics, world models
+- **Source**: [Runtimewire](https://runtimewire.com/article/general-intuition-320m-series-a-pim-de-witte-medal-gameplay-agents)
+- **Keywords**: `AI, AI agents, gaming, robotics, world models`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 3. Mirendil: $200 Million Seed
 
-- **Summary**: Mirendil is a startup focused on self-accelerating R&D, likely utilizing advanced AI and computational methods to significantly expedite scientific discovery and development processes. The substantial seed funding from a prominent investor highlights its potential to disrupt traditional research and development timelines.
+- **Summary**: Mirendil is an AI lab founded by former Anthropic researchers, aiming to develop AI systems capable of accelerating AI research itself. The startup focuses on building AI-native infrastructure, specialized fine-tuning workflows, and custom modeling architectures to assist scientists in creating highly specialized models for complex fields like molecular medicine and advanced materials research.
 - **Key Points**:
-  1. Investors: Andreessen Horowitz (a16z)
-  2. Sector keywords: R&D, AI, scientific discovery, deep tech, biotech
-- **Source**: [Hacker News](https://a16z.com/announcement/investing-in-mirendil/)
-- **Keywords**: `R&D` `AI` `scientific discovery` `deep tech` `biotech`
+  1. Investors: Andreessen Horowitz (lead), Kleiner Perkins (co-lead), NVIDIA
+  2. Sector keywords: AI, R&D, deep tech, scientific AI, autonomous AI
+- **Source**: [a16z.com](https://a16z.com/announcement/investing-in-mirendil/)
+- **Keywords**: `AI, R&D, deep tech, scientific AI, autonomous AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 4. Patronus AI: $50 Million Series B
 
-- **Summary**: Patronus AI, founded by former Meta AI researchers, develops an AI evaluation and simulation infrastructure. The company builds 'Digital World Models,' which are large-scale simulation environments designed to help AI systems train, evaluate, and improve across complex digital workflows, addressing the growing demand for reliable AI agents.
+- **Summary**: Patronus AI, founded by former Meta AI researchers, develops 'digital worlds' to stress-test AI agents in simulated business environments. This aims to ensure AI agent stability and performance in complex, real-world tasks, addressing issues like AI 'shortcuts' that static benchmarks miss. The company is experiencing high demand and serves leading AI labs and numerous startups.
 - **Key Points**:
-  1. Investors: Greenfield Partners (lead), Notable Capital, Lightspeed Venture Partners, Datadog, Samsung, Factorial Capital, Gokul Rajaram
-  2. Sector keywords: AI, AI safety, AI agents, simulation, LLM evaluation
+  1. Investors: Greenfield Partners (lead), Notable Capital, Lightspeed, Datadog, Samsung, Factorial Capital, Gokul Rajaram
+  2. Sector keywords: AI, AI testing, AI agents, enterprise AI, simulation
 - **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
-- **Keywords**: `AI` `AI safety` `AI agents` `simulation` `LLM evaluation`
+- **Keywords**: `AI, AI testing, AI agents, enterprise AI, simulation`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 5. Sazabi: $8 Million Seed
+## 5. Sazabi: $8 Million Seed Round
 
-- **Summary**: Sazabi is an AI-native observability platform designed for fast-moving engineering teams using AI coding tools. It provides monitoring, debugging, and incident response by using AI agents to interpret logs, infrastructure, and codebases to proactively detect, investigate, and resolve production issues, aiming to replace traditional dashboards and manual workflows.
+- **Summary**: Sazabi is an AI-native observability platform designed for fast-moving engineering teams. It uses AI agents, chat-based interfaces, and a logs-first architecture to help teams detect, investigate, understand, and fix production issues faster. The platform aims to move beyond traditional manual telemetry stacks by automating incident response for modern engineering teams.
 - **Key Points**:
-  1. Investors: J2 Ventures (lead), Village Global, Y Combinator, Orange Collective, over 60 angel investors (including from Vercel, Cursor, LangChain, OpenAI, Anthropic, GitHub, Replit, Browserbase)
-  2. Sector keywords: AI, observability, developer tools, AI/MLOps, SaaS
-- **Source**: [Hacker News](https://www.sazabi.com/blog/seed-round)
-- **Keywords**: `AI` `observability` `developer tools` `AI/MLOps` `SaaS`
+  1. Investors: J2 Ventures (lead), Village Global, Y Combinator, Orange Collective, and over 60 angel investors from companies including Vercel, Cursor, LangChain, OpenAI, Anthropic, GitHub, Replit, Browserbase
+  2. Sector keywords: AI, observability, DevOps, developer tools, AI agents
+- **Source**: [Sazabi](https://www.sazabi.com/blog/seed-round)
+- **Keywords**: `AI, observability, DevOps, developer tools, AI agents`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
