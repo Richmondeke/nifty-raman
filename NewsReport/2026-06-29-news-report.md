@@ -7,24 +7,24 @@
 
 ## 1. Patronus AI: $50 Million Series B
 
-- **Summary**: Patronus AI, founded by former Meta AI researchers, has raised $50 million in Series B funding to develop "Digital World Models" that stress-test and train AI agents. The company provides AI evaluation and simulation infrastructure, aiming to improve the reliability of autonomous AI systems by replicating complex digital workflows. Its revenue has grown significantly, indicating high demand for its solutions.
+- **Summary**: Patronus AI, founded by former Meta AI researchers, raised $50 million in Series B funding to develop "Digital World Models." These models create large-scale simulation environments for stress-testing and evaluating AI agents in complex digital workflows, aiming to ensure their reliability before deployment. The company has seen 15x revenue growth in the past year.
 - **Key Points**:
   1. Investors: Greenfield Partners (lead), Notable Capital, Lightspeed Venture Partners, Datadog, Samsung, Factorial Capital, Gokul Rajaram
-  2. Sector keywords: AI, AI testing, AI agents, AI infrastructure, simulation
+  2. Sector keywords: AI, AI testing, AI agents, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
-- **Keywords**: `AI` `AI testing` `AI agents` `AI infrastructure` `simulation`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+- **Keywords**: `AI, AI testing, AI agents, enterprise AI`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 2. Stabyl: $2.7 Million Preseed
 
-- **Summary**: Stabyl, a liquidity exchange, has secured $2.7 million in pre-seed funding after emerging from stealth. The company's mission is to build Africa's foreign exchange (FX) infrastructure, making FX liquidity more accessible across the continent. This investment aims to address challenges in cross-border transactions and financial stability in Africa.
+- **Summary**: Stabyl emerged from stealth with $2.7 million in pre-seed funding to build foreign exchange (FX) infrastructure for Africa. The company operates a liquidity exchange platform designed to provide banks, payment service providers, and traders with easier access to FX liquidity and near-instant settlements.
 - **Key Points**:
-  1. Investors: Konga (led)
-  2. Sector keywords: Fintech, FX, infrastructure, Africa, liquidity
+  1. Investors: Konga (lead)
+  2. Sector keywords: Fintech, FX infrastructure, Africa, liquidity
 - **Source**: [TechCabal](https://techcabal.com/2026/06/26/stabyl-emerges-from-stealth-with-2-7-million-for-africas-fx-infrastructure/)
-- **Keywords**: `Fintech` `FX` `infrastructure` `Africa` `liquidity`
+- **Keywords**: `Fintech, FX infrastructure, Africa, liquidity`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
