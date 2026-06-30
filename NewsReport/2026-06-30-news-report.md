@@ -1,66 +1,42 @@
 # Daily News Report (2026-06-30)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. 8090 Labs: $135 Million Series A
+## 1. 8090: $135 Million Series A
 
-- **Summary**: 8090 Labs, an AI-native software factory founded by Chamath Palihapitiya, has successfully raised $135 million in Series A funding. The company provides a platform that uses AI to design new systems, refactor legacy codebases, and automate software delivery pipelines for enterprise customers in highly regulated industries, aiming to significantly reduce software development costs.
+- **Summary**: 8090 is an AI-native software factory founded by Chamath Palihapitiya, which develops the "Software Factory" platform to help companies build and change enterprise software using AI agents. The platform aims to democratize access to intelligence and expertise in software development, allowing teams of people and AI agents to collaborate on mission-critical applications across various regulated industries.
 - **Key Points**:
-  1. Investors: Salesforce Ventures (Lead), WndrCo, Craft Ventures, The Production Board, LAUNCH, Nikesh Arora, Adam D'Angelo
-  2. Sector keywords: AI, enterprise software, software development, AI automation, SaaS
+  1. Investors: Salesforce Ventures (lead), WNDR, Craft Ventures, The Production Board, LAUNCH, Nikesh Arora (angel), Cliff Robbins (angel), Adam D'Angelo (angel), Shyam Ravindran (angel), Abhi Arun (angel), Thomas Laffont (angel)
+  2. Sector keywords: AI, software development, enterprise software, AI agents, SaaS
 - **Source**: [Hacker News](https://www.8090.ai/blog/series-a)
-- **Keywords**: `AI` `enterprise software` `software development` `AI automation` `SaaS`
+- **Keywords**: `AI` `software development` `enterprise software` `AI agents` `SaaS`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Menlo Ventures: $3 Billion Fund
+## 2. Patronus AI: $50 Million Series B
 
-- **Summary**: Menlo Ventures, a prominent Silicon Valley venture capital firm, has announced a historic $3 billion fundraise across two new funds: Menlo Ventures XVII (for seed and Series A) and Menlo Inflection IV (for Series B and later growth stages). This significant capital infusion, the largest in the firm's 50-year history, is primarily dedicated to backing AI startups, leveraging their successful early investment in Anthropic.
+- **Summary**: Patronus AI, founded by former Meta AI researchers, builds simulated digital environments to stress-test and evaluate the performance of AI agents. The San Francisco-based startup helps model makers and companies fine-tune models to reliably perform complex, real-world tasks. Its revenue has grown 15-fold over the past year due to high demand from virtually every frontier AI lab and many emerging startups.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: Venture capital, AI, fund, fundraise, enterprise AI
-- **Source**: [TechCrunch](https://techcrunch.com/2026/06/23/after-betting-the-firm-on-anthropic-menlo-ventures-raises-victorious-3b-fund/)
-- **Keywords**: `Venture capital` `AI` `fund` `fundraise` `enterprise AI`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 3. Patronus AI: $50 Million Series B
-
-- **Summary**: Patronus AI, an agent-testing startup founded by former Meta AI researchers, has secured $50 million in Series B funding. The company specializes in building 'digital worlds' to rigorously stress-test and train AI agents, addressing the critical need for reliability in autonomous AI systems. This funding round will help expand its simulation platform, given the nearly insatiable demand for its services.
-- **Key Points**:
-  1. Investors: Greenfield Partners (Lead), Lightspeed Venture Partners, Notable Capital, Datadog, Samsung, Factorial Capital, Gokul Rajaram
-  2. Sector keywords: AI, AI testing, AI agents, simulation, enterprise AI
+  1. Investors: Greenfield Partners (lead), Notable Capital, Lightspeed, Datadog, Samsung
+  2. Sector keywords: AI, AI agents, AI testing, simulation, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
-- **Keywords**: `AI` `AI testing` `AI agents` `simulation` `enterprise AI`
+- **Keywords**: `AI` `AI agents` `AI testing` `simulation` `enterprise AI`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. Pocket: $11 Million
+## 3. Pocket: $11 Million Undisclosed
 
-- **Summary**: Pocket has raised $11 million as it experiences surging demand for its personal AI assistant device. The company focuses on providing a personal AI assistant in a device format.
+- **Summary**: Pocket is a startup developing a personal AI assistant device, which is experiencing surging demand for its product.
 - **Key Points**:
-  1. Investors: Accel and others
-  2. Sector keywords: AI, personal AI, AI device
+  1. Investors: Accel, others
+  2. Sector keywords: AI, personal AI, AI assistant, hardware, consumer tech
 - **Source**: [Hacker News](https://finance.yahoo.com/technology/ai/articles/pocket-raises-11m-accel-others-130000605.html)
-- **Keywords**: `AI` `personal AI` `AI device`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 5. Holocene: $3 Million Fund
-
-- **Summary**: Holocene, a South African climate tech venture capital firm, has successfully raised $3 million for its Holocene Ventures Fund I. This fund is dedicated to investing in early-stage African climate tech startups, with a unique strategy focused on achieving multiple $30-$50 million exits within three to five years by providing both capital and operational support.
-- **Key Points**:
-  1. Investors: 32 investors (60% based in Southern Africa)
-  2. Sector keywords: Climate tech, Africa, venture capital, fund, impact investing
-- **Source**: [TechCabal](https://techcabal.com/2026/06/29/holocene-bet-on-climate-tech/)
-- **Keywords**: `Climate tech` `Africa` `venture capital` `fund` `impact investing`
+- **Keywords**: `AI` `personal AI` `AI assistant` `hardware` `consumer tech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
