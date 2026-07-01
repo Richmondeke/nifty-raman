@@ -7,24 +7,24 @@
 
 ## 1. Patronus AI: $50 Million Series B
 
-- **Summary**: Patronus AI is an enterprise platform that develops simulation research and infrastructure to accelerate progress toward human-aligned AGI. It builds "Digital World Models" to stress-test and improve the reliability of autonomous AI agents in simulated environments before they are deployed in real-world scenarios. The company also offers automated AI evaluation and security features to detect hallucinations, copyright risks, and safety violations in large language models (LLMs).
+- **Summary**: Patronus AI, founded by former Meta AI researchers, develops "Digital World Models" which are large-scale simulation environments designed to stress-test and train AI agents in complex digital workflows. The company aims to provide critical infrastructure for evaluating and improving AI systems, especially as autonomous AI agents become more prevalent. Their revenue has grown significantly, reflecting a strong demand for their simulation and evaluation infrastructure.
 - **Key Points**:
-  1. Investors: Greenfield Partners (lead), Lightspeed Venture Partners, Notable Capital, Datadog, Samsung, Factorial Capital, Gokul Rajaram
-  2. Sector keywords: AI, AI agents, simulation, AI safety, LLM evaluation, enterprise AI
+  1. Investors: Greenfield Partners, Lightspeed Venture Partners, Notable Capital, Datadog, Samsung, Factorial Capital, Gokul Rajaram, and other AI and software executives.
+  2. Sector keywords: AI, AI testing, AI simulation, AI infrastructure
 - **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
-- **Keywords**: `AI, AI agents, simulation, AI safety, LLM evaluation, enterprise AI`
+- **Keywords**: `AI` `AI testing` `AI simulation` `AI infrastructure`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 2. Warp: $60 Million Series B
 
-- **Summary**: Warp is an AI-native human capital management (HCM) platform designed to automate payroll, HR compliance, benefits, and IT operations for high-growth companies. It utilizes AI agents to autonomously handle complex workflows like tax filings, compliance, and IT provisioning, aiming to replace legacy HCM systems.
+- **Summary**: Warp is a New York City-based AI-native Human Capital Management (HCM) platform that automates payroll, HR, IT automation, and tax compliance for businesses. The company leverages AI agents to autonomously manage complex workflows across numerous tax jurisdictions, positioning itself as a challenger to established players in the HCM market.
 - **Key Points**:
-  1. Investors: Battery Ventures (lead), Peak XV, Sound Ventures, Y Combinator, Tobi Lütke, Claire Hughes Johnson, Drew Houston, Arash Ferdowsi, Balaji Srinivasan, Kevin Hartz, Kyle Vogt, Amjad Masad
-  2. Sector keywords: AI, HCM, HR tech, payroll, compliance, enterprise software
-- **Source**: [Warp.co](https://www.warp.co/b)
-- **Keywords**: `AI, HCM, HR tech, payroll, compliance, enterprise software`
+  1. Investors: Battery Ventures, Peak XV, Sound Ventures, Y Combinator, Tobi Lütke, Claire Hughes Johnson, Drew Houston, Arash Ferdowsi, Balaji Srinivasan, Kevin Hartz, Kyle Vogt, Amjad Masad.
+  2. Sector keywords: AI, HR tech, payroll, HCM
+- **Source**: [Hacker News](https://www.warp.co/b)
+- **Keywords**: `AI` `HR tech` `payroll` `HCM`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
