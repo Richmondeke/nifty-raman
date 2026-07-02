@@ -5,27 +5,27 @@
 
 ---
 
-## 1. Kling AI: Nears US$3 Billion round at US$18 Billion valuation
+## 1. Patronus AI: $50 Million Series B
 
-- **Summary**: Kling AI, a Beijing-based artificial intelligence video-generation firm spun off from Kuaishou Technology, is reportedly close to finalizing a substantial funding round, which would value the company at $18 billion. The company generates revenue through user subscriptions for its video and image-generation services, as well as providing developers access to its models via an application programming interface.
+- **Summary**: Patronus AI, an agent-testing startup founded by former Meta AI researchers, has secured $50 million in Series B funding. The company develops 'Digital World Models' and large-scale simulation environments to train and rigorously stress-test AI agents across complex digital workflows. This funding aims to address the high failure rates often observed in AI agent pilots.
 - **Key Points**:
-  1. Investors: Tencent, General Atlantic (reportedly leading a $2B+ round in a separate mention)
-  2. Sector keywords: AI, video generation, China, artificial intelligence, generative AI
-- **Source**: [SCMP](https://www.scmp.com/tech/big-tech/article/3359059/chinas-kling-ai-nears-us3-billion-round-us18-billion-valuation-sources)
-- **Keywords**: `AI, video generation, China, artificial intelligence, generative AI`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+  1. Investors: Greenfield Partners, Lightspeed Venture Partners, Notable Capital, Datadog, Samsung, Factorial Capital, Gokul Rajaram, and other AI and software executives
+  2. Sector keywords: AI, AI-testing, AI-agents, simulation, enterprise-AI
+- **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
+- **Keywords**: `AI, AI-testing, AI-agents, simulation, enterprise-AI`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 2. Patronus AI: $50 Million Series B
+## 2. Parsewise: $500 Thousand Seed
 
-- **Summary**: Patronus AI, an agent-testing startup founded by former Meta AI researchers, has secured a significant funding round. The company develops "Digital World Models" to rigorously stress-test AI agents within complex, simulated digital environments. Their aim is to provide scalable oversight for autonomous AI systems, thereby addressing the crucial challenge of ensuring AI reliability before real-world deployment.
+- **Summary**: Parsewise (YC S25) is an AI-driven data extraction platform that enables businesses in sectors like asset management, life sciences, and insurance to efficiently analyze and reason across complex document sets. The platform offers customizable agents, source-level traceability, and an API designed to streamline data extraction and validation processes.
 - **Key Points**:
-  1. Investors: Greenfield Partners (lead), Notable Capital, Lightspeed Venture Partners, Datadog, Samsung, Factorial Capital, Gokul Rajaram
-  2. Sector keywords: AI testing, AI agents, enterprise AI, simulation, AI infrastructure
-- **Source**: [TechCrunch](https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/)
-- **Keywords**: `AI testing, AI agents, enterprise AI, simulation, AI infrastructure`
-- **Score**: ⭐⭐⭐⭐ (4/5)
+  1. Investors: Y Combinator
+  2. Sector keywords: AI, document-parsing, API, developer-tools, fintech, insurtech
+- **Source**: [Hacker News](https://news.ycombinator.com/item?id=48746752)
+- **Keywords**: `AI, document-parsing, API, developer-tools, fintech, insurtech`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
