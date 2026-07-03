@@ -1,19 +1,31 @@
 # Daily News Report (2026-07-03)
 
-> Curated from TechCrunch and Hacker News. Contains 1 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 2 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Wealth8: Acquisition by LemFi, undisclosed amount
+## 1. Spiro: $270 Million Growth Round
 
-- **Summary**: Wealth8 is a digital wealth management platform based in the UK, primarily serving affluent individuals and the African diaspora with diversified investment portfolios. Its acquisition by LemFi, a prominent African fintech company, signifies a strategic move to broaden LemFi's financial services ecosystem and offer wealth management solutions to its global customer base. This deal enhances LemFi's position in the fintech landscape by integrating investment capabilities.
+- **Summary**: Spiro is a leading African electric mobility company that provides electric two-wheelers and extensive battery-swapping infrastructure across several African countries. The company aims to accelerate Africa's transition to sustainable transportation, reduce reliance on imported fossil fuels, and build a localized clean energy ecosystem. Spiro currently operates a vast network of battery-swapping stations and focuses on local manufacturing and advanced technology development.
 - **Key Points**:
-  1. Investors: LemFi
-  2. Sector keywords: Fintech, M&A, Wealth Management, Diaspora Banking
-- **Source**: [TechCabal](https://techcabal.com/2026/07/03/techcabal-daily-lemfi-comes-into-wealth/)
-- **Keywords**: `Fintech, M&A, Wealth Management, Diaspora Banking`
-- **Score**: ⭐⭐⭐ (3/5)
+  1. Investors: NewTrails Capital, Impact Fund Denmark, Equitane, Fund for Export Development in Africa (FEDA), Afreximbank, Nithio, Africa Go Green Fund managed by Cygnum Capital
+  2. Sector keywords: electric mobility, battery swapping, clean energy, Africa, EV infrastructure
+- **Source**: [allAfrica.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyJtS-ssPRz_GjRh-pugCGWxyDC_trwbbMmINDQQuuAy04wwnvWtD1DpCqfKJbdTRE5TZZVh37a1L8piM8Y-V4RHJdqCC5WubF5-IysQbcOhsStnQeUPUeQFpCCp1ctSpgvo0zEemhxjo=)
+- **Keywords**: `electric mobility` `battery swapping` `clean energy` `Africa` `EV infrastructure`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 2. Spiro Medical, Inc.: $67 Million Series A
+
+- **Summary**: Spiro Medical is a new company established to develop a Pulmonary Neuromodulation System (PNM) for the treatment of asthma and other breathing-related conditions. This first-of-its-kind system combines neuro-respiratory medicine with implantable devices and digital tools. The secured funding will be used to advance clinical development and pursue regulatory approval in the United States.
+- **Key Points**:
+  1. Investors: Andera Partners, Omega Funds, Sherpa Healthcare Partners, HSG, Supernova Invest, Northern Light Venture Capital, Hero Inc. Ltd UK
+  2. Sector keywords: healthtech, medtech, neuromodulation, asthma, medical devices
+- **Source**: [BioSpace](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFADk8CdmhgY1rXmj5jY3E-UjKcuKmPOMgHuT6yoCsDn2wFSxruZLBdhO2_xq89hWkAUM2dFnBWMk-WaJGC3V4sJLZjlaURV03VIDa5ivYN8GXvGndanIplfkkJ0V7mxZJ0IMOIQJg6Eq_mTyA6rEnerlL2X8ELBceDbhULxdkuIk3HMdRCBhFKUwZe0SMe1Sg2y9Utoqwc3o2h0ASPnFheAAi6zyHC01VHRuGa8wUACPB1oFPYEjPmG98-rOX0L8a4zgGxow==)
+- **Keywords**: `healthtech` `medtech` `neuromodulation` `asthma` `medical devices`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
