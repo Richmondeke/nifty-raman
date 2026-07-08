@@ -5,26 +5,26 @@
 
 ---
 
-## 1. Norm: $120 million Series C round
+## 1. Norm: $120 Million Series C
 
-- **Summary**: Norm is an AI law startup that leverages artificial intelligence to streamline and enhance legal processes. This significant Series C funding round has propelled the company to a unicorn valuation of $1.2 billion, reflecting strong investor confidence in its AI-powered legal solutions and market potential.
+- **Summary**: Norm is an AI law startup that has successfully raised a significant Series C round, achieving a unicorn valuation of $1.2 billion. The company develops AI solutions for the legal sector.
 - **Key Points**:
   1. Investors: Khosla Ventures
-  2. Sector keywords: AI, legaltech, saas, unicorn
+  2. Sector keywords: AI, LegalTech, Enterprise Software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/)
-- **Keywords**: `AI` `legaltech` `saas` `unicorn`
+- **Keywords**: `AI` `LegalTech` `Enterprise Software`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Flutterwave: Undisclosed strategic investment from Circle Ventures as part of Series E
+## 2. Flutterwave: Undisclosed Strategic Investment
 
-- **Summary**: Flutterwave, an African fintech company, has secured a strategic investment from Circle Ventures. This funding aims to embed native USDC stablecoin settlement tracks directly into Flutterwave's transactional infrastructure, enabling faster and more flexible cross-border fund transfers across Africa. The investment from Circle Ventures is part of a broader Series E round which also saw participation from Ripple, valuing Flutterwave at $3.2 billion.
+- **Summary**: Flutterwave, a leading African fintech company, received a strategic investment from Circle Ventures to expand its USDC payment and settlement business across Africa. This investment aims to integrate native USDC stablecoin settlement tracks directly into Flutterwave's transactional infrastructure, facilitating faster and more flexible cross-border fund transfers for businesses.
 - **Key Points**:
-  1. Investors: Circle Ventures, Ripple
-  2. Sector keywords: fintech, payments, stablecoin, africa
+  1. Investors: Circle Ventures
+  2. Sector keywords: Fintech, Payments, Blockchain, Stablecoins, Africa
 - **Source**: [TechCabal](https://techcabal.com/2026/07/08/techcabal-daily-a-circle-in-flutterwave/)
-- **Keywords**: `fintech` `payments` `stablecoin` `africa`
+- **Keywords**: `Fintech` `Payments` `Blockchain` `Stablecoins` `Africa`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
