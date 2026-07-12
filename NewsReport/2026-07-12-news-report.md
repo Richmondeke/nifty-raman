@@ -5,26 +5,26 @@
 
 ---
 
-## 1. Norm Ai: $120 Million Series C
+## 1. Gradium: $100 Million Seed
 
-- **Summary**: Norm Ai is an AI law startup that raised a $120 million Series C round, pushing its valuation to $1.2 billion and achieving unicorn status. The company focuses on building 'agentic law' by combining AI engineers and attorneys to embed law into AI agents, and also operates Norm Law, an affiliated AI-native law firm that prices based on outcomes. The funding will accelerate hiring, expand practice area coverage, and advance supervisory agents for regulated enterprise AI deployments.
+- **Summary**: Gradium is a Paris-based AI voice startup specializing in ultra-low-latency voice AI models. The company, a spin-out from the French AI lab Kyutai, develops real-time speech infrastructure for developers and enterprises, including speech-to-text, text-to-speech, and live speech translation. The $100 million seed funding, including an extension, will be used to open a Bay Area office to attract top AI talent and accelerate product development and international expansion.
 - **Key Points**:
-  1. Investors: Khosla Ventures, Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, Tony James, Jeff Hammes, Fenwick LLP
-  2. Sector keywords: AI, LegalTech, SaaS, Series C, Unicorn
-- **Source**: [TechCrunch](https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/)
-- **Keywords**: `AI` `LegalTech` `SaaS` `Series C` `Unicorn`
+  1. Investors: Nvidia, FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, Xavier Niel, Rodolphe Saadé
+  2. Sector keywords: AI, voice AI, deep tech, enterprise AI, France
+- **Source**: [TechCrunch](https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/)
+- **Keywords**: `AI, voice AI, deep tech, enterprise AI, France`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Gradium: $100 Million Seed
+## 2. Norm: $120 Million Series C
 
-- **Summary**: Gradium is a Paris-based voice AI startup that raised an extended seed round of $100 million. The company, a spinout from the French AI laboratory Kyutai, develops audio models engineered for high-scale, ultra-low-latency voice generation, targeting real-time AI applications. The funding will be used to scale operations, accelerate talent acquisition, and open a new San Francisco Bay Area office.
+- **Summary**: Norm is an AI law startup that has successfully raised a $120 million Series C round. This funding values the company at $1.2 billion, granting it unicorn status, as it aims to innovate the legal sector with artificial intelligence.
 - **Key Points**:
-  1. Investors: Nvidia, FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, Xavier Niel, Rodolphe Saadé
-  2. Sector keywords: AI, Voice AI, Seed, European Tech, SaaS
-- **Source**: [TechCrunch](https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/)
-- **Keywords**: `AI` `Voice AI` `Seed` `European Tech` `SaaS`
+  1. Investors: Khosla Ventures
+  2. Sector keywords: AI, legal tech, SaaS, enterprise AI
+- **Source**: [TechCrunch](https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/)
+- **Keywords**: `AI, legal tech, SaaS, enterprise AI`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
