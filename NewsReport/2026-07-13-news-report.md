@@ -5,26 +5,26 @@
 
 ---
 
-## 1. Gradium: $100M Seed round backed by Nvidia
+## 1. Gradium: $100 Million Seed
 
-- **Summary**: Gradium is a Paris-based AI voice startup that successfully raised a substantial Seed round. This funding will be used to establish a Bay Area office, aiming to attract top talent and solidify its standing within the global AI ecosystem.
+- **Summary**: Gradium, a Paris-based AI voice startup, has secured a significant $100 million in an extended seed funding round. The company plans to utilize the capital to open an office in the Bay Area, aiming to attract top talent and strengthen its presence within the global AI ecosystem. Gradium was spun out of research lab Kyutai and its co-founders are behind foundational research papers for modern voice AI systems.
 - **Key Points**:
-  1. Investors: Nvidia
-  2. Sector keywords: AI voice, AI, Seed, Paris
+  1. Investors: NVIDIA, FirstMark Capital, Eurazeo, DST Global Partners, Xavier Niel, Rodolphe Saadé, Eric Schmidt
+  2. Sector keywords: AI, voice technology, seed funding, European startup, deep tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/)
-- **Keywords**: `AI voice` `AI` `Seed` `Paris`
+- **Keywords**: `AI, voice technology, seed funding, European startup, deep tech`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Norm: $120 Million Series C round led by Khosla Ventures
+## 2. Norm: $120 Million Series C
 
-- **Summary**: Norm, an AI law startup, has closed a $120 million Series C funding round, which has elevated its valuation to unicorn status at $1.2 billion. The investment round was spearheaded by Khosla Ventures.
+- **Summary**: Norm, an AI law startup, has successfully closed a $120 million Series C funding round, which has propelled the company to a unicorn valuation of $1.2 billion. The investment was led by Khosla Ventures. Norm develops AI agents for legal and regulatory work, and its affiliated AI-native law firm, Norm Law, utilizes this technology to deliver legal services under attorney supervision with an outcomes-based pricing model.
 - **Key Points**:
-  1. Investors: Khosla Ventures
-  2. Sector keywords: AI, Legal Tech, Series C, Unicorn
+  1. Investors: Khosla Ventures (Lead), Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, Tony James, Jeff Hammes, Fenwick LLP
+  2. Sector keywords: AI, legal tech, Series C, unicorn, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/)
-- **Keywords**: `AI` `Legal Tech` `Series C` `Unicorn`
+- **Keywords**: `AI, legal tech, Series C, unicorn, enterprise AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
