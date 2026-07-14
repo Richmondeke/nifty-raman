@@ -1,67 +1,43 @@
 # Daily News Report (2026-07-14)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Nous Research: at least $75 Million in new funding at $1.5 Billion valuation
+## 1. Gradium: $100M seed, backed by Nvidia
 
-- **Summary**: Nous Research, the developer of Hermes agents, is in discussions to raise at least $75 million in new funding. This round would value the company at $1.5 billion, reflecting significant growth and investor interest in its AI agent technology.
-- **Key Points**:
-  1. Investors: Robot Ventures (lead), USV
-  2. Sector keywords: AI, AI agents, LLMs, enterprise AI
-- **Source**: [TechCrunch](https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/)
-- **Keywords**: `AI` `AI agents` `LLMs` `enterprise AI`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 2. Gradium: $100 Million Seed round
-
-- **Summary**: Paris-based AI voice startup Gradium has secured a substantial $100 million in seed funding. The company intends to leverage this capital to establish a Bay Area office and attract top talent, further solidifying its presence in the global AI ecosystem.
+- **Summary**: Gradium, an AI voice startup based in Paris, has successfully raised a substantial $100 million seed round. This significant funding, backed by Nvidia, will be utilized to establish a new office in the Bay Area, aiming to attract top talent and strengthen its position within the global AI ecosystem.
 - **Key Points**:
   1. Investors: Nvidia
-  2. Sector keywords: AI, voice AI, deeptech, machine learning
+  2. Sector keywords: AI, voice-tech, deeptech, seed-funding
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/)
-- **Keywords**: `AI` `voice AI` `deeptech` `machine learning`
+- **Keywords**: `AI, voice-tech, deeptech, seed-funding`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Norm: $120 Million Series C round, hits unicorn valuation
+## 2. Norm: $120 million Series C round led by Khosla Ventures, valuing the startup at $1.2 billion
 
-- **Summary**: AI law startup Norm has successfully raised a $120 million Series C funding round. This latest investment has pushed the company's valuation to $1.2 billion, granting it unicorn status.
+- **Summary**: Norm, an AI law startup, has secured a $120 million Series C funding round, which propels the company into unicorn status with a valuation of $1.2 billion. The investment was led by Khosla Ventures, underscoring confidence in Norm's innovative approach to applying AI within the legal industry.
 - **Key Points**:
-  1. Investors: Khosla Ventures (lead)
-  2. Sector keywords: AI, legal tech, enterprise software, SaaS
+  1. Investors: Khosla Ventures
+  2. Sector keywords: AI, legaltech, SaaS, Series C
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/)
-- **Keywords**: `AI` `legal tech` `enterprise software` `SaaS`
+- **Keywords**: `AI, legaltech, SaaS, Series C`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 4. Yas: $307 Million investment
+## 3. Nous Research: raising at least $75 million, led by Robot Ventures, with significant participation from USV and other prominent investors, at a $1.5B valuation
 
-- **Summary**: Yas has secured a significant $307 million investment from the European Bank for Reconstruction and Development (EBRD). The investment was reported in a TechCabal daily digest, suggesting a focus on emerging markets, potentially in Africa.
+- **Summary**: Nous Research, a developer of Hermes agents in the AI sector, is currently in talks to raise at least $75 million in new funding. This round is anticipated to value the company at $1.5 billion, reflecting significant growth and investor interest in its advanced AI technology.
 - **Key Points**:
-  1. Investors: EBRD
-  2. Sector keywords: investment, emerging markets, finance, development
-- **Source**: [TechCabal](https://techcabal.com/2026/07/14/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-openview-and-watch-ads/)
-- **Keywords**: `investment` `emerging markets` `finance` `development`
+  1. Investors: Robot Ventures, USV
+  2. Sector keywords: AI, AI-agents, deeptech, venture capital
+- **Source**: [TechCrunch](https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/)
+- **Keywords**: `AI, AI-agents, deeptech, venture capital`
 - **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 5. LAVA: $11 Million fund
-
-- **Summary**: LAVA, a new venture capital fund, has announced its $11 million fund dedicated to investing in African Web3 startups. Founder Yoseph Ayele highlights the fund's strategy of prioritizing founders over market conditions in its investment decisions.
-- **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: Web3, venture capital, Africa, fund
-- **Source**: [TechCabal](https://techcabal.com/2026/07/13/lava-yoseph-ayele-on-africas-web3-market/)
-- **Keywords**: `Web3` `venture capital` `Africa` `fund`
-- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
