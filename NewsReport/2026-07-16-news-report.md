@@ -1,79 +1,67 @@
 # Daily News Report (2026-07-16)
 
-> Curated from TechCrunch and Hacker News. Contains 6 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. IM8: $1 Billion from General Catalyst's unusual CVF fund
+## 1. IM8: $1 Billion from General Catalyst's Customer Value Fund
 
-- **Summary**: IM8, David Beckham's health drink startup, secured $1 billion in funding from General Catalyst's Customer Value Fund. This fund is noted for providing capital without making equity investments, supporting IM8's longevity vitamin drink product.
+- **Summary**: IM8 is David Beckham's health drink startup, known for its longevity vitamin drink. It has secured $1 billion from General Catalyst's Customer Value Fund, which provides non-equity investments rather than traditional equity. This substantial funding highlights investor interest in celebrity-backed ventures in the health and wellness sector.
 - **Key Points**:
   1. Investors: General Catalyst (Customer Value Fund)
-  2. Sector keywords: healthtech, consumer goods, celebrity-backed, strategic investment
+  2. Sector keywords: healthtech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/14/david-beckhams-health-drink-startup-im8-takes-1b-from-general-catalysts-unusual-cvf-fund/)
-- **Keywords**: `healthtech` `consumer goods` `celebrity-backed` `strategic investment`
+- **Keywords**: `healthtech`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Gradium: $100M seed, backed by Nvidia
+## 2. Gradium: $100 Million Seed
 
-- **Summary**: Paris-based AI voice startup Gradium has successfully raised a $100 million seed funding round. The investment, backed by Nvidia, will be utilized to establish a Bay Area office and attract top talent, thereby strengthening its position within the global AI ecosystem.
+- **Summary**: Gradium, a Paris-based AI voice startup, has secured a $100 million seed funding round. The company specializes in developing ultra-low-latency voice AI models and building real-time voice infrastructure for developers and enterprises. The funding will be used to establish a new office in the Bay Area to attract top AI talent.
 - **Key Points**:
-  1. Investors: Nvidia
-  2. Sector keywords: AI, voice AI, deeptech, seed funding
+  1. Investors: NVIDIA, FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, Xavier Niel
+  2. Sector keywords: AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/)
-- **Keywords**: `AI` `voice AI` `deeptech` `seed funding`
+- **Keywords**: `AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Neko Health: $700M Series C
+## 3. Neko Health: $700 Million Series C
 
-- **Summary**: Neko Health, co-founded by Spotify's Daniel Ek, has secured $700 million in Series C funding to accelerate its expansion into the US market, with plans to open a New York clinic later this year. The health technology company focuses on preventive care through non-invasive diagnostic scans and will also use the capital to advance its research and proprietary technology.
+- **Summary**: Neko Health, a preventive medical technology company co-founded by Spotify's Daniel Ek, has completed a $700 million Series C funding round. The Swedish-born company offers a 60-minute, non-invasive health assessment using proprietary imaging hardware and software. This significant funding will fuel its expansion, including opening its first U.S. clinic in Manhattan.
 - **Key Points**:
-  1. Investors: Lightspeed Venture Partners (lead), O.G. Venture Partners (co-lead), Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD, Mark Zuckerberg, Priscilla Chan, Tim Ferriss, Maria Sharapova, Thierry Henry, Jimmy Iovine, will.i.am, Ari Emanuel, Claudia Schiffer, Sir Matthew Vaughn, Danny Meyer
-  2. Sector keywords: healthtech, preventive health, AI, diagnostics, Series C
+  1. Investors: Lightspeed Venture Partners (lead), O.G. Venture Partners (co-lead), Mark Zuckerberg, Priscilla Chan, Tim Ferriss, Maria Sharapova, will.i.am, Thierry Henry, Jimmy Iovine, Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD
+  2. Sector keywords: healthtech
 - **Source**: [Hacker News](https://www.nytimes.com/2026/07/15/business/dealbook/neko-health-ek-funding.html)
-- **Keywords**: `healthtech` `preventive health` `AI` `diagnostics` `Series C`
+- **Keywords**: `healthtech`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 4. Nous Research: raising at least $75 million
+## 4. Nous Research: $75 Million in new funding at $1.5B valuation
 
-- **Summary**: Nous Research, the maker of Hermes agents, is in the process of raising at least $75 million. This funding round is led by Robot Ventures, with significant participation from USV and other prominent investors, and is being sought at a $1.5 billion valuation.
+- **Summary**: Nous Research, the developer of Hermes agents, is in talks to raise at least $75 million in new funding, which would value the company at $1.5 billion. The company focuses on creating advanced AI agents. This funding round is expected to strengthen its position in the competitive AI landscape.
 - **Key Points**:
   1. Investors: Robot Ventures (lead), USV
-  2. Sector keywords: AI, AI agents, deeptech, machine learning
+  2. Sector keywords: AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/)
-- **Keywords**: `AI` `AI agents` `deeptech` `machine learning`
+- **Keywords**: `AI`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 5. Helios Towers: $29 million
+## 5. Helios Towers: $29 Million backed by Standard Bank
 
-- **Summary**: Standard Bank has provided $29 million in backing to Helios Towers, an independent telecommunications tower company. Helios Towers operates across Africa, providing critical infrastructure for mobile network operators.
+- **Summary**: Helios Towers, a telecommunications infrastructure company operating across Africa, has received $29 million in backing from Standard Bank. This investment will support their operations in building and managing tower networks. The backing from a major bank suggests a strategic financial partnership to further develop telecom infrastructure in the region.
 - **Key Points**:
   1. Investors: Standard Bank
-  2. Sector keywords: infrastructure, telecommunications, Africa, debt financing
+  2. Sector keywords: telecom infrastructure
 - **Source**: [TechCabal](https://techcabal.com/2026/07/16/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-amazon-finds-space-in-sa/)
-- **Keywords**: `infrastructure` `telecommunications` `Africa` `debt financing`
+- **Keywords**: `telecom infrastructure`
 - **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 6. Coasty: YC S26
-
-- **Summary**: Coasty is a startup from Y Combinator's S26 batch, developing an API for computer-use agents. The company aims to provide tools that enable developers to integrate AI agents into various applications and systems.
-- **Key Points**:
-  1. Investors: Y Combinator
-  2. Sector keywords: AI, API, developer tools, preseed
-- **Source**: [Hacker News](https://coasty.ai/docs)
-- **Keywords**: `AI` `API` `developer tools` `preseed`
-- **Score**: ⭐⭐ (2/5)
 
 ---
 
