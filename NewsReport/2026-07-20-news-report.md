@@ -1,66 +1,90 @@
 # Daily News Report (2026-07-20)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 7 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
 ## 1. IM8: $1 Billion from General Catalyst's unusual CVF fund
 
-- **Summary**: IM8, a health drink startup co-founded by David Beckham, has secured a $1 billion investment from General Catalyst’s Customer Value Fund. This funding is notable as it's not an equity investment, but rather provided by a fund that does not take equity. IM8 is known for its longevity vitamin drink, appealing to the growing health and wellness market.
+- **Summary**: IM8, a health drink startup founded by David Beckham, received a substantial investment from General Catalyst's Customer Value Fund. The company is known for its longevity vitamin drink. This funding is noted as a non-equity investment.
 - **Key Points**:
-  1. Investors: General Catalyst's Customer Value Fund
-  2. Sector keywords: healthtech, consumer, foodtech, longevity
+  1. Investors: General Catalyst (Customer Value Fund)
+  2. Sector keywords: healthtech, consumer goods, longevity
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/14/david-beckhams-health-drink-startup-im8-takes-1b-from-general-catalysts-unusual-cvf-fund/)
-- **Keywords**: `healthtech, consumer, foodtech, longevity`
+- **Keywords**: `healthtech` `consumer goods` `longevity`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Together AI: $800M in a Series C
+## 2. Fora: $60 million Series D round
 
-- **Summary**: Together AI has raised a significant $800 million in a Series C funding round, led by Aramco Ventures, valuing the company at $8.3 billion. The company, which focuses on AI, has also reported annual bookings surpassing $1.15 billion. This substantial investment highlights the strong investor confidence in Together AI's growth and its impact in the artificial intelligence sector.
-- **Key Points**:
-  1. Investors: Aramco Ventures
-  2. Sector keywords: AI, cloud, infrastructure
-- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
-- **Keywords**: `AI, cloud, infrastructure`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 3. Quantum Systems: $1.2 billion in a Series D
-
-- **Summary**: Quantum Systems, a German manufacturer of autonomous defense drones, has successfully closed a $1.2 billion Series D funding round. This round was co-led by prominent investors including Blackstone, Airbus, Advent, and Noteus, and values the company at $8 billion. The investment underscores the increasing demand and strategic importance of advanced drone technology in the defense sector.
-- **Key Points**:
-  1. Investors: Blackstone, Airbus, Advent, Noteus
-  2. Sector keywords: defense, drones, AI, hardware
-- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
-- **Keywords**: `defense, drones, AI, hardware`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 4. Kuaishou's AI video unit Kling AI: $2.8 billion
-
-- **Summary**: Kuaishou's AI video unit, Kling AI, has secured a massive $2.8 billion in funding from a consortium of investors, achieving a pre-money valuation of $15 billion. This significant capital injection from major players like Alibaba, Tencent, and Baidu highlights the immense potential seen in AI-powered video technologies. The funding is expected to accelerate Kling AI's development and market expansion in the competitive AI and media landscape.
-- **Key Points**:
-  1. Investors: Alibaba, Tencent, Baidu
-  2. Sector keywords: AI, video, media, China
-- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
-- **Keywords**: `AI, video, media, China`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 5. Fora: $60 million Series D
-
-- **Summary**: Fora is an AI-powered travel agency that has achieved unicorn status, valuing the company at $1 billion. The company leverages AI to enhance travel planning and booking experiences for its users. This significant funding round will likely fuel further expansion and technological advancements in the travel industry.
+- **Summary**: Fora is an AI-powered travel agency that has achieved unicorn status with this funding round. The company provides a modern approach to travel planning and booking, leveraging artificial intelligence to enhance the customer experience.
 - **Key Points**:
   1. Investors: Forerunner, Tactile Ventures
-  2. Sector keywords: traveltech, AI, marketplace
+  2. Sector keywords: traveltech, AI, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/)
-- **Keywords**: `traveltech, AI, marketplace`
+- **Keywords**: `traveltech` `AI` `SaaS`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 3. Nous Research: at least $75 million in new funding
+
+- **Summary**: Nous Research, a company specializing in making Hermes agents, is in the process of raising significant new funding. The company is valued at $1.5 billion, and this round is led by Robot Ventures with participation from USV and other investors.
+- **Key Points**:
+  1. Investors: Robot Ventures, USV
+  2. Sector keywords: AI, AI-agents, deeptech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/)
+- **Keywords**: `AI` `AI-agents` `deeptech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 4. Nuclei AI: $65 million Series B round
+
+- **Summary**: Nuclei AI is a generative AI company focused on building custom large language models for enterprise clients. The company announced a successful Series B funding round, which was led by CapitalG.
+- **Key Points**:
+  1. Investors: CapitalG, NVIDIA, Workday Ventures
+  2. Sector keywords: AI, generative AI, LLMs, enterprise software
+- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
+- **Keywords**: `AI` `generative AI` `LLMs` `enterprise software`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 5. SyntheX: $80 million Series A round
+
+- **Summary**: SyntheX is a biotech company dedicated to developing next-generation therapeutics. They utilize synthetic biology and artificial intelligence in their research and development processes. The company secured a Series A funding round led by New Enterprise Associates.
+- **Key Points**:
+  1. Investors: New Enterprise Associates (NEA), ARCH Venture Partners, Lux Capital
+  2. Sector keywords: biotech, AI, synthetic biology, therapeutics
+- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
+- **Keywords**: `biotech` `AI` `synthetic biology` `therapeutics`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 6. Quantexa: $150 million Series E funding
+
+- **Summary**: Quantexa operates a data intelligence platform designed to help organizations make informed decisions by providing a comprehensive view of their data. The company successfully raised a significant Series E funding round, led by BAE Systems Digital Intelligence.
+- **Key Points**:
+  1. Investors: BAE Systems Digital Intelligence, HSBC, Evolution Equity Partners, Dawn Capital
+  2. Sector keywords: data intelligence, AI, fintech, enterprise software
+- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
+- **Keywords**: `data intelligence` `AI` `fintech` `enterprise software`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 7. Adept AI: undisclosed amount of funding
+
+- **Summary**: Adept AI is an AI research and product laboratory focused on advancing artificial intelligence. The company has secured additional funding from Microsoft, building upon its existing investor base which includes prominent venture capital firms.
+- **Key Points**:
+  1. Investors: Microsoft, Spark Capital, Greylock, Lightspeed Venture Partners
+  2. Sector keywords: AI research, generative AI, machine learning
+- **Source**: [Choclate Weekly (Substack)](https://choclatenews.substack.com/p/choclate-weekly-011)
+- **Keywords**: `AI research` `generative AI` `machine learning`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
