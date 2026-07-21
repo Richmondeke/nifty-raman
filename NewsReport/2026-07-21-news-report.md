@@ -7,48 +7,48 @@
 
 ## 1. Fora: $60 Million Series D
 
-- **Summary**: Fora, an AI-powered travel agency, has reached unicorn status with a $1 billion valuation following a $60 million Series D funding round. The company leverages artificial intelligence to provide modern travel planning services. This significant investment demonstrates strong investor confidence in its growth trajectory and its position within the competitive travel technology market.
+- **Summary**: Fora is an AI-powered travel agency that has achieved unicorn status with a $60 million Series D funding round. The company is now valued at $1 billion, showcasing its rapid growth and success in leveraging AI to enhance the travel booking and agency experience.
 - **Key Points**:
   1. Investors: Forerunner, Tactile Ventures
-  2. Sector keywords: travel tech, AI, travel agency, saas
+  2. Sector keywords: travel tech, AI, SaaS, e-commerce
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/)
-- **Keywords**: `travel tech, AI, travel agency, saas`
+- **Keywords**: `travel tech, AI, SaaS, e-commerce`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. IM8: $1 Billion Debt from General Catalyst's Customer Value Fund
+## 2. IM8: $1 Billion from General Catalyst's CVF fund
 
-- **Summary**: IM8, a health drink startup co-founded by David Beckham and known for its longevity vitamin drink, has secured a massive $1 billion in funding from General Catalyst's Customer Value Fund. This unique funding mechanism is a non-equity investment designed to support the company's growth. The deal highlights an unconventional approach to financing consumer brands.
+- **Summary**: IM8, a health drink startup co-founded by David Beckham, has secured a substantial $1 billion in funding from General Catalyst’s Customer Value Fund. This unique investment is not an equity deal but rather provided through a specialized fund, supporting the company known for its longevity vitamin drink.
 - **Key Points**:
-  1. Investors: General Catalyst (Customer Value Fund)
-  2. Sector keywords: healthtech, consumer goods, longevity, celebrity-backed
+  1. Investors: General Catalyst (via its Customer Value Fund)
+  2. Sector keywords: healthtech, consumer goods, wellness, structured finance
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/14/david-beckhams-health-drink-startup-im8-takes-1b-from-general-catalysts-unusual-cvf-fund/)
-- **Keywords**: `healthtech, consumer goods, longevity, celebrity-backed`
+- **Keywords**: `healthtech, consumer goods, wellness, structured finance`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Natural: $30 Million Undisclosed Round
+## 3. Natural: $30 Million Series A
 
-- **Summary**: Natural is a one-year-old startup focused on revolutionizing payments for AI agents, aiming to create a new financial architecture for autonomous AI transactions. The company seeks to provide AI agents with the ability to independently store, transfer, and settle accounts, directly challenging traditional payment systems like Stripe by building an infrastructure suited for the AI economy.
+- **Summary**: Natural is a one-year-old startup focused on reinventing financial architecture for autonomous AI transactions. It aims to develop a payment system specifically designed for AI agents, enabling them to autonomously process transactions and compete with existing payment platforms like Stripe. The company plans to expand operations and development efforts with the new funding.
 - **Key Points**:
-  1. Investors: Forerunner (led by Kirsten Green)
-  2. Sector keywords: fintech, AI, payments, AI agents
+  1. Investors: Kirsten Green (Forerunner Ventures), Aarmaan Ali, Baris Akis, Ramtin Naimi, Nichole Wischoff, Darragh Buckley, Pablo Palafox, Paul Klein IV, Akshay Kothari, Henri Stern, Max Segall, Art Levy, Jake Paul, Logan Paul, Human Capital, Abstract, Wischoff Ventures, Increase, HappyRobot, Browserbase, Notion, Privy, Y Combinator, Profound, Brex, Antifund
+  2. Sector keywords: fintech, AI payments, AI infrastructure, payments
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/)
-- **Keywords**: `fintech, AI, payments, AI agents`
+- **Keywords**: `fintech, AI payments, AI infrastructure, payments`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. Infinity: $15 Million Undisclosed Round at a $100 Million valuation
+## 4. Infinity: $15 Million Seed
 
-- **Summary**: Infinity is an AI infrastructure company that has secured $15 million in funding, achieving a $100 million valuation. The startup specializes in inference solutions, which are crucial for the efficient deployment and operation of AI models. Its investment round saw participation from prominent venture capitalists and key researchers from leading AI organizations.
+- **Summary**: Infinity is an AI infrastructure company that recently raised $15 million in a Seed round at a $100 million valuation. The company focuses on AI inference, which is crucial for deploying AI models. This significant early-stage funding indicates strong investor confidence in its technology.
 - **Key Points**:
   1. Investors: Touring Capital, Principal VC, researchers from OpenAI and Anthropic
-  2. Sector keywords: AI infrastructure, inference, machine learning, enterprise AI
+  2. Sector keywords: AI infrastructure, AI inference, machine learning, deep learning
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/)
-- **Keywords**: `AI infrastructure, inference, machine learning, enterprise AI`
+- **Keywords**: `AI infrastructure, AI inference, machine learning, deep learning`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
