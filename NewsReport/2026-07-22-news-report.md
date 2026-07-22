@@ -7,72 +7,72 @@
 
 ## 1. Fora: $60 Million Series D
 
-- **Summary**: Fora is an AI-powered travel agency that has achieved unicorn status with this funding round, valuing the company at $1 billion. The company provides tools and services for modern travel advisors, leveraging AI to enhance the travel planning experience.
+- **Summary**: Fora, an AI-powered travel agency, has attained unicorn status following a $60 million Series D funding round, which valued the company at $1 billion. This significant investment is expected to accelerate its global expansion and enhance its AI capabilities within the travel sector.
 - **Key Points**:
   1. Investors: Forerunner, Tactile Ventures
-  2. Sector keywords: travel tech, AI, SaaS, hospitality
+  2. Sector keywords: travel tech, AI, marketplace, unicorn, Series D
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/)
-- **Keywords**: `travel tech, AI, SaaS, hospitality`
+- **Keywords**: `travel tech` `AI` `marketplace` `unicorn` `Series D`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Freenome: $310 Million from SPAC merger
+## 2. Freenome: $310 Million IPO (including PIPE)
 
-- **Summary**: Freenome is a cancer testing company developing blood-based tests for early cancer detection, utilizing multiomic and AI/ML platforms. The company went public via a SPAC merger with Perceptive Capital Solutions Corp., securing significant capital to advance its diagnostic technologies.
+- **Summary**: Freenome, a company specializing in early cancer detection, has gone public through a business combination, raising approximately $310 million in gross proceeds, which included a $240 million Private Investment in Public Equity (PIPE). The company's platform utilizes blood tests and AI to detect cancer in its earliest stages, marking a significant step in making its technology widely available.
 - **Key Points**:
-  1. Investors: Perceptive Capital Solutions Corp. (SPAC sponsor), Perceptive Advisors, RA Capital Management, ADAR1 Capital, Bain Capital Life Sciences, Farallon Capital Management
-  2. Sector keywords: healthtech, cancer detection, biotechnology, liquid biopsy
-- **Source**: [Hacker News](https://www.bizjournals.com/sanfrancisco/news/2026/07/21/cancer-testing-crc-freenome-public-spac-perceptive.html)
-- **Keywords**: `healthtech, cancer detection, biotechnology, liquid biopsy`
+  1. Investors: Perceptive Advisors, RA Capital.
+  2. Sector keywords: healthtech, biotech, cancer diagnostics, IPO, AI
+- **Source**: [Hacker News (Bizjournals.com)](https://www.bizjournals.com/sanfrancisco/news/2026/07/21/cancer-testing-crc-freenome-public-spac-perceptive.html)
+- **Keywords**: `healthtech` `biotech` `cancer diagnostics` `IPO` `AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Augustus: $180 Million Series B at a $1 Billion valuation
+## 3. Augustus: $180 Million Series B at $1 Billion valuation
 
-- **Summary**: Augustus (formerly Ivy) is building a clearing bank for the AI and stablecoin era, aiming to provide financial institutions worldwide with direct, programmable access to dollar accounts and rails. The company combines direct bank clearing, traditional payment rails, and stablecoin settlement, with a focus on AI-driven payments and 24/7 settlement.
+- **Summary**: Augustus, formerly known as Ivy, has successfully raised $180 million in a Series B funding round, valuing the company at $1 billion. This significant investment is aimed at establishing a federally chartered clearing bank specifically designed for the AI and stablecoin era. The company seeks to revolutionize cross-border payment infrastructure by offering international financial institutions direct, programmable access to dollar accounts and seamlessly integrating stablecoin settlement with traditional payment rails.
 - **Key Points**:
-  1. Investors: Tiger Global (led), Hummingbird, QED, founders/executives from Nubank, Ramp, Circle, Deel, Balaji Srinivasan, Soma Capital, Road Capital Management, CMT Digital, Brevan Howard Digital, Variant
-  2. Sector keywords: fintech, stablecoins, AI, banking, payments
-- **Source**: [Hacker News](https://www.coindesk.com/business/2026/07/21/augustus-raises-usd180-million-to-build-a-clearing-bank-for-the-ai-and-stablecoin-era)
-- **Keywords**: `fintech, stablecoins, AI, banking, payments`
+  1. Investors: Tiger Global (led), Hummingbird, QED, founders or executives linked to Nubank, Ramp, Circle, and Deel, Balaji Srinivasan, Soma Capital, Road Capital Management, CMT Digital, Brevan Howard Digital, Variant.
+  2. Sector keywords: fintech, blockchain, AI, stablecoins, banking, Series B
+- **Source**: [Hacker News (CoinDesk)](https://www.coindesk.com/business/2026/07/21/augustus-raises-usd180-million-to-build-a-clearing-bank-for-the-ai-and-stablecoin-era)
+- **Keywords**: `fintech` `blockchain` `AI` `stablecoins` `banking` `Series B`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 4. Bluecore Energy: $10 Million Preseed
+## 4. Bluecore Energy: $10 Million Pre-seed
 
-- **Summary**: Bluecore Energy is a maritime nuclear energy startup that has raised funding to build portable nuclear reactors on barges. The company is innovating in the energy sector with its unique approach to nuclear power generation and deployment.
+- **Summary**: Bluecore Energy is a maritime nuclear energy startup focused on developing and building portable nuclear reactors that can be deployed on barges. This pre-seed funding round will support the initial development and advancement of their innovative approach to clean energy generation.
 - **Key Points**:
   1. Investors: Slauson & Co.
-  2. Sector keywords: nuclear energy, maritime tech, deep tech
+  2. Sector keywords: nuclear energy, maritime, cleantech, pre-seed
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/21/this-uber-alumn-just-raised-a-10m-pre-seed-to-build-portable-nuclear-enegry/)
-- **Keywords**: `nuclear energy, maritime tech, deep tech`
+- **Keywords**: `nuclear energy` `maritime` `cleantech` `pre-seed`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 5. Natural: $30 Million Series A
 
-- **Summary**: Natural is a one-year-old startup building a financial technology stack for AI agents, aiming to reinvent payments infrastructure for autonomous AI transactions and compete with Stripe. They provide tools for AI agents to hold and move money, make purchases, pay invoices, and collect payments independently.
+- **Summary**: Natural, a one-year-old startup, secured $30 million in Series A funding to develop an AI-native payments platform. The company aims to redefine financial infrastructure for autonomous AI transactions, offering a comprehensive technology stack for AI agents to manage payments, wallets, fraud detection, and compliance, directly challenging established payment solutions like Stripe.
 - **Key Points**:
-  1. Investors: Forerunner (led by Kirsten Green), Human Capital, Abstract, Wischoff Ventures, Increase, HappyRobot, Browserbase, Akshay Kothari (Notion), Pete Koomen (Y Combinator), Art Levy (Brex), Jake Paul, Logan Paul (Antifund), Dylan Babbs (Profound), Henri Stern, Max Segall (Privy)
-  2. Sector keywords: AI, fintech, payments, AI agents
+  1. Investors: Forerunner (led by Kirsten Green), Aarmaan Ali and Baris Akis (Founders of Human Capital), Ramtin Naimi (Founder of Abstract), Nichole Wischoff (Founder of Wischoff Ventures), Darragh Buckley (CEO of Increase), Pablo Palafox (CEO of HappyRobot), Paul Klein IV (CEO of Browserbase), Akshay Kothari (Co-founder of Notion), Henri Stern and Max Segall (CEO and COO of Privy), Pete Koomen (GP of Y Combinator), Dylan Babbs (CTO of Profound), Art Levy (CBO of Brex), Jake and Logan Paul (GPs of Antifund), and other angel investors.
+  2. Sector keywords: fintech, AI, payments, AI agents, Series A
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/)
-- **Keywords**: `AI, fintech, payments, AI agents`
+- **Keywords**: `fintech` `AI` `payments` `AI agents` `Series A`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 6. Infinity: $15 Million Seed funding at a $100 Million valuation
+## 6. Infinity: $15 Million Seed at $100 Million valuation
 
-- **Summary**: Infinity is an early-stage AI infrastructure company building software to optimize AI chips for inference workloads. Its autonomous coding agent, Ignition, writes and optimizes compute kernels for various processors, aiming to provide a software alternative to NVIDIA's CUDA ecosystem.
+- **Summary**: Infinity, an early-stage AI infrastructure company, has raised $15 million in seed funding, achieving a $100 million post-money valuation. The company is developing a crucial software layer designed to make any AI chip inference-ready, providing an alternative to NVIDIA's CUDA ecosystem for optimizing AI chips and running inference workloads efficiently.
 - **Key Points**:
-  1. Investors: Touring Capital, Principal VC, executives from leading chip companies, researchers from OpenAI and Anthropic, other angel investors including founder Jeremy Nixon
-  2. Sector keywords: AI infrastructure, inference, AI chips, software
+  1. Investors: Touring Capital, Principal VC, executives at major chip companies, researchers from OpenAI and Anthropic, and other prominent angel investors including Infinity founder and CEO Jeremy Nixon.
+  2. Sector keywords: AI infrastructure, AI, inference, deep tech, semiconductors, seed
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/)
-- **Keywords**: `AI infrastructure, inference, AI chips, software`
+- **Keywords**: `AI infrastructure` `AI` `inference` `deep tech` `semiconductors` `seed`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
