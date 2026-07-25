@@ -5,9 +5,9 @@
 
 ---
 
-## 1. Atoms: $1.7 billion, undisclosed stage
+## 1. Atoms: $1.7 Billion, undisclosed stage
 
-- **Summary**: Atoms is Travis Kalanick's robotics company, which has raised a substantial $1.7 billion funding round. The company is focused on leveraging industrial AI to modernize various sectors, with Uber also investing in its vision for advanced robotics and artificial intelligence applications.
+- **Summary**: Atoms, founded by Uber's Travis Kalanick, raised a significant $1.7 billion round to develop industrial AI solutions. The company aims to modernize the world through its advanced robotics and AI technologies, with Uber also investing.
 - **Key Points**:
   1. Investors: a16z, Uber
   2. Sector keywords: robotics, AI, industrial AI, deep tech
@@ -17,62 +17,62 @@
 
 ---
 
-## 2. Bluecore Energy: $10 million Preseed round
+## 2. Bluecore Energy: $10 Million Preseed
 
-- **Summary**: Bluecore Energy, a maritime nuclear energy startup, has raised $10 million in a pre-seed funding round. The company is developing portable nuclear reactors designed to operate on barges, aiming to provide innovative and flexible energy solutions for various applications.
+- **Summary**: Bluecore Energy, a maritime nuclear energy startup, raised $10 million in a pre-seed funding round. The company is innovating by building portable nuclear reactors designed to operate on barges, pushing forward clean energy solutions.
 - **Key Points**:
   1. Investors: Slauson & Co.
-  2. Sector keywords: energy tech, nuclear energy, deep tech, maritime
+  2. Sector keywords: nuclear energy, deep tech, energy innovation, cleantech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/21/this-uber-alumn-just-raised-a-10m-pre-seed-to-build-portable-nuclear-enegry/)
-- **Keywords**: `energy tech` `nuclear energy` `deep tech` `maritime`
+- **Keywords**: `nuclear energy` `deep tech` `energy innovation` `cleantech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Natural: $30 million Series A round
+## 3. Natural: $30 Million, undisclosed stage
 
-- **Summary**: Natural is a San Francisco-based payments infrastructure startup that has closed a $30 million Series A round. The company is building financial architecture specifically for autonomous AI agents, aiming to enable them to conduct transactions autonomously and challenging existing payment platforms like Stripe in this emerging market.
+- **Summary**: Natural, a one-year-old startup, raised $30 million to build a new financial architecture specifically for autonomous AI transactions. The company aims to challenge existing payment giants like Stripe by focusing on the unique payment needs of AI agents.
 - **Key Points**:
-  1. Investors: Forerunner Ventures, Human Capital, Abstract, Wischoff Ventures, Akshay Kothari, Pete Koomen, Art Levy, Logan and Jake Paul's Antifund
-  2. Sector keywords: fintech, AI, payments, AI agents, payments infrastructure
+  1. Investors: Undisclosed
+  2. Sector keywords: fintech, AI, payments, AI agents
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/)
-- **Keywords**: `fintech` `AI` `payments` `AI agents` `payments infrastructure`
+- **Keywords**: `fintech` `AI` `payments` `AI agents`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. Infinity: $15 million, undisclosed stage
+## 4. Infinity: $15 Million, undisclosed stage at $100 Million valuation
 
-- **Summary**: Infinity is an AI infrastructure company that recently raised $15 million, achieving a $100 million valuation. The startup focuses on providing solutions for AI inference, with backing from prominent investors including venture capital firms and researchers from leading AI organizations like OpenAI and Anthropic.
+- **Summary**: Infinity, an AI infrastructure company focusing on inference, announced a $15 million funding round at a $100 million valuation. The investment comes from notable firms and researchers from leading AI companies like OpenAI and Anthropic, highlighting its potential in the AI ecosystem.
 - **Key Points**:
   1. Investors: Touring Capital, Principal VC, researchers from OpenAI and Anthropic
-  2. Sector keywords: AI infrastructure, inference, deep tech, machine learning
+  2. Sector keywords: AI infrastructure, inference, deep tech, AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/)
-- **Keywords**: `AI infrastructure` `inference` `deep tech` `machine learning`
+- **Keywords**: `AI infrastructure` `inference` `deep tech` `AI`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 5. Imagi: $4.5 million Seed round
+## 5. Imagi: $4.5 Million Seed
 
-- **Summary**: Imagi is an edtech platform that helps teach students how to 'vibe code.' The platform focuses on making coding education accessible and engaging for students, offering tools and curricula to foster programming skills.
+- **Summary**: Imagi is an edtech platform focused on teaching students how to 'vibe code', aiming to make programming education engaging. This seed funding will support the platform's development and expansion in the educational technology sector.
 - **Key Points**:
   1. Investors: Brighteye Ventures, Day One Capital, Will.i.am
-  2. Sector keywords: edtech, coding education, education
+  2. Sector keywords: edtech, coding education, education technology
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/23/edtech-platform-raises-4-5m-to-help-teach-students-how-to-vibe-code/)
-- **Keywords**: `edtech` `coding education` `education`
+- **Keywords**: `edtech` `coding education` `education technology`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 6. Cascade: $3.5 million Seed round
+## 6. Cascade: $3.5 Million Seed
 
-- **Summary**: Cascade has secured $3.5 million in a seed funding round to assist construction firms in identifying and securing projects. The platform aims to streamline the process of finding new opportunities and winning bids within the construction industry, likely through advanced analytics and project management tools.
+- **Summary**: Cascade secured $3.5 million in a seed round to develop a platform that helps construction firms efficiently identify and secure new projects. The company aims to streamline project acquisition and management within the construction industry.
 - **Key Points**:
   1. Investors: a16z Speedrun, Ada Ventures, Snowball VC
-  2. Sector keywords: construction tech, SaaS, project management
+  2. Sector keywords: construction tech, B2B SaaS, project management
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/22/cascade-raises-3-5m-to-help-construction-firms-find-and-win-projects/)
-- **Keywords**: `construction tech` `SaaS` `project management`
+- **Keywords**: `construction tech` `B2B SaaS` `project management`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
