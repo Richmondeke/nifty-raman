@@ -1,54 +1,66 @@
 # Daily News Report (2026-07-29)
 
-> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Atoms: $1.7 Billion funding round
+## 1. The Boring Company: Reportedly raising $4 Billion at a $20 Billion valuation
 
-- **Summary**: Atoms, a robotics company founded by Travis Kalanick, has secured a substantial $1.7 billion funding round. The company aims to modernize industries globally through the application of industrial AI.
+- **Summary**: Elon Musk's tunneling startup, The Boring Company, is reportedly in talks to raise a significant new funding round of $4 billion, which would value the company at approximately $20 billion. This investment aims to further its ambitious infrastructure projects, despite some previous setbacks in proposed ventures.
 - **Key Points**:
-  1. Investors: a16z, Uber
-  2. Sector keywords: robotics, industrial AI, enterprise software, deep tech
-- **Source**: [TechCrunch](https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/)
-- **Keywords**: `robotics, industrial AI, enterprise software, deep tech`
+  1. Investors: Undisclosed
+  2. Sector keywords: infrastructure
+- **Source**: [TechCrunch](https://techcrunch.com/2026/07/25/elon-musks-boring-company-reportedly-raising-funding-at-a-20-billion-valuation/)
+- **Keywords**: `infrastructure`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Imagi: $4.5 Million Seed round
+## 2. Atoms: $1.7 Billion, led by a16z
 
-- **Summary**: Imagi is an edtech platform focused on teaching students how to code. The company successfully closed a seed funding round to further develop its educational offerings and expand its reach.
+- **Summary**: Travis Kalanick's robotics company, Atoms, has raised a substantial $1.7 billion in a funding round led by a16z. The company focuses on using industrial AI to modernize various sectors, with Uber also participating as an investor.
+- **Key Points**:
+  1. Investors: a16z (lead), Uber
+  2. Sector keywords: robotics
+- **Source**: [TechCrunch](https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/)
+- **Keywords**: `robotics`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Imagi: $4.5 Million Seed round
+
+- **Summary**: Imagi, an edtech platform, has secured a $4.5 million seed round. The company aims to help teach students 'vibe code,' indicating an innovative and engaging approach to coding education.
 - **Key Points**:
   1. Investors: Brighteye Ventures, Day One Capital, Will.i.am
-  2. Sector keywords: edtech, coding education, K-12, software
+  2. Sector keywords: edtech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/23/edtech-platform-raises-4-5m-to-help-teach-students-how-to-vibe-code/)
-- **Keywords**: `edtech, coding education, K-12, software`
+- **Keywords**: `edtech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 3. Cascade: $3.5 Million Seed round
+## 4. Cascade: $3.5 Million Seed round
 
-- **Summary**: Cascade has raised a $3.5 million seed round to advance its platform, which is designed to assist construction firms in identifying and securing new projects. The company aims to streamline the project acquisition process for the construction industry.
+- **Summary**: Cascade has raised $3.5 million in a seed funding round. The company's platform is designed to assist construction firms in identifying and successfully securing new projects.
 - **Key Points**:
   1. Investors: a16z Speedrun, Ada Ventures, Snowball VC
-  2. Sector keywords: construction tech, SaaS, project management, proptech
+  2. Sector keywords: construction tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/22/cascade-raises-3-5m-to-help-construction-firms-find-and-win-projects/)
-- **Keywords**: `construction tech, SaaS, project management, proptech`
+- **Keywords**: `construction tech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Fincart: $2.8 Million Seed round
+## 5. Fincart: $2.8 Million Seed round
 
-- **Summary**: Fincart, an Egyptian startup, has successfully raised an oversubscribed seed funding round to expand its AI-powered operating system for e-commerce merchants. The company recently pivoted from a logistics management platform to offer a comprehensive solution for online businesses.
+- **Summary**: Egyptian startup Fincart has successfully closed an oversubscribed $2.8 million seed funding round to expand its AI-powered commerce platform. The company, which pivoted from a logistics management platform, now offers an operating system for e-commerce merchants to manage shipping, customer engagement, and cash advances.
 - **Key Points**:
-  1. Investors: Launch Africa, Antler MENAP, Yango Ventures, Five35 Ventures, Bluestream Capital, Hi2 Global, Kalahari Venture Labs
-  2. Sector keywords: e-commerce, AI, logistics, SaaS, Egypt
+  1. Investors: Launch Africa (co-lead), Antler MENAP (co-lead), Yango Ventures, Five35 Ventures, Bluestream Capital, Hi2 Global, Kalahari Venture Labs
+  2. Sector keywords: e-commerce
 - **Source**: [TechCabal](https://techcabal.com/2026/07/28/egyptian-startup-fincart-raises-2-8-million-to-expand-ai-commerce-platform/)
-- **Keywords**: `e-commerce, AI, logistics, SaaS, Egypt`
+- **Keywords**: `e-commerce`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
