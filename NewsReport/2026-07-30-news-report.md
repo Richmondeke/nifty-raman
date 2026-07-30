@@ -5,63 +5,63 @@
 
 ---
 
-## 1. The Boring Company: $4 Billion at a $20 Billion Valuation
+## 1. The Boring Company: reportedly raising $4 Billion at a $20 Billion valuation
 
-- **Summary**: Elon Musk's tunneling startup, The Boring Company, is reportedly in talks to raise a new funding round of $4 billion, which would value the company at $20 billion. This significant investment aims to further its ambitious projects in developing underground tunnel systems for transportation and infrastructure.
+- **Summary**: Elon Musk's tunneling startup, The Boring Company, is reportedly in talks to raise a significant new funding round of approximately $4 billion, which would value the company at $20 billion. The company aims to alleviate urban congestion through underground tunnel systems for high-speed transportation. This potential raise marks a substantial increase from its previous valuation.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: tunneling, infrastructure, deep-tech, transportation
+  2. Sector keywords: tunneling, infrastructure, deep tech, transportation
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/25/elon-musks-boring-company-reportedly-raising-funding-at-a-20-billion-valuation/)
-- **Keywords**: `tunneling` `infrastructure` `deep-tech` `transportation`
+- **Keywords**: `tunneling` `infrastructure` `deep tech` `transportation`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Moonshot AI: $3.5 Billion Series F at $35 Billion Valuation
+## 2. Moonshot AI: $3.5 Billion Series F at a $35 Billion Valuation
 
-- **Summary**: Moonshot AI, a Beijing-based artificial intelligence startup, has secured $3.5 billion in Series F financing, pushing its post-money valuation to $35 billion. This substantial funding round was anchored by China's National Artificial Intelligence Industry Investment Fund, highlighting significant investment in advanced AI development.
+- **Summary**: Chinese AI startup Moonshot AI has completed a substantial funding round, raising $3.5 billion and reaching a valuation of $35 billion. The company, known for its Kimi chatbot, aims to further develop its advanced artificial intelligence capabilities. This significant investment underscores the strong interest in the company's large language models.
 - **Key Points**:
-  1. Investors: China's National Artificial Intelligence Industry Investment Fund (lead)
-  2. Sector keywords: AI, large language models, generative AI, China
+  1. Investors: National Artificial Intelligence Industry Investment Fund, Alibaba, Tencent, HongShan, IDG Capital, Gaorong Capital
+  2. Sector keywords: AI, large language models, deep tech, China
 - **Source**: [Hacker News](https://www.bloomberg.com/news/articles/2026-07-29/china-s-moonshot-ai-passes-funding-goal-to-hit-35-billion-value)
-- **Keywords**: `AI` `large language models` `generative AI` `China`
+- **Keywords**: `AI` `large language models` `deep tech` `China`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Imagi: $4.5 Million Seed Round
+## 3. Imagi: $4.5 Million Seed round
 
-- **Summary**: Imagi, an edtech platform focused on teaching students how to 'vibe code,' has successfully closed a $4.5 million seed funding round. The capital will be utilized to enhance its educational offerings and expand its reach within the growing market for coding education.
+- **Summary**: Imagi, an edtech platform, has announced a $4.5 million seed round. The company focuses on teaching students 'vibe code,' aiming to make coding education engaging and accessible. This funding will support its mission to help students learn programming skills in an interactive environment.
 - **Key Points**:
   1. Investors: Brighteye Ventures, Day One Capital, Will.i.am
-  2. Sector keywords: edtech, coding education, education, K-12
+  2. Sector keywords: edtech, coding education, education technology, seed
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/23/edtech-platform-raises-4-5m-to-help-teach-students-how-to-vibe-code/)
-- **Keywords**: `edtech` `coding education` `education` `K-12`
+- **Keywords**: `edtech` `coding education` `education technology` `seed`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Pangram: $9 Million Funding
+## 4. Situational Awareness: seeks capital raise
 
-- **Summary**: Pangram, an AI research lab based in NYC, has raised $9 million in funding to advance its technology for detecting AI-generated content. The company aims to address the challenge of distinguishing human-created content from AI-assisted outputs across text and images.
+- **Summary**: Leopold Aschenbrenner's AI-focused hedge fund, Situational Awareness, is actively seeking additional capital from investors following recent losses in AI-related stocks. The fund has been holding discussions with existing investors and lending counterparties to raise new capital. It previously garnered backing from notable tech investors and aims to capitalize on new investment opportunities.
 - **Key Points**:
-  1. Investors: Menlo Ventures (lead), Haystack, ScOp, Script Capital, Cadenza
-  2. Sector keywords: AI detection, content moderation, AI ethics, generative AI
-- **Source**: [Hacker News](https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/)
-- **Keywords**: `AI detection` `content moderation` `AI ethics` `generative AI`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 5. Situational Awareness: Undisclosed Capital Raise
-
-- **Summary**: Leopold Aschenbrenner's new venture, Situational Awareness, is actively seeking to raise capital. This funding initiative follows a period of significant market volatility within the artificial intelligence sector, indicating the company's efforts to secure resources for its AI-focused operations.
-- **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: AI, deep-tech, start-up
+  1. Investors: Jane Street, Patrick Collison, John Collison, Nat Friedman, Daniel Gross
+  2. Sector keywords: AI, artificial intelligence, hedge fund, funding
 - **Source**: [Hacker News](https://www.ft.com/content/280336bf-dbed-405f-b38e-5af644a21549)
-- **Keywords**: `AI` `deep-tech` `start-up`
-- **Score**: ⭐⭐ (2/5)
+- **Keywords**: `AI` `artificial intelligence` `hedge fund` `funding`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 5. Pangram: $9 Million in funding
+
+- **Summary**: Pangram has successfully raised $9 million in a funding round to enhance its AI content detection technology. The company aims to address the growing challenge of identifying AI-generated text and images in an internet increasingly populated by synthetic media. This capital will support the launch of its new detection models.
+- **Key Points**:
+  1. Investors: Menlo Ventures, Haystack, ScOp, Script Capital, Cadenza
+  2. Sector keywords: AI, content detection, AI ethics, machine learning
+- **Source**: [Hacker News](https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/)
+- **Keywords**: `AI` `content detection` `AI ethics` `machine learning`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
