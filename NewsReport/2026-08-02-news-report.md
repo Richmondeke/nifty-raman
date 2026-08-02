@@ -7,36 +7,36 @@
 
 ## 1. Inforcer: $50 Million Series C
 
-- **Summary**: London-based Inforcer closed a $50 million Series C round to help smaller businesses prepare for and manage new AI and security risks. The company aims to provide solutions that enable SMBs to navigate the evolving landscape of cyber threats and integrate AI securely.
+- **Summary**: London-based Inforcer closed a $50 million Series C round led by Insight Partners. The company helps smaller businesses prepare for a new world of AI and security risks, providing solutions to enhance their cybersecurity posture.
 - **Key Points**:
   1. Investors: Insight Partners (Lead)
-  2. Sector keywords: Cybersecurity
+  2. Sector keywords: cybersecurity, AI, SMB, B2B SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/30/inforcer-raises-50m-to-help-prepare-smbs-for-a-new-world-of-ai-and-security-risks/)
-- **Keywords**: `Cybersecurity`
+- **Keywords**: `cybersecurity` `AI` `SMB` `B2B SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 2. Smallest.ai: $13 Million Series A
 
-- **Summary**: Smallest.ai is developing ultra-fast voice AI that aims to sound genuinely human, designed to enable AI phone calls to pass the Turing test. The startup focuses on achieving low latency and natural speech by combining small, specialized voice models with larger AI models for deeper reasoning.
+- **Summary**: Smallest.ai, a San Francisco-based AI fundamental research lab, raised $13 million in Series A funding. The company is building ultra-fast voice AI that sounds genuinely human, aiming to make AI phone calls pass the Turing test. They focus on specialized, small models for low latency in real-time conversations.
 - **Key Points**:
   1. Investors: Seligman Ventures (Lead), Sierra Ventures, 3one4 Capital
-  2. Sector keywords: AI
+  2. Sector keywords: voice AI, artificial intelligence, conversational AI, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/)
-- **Keywords**: `AI`
+- **Keywords**: `voice AI` `artificial intelligence` `conversational AI` `enterprise AI`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
 ## 3. Ellis AI: $10 Million Seed
 
-- **Summary**: Ellis AI, founded by repeat entrepreneur Ryan Williams, has emerged from stealth with $10 million in seed funding. The AI-native operations platform is designed specifically for private credit managers, aiming to unify disconnected outputs from various financial systems and automate workflows like reconciliation, anomaly detection, and reporting.
+- **Summary**: Ellis AI emerged from stealth with $10 million in seed funding to transform private credit operations with AI. The company, founded by repeat entrepreneur Ryan Williams, provides an AI-native operations platform to automate reconciliation, reporting, and compliance for fund managers, aiming to create a unified data layer to address fragmented data silos in private credit.
 - **Key Points**:
-  1. Investors: First Round Capital (Lead), 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Ventures, Wilshire Lane, Westbound, Collide Capital, Gallery Ventures, Mellody Hobson, Josh Kushner, Immad Akhund
-  2. Sector keywords: AI
+  1. Investors: First Round Capital (Lead), 645 Ventures, Harlem Capital, Khosla Ventures, Slow Ventures, Wilshire Lane, Westbound, Collide Capital, Gallery Ventures. Individual investors: Mellody Hobson, Josh Kushner, Immad Akhund.
+  2. Sector keywords: AI, private credit, fintech, enterprise software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/)
-- **Keywords**: `AI`
+- **Keywords**: `AI` `private credit` `fintech` `enterprise software`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
