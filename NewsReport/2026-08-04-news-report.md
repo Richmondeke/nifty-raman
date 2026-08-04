@@ -1,66 +1,78 @@
 # Daily News Report (2026-08-04)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 6 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Base Power: $1 Billion Series D
+## 1. Base Power: $1 Billion Series D financing
 
-- **Summary**: Base Power, an Austin, Texas-based company, has raised a significant Series D round to expand its distributed energy solutions and home battery systems. The company is developing innovative home batteries, like its 40 kWh Base Core, designed for rapid deployment, automatic outage backup, and integration into a virtual power plant to support the power grid.
+- **Summary**: Base Power, an Austin, Texas-based provider of distributed energy solutions and home battery systems, raised $1 billion in Series D financing, bringing its total capital to over $2.5 billion. The company plans to use the new funding to expand nationally and scale its home battery deployments.
 - **Key Points**:
-  1. Investors: Ribbit Capital (Lead), Addition (Lead), Valor Equity Partners (Lead), JPMorgan Chase's Strategic Investment Group (Lead), Altimeter, D1 Capital Partners, Sands Capital, Coatue, Layer Global, Energy Impact Partners, Thrive Capital, Andreessen Horowitz (a16z), Lightspeed, Trust Ventures, CapitalG
-  2. Sector keywords: energy storage, cleantech, home energy, grid infrastructure, hardware
+  1. Investors: Ribbit (lead), Addition (lead), Valor Equity Partners (lead), JPMorganChase's Strategic Investment Group (lead), Altimeter, D1 Capital Partners, Sands Capital, Coatue, Layer Global, Energy Impact Partners, Thrive Capital, Andreessen Horowitz, Lightspeed, Trust Ventures, CapitalG
+  2. Sector keywords: Energy, Infrastructure, Climate Tech, Home Batteries
 - **Source**: [Hacker News](https://news.ycombinator.com/item?id=49161808)
-- **Keywords**: `energy storage` `cleantech` `home energy` `grid infrastructure` `hardware`
+- **Keywords**: `Energy, Infrastructure, Climate Tech, Home Batteries`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Inforcer: $50 million Series C round led by Insight Partners
+## 2. Airtable: acquired for $1.285 Billion
 
-- **Summary**: London-based Inforcer secured a substantial Series C funding round. The company focuses on providing solutions to help smaller businesses prepare for and manage new risks associated with AI and evolving security threats, aiming to enhance their resilience in the digital landscape.
+- **Summary**: Bending Spoons has entered into a definitive agreement to acquire Airtable for $1.285 billion. This major acquisition signifies a significant consolidation in the low-code and productivity software market.
 - **Key Points**:
-  1. Investors: Insight Partners (Lead)
-  2. Sector keywords: cybersecurity, AI, SMBs, enterprise software, risk management
+  1. Investors: Bending Spoons (Acquirer)
+  2. Sector keywords: SaaS, Productivity, Low-code, M&A
+- **Source**: [Reuters](https://www.reuters.com/legal/transactional/bending-spoons-makes-first-post-ipo-acquisition-with-13-billion-airtable-deal-2026-08-04/)
+- **Keywords**: `SaaS, Productivity, Low-code, M&A`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Inforcer: $50 million Series C round
+
+- **Summary**: London-based Inforcer successfully closed a $50 million Series C round led by Insight Partners. The company focuses on equipping smaller businesses to prepare for the evolving landscape of AI and security risks.
+- **Key Points**:
+  1. Investors: Insight Partners
+  2. Sector keywords: Cybersecurity, AI, SMBs, Enterprise Security
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/30/inforcer-raises-50m-to-help-prepare-smbs-for-a-new-world-of-ai-and-security-risks/)
-- **Keywords**: `cybersecurity` `AI` `SMBs` `enterprise software` `risk management`
+- **Keywords**: `Cybersecurity, AI, SMBs, Enterprise Security`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. June AI: $20 Million Pre-seed
+## 4. June: $20 million pre-seed round
 
-- **Summary**: June AI is a New York-based startup that emerged from stealth with significant pre-seed funding. It aims to solve the enterprise AI deployment problem by developing autonomous AI agents to automate the implementation, migration, and adoption of complex enterprise software systems. The company was founded by a team who previously built Bonobo AI, acquired by Salesforce.
+- **Summary**: June emerged from stealth with a $20 million pre-seed round to simplify AI adoption. The startup, backed by notable tech leaders, aims to solve the complex challenges associated with deploying enterprise AI solutions by automating implementation processes.
 - **Key Points**:
-  1. Investors: TIME Ventures (Lead), Michael Dell, Diane Greene, Aaron Levie, George Kurtz, SV Angel, Conviction Embed, Abstract, A*, Vesey Ventures
-  2. Sector keywords: AI, enterprise software, AI deployment, preseed, SaaS
+  1. Investors: TIME Ventures (lead), Michael Dell, Diane Greene, Aaron Levie, George Kurtz, SV Angel, Conviction Embed, Abstract, A*, Vesey Ventures
+  2. Sector keywords: AI deployment, Enterprise AI, Preseed, Software implementation
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/)
-- **Keywords**: `AI` `enterprise software` `AI deployment` `preseed` `SaaS`
+- **Keywords**: `AI deployment, Enterprise AI, Preseed, Software implementation`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Smallest.ai: $13M Series A
+## 5. Smallest.ai: $13M Series A funding round
 
-- **Summary**: Smallest.ai, based in San Francisco (though some sources mention Bangalore), raised a Series A round to build ultra-fast, genuinely human-sounding voice AI. The company develops specialized, miniaturized AI models and a real-time speech-to-speech architecture, Hydra, designed to reduce latency in enterprise voice interactions and help AI phone calls pass the Turing test.
+- **Summary**: Smallest.ai raised $13 million in a Series A funding round to develop ultra-fast, human-like voice AI. The San Francisco-based company is building voice models designed to enable AI phone calls to pass the Turing test, with a focus on enterprise applications in financial services, healthcare, and contact centers.
 - **Key Points**:
-  1. Investors: Seligman Ventures (Lead), Sierra Ventures, 3one4 Capital, Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC, Mission Street Capital
-  2. Sector keywords: voice AI, AI, natural language processing, enterprise AI, deep tech
+  1. Investors: Seligman Ventures (lead), Sierra Ventures, 3one4 Capital
+  2. Sector keywords: Voice AI, AI models, Enterprise AI, Speech technology
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/)
-- **Keywords**: `voice AI` `AI` `natural language processing` `enterprise AI` `deep tech`
+- **Keywords**: `Voice AI, AI models, Enterprise AI, Speech technology`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 5. Ellis AI: $10M seed funding
+## 6. Ellis AI: $10M seed funding
 
-- **Summary**: Ellis AI, founded by repeat entrepreneur Ryan Williams, emerged from stealth with seed funding to create an AI-native operations platform for private credit managers. The platform aims to automate reconciliation, reporting, compliance, and anomaly detection by unifying fragmented financial data and employing AI agents, allowing human teams to maintain control over key decisions.
+- **Summary**: Ellis AI, founded by repeat entrepreneur Ryan Williams, emerged from stealth with $10 million in seed funding. The startup provides an AI-native operations platform specifically designed for private credit managers to automate reconciliation, reporting, and compliance.
 - **Key Points**:
-  1. Investors: First Round Capital (Lead), 645 Ventures, Harlem Capital, Khosla Ventures, Slow Ventures, Wilshire Lane, Westbound, Collide Capital, Gallery Ventures, Mellody Hobson, Josh Kushner, Immad Akhund
-  2. Sector keywords: AI, fintech, private credit, enterprise AI, workflow automation
+  1. Investors: First Round Capital (lead), 645 Ventures, Harlem Capital, Khosla Ventures, Slow Ventures, Wilshire Lane, Westbound, Collide Capital, Gallery Ventures, Mellody Hobson, Josh Kushner, Immad Akhund
+  2. Sector keywords: AI, Private Credit, Fintech, Enterprise Software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/)
-- **Keywords**: `AI` `fintech` `private credit` `enterprise AI` `workflow automation`
+- **Keywords**: `AI, Private Credit, Fintech, Enterprise Software`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
