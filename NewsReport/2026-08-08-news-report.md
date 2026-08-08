@@ -7,60 +7,60 @@
 
 ## 1. Moove: $250 Million Series C
 
-- **Summary**: Moove, a mobility fintech company, raised $250 million in Series C funding at a $2.1 billion valuation. The company is scaling its autonomous vehicle fleet management business and plans to expand its 'Nests' — robotics-first depot infrastructure for autonomous fleets — to own and manage robotaxis globally.
+- **Summary**: Moove, an African-born mobility fintech, secured $250 million in Series C funding at a $2.1 billion valuation. This capital will accelerate its autonomous vehicle (AV) fleet management business and the development of robotics-first depot infrastructure, positioning the company as a global infrastructure provider for autonomous mobility.
 - **Key Points**:
-  1. Investors: Mubadala Investment Company (Lead), Woven Capital, Ion Pacific, BlueCrest Capital Management, Sona Asset Management, The Raptor Group, BlackRock, MUFG, Franklin Templeton, Uber, Left Lane, Silverbacks Holdings, Endeavor Catalyst
-  2. Sector keywords: robotaxi, autonomous vehicles, fleet management, mobility, fintech
+  1. Investors: Mubadala Investment Company (lead), Woven Capital (co-lead), Ion Pacific (co-lead), Tiger Global, BlueCrest Capital Management, Sona Capital, Uber, BlackRock, Prosus Ventures
+  2. Sector keywords: mobility, fintech, autonomous vehicles, robotaxi, AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/)
-- **Keywords**: `robotaxi, autonomous vehicles, fleet management, mobility, fintech`
+- **Keywords**: `mobility, fintech, autonomous vehicles, robotaxi, AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Lumilens: $700 Million Series C
 
-- **Summary**: Lumilens raised over $700 million in Series C funding at a $5.51 billion valuation to develop optical interconnect solutions. The company's technology is designed to replace traditional copper wiring in AI data centers with light, aiming to increase speed and reduce energy consumption.
+- **Summary**: Lumilens, a silicon photonics startup, secured over $700 million in Series C funding, achieving a $5.51 billion valuation. The company is developing optical interconnect technology to replace traditional data-center wires with light, addressing critical connectivity bottlenecks in advanced AI infrastructure.
 - **Key Points**:
-  1. Investors: Atreides Management (Co-lead), Bain Capital Ventures (Co-lead), Meritech (Co-lead), Seligman Ventures (Co-lead), Spark Capital (Co-lead), Addition, Alkeon, HarbourVest, J.P. Morgan Private Capital, Mayfield, Qualcomm Ventures, Peak XV, Redpoint Ventures, Seifdune
-  2. Sector keywords: datacenters, optical networking, AI infrastructure, hardware, photonics
-- **Source**: [WSJ](https://www.wsj.com/tech/startup-raises-700-million-to-replace-data-center-wires-with-light-adc74358)
-- **Keywords**: `datacenters, optical networking, AI infrastructure, hardware, photonics`
+  1. Investors: Atreides Management (co-lead), Bain Capital Ventures (co-lead), Meritech Capital (co-lead), Seligman Ventures (co-lead), Spark Capital (co-lead), Addition, Alkeon, HarbourVest, J.P. Morgan Private Capital, Mayfield, Qualcomm Ventures, Peak XV, Redpoint Ventures, Seifdune, Thomvest Ventures
+  2. Sector keywords: data centers, AI infrastructure, optical interconnects, silicon photonics, hardware
+- **Source**: [Hacker News](https://www.wsj.com/tech/startup-raises-700-million-to-replace-data-center-wires-with-light-adc74358)
+- **Keywords**: `data centers, AI infrastructure, optical interconnects, silicon photonics, hardware`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. WindBorne Systems: $37 Million Series B
+## 3. Convex.dev: $57 Million Series B
 
-- **Summary**: WindBorne Systems secured a $37 million Series B round to scale its weather balloons and AI forecasts. The company builds an atmospheric sensing network paired with AI forecasting models to deliver actionable weather intelligence, aiming to improve weather prediction accuracy.
+- **Summary**: Convex.dev raised $57 million in Series B funding for its reactive backend platform, which provides a comprehensive suite of developer tools including a database, functions, workflow, sync, search, and file storage in TypeScript. The platform is designed to support both human developers and AI agents in building reliable and type-safe applications.
 - **Key Points**:
-  1. Investors: Khosla Ventures (Co-lead), Galvanize (Co-lead), TransLink Capital, Lux Capital, existing investors
-  2. Sector keywords: AI, weather prediction, aerospace, atmospheric sensing, data
+  1. Investors: Insight Partners (lead), Etna Labs, Spark Capital, a16z, Justin Kan
+  2. Sector keywords: developer tools, backend as a service, AI development, cloud infrastructure, TypeScript
+- **Source**: [Hacker News](https://news.convex.dev/convex-raises-57m/)
+- **Keywords**: `developer tools, backend as a service, AI development, cloud infrastructure, TypeScript`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 4. WindBorne Systems: $37 Million Series B
+
+- **Summary**: WindBorne Systems, a weather intelligence company, raised $37 million in Series B funding. The company plans to use the funds to expand its global atmospheric sensing network of autonomous balloons and advance the development of its AI forecasting platform, WeatherMesh, for improved weather prediction.
+- **Key Points**:
+  1. Investors: Khosla Ventures (co-lead), Galvanize (co-lead), TransLink Capital, Lux Capital, existing investors
+  2. Sector keywords: AI, weather prediction, atmospheric sensing, climate tech, aerospace
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/)
-- **Keywords**: `AI, weather prediction, aerospace, atmospheric sensing, data`
+- **Keywords**: `AI, weather prediction, atmospheric sensing, climate tech, aerospace`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. June: $20 Million Preseed
+## 5. June: $20 Million Pre-Seed
 
-- **Summary**: June emerged from stealth with a $20 million pre-seed round, backed by Marc Benioff. The startup aims to solve the AI deployment problem by using AI agents to automate the implementation, migration, and adoption of enterprise software, making AI adoption simpler and reducing technical debt for large organizations.
+- **Summary**: June, an AI-driven enterprise system deployment platform, emerged from stealth with a $20 million pre-seed round. The startup aims to simplify AI adoption by leveraging AI agents to automate the implementation, migration, and continuous adaptation of complex enterprise software systems.
 - **Key Points**:
-  1. Investors: TIME Ventures (Lead), Michael Dell, Diane Greene, Aaron Levie, George Kurtz, SV Angel, Conviction Embed, Abstract, A*, Vesey Ventures
-  2. Sector keywords: AI deployment, enterprise AI, SaaS, AI infrastructure, automation
+  1. Investors: TIME Ventures (lead), Michael Dell, Diane Greene, Aaron Levie, George Kurtz, SV Angel, Conviction Embed, Abstract Ventures, SVA, Sunflower Capital, Operator Collective, Vesey Ventures, Liquid 2 Ventures
+  2. Sector keywords: AI, AI deployment, enterprise software, SaaS, automation
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/)
-- **Keywords**: `AI deployment, enterprise AI, SaaS, AI infrastructure, automation`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 5. Convex.dev: $57 Million Series B
-
-- **Summary**: Convex.dev closed a $57 million Series B round for its AI-optimized app backend. The company provides a reactive backend platform for developers, including a database, functions, and real-time sync, built in TypeScript and designed to enhance software development alongside AI coding agents.
-- **Key Points**:
-  1. Investors: Insight Partners (Lead), Etna Labs, Andreessen Horowitz, Spark Capital, Justin Kan
-  2. Sector keywords: developer tools, backend as a service, AI development, database, SaaS
-- **Source**: [news.convex.dev](https://news.convex.dev/convex-raises-57m/)
-- **Keywords**: `developer tools, backend as a service, AI development, database, SaaS`
+- **Keywords**: `AI, AI deployment, enterprise software, SaaS, automation`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
