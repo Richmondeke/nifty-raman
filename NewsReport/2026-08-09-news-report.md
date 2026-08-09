@@ -7,37 +7,37 @@
 
 ## 1. Moove: $250 Million Series C
 
-- **Summary**: Moove, a Nigerian-born global startup, has secured a significant Series C round, achieving a $2.1 billion valuation and unicorn status. The company is expanding its autonomous vehicle fleet management business with plans to own and manage Waymo robotaxis. This funding will support its growth into a key infrastructure provider for the global autonomous vehicle industry, including the establishment of robotics-first depots called 'Nests'. Moove initially focused on providing revenue-based vehicle financing to mobility entrepreneurs in Africa.
+- **Summary**: Moove, a global mobility company, raised $250 million in Series C funding to expand its autonomous vehicle business, including autonomous fleet ownership and robotics-first depot infrastructure called "Nests." These facilities will charge, service, and maintain autonomous fleets for continuous operation, supporting the company's global expansion into new markets.
 - **Key Points**:
-  1. Investors: Mubadala Investment Company (lead), Woven Capital (co-lead), Ion Pacific (co-lead), BlueCrest Capital Management, Sona Asset Management, The Raptor Group, BlackRock, MUFG, Franklin Templeton, Uber, Left Lane, Silverbacks Holdings, Ontario Power Generation Pension Plan
-  2. Sector keywords: mobility, autonomous vehicles, robotaxi, fintech, Africa
+  1. Investors: Led by Mubadala Investment Company. Co-led by Woven Capital (Toyota's Growth Fund) and Ion Pacific. Participating investors include BlueCrest Capital Management, Sona Asset Management, and The Raptor Group.
+  2. Sector keywords: mobility, autonomous vehicles, robotaxi, fleet management
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/)
-- **Keywords**: `mobility, autonomous vehicles, robotaxi, fintech, Africa`
+- **Keywords**: `mobility` `autonomous vehicles` `robotaxi` `fleet management`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. June AI: $20 Million Pre-seed
+## 2. WindBorne Systems: $37 Million Series B
 
-- **Summary**: June AI, a New York-based startup, emerged from stealth with a $20 million pre-seed round to tackle the challenges of AI deployment in enterprises. The company's platform utilizes autonomous AI agents to automate the implementation, modernization, and configuration of enterprise software, aiming to simplify AI adoption and reduce technical debt for large organizations. The founding team has prior experience building Bonobo AI, which was acquired by Salesforce.
+- **Summary**: WindBorne Systems raised $37 million in Series B funding to scale its global atmospheric sensing network and accelerate the development of its AI forecasting platform, WeatherMesh. The company utilizes autonomous, long-duration sensing balloons combined with proprietary AI models to provide more accurate weather predictions.
 - **Key Points**:
-  1. Investors: TIME Ventures (lead, Marc Benioff's fund), Michael Dell, Diane Greene, Aaron Levie, George Kurtz, SV Angel, Conviction Embed, Abstract, A*, Vesey Ventures
-  2. Sector keywords: AI, enterprise software, AI deployment, SaaS, automation
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/)
-- **Keywords**: `AI, enterprise software, AI deployment, SaaS, automation`
+  1. Investors: Co-led by Khosla Ventures and Galvanize. Participating investors include TransLink Capital, Lux Capital, and existing investors.
+  2. Sector keywords: AI, weather prediction, atmospheric sensing, forecasting
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/)
+- **Keywords**: `AI` `weather prediction` `atmospheric sensing` `forecasting`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. WindBorne Systems: $37 Million Series B
+## 3. June AI: $20 Million Preseed
 
-- **Summary**: WindBorne Systems, a Palo Alto, CA-based weather intelligence company, has raised a $37 million Series B round. The funding will be used to scale its atmospheric sensing network and further develop its AI forecasting platform. The company employs a global constellation of autonomous, long-duration sensing balloons combined with proprietary AI models to deliver more accurate weather predictions, particularly for severe weather events, aiming to build a 'planetary nervous system' for weather intelligence.
+- **Summary**: June AI, an enterprise AI startup, emerged from stealth with a $20 million pre-seed round. The company aims to simplify and automate enterprise AI deployment by helping organizations modernize, configure, and adapt their business systems using AI agents, tackling technical debt and integration challenges.
 - **Key Points**:
-  1. Investors: Khosla Ventures (co-lead), Galvanize (co-lead), TransLink Capital, Lux Capital, existing investors
-  2. Sector keywords: AI, weather prediction, atmospheric sensing, climate tech, aerospace
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/)
-- **Keywords**: `AI, weather prediction, atmospheric sensing, climate tech, aerospace`
-- **Score**: ⭐⭐⭐ (3/5)
+  1. Investors: Led by Marc Benioff's TIME Ventures. Participating investors include Michael Dell, Diane Greene, Aaron Levie, George Kurtz, SV Angel, Conviction Embed, Abstract, A*, and Vesey Ventures, Sunflower Capital, Operator Collective, and Liquid 2 Ventures.
+  2. Sector keywords: AI, enterprise software, AI deployment, process automation
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/)
+- **Keywords**: `AI` `enterprise software` `AI deployment` `process automation`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
