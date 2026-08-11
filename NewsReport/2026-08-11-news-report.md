@@ -7,36 +7,36 @@
 
 ## 1. Olix: $312 Million Series B
 
-- **Summary**: Olix, a London-based AI infrastructure specialist, raised $312 million in Series B financing at a $3.3 billion valuation. The company is developing specialized silicon and systems for frontier AI inference, aiming to challenge Nvidia. Olix designs its chips, lasers, and network to build complete racks for demanding AI workloads.
+- **Summary**: London-based Olix raised $312 million in a Series B round at a $3.3 billion valuation to build specialized silicon for AI workloads, aiming to challenge Nvidia. The company's main differentiator is a photonic interconnect that uses lasers for faster and more efficient data transfer between chip clusters.
 - **Key Points**:
-  1. Investors: Fundomo, Arm, Hudson River Trading, Reed Hastings (angel investor), Hummingbird Ventures, Crane, Plural, Creandum, Phoenix Court, Transition.
-  2. Sector keywords: AI hardware, semiconductors, AI inference, chip design, deep tech
+  1. Investors: Fundomo (lead), Arm, Hudson River Trading, Reed Hastings, Hummingbird Ventures, Crane, Plural, Creandum, Phoenix Court, Transition
+  2. Sector keywords: AI hardware, semiconductors, Nvidia rival, deep tech, photonic interconnect
 - **Source**: [Hacker News](https://techfundingnews.com/olix-raises-312m-3-3b-valuation-nvidia-rival/)
-- **Keywords**: `AI hardware, semiconductors, AI inference, chip design, deep tech`
+- **Keywords**: `AI hardware, semiconductors, Nvidia rival, deep tech, photonic interconnect`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Moove: $250 Million Series C
 
-- **Summary**: Moove, a global mobility company, raised $250 million in a Series C funding round to scale its autonomous vehicle business. The company plans to expand its autonomous fleet ownership and robotics-first depot infrastructure, known as 'Nests', to support global expansion. Moove aims to be a key infrastructure provider for the autonomous mobility industry.
+- **Summary**: Moove, a global mobility company, raised $250 million in Series C funding to expand its autonomous vehicle business, including fleet ownership and robotics-first depot infrastructure called "Nests." The company aims to build the operational layer for autonomous mobility and currently operates approximately 42,000 vehicles across 29 cities in 13 countries.
 - **Key Points**:
-  1. Investors: Mubadala Investment Company (lead), Woven Capital (Toyota's Growth Fund) (co-lead), Ion Pacific (co-lead), BlueCrest Capital Management, Sona Asset Management, The Raptor Group, BlackRock, MUFG, Franklin Templeton, Uber, Left Lane, Square Associates, The Latest Ventures, Ontario Power Generation Pension Plan.
-  2. Sector keywords: robotaxi, autonomous vehicles, fleet management, mobility, AI
+  1. Investors: Mubadala Investment Company (lead), Woven Capital (co-lead), Ion Pacific (co-lead), BlueCrest Capital Management, Sona Asset Management, The Raptor Group, BlackRock, MUFG, Franklin Templeton, Uber, Left Lane, Silverbacks Holdings, Ontario Power Generation Pension Plan, Speedinvest, The Latest Ventures, Endeavor Catalyst, Clocktower Ventures, LocalGlobe, Prosus, Quona Capital, FJ Labs, Maya Capital, Monashees, Valor
+  2. Sector keywords: mobility, autonomous vehicles, robotaxi, fleet management, logistics, African
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/)
-- **Keywords**: `robotaxi, autonomous vehicles, fleet management, mobility, AI`
+- **Keywords**: `mobility, autonomous vehicles, robotaxi, fleet management, logistics, African`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 3. WindBorne Systems: $37 Million Series B
 
-- **Summary**: WindBorne Systems, a weather intelligence company, secured $37 million in Series B funding. The company is building a global atmospheric sensing network using autonomous, long-duration balloons combined with proprietary AI models to deliver highly accurate weather forecasts. The funding will accelerate the expansion of its sensing network and the continued development of its AI platform, WeatherMesh.
+- **Summary**: WindBorne Systems raised $37 million in Series B funding to scale its AI-powered weather prediction technology. The company builds a global atmospheric sensing network using autonomous, long-duration sensing balloons combined with proprietary AI models to deliver accurate weather forecasts.
 - **Key Points**:
-  1. Investors: Khosla Ventures (co-lead), Galvanize (co-lead), TransLink Capital, Lux Capital, existing investors.
-  2. Sector keywords: AI, weather prediction, aerospace, atmospheric sensing, climate tech
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/)
-- **Keywords**: `AI, weather prediction, aerospace, atmospheric sensing, climate tech`
+  1. Investors: Khosla Ventures (co-lead), Galvanize (co-lead), TransLink Capital, Lux Capital, Ubiquity Ventures
+  2. Sector keywords: AI, weather prediction, aerospace, climate tech, atmospheric sensing
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better. Can WindBorne make it lucrative/)
+- **Keywords**: `AI, weather prediction, aerospace, climate tech, atmospheric sensing`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
