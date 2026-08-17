@@ -5,27 +5,27 @@
 
 ---
 
-## 1. Thrive Holdings: $2 Billion new funding at a $12 Billion valuation
+## 1. Thrive Holdings: $2 Billion in new funding at a $12 Billion valuation
 
-- **Summary**: Thrive Holdings, backed by OpenAI, has secured $2 billion in new funding, reaching a $12 billion valuation. The company aims to integrate AI solutions into enterprise businesses, leveraging this significant investment to expand its reach and product offerings in the AI sector.
+- **Summary**: Thrive Holdings, an OpenAI-backed company, has successfully raised $2 billion in new funding. The company aims to bring advanced AI solutions to enterprise clients, with its significant valuation of $12 billion reflecting strong investor confidence in its market strategy and potential.
 - **Key Points**:
-  1. Investors: SoftBank, D1 Capital Partners, Altimeter Capital, OpenAI
-  2. Sector keywords: AI, Enterprise AI, Venture Capital, Growth Stage
+  1. Investors: SoftBank, D1 Capital Partners, Altimeter Capital
+  2. Sector keywords: AI, Enterprise AI, Growth Equity, Software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/)
-- **Keywords**: `AI, Enterprise AI, Venture Capital, Growth Stage`
+- **Keywords**: `AI, Enterprise AI, Growth Equity, Software`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. ICEYE: $1 Billion Series F funding round (including €450 million in primary capital) at a valuation exceeding €10 billion
+## 2. ICEYE: $93 Million Series D
 
-- **Summary**: ICEYE, a Finnish satellite intelligence company, secured a €1 billion Series F funding round, co-led by the Scaleup Europe Fund and General Atlantic. The round included €450 million in primary capital, valuing the company at over €10 billion. ICEYE operates the world's largest synthetic aperture radar (SAR) satellite constellation, providing continuous monitoring capabilities for governments and commercial clients for defense, intelligence, and disaster response.
+- **Summary**: ICEYE is a Finnish satellite company that specializes in providing timely and reliable satellite imagery. The company secured a $93 million Series D funding round, with Scaleup Europe making its inaugural investment in ICEYE. This funding will support its continued development and expansion in the satellite technology sector.
 - **Key Points**:
-  1. Investors: Scaleup Europe Fund, General Atlantic, Nokia, Qatar Investment Authority (QIA), TCV, Solidium, Tesi, Varma, Ilmarinen, Lifeline Ventures
-  2. Sector keywords: Satellite Intelligence, Space Tech, Deep Tech, Defense Tech
+  1. Investors: Scaleup Europe, Seraphim Space Investment Trust, OTB Ventures, Tesi, Return on Capital
+  2. Sector keywords: Satellite, SpaceTech, Finland, Deep Tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye/)
-- **Keywords**: `Satellite Intelligence, Space Tech, Deep Tech, Defense Tech`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+- **Keywords**: `Satellite, SpaceTech, Finland, Deep Tech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
