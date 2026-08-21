@@ -201,14 +201,16 @@ def generate_newsletter_html(jobs, gemini_keys, newsletter_type='general'):
 REFERRAL_URL = os.getenv("REFERRAL_URL", "https://forms.gle/your-form-id")
 
 def send_email(html_content):
-    smtp_host = os.environ.get("SMTP_HOST", "smtp.zoho.com")
-    smtp_port = int(os.environ.get("SMTP_PORT", 465))
-    smtp_user = os.environ.get("SMTP_USER")
-    smtp_password = os.environ.get("SMTP_PASSWORD")
+    smtp_user = os.environ.get("SMTP_USER") or os.environ.get("GMAIL_USER")
+    smtp_password = os.environ.get("SMTP_PASSWORD") or os.environ.get("GMAIL_APP_PASSWORD")
     
     if not smtp_user or not smtp_password:
-        print("Warning: SMTP_USER or SMTP_PASSWORD not set. Cannot send email.")
+        print("Warning: SMTP_USER / GMAIL_USER or SMTP_PASSWORD not set. Cannot send email.")
         return
+
+    smtp_host = os.environ.get("SMTP_HOST") or ("smtp.gmail.com" if "gmail" in smtp_user.lower() else "smtp.zoho.com")
+    raw_port = os.environ.get("SMTP_PORT", "").strip()
+    smtp_port = int(raw_port) if raw_port.isdigit() else 465
         
     # By default, sending to the core team or a configured mailing list
     recipients = load_recipients()
