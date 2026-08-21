@@ -1,30 +1,42 @@
 # Daily News Report (2026-08-21)
 
-> Curated from TechCrunch and Hacker News. Contains 2 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
 ## 1. Rillet: $100M Series C at $1B valuation
 
-- **Summary**: AI-native account startup Rillet became a unicorn, reaching a $1 billion valuation. The company secured a $100 million Series C round after doubling its Annual Recurring Revenue (ARR) in the past three months, demonstrating significant growth in the enterprise AI sector.
+- **Summary**: Rillet, an AI-native account startup, achieved unicorn status after raising a Series C round that valued the company at $1 billion. This significant growth comes two years after emerging from stealth, with the company reporting a doubling of its annual recurring revenue (ARR) in the preceding three months.
 - **Key Points**:
   1. Investors: Iconiq
-  2. Sector keywords: AI, enterprise software, fintech, unicorn
+  2. Sector keywords: AI, Fintech, SaaS, Enterprise Software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/)
-- **Keywords**: `AI, enterprise software, fintech, unicorn`
+- **Keywords**: `AI` `Fintech` `SaaS` `Enterprise Software`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Vendo: Y Combinator Summer 2026 Batch
+## 2. Reach Capital: $265M Fund V
 
-- **Summary**: Vendo is an open-source platform that empowers users to build custom micro-apps and features directly on top of existing software products. The company aims to enable businesses to offer personalization, automations, and integrations within their products, all running in secure sandboxes. Vendo is a participant in the Y Combinator Summer 2026 (S26) batch.
+- **Summary**: Reach Capital, an 11-year-old venture capital firm based in San Francisco, has successfully closed its fifth fund, Fund V, which was oversubscribed at $265 million. This fund is dedicated to backing approximately 50 early-stage AI companies over the next three years, with investments ranging from $1 million to $10 million, focusing on sectors like learning, health, and work to expand human potential.
+- **Key Points**:
+  1. Investors: Capricorn Investment Group, Los Angeles Fire and Police Pensions, The LEGO Foundation, College Board, San Francisco State University Foundation
+  2. Sector keywords: Venture Capital, Fund, AI, Edtech, Healthtech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/18/reach-capital-raises-265m-fund-v-to-back-ai-founders-building-to-expand-human-potential/)
+- **Keywords**: `Venture Capital` `Fund` `AI` `Edtech` `Healthtech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 3. Vendo: YC S26 Seed
+
+- **Summary**: Vendo, a startup participating in Y Combinator's Summer 2026 batch (S26), is building a platform that allows users to develop and integrate features on top of existing products. The company aims to provide tools for extensibility, enabling a more customizable and adaptable software ecosystem.
 - **Key Points**:
   1. Investors: Y Combinator
-  2. Sector keywords: SaaS, AI, developer tools, customization
+  2. Sector keywords: SaaS, Developer Tools, AI, Y Combinator
 - **Source**: [Hacker News](https://github.com/runvendo/vendo)
-- **Keywords**: `SaaS, AI, developer tools, customization`
+- **Keywords**: `SaaS` `Developer Tools` `AI` `Y Combinator`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
