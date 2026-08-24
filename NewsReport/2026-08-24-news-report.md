@@ -1,19 +1,31 @@
 # Daily News Report (2026-08-24)
 
-> Curated from TechCrunch and Hacker News. Contains 1 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 2 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Rillet: $100M Series C at $1B valuation
+## 1. Rillet: $100 Million Series C at $1 Billion valuation
 
-- **Summary**: Rillet, an AI-native accounting startup, secured $100 million in a Series C round, achieving a $1 billion valuation. The company reportedly doubled its Annual Recurring Revenue (ARR) in the past three months, two years after emerging from stealth. The fundraising frenzy was triggered by strong growth numbers shared at a board meeting, leading to its unicorn status in 48 hours.
+- **Summary**: Rillet is an AI-native accounting startup that recently achieved unicorn status. The company doubled its Annual Recurring Revenue (ARR) in the past three months, leading to a significant Series C funding round that valued the company at $1 billion.
 - **Key Points**:
-  1. Investors: Iconiq, Sequoia
-  2. Sector keywords: AI, accounting, fintech, enterprise-software
+  1. Investors: Iconiq Growth, Sequoia Capital
+  2. Sector keywords: AI, Accounting, Fintech, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/)
-- **Keywords**: `AI, accounting, fintech, enterprise-software`
+- **Keywords**: `AI` `Accounting` `Fintech` `SaaS`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 2. Reach Capital: $265 Million Fund V
+
+- **Summary**: Reach Capital, a venture capital firm, has successfully closed its oversubscribed fifth fund, Fund V, totaling $265 million. This fund is dedicated to investing in early-stage AI founders who are developing solutions to enhance human potential across learning, health, and work.
+- **Key Points**:
+  1. Investors: Capricorn Investment Group, Los Angeles Fire and Police Pensions, The LEGO Foundation, College Board, San Francisco State University Foundation
+  2. Sector keywords: Venture Capital, Fundraising, AI, Impact Investing
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/18/reach-capital-raises-265m-fund-v-to-back-ai-founders-building-to-expand-human-potential/)
+- **Keywords**: `Venture Capital` `Fundraising` `AI` `Impact Investing`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
