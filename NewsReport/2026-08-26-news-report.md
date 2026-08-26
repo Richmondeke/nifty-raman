@@ -1,42 +1,54 @@
 # Daily News Report (2026-08-26)
 
-> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. General Intuition: undisclosed amount at $6 Billion valuation
+## 1. General Intuition: Undisclosed amount at $6 Billion pre-money valuation
 
-- **Summary**: General Intuition is an AI startup developing a foundation model to train generalized AI agents on navigating space and time. The company is reportedly in discussions to raise funding at a $6 billion pre-money valuation, marking its expansion into the robotics sector.
+- **Summary**: General Intuition is an AI startup developing a foundation model to train generalized AI agents on movement through space and time. The company, valued at $6 billion pre-money, is currently in talks to raise a new round as it expands its focus into robotics.
 - **Key Points**:
   1. Investors: Valor Ventures, Point72 Ventures, Seven Seven Six
-  2. Sector keywords: AI, Robotics, Foundation Models, Enterprise AI
+  2. Sector keywords: AI, Robotics, Foundation Model, AI Agents
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/)
-- **Keywords**: `AI, Robotics, Foundation Models, Enterprise AI`
+- **Keywords**: `AI, Robotics, Foundation Model, AI Agents`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Rillet: $100 Million Series C at $1 Billion valuation
 
-- **Summary**: Rillet, an AI-native accounting startup, secured $100 million in Series C funding, achieving a unicorn valuation of $1 billion. The company notably reached this milestone rapidly after doubling its Annual Recurring Revenue (ARR) in the three months prior to the fundraising.
+- **Summary**: Rillet, an AI-native accounting startup, achieved unicorn status with a $1 billion valuation after securing a $100 million Series C funding round. The company reported doubling its Annual Recurring Revenue (ARR) in the three months preceding this investment.
 - **Key Points**:
   1. Investors: Iconiq, Sequoia
-  2. Sector keywords: AI, FinTech, Accounting, SaaS
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from- stealth/)
-- **Keywords**: `AI, FinTech, Accounting, SaaS`
+  2. Sector keywords: AI, Accounting, Fintech, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/)
+- **Keywords**: `AI, Accounting, Fintech, SaaS`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. ThriveAgric: $3.93 Million in commercial paper sale
+## 3. Atoms: $1.7 Billion equity investment
 
-- **Summary**: ThriveAgric, a YC-backed agricultural technology startup, successfully raised $3.93 million through a commercial paper sale. This marks the company's inaugural venture into Nigeria's debt capital markets, providing a new avenue for capital beyond traditional bank lending to support its operations.
+- **Summary**: Atoms is a robotics company founded by Travis Kalanick, the former CEO of Uber. The company has raised $1.7 billion in equity funding, focusing on industrial automation by integrating businesses like CloudKitchens and robotics firm Pronto.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: AgriTech, Debt Financing, Nigeria, Y Combinator
+  1. Investors: Andreessen Horowitz (a16z), Uber, Bain Capital, Fifth Wall, Chemistry, A*, K5 Global, Abstract, SV Angel, Alpha Square Group
+  2. Sector keywords: Robotics, Industrial Automation, AI, Deep Tech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/)
+- **Keywords**: `Robotics, Industrial Automation, AI, Deep Tech`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 4. ThriveAgric: $3.93 Million in commercial paper sale
+
+- **Summary**: ThriveAgric, a YC-backed agritech startup based in Nigeria, successfully raised $3.93 million through its debut commercial paper issuance. This strategic move into Nigeria's debt capital markets aims to provide the company with working capital for commodity trading and diversify its funding channels.
+- **Key Points**:
+  1. Investors: Institutional investors, including pension fund administrators, asset managers, and commercial banks
+  2. Sector keywords: Agritech, Debt Financing, Nigeria, Agriculture
 - **Source**: [TechCabal](https://techcabal.com/2026/08/25/thriveagric-commercial-paper-raise-5-3-billion-naira/)
-- **Keywords**: `AgriTech, Debt Financing, Nigeria, Y Combinator`
+- **Keywords**: `Agritech, Debt Financing, Nigeria, Agriculture`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
