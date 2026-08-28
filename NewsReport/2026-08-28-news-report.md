@@ -5,62 +5,62 @@
 
 ---
 
-## 1. General Intuition: Undisclosed at $6 Billion Pre-Money Valuation
+## 1. Lovable: $400 Million Series C at a $13.3 Billion valuation
 
-- **Summary**: General Intuition is an AI startup focused on building a foundational model that trains generalized AI agents to navigate space and time. The company is actively expanding its focus into robotics and is in discussions to raise new funding at a significant $6 billion pre-money valuation from several new investors.
+- **Summary**: Lovable, a Swedish 'vibe-coding' startup, secured $400 million in Series C funding, effectively doubling its valuation to $13.3 billion in eight months. The company develops an AI-powered software creation platform that enables users to build applications using natural language without requiring traditional coding expertise.
 - **Key Points**:
-  1. Investors: Valor Ventures, Point72 Ventures, Seven Seven Six
-  2. Sector keywords: AI, robotics, foundation model, deep tech, valuation
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/)
-- **Keywords**: `AI` `robotics` `foundation model` `deep tech` `valuation`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 2. Rillet: $100 Million
-
-- **Summary**: Rillet is an AI accounting startup that quickly achieved unicorn status after raising $100 million in a fast-paced fundraising round. The company's rapid growth was driven by strong performance numbers, attracting significant investor interest.
-- **Key Points**:
-  1. Investors: Iconiq, Sequoia
-  2. Sector keywords: AI, accounting, fintech, unicorn
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/)
-- **Keywords**: `AI` `accounting` `fintech` `unicorn`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 3. Lovable: $400 Million Series C at $13.3 Billion Valuation
-
-- **Summary**: Lovable is a Swedish unicorn startup developing an AI-powered software creation platform that enables users to build applications without extensive coding knowledge. The platform has seen rapid growth, with over 60 million projects created and more than 900 million monthly visits to Lovable-built applications. This Series C funding round will accelerate product development, strengthen infrastructure, and support international expansion.
-- **Key Points**:
-  1. Investors: Menlo Ventures, EQT's Scaleup Europe Fund, Balderton Capital, Carmignac, Kaszek Ventures, LTS Growth, Tencent, World Innovation Lab, Regent, Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, Salesforce Ventures
-  2. Sector keywords: AI, software development, no-code, unicorn, Sweden
+  1. Investors: Menlo Ventures (led), EQT's Scaleup Europe Fund (co-led), Balderton Capital, Carmignac, Kaszek Ventures, LTS Growth, Tencent, World Innovation Lab, Regent, Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, Salesforce Ventures
+  2. Sector keywords: AI, software development, no-code, enterprise software
 - **Source**: [TechCrunch](https://techcrunch.com/video/whats-driving-swedens-startup-boom-from-lovable-to-legora/)
-- **Keywords**: `AI` `software development` `no-code` `unicorn` `Sweden`
+- **Keywords**: `AI, software development, no-code, enterprise software`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 2. General Intuition: Undisclosed amount at $6 Billion valuation
+
+- **Summary**: General Intuition, an AI startup, is reportedly in talks to raise new funding at a $6 billion pre-money valuation. The company is building a foundation model that trains generalized AI agents to move through space and time, with a strategic push into robotics.
+- **Key Points**:
+  1. Investors: Valor Ventures, Point72 Ventures, Seven Seven Six (potential new investors), Khosla Ventures, General Catalyst (existing investors)
+  2. Sector keywords: AI, robotics, foundation models, enterprise AI
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/)
+- **Keywords**: `AI, robotics, foundation models, enterprise AI`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Rillet: $100 Million Series C
+
+- **Summary**: Rillet, an AI accounting startup, raised $100 million in a Series C funding round, achieving unicorn status with a $1 billion valuation. The company provides an AI-driven enterprise resource planning (ERP) platform designed for modern finance departments, aiming to automate core accounting workflows.
+- **Key Points**:
+  1. Investors: ICONIQ (led), Sequoia, Andreessen Horowitz, Sequoia Global Equities, Bain Capital Ventures, Oak HC/FT, Battery Ventures, FirstMark, Scale Venture Partners, Creandum
+  2. Sector keywords: AI, accounting, ERP, fintech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/)
+- **Keywords**: `AI, accounting, ERP, fintech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. Metriport: $26M Series A
+## 4. Atorie: $9.5 Million Seed
 
-- **Summary**: Metriport is a health tech startup that provides clinicians with comprehensive insights into patient data. Their platform unifies and standardizes disparate medical records from various sources, making it easier for healthcare providers to access relevant patient information rapidly. The company also emphasizes an open-source data infrastructure for processing clinical data.
+- **Summary**: Atorie is a fashion startup that raised $9.5 million in seed funding. The company aims to provide consumers with luxury goods, such as handbags and clothes, without the typical high markup by sourcing directly from the same factories that produce high-end brands, leveraging AI technology to streamline the supply chain.
 - **Key Points**:
-  1. Investors: Matrix, ARTIS, Y Combinator
-  2. Sector keywords: healthtech, AI, patient data, interoperability, open-source
-- **Source**: [Hacker News](https://www.metriport.com/blog/metriport-series-a)
-- **Keywords**: `healthtech` `AI` `patient data` `interoperability` `open-source`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 5. Atorie: $9.5M Seed
-
-- **Summary**: Atorie is a fashion startup that allows consumers to purchase luxury goods, such as handbags and clothing, directly from the same factories that supply high-end brands. This model aims to offer luxury-grade products without the traditional retail markups. The company leverages AI to analyze fashion trends and optimize production.
-- **Key Points**:
-  1. Investors: a16z Speedrun, Night Capital, Lightspeed Ventures' Jeremy Liew
-  2. Sector keywords: fashion, luxury goods, direct-to-consumer, e-commerce, AI
+  1. Investors: a16z Speedrun (led), Night Capital, Jeremy Liew of Lightspeed Ventures
+  2. Sector keywords: fashiontech, luxury goods, direct-to-consumer, AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/27/fashion-startup-atorie-raises-9-5m-to-bring-consumers-luxury-goods-without-the-markup/)
-- **Keywords**: `fashion` `luxury goods` `direct-to-consumer` `e-commerce` `AI`
+- **Keywords**: `fashiontech, luxury goods, direct-to-consumer, AI`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 5. Metriport: $26 Million Series A
+
+- **Summary**: Metriport, a health tech startup, secured $26 million in Series A funding. The company focuses on making it easier for doctors to retrieve and process patient data from various sources like health records and pharmacies, providing clinicians with relevant insights.
+- **Key Points**:
+  1. Investors: Matrix (led), ARTIS, Y Combinator
+  2. Sector keywords: healthtech, patient data, AI, medical informatics
+- **Source**: [Hacker News](https://www.metriport.com/blog/metriport-series-a)
+- **Keywords**: `healthtech, patient data, AI, medical informatics`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
