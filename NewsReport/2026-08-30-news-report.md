@@ -1,102 +1,42 @@
 # Daily News Report (2026-08-30)
 
-> Curated from TechCrunch and Hacker News. Contains 8 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. a16z: $1.1B ‘Machine Age’ fund
+## 1. Lovable: $400 million in Series C funding at a $13.3 billion valuation
 
-- **Summary**: Andreessen Horowitz (a16z), a prominent venture capital firm, has established a new $1.1 billion 'Machine Age' fund. This fund is specifically dedicated to accelerating the physical buildout of AI infrastructure, marking a strategic shift for the firm traditionally known for its software focus towards investing more heavily in hardware supporting AI.
+- **Summary**: Lovable, a Swedish 'vibe-coding' startup, has raised significant Series C funding. The company develops an AI-powered software creation platform that allows users to build applications by describing their desired outcomes in natural language, without needing traditional coding expertise. This latest round more than doubled its valuation to $13.3 billion in eight months, highlighting its rapid growth and impact on the software development landscape.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: venture capital, AI, hardware, fund close
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/)
-- **Keywords**: `venture capital` `AI` `hardware` `fund close`
+  1. Investors: Menlo Ventures (lead), Scaleup Europe Fund (co-lead, managed by EQT), Balderton Capital, Carmignac, Kaszek Ventures, LTS Growth, Tencent, World Innovation Lab, Regent, Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, Salesforce Ventures
+  2. Sector keywords: AI, software development, no-code, platform, Sweden, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/podcast/from-the-spotify-mafia-to-the-lovable-mafia-inside-stockholms-founder-network/)
+- **Keywords**: `AI, software development, no-code, platform, Sweden, SaaS`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Lovable: $400 Million Series C funding at a $13.3 billion valuation
+## 2. General Intuition: in talks to raise at a $6 billion pre-money valuation
 
-- **Summary**: Lovable, a Swedish "vibe-coding darling," raised $400 million in Series C funding, reaching a $13.3 billion valuation and roughly doubling its worth in eight months. The company develops an AI-powered software creation platform that enables users to turn ideas into applications without extensive coding knowledge. Since its launch, it has seen rapid growth, with over 60 million projects created and 900 million monthly visits to its built apps.
-- **Key Points**:
-  1. Investors: Menlo Ventures (lead), EQT's Scaleup Europe Fund (co-lead), Balderton Capital, Carmignac, Kaszek Ventures, LTS Growth, Tencent, World Innovation Lab, Regent, Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, Salesforce Ventures
-  2. Sector keywords: AI, software, no-code, Sweden, growth equity
-- **Source**: [TechCrunch](https://techcrunch.com/video/whats-driving-swedens-startup-boom-from-lovable-to-legora/)
-- **Keywords**: `AI` `software` `no-code` `Sweden` `growth equity`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 3. General Intuition: In talks to raise at a $6 billion pre-money valuation
-
-- **Summary**: General Intuition is an AI startup that is developing a foundational model to train generalized AI agents on navigating space and time. The company is reportedly in discussions to raise new funding at a significant $6 billion pre-money valuation, as it expands its strategic focus into the robotics sector.
+- **Summary**: General Intuition is an AI startup focused on building a foundational model to train generalized AI agents. These agents are designed to learn how to move through space and time. The company is reportedly in discussions to raise funding at a substantial $6 billion pre-money valuation, indicating a significant strategic push into the robotics sector.
 - **Key Points**:
   1. Investors: Valor Ventures, Point72 Ventures, Seven Seven Six
-  2. Sector keywords: AI, robotics, foundation model, deep tech
+  2. Sector keywords: AI, robotics, foundation models, deep tech, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/)
-- **Keywords**: `AI` `robotics` `foundation model` `deep tech`
+- **Keywords**: `AI, robotics, foundation models, deep tech, enterprise AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 4. Hugging Face: Reportedly in talks to be acquired for $13B
+## 3. Atorie: $9.5 million in seed funding
 
-- **Summary**: Hugging Face, a widely recognized platform for AI developers, is reportedly in acquisition discussions that could value the company at approximately $13 billion. The founders are currently considering these offers, weighing them against their commitment and responsibility to the AI developer community.
+- **Summary**: Atorie is a fashion technology startup that aims to democratize access to luxury goods by connecting consumers directly with manufacturers that produce for high-end brands. The company leverages AI to sell handbags and clothing made from the same materials and factories as luxury items, but without the traditional retail markup. This model seeks to address the pricing problem in the luxury fashion market.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: AI, machine learning, M&A, developer tools
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/)
-- **Keywords**: `AI` `machine learning` `M&A` `developer tools`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 5. Ventures Platform: $84M second Africa fund
-
-- **Summary**: Ventures Platform, a Pan-African venture capital firm, has closed its second Africa fund with $84 million. The firm plans to broaden its investment scope, moving beyond its initial focus on Nigeria to invest in startups across the wider African continent, supporting the growth of the region's tech ecosystem.
-- **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: venture capital, Africa, Nigeria, fund close, emerging markets
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/26/ventures-platform-goes-bigger-and- broader-with-its-second-africa-fund/)
-- **Keywords**: `venture capital` `Africa` `Nigeria` `fund close` `emerging markets`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 6. Atorie: $9.5M Seed round
-
-- **Summary**: Atorie is a fashion startup that aims to provide consumers with luxury goods, such as handbags and clothes, without the traditional markup. The company achieves this by sourcing products directly from the same factories and using the same materials that manufacturers use for high-end brands. This allows them to offer luxury-grade items at a fraction of the cost.
-- **Key Points**:
-  1. Investors: a16z speedrun, Night Capital, Lightspeed Ventures partner Jeremy Liew
-  2. Sector keywords: fashion, e-commerce, luxury goods, direct-to-consumer
+  1. Investors: a16z Speedrun, Night Capital, Jeremy Liew (Lightspeed Ventures), Ami Capital (London), Creator Ventures, Lightbank (Venture Capital)
+  2. Sector keywords: fashion, luxury goods, e-commerce, AI, direct-to-consumer
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/27/fashion-startup-atorie-raises-9-5m-to-bring-consumers-luxury-goods-without-the-markup/)
-- **Keywords**: `fashion` `e-commerce` `luxury goods` `direct-to-consumer`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 7. Capital F: $17M debut fund close
-
-- **Summary**: Capital F is a venture capital firm that successfully closed its $17 million debut fund. The firm's investment strategy is focused on supporting companies that are building in the "female economy," which includes markets where women drive demand such as women's health, digital commerce, and AI tools.
-- **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: venture capital, female economy, women's health, digital commerce
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/26/capital-f-closes-17m-debut-fund-with-goal-to-back-the-future-of-the-female-economy/)
-- **Keywords**: `venture capital` `female economy` `women's health` `digital commerce`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 8. Fiat Ventures: $35M Fund II
-
-- **Summary**: Fiat Ventures, which has rebranded and combined its venture and advisory divisions, has successfully raised $35 million for its Fund II. The firm is employing a new venture model to attract Limited Partners, particularly in an environment where emerging fund managers face challenges in securing investment.
-- **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: venture capital, fund close, advisory, fund management
-- **Source**: [TechCrunch](https://techcrunch.com/2026/08/25/fgv-capital-bets-on-a-new-venture-model-raises-35m-fund-ii/)
-- **Keywords**: `venture capital` `fund close` `advisory` `fund management`
+- **Keywords**: `fashion, luxury goods, e-commerce, AI, direct-to-consumer`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
