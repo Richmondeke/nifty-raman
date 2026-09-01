@@ -1,67 +1,55 @@
 # Daily News Report (2026-09-01)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Lovable: $400 Million Series C at a $13.3 Billion Valuation
+## 1. Lovable: $400 Million Growth Round at $13.3 Billion valuation
 
-- **Summary**: Lovable, a Swedish AI software company, secured $400 million in Series C funding, doubling its valuation to $13.3 billion. The company offers an AI-powered platform that allows users to create software applications using natural language, making software development accessible without traditional coding skills. Lovable plans to use the funding for product development, infrastructure, and global expansion.
+- **Summary**: Lovable, a 'vibe-coding darling' from Stockholm, has successfully raised $400 million, pushing its valuation to $13.3 billion. This significant funding round nearly doubled the company's worth in just eight months, highlighting its rapid growth within Europe's vibrant startup ecosystem.
 - **Key Points**:
-  1. Investors: Menlo Ventures (lead), EQT's Scaleup Europe Fund (co-lead), Balderton Capital, Carmignac, Kaszek Ventures, LTS Growth, Tencent, World Innovation Lab, Regent, Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, Salesforce Ventures
-  2. Sector keywords: AI, software development, no-code, unicorn
-- **Source**: [TechCrunch](https://techcrunch.com/podcast/from-the-spotify-mafia-to-the-lovable-mafia-inside-stockholms-founder-network/)
-- **Keywords**: `AI` `software development` `no-code` `unicorn`
+  1. Investors: Undisclosed
+  2. Sector keywords: vibe-coding, software, Sweden, AI
+- **Source**: [TechCrunch](https://techcrunch.com/video/whats-driving-swedens-startup-boom-from-lovable-to-legora/)
+- **Keywords**: `vibe-coding` `software` `Sweden` `AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Spiro: $270 Million equity funding round
+## 2. Atorie: $9.5 Million Undisclosed Round
 
-- **Summary**: Spiro, Africa's largest electric mobility company, closed a $270 million equity funding round. The funding, which included an initial $215 million raise and an additional $55 million, will support its expansion of electric motorcycle and battery-swapping infrastructure across seven African markets.
+- **Summary**: Atorie is a fashion startup aiming to disrupt the luxury goods market by offering high-quality items made in the same factories as premium brands, but without the exorbitant markup. This model seeks to make luxury more accessible to consumers.
 - **Key Points**:
-  1. Investors: NewTrails Capital, Impact Fund Denmark, Equitane, Nithio, Africa Go Green Fund, FEDA
-  2. Sector keywords: electric mobility, EV, Africa, sustainability, growth-stage
-- **Source**: [TechCabal](https://techcabal.com/2026/08/31/spiro-appoints-automotive-veteran-to-lead-west-and-central-africa/)
-- **Keywords**: `electric mobility` `EV` `Africa` `sustainability` `growth-stage`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 3. Atorie: $9.5 Million Seed
-
-- **Summary**: Atorie, a fashion startup based in Los Angeles, raised $9.5 million in seed funding. The company aims to provide luxury-grade fashion goods directly to consumers without the traditional markup by sourcing from the same factories as high-end brands. Atorie leverages AI throughout its supply chain to track trends, test designs, and forecast demand.
-- **Key Points**:
-  1. Investors: a16z Speedrun, Night Capital, Jeremy Liew of Lightspeed Ventures
-  2. Sector keywords: fashion, luxury goods, e-commerce, AI
+  1. Investors: Undisclosed
+  2. Sector keywords: fashion, luxury goods, e-commerce
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/27/fashion-startup-atorie-raises-9-5m-to-bring-consumers-luxury-goods-without-the-markup/)
-- **Keywords**: `fashion` `luxury goods` `e-commerce` `AI`
+- **Keywords**: `fashion` `luxury goods` `e-commerce`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Allawee: Undisclosed acquisition by Paystack
+## 3. ChipMango: $1.9 Million Undisclosed Round
 
-- **Summary**: Allawee, a Nigerian card-issuing fintech, has been acquired by Paystack, a prominent African payment gateway. This strategic acquisition marks Paystack's second fintech takeover this year, further solidifying its presence and offerings in the African financial technology landscape.
+- **Summary**: ChipMango has secured $1.9 million in funding to address the shortage of chip-design talent in Africa. The company is dedicated to nurturing and developing skilled professionals in the semiconductor industry across the continent.
 - **Key Points**:
-  1. Investors: Paystack (Acquirer)
-  2. Sector keywords: fintech, acquisition, payments, Nigeria
-- **Source**: [TechCabal](https://techcabal.com/2026/08/31/paystack-acquires-allawee/)
-- **Keywords**: `fintech` `acquisition` `payments` `Nigeria`
+  1. Investors: Atlantica Ventures, DFS Labs, Kaleo Ventures, Madica, Trilinear Technologies, Malta Ventures
+  2. Sector keywords: chip design, talent development, Africa, deep tech
+- **Source**: [TechCabal](https://techcabal.com/2026/09/01/chipmango-raises-1-9-million/)
+- **Keywords**: `chip design` `talent development` `Africa` `deep tech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 5. TrustedRouter: $1.25 Million Seed
+## 4. TrustedRouter: $1.25 Million Undisclosed Round
 
-- **Summary**: TrustedRouter, an AI routing startup, successfully raised $1.25 million in seed funding. The company provides a platform that enables businesses to route queries to the most efficient AI model while ensuring data privacy through confidential computing.
+- **Summary**: TrustedRouter, an AI startup, has raised $1.25 million. The company's focus is on leveraging artificial intelligence, though specific details about its offerings are not provided in the announcement.
 - **Key Points**:
-  1. Investors: Sam Lessin of Slow Ventures, Bill Tai, Linda Avey, George Xing
-  2. Sector keywords: AI, AI infrastructure, data privacy, SaaS
-- **Source**: [Axios](https://www.axios.com/2026/08/31/exclusive-ai-startup-trustedrouter-raises-125-million)
-- **Keywords**: `AI` `AI infrastructure` `data privacy` `SaaS`
-- **Score**: ⭐⭐ (2/5)
+  1. Investors: Undisclosed
+  2. Sector keywords: AI, software, security
+- **Source**: [Hacker News](https://www.axios.com/2026/08/31/exclusive-ai-startup-trustedrouter-raises-125-million)
+- **Keywords**: `AI` `software` `security`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
