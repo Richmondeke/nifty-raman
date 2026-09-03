@@ -1,30 +1,42 @@
 # Daily News Report (2026-09-03)
 
-> Curated from TechCrunch and Hacker News. Contains 2 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. AfterQuery: Undisclosed Series B at $3.2 Billion valuation
+## 1. AfterQuery: Undisclosed Series B, valued at $3.2 Billion
 
-- **Summary**: AfterQuery is an AI model-training startup that has reportedly achieved a $3.2 billion valuation in a Series B round, becoming Y Combinator's fastest-ever unicorn. The company focuses on building high-end human reasoning data to train AI models, addressing the industry's need for complex, nuanced professional tasks data. It pivoted from building AI agents for financial workflows after realizing existing models failed due to a lack of training on how professionals actually work.
+- **Summary**: AfterQuery is an AI model-training startup that provides human-curated training datasets and reinforcement learning environments to AI labs. It recently became Y Combinator's fastest-ever unicorn, reportedly reaching a $3.2 billion valuation just five months after its Series A. Its clients include major AI developers like OpenAI, Google DeepMind, and Microsoft AI.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: AI, machine learning, data training, unicorn, Y Combinator
+  2. Sector keywords: AI, Machine Learning, Data Training, Unicorn, Enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/)
-- **Keywords**: `AI, machine learning, data training, unicorn, Y Combinator`
+- **Keywords**: `AI` `Machine Learning` `Data Training` `Unicorn` `Enterprise AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Atorie: $9.5 Million Seed
 
-- **Summary**: Atorie is a fashion startup that raised $9.5 million in seed funding. The company aims to provide consumers with luxury goods, such as handbags and clothes, directly from the same factories and materials used by high-end brands but without the traditional retail markup. The Los Angeles-based startup leverages AI to track trends, test designs, forecast demand, and streamline its supply chain.
+- **Summary**: Atorie is a fashion startup that aims to bring luxury-grade goods to consumers without the traditional markup. The company sources handbags and clothing directly from the same factories and uses the same materials as high-end brands, leveraging AI for demand prediction and direct-to-consumer sales.
 - **Key Points**:
-  1. Investors: a16z Speedrun, Night Capital, Jeremy Liew (Lightspeed Ventures)
-  2. Sector keywords: fashion, e-commerce, luxury goods, AI, direct-to-consumer
+  1. Investors: a16z speedrun (lead), Night Capital, Jeremy Liew (Lightspeed Venture Partners)
+  2. Sector keywords: Fashion, E-commerce, Luxury Goods, AI, Retail Tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/08/27/fashion-startup-atorie-raises-9-5m-to-bring-consumers-luxury-goods-without-the-markup/)
-- **Keywords**: `fashion, e-commerce, luxury goods, AI, direct-to-consumer`
+- **Keywords**: `Fashion` `E-commerce` `Luxury Goods` `AI` `Retail Tech`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 3. Nomba: $3 Million Debt
+
+- **Summary**: Nomba has secured a debt facility to expand its cross-border payments infrastructure. The company focuses on facilitating payments between Africa and Asia, specifically targeting growth across Central Africa.
+- **Key Points**:
+  1. Investors: CardinalStone Finance Company Limited
+  2. Sector keywords: Fintech, Payments, Cross-border, Africa, Debt Funding
+- **Source**: [TechCabal](https://techcabal.com/2026/09/03/nomba-raises-3-million/)
+- **Keywords**: `Fintech` `Payments` `Cross-border` `Africa` `Debt Funding`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
