@@ -1,66 +1,54 @@
 # Daily News Report (2026-09-04)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
 ## 1. Crusoe: $3 Billion at a $30 Billion valuation
 
-- **Summary**: Crusoe, a data center developer and AI infrastructure provider, has reportedly raised $3 billion, valuing the company at $30 billion. The company, which lists Meta, Microsoft, and OpenAI among its customers, recently secured a significant five-year, $13 billion cloud contract to supply GPUs and AI infrastructure to quantitative trading firm Jane Street.
+- **Summary**: Crusoe, a developer of AI data centers and cloud capacity, reportedly raised over $3 billion, tripling its valuation to $30 billion. The funding supports the company's expansion, including its vertically integrated data-center and cloud operations. This round follows a reported $13 billion contract with Jane Street for GPUs and AI infrastructure.
 - **Key Points**:
   1. Investors: Atreides Management, Valor Equity Partners, Mubadala Capital
-  2. Sector keywords: data centers, AI infrastructure, cloud computing, growth stage
+  2. Sector keywords: AI infrastructure, data centers, cloud computing, growth
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/)
-- **Keywords**: `data centers` `AI infrastructure` `cloud computing` `growth stage`
+- **Keywords**: `AI infrastructure` `data centers` `cloud computing` `growth`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. AfterQuery: undisclosed round that valued it at $3.2 Billion
+## 2. AfterQuery: Undisclosed round, valued at $3.2 Billion
 
-- **Summary**: AI model-training startup AfterQuery has reportedly achieved a $3.2 billion valuation after raising an undisclosed funding round, making it Y Combinator's fastest-ever unicorn. This valuation jump occurred just five months after its $30 million Series A round at a $300 million valuation. The company specializes in training AI models to perform like professionals, with clients including NVIDIA and Motif Technologies.
+- **Summary**: AI model-training startup AfterQuery reportedly reached a $3.2 billion valuation in a new funding round, becoming Y Combinator's fastest-ever unicorn. This significant valuation jump occurred just five months after its $30 million Series A round. The company specializes in training AI models to perform like professionals.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: AI model training, unicorn, Y Combinator, AI
+  2. Sector keywords: AI, model training, unicorn, growth stage
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/)
-- **Keywords**: `AI model training` `unicorn` `Y Combinator` `AI`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+- **Keywords**: `AI` `model training` `unicorn` `growth stage`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Tolaram: $51 Million Debt
+## 3. Tolaram: $51 Million debt facility
 
-- **Summary**: Tolaram, a Singapore-headquartered consumer goods group with significant operations in Africa, has secured a $51 million medium-term loan facility. This debt financing, structured by Mauritius Commercial Bank, is aimed at refinancing debt associated with its acquisition of Guinness Nigeria.
+- **Summary**: Tolaram, a Singapore-headquartered diversified group with significant operations in Africa, secured a $51 million medium-term debt facility. This financing is intended to support its various business interests, which include consumer goods, fintech, infrastructure, and industrials across emerging markets. The facility was structured to refinance bridge funding related to a strategic acquisition.
 - **Key Points**:
-  1. Investors: Mauritius Commercial Bank
-  2. Sector keywords: debt financing, consumer goods, Africa, refinancing
+  1. Investors: Mauritius Commercial Bank Limited (MCB), Standard Bank Corporate and Investment Banking (CIB)
+  2. Sector keywords: debt financing, diversified group, emerging markets, africa
 - **Source**: [TechCabal](https://techcabal.com/2026/09/04/techcabal-daily-tolaram-secures-51m-debt/)
-- **Keywords**: `debt financing` `consumer goods` `Africa` `refinancing`
+- **Keywords**: `debt financing` `diversified group` `emerging markets` `africa`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Nomba: $3 Million Debt Facility
+## 4. Mireye: $500 Thousand Seed funding from Y Combinator S26
 
-- **Summary**: Nomba has successfully raised a $3 million debt facility to support the expansion of its cross-border payments infrastructure. The company intends to use this funding to enhance its services across the Africa–Asia payment corridor.
-- **Key Points**:
-  1. Investors: CardinalStone Finance Company Limited
-  2. Sector keywords: fintech, payments, cross-border payments, Africa
-- **Source**: [TechCabal](https://techcabal.com/2026/09/03/nomba-raises-3-million/)
-- **Keywords**: `fintech` `payments` `cross-border payments` `Africa`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 5. Mireye: Undisclosed
-
-- **Summary**: Mireye has launched its infrastructure platform for physical world AI agents as part of Y Combinator's S26 batch. Typically, a 'Launch HN' from a YC company indicates an initial funding round, often a pre-seed or seed round, with Y Combinator as a key investor.
+- **Summary**: Mireye, a Y Combinator S26 batch company, received $500,000 in seed funding from the accelerator. The startup is building infrastructure for physical world AI agents, aiming to index every inch of the earth and make it queryable. Their service provides data, enrichment, tools, and signals for US locations through an API.
 - **Key Points**:
   1. Investors: Y Combinator
-  2. Sector keywords: AI infrastructure, physical AI, robotics, Y Combinator
+  2. Sector keywords: AI agents, AI infrastructure, geospatial data, seed
 - **Source**: [Hacker News](https://news.ycombinator.com/item?id=49552616)
-- **Keywords**: `AI infrastructure` `physical AI` `robotics` `Y Combinator`
+- **Keywords**: `AI agents` `AI infrastructure` `geospatial data` `seed`
 - **Score**: ⭐⭐ (2/5)
 
 ---
