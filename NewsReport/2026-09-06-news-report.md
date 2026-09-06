@@ -5,63 +5,63 @@
 
 ---
 
-## 1. Crusoe: $3 Billion Series F at a $30 Billion valuation
+## 1. Crusoe: $3 Billion at a $30 Billion valuation
 
-- **Summary**: Crusoe, initially a cryptocurrency mining operation utilizing flared natural gas, has evolved into a significant provider of AI cloud and data center infrastructure. The company secured a substantial $3 billion Series F round, reaching a $30 billion valuation, after reportedly signing a major $13 billion contract with Jane Street for GPUs and AI infrastructure.
+- **Summary**: Crusoe, a data center developer and AI infrastructure provider, has reportedly raised over $3 billion at a $30 billion valuation, nearly tripling its worth in ten months. The company, which pivoted from crypto mining, serves customers like Meta, Microsoft, and OpenAI, and recently secured a significant $13 billion, five-year contract with Jane Street to supply GPUs and AI infrastructure.
 - **Key Points**:
   1. Investors: Atreides Management, Valor Equity Partners, Mubadala Capital
-  2. Sector keywords: AI infrastructure, data centers, clean energy, cloud computing
+  2. Sector keywords: AI infrastructure, data centers, cloud computing, GPU
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/)
-- **Keywords**: `AI infrastructure` `data centers` `clean energy` `cloud computing`
+- **Keywords**: `AI infrastructure, data centers, cloud computing, GPU`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. AfterQuery: Undisclosed Series B at a $3.2 Billion valuation
+## 2. AfterQuery: Undisclosed round, valued at $3.2 Billion (Series B)
 
-- **Summary**: AI model-training startup AfterQuery achieved a $3.2 billion valuation in a new Series B funding round, making it Y Combinator’s fastest-ever unicorn. This rapid growth occurred just five months after its $30 million Series A round, highlighting intense investor interest in its high-quality, human-generated datasets for training large foundational AI models.
+- **Summary**: AfterQuery, an AI model-training startup, has reportedly achieved a $3.2 billion valuation in a Series B round, becoming Y Combinator's fastest-ever unicorn, just five months after its Series A. The company provides training datasets and reinforcement learning tools to major AI labs like OpenAI and Microsoft AI, focusing on expert knowledge and professional workflows.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: AI, machine learning, data training, unicorn, Y Combinator
+  2. Sector keywords: AI, machine learning, training data, unicorn
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/)
-- **Keywords**: `AI` `machine learning` `data training` `unicorn` `Y Combinator`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+- **Keywords**: `AI, machine learning, training data, unicorn`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Tolaram: $51 Million Debt
+## 3. Tolaram: $51 Million debt facility
 
-- **Summary**: Singapore-based Tolaram Group secured a $51 million medium-term loan from Mauritius Commercial Bank (MCB). This debt financing is intended to refinance part of the existing debt associated with its acquisition of Guinness Nigeria, aiming to mitigate refinancing risks and provide capital for future expansion.
+- **Summary**: Tolaram, a Singapore-headquartered diversified group with significant operations in Africa across consumer goods, fintech, and infrastructure, has secured a $51 million debt facility. This financing solution is aimed at refinancing bridge funding associated with a previously completed strategic acquisition and establishing a longer-term funding structure.
 - **Key Points**:
-  1. Investors: Mauritius Commercial Bank (MCB)
-  2. Sector keywords: debt financing, consumer goods, acquisition finance, Nigeria
+  1. Investors: Standard Bank Corporate and Investment Banking (CIB)
+  2. Sector keywords: debt funding, FMCG, infrastructure, fintech
 - **Source**: [TechCabal](https://techcabal.com/2026/09/04/techcabal-daily-tolaram-secures-51m-debt/)
-- **Keywords**: `debt financing` `consumer goods` `acquisition finance` `Nigeria`
+- **Keywords**: `debt funding, FMCG, infrastructure, fintech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Nomba: $3 Million Debt Facility
+## 4. Nomba: $3 Million debt facility
 
-- **Summary**: Nomba, a Nigerian fintech company, has secured a $3 million debt facility from CardinalStone Finance Company Limited. The funding will be used to expand its cross-border payments infrastructure, particularly from its Democratic Republic of Congo operations, to facilitate trade settlement between Central Africa and Asia.
+- **Summary**: Nomba, a Nigerian fintech company, has secured a $3 million debt facility from CardinalStone Finance Company Limited. This funding aims to expand its cross-border payment infrastructure, particularly for trade between Africa and Asia, leveraging its licensed money service operations in the Democratic Republic of Congo and Canada.
 - **Key Points**:
   1. Investors: CardinalStone Finance Company Limited
-  2. Sector keywords: fintech, cross-border payments, Africa, debt financing
+  2. Sector keywords: fintech, payments, cross-border, Nigeria
 - **Source**: [TechCabal](https://techcabal.com/2026/09/04/techcabal-daily-tolaram-secures-51m-debt/)
-- **Keywords**: `fintech` `cross-border payments` `Africa` `debt financing`
+- **Keywords**: `fintech, payments, cross-border, Nigeria`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
 ## 5. Swiftask: €1.55 Million Seed round
 
-- **Summary**: French startup Swiftask raised €1.55 million in a seed round to scale its AI agent deployment. The company's SaaS platform helps businesses structure, run, and govern AI agents, with plans for commercial growth in France and international markets, including prioritized European and African markets.
+- **Summary**: Swiftask, a French startup, has raised €1.55 million ($1.8 million USD) in a seed round. The funding will be used to scale the deployment and governance of its AI agents inside companies, with plans for commercial expansion in prioritized European and African markets.
 - **Key Points**:
-  1. Investors: Founders, business angels
-  2. Sector keywords: AI agents, enterprise AI, SaaS, AI deployment
-- **Source**: [Hacker News](https://agence-api.ouest-france.fr/numerique/swiftask-securise-1-55-m-euros-pour-deployer-ses-agents-ia-a-grande-echelle-ae6db912-a7a0-11f1-8a27-1e0c4eb5e395)
-- **Keywords**: `AI agents` `enterprise AI` `SaaS` `AI deployment`
-- **Score**: ⭐⭐⭐ (3/5)
+  1. Investors: Undisclosed (founders and a pool of business angels)
+  2. Sector keywords: AI agents, SaaS, enterprise AI, AI governance
+- **Source**: [Agence API Ouest France](https://agence-api.ouest-france.fr/numerique/swiftask-securise-1-55-m-euros-pour-deployer-ses-agents-ia-a-grande-echelle-ae6db912-a7a0-11f1-8a27-1e0c4eb5e395)
+- **Keywords**: `AI agents, SaaS, enterprise AI, AI governance`
+- **Score**: ⭐⭐ (2/5)
 
 ---
 
