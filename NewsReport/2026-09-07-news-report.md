@@ -1,43 +1,31 @@
 # Daily News Report (2026-09-07)
 
-> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 2 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Crusoe: $3 Billion at a $30 Billion valuation
+## 1. Crusoe: $3 Billion Series F at a $30 Billion valuation
 
-- **Summary**: Crusoe, a Denver, Colorado-based cloud computing provider and data center developer, has reportedly raised over $3 billion at a $30 billion valuation. The company specializes in AI infrastructure by capturing wasted natural gas from oil fields to power its portable data centers, offering energy-first solutions for AI. Crusoe serves major customers including OpenAI, Microsoft Corp., and Meta Platforms Inc., and recently secured a five-year, $13 billion contract with Jane Street for GPUs and AI infrastructure.
+- **Summary**: Crusoe, a Denver-based data center developer and AI infrastructure provider, raised over $3 billion in a Series F round at a $30 billion valuation. The company has successfully pivoted from its origins in crypto mining to delivering AI cloud and data center services, securing significant contracts with major clients like OpenAI, Microsoft, Meta, and Jane Street.
 - **Key Points**:
-  1. Investors: Atreides Management, Valor Equity Partners (co-leads), Mubadala Capital
-  2. Sector keywords: data centers, AI infrastructure, cloud computing, energy solutions, sustainability
+  1. Investors: Atreides Management, Valor Equity Partners, Mubadala Capital
+  2. Sector keywords: AI infrastructure, data centers, cloud computing, energy
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/)
-- **Keywords**: `data centers` `AI infrastructure` `cloud computing` `energy solutions` `sustainability`
+- **Keywords**: `AI infrastructure, data centers, cloud computing, energy`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. AfterQuery: Undisclosed Series B, valued at $3.2 Billion
+## 2. AfterQuery: Undisclosed Series B at a $3.2 Billion valuation
 
-- **Summary**: AfterQuery, a San Francisco-based AI model-training startup, reportedly achieved a $3.2 billion valuation in a Series B round, making it Y Combinator's fastest-ever unicorn. The company specializes in engineering high-expertise datasets to teach large language models and autonomous agents to replicate the decision-making, reasoning, and workflow patterns of seasoned professionals. This rapid growth follows its $30 million Series A round just five months prior.
+- **Summary**: AfterQuery, a San Francisco-based AI model-training startup, has achieved a $3.2 billion valuation in a Series B round, making it Y Combinator's fastest unicorn. The company specializes in curating high-quality, human-generated datasets for training advanced AI models, addressing the critical need for empirically validated data in complex AI applications.
 - **Key Points**:
-  1. Investors: Undisclosed Lead Investor, Y Combinator (Previous Accelerator)
-  2. Sector keywords: AI, machine learning, model training, AI data, Y Combinator, unicorn
+  1. Investors: Undisclosed
+  2. Sector keywords: AI, machine learning, data curation, AI training data, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/)
-- **Keywords**: `AI` `machine learning` `model training` `AI data` `Y Combinator` `unicorn`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 3. Omarchy: $13 Million funding
-
-- **Summary**: The Omacom Foundation, the organization responsible for the Arch-based Omarchy Linux distribution, has secured $13 million in committed funding. This capital is earmarked to aggressively support the development of the Linux Desktop and its broader ecosystem over the next three years. The foundation's backers include individual Distinguished Patrons and Corporate Patrons.
-- **Key Points**:
-  1. Investors: 1Password, 37signals (Corporate Patrons), Ryan R. Hughes, Ed Huang, Adrien Treccani, Max Schoening (Distinguished Patrons)
-  2. Sector keywords: Linux, open source, desktop environment, operating system, foundation funding
-- **Source**: [Linuxiac](https://linuxiac.com/omarchy-funding-climbs-to-13m-with-over-4m-a-year-set-for-spending/)
-- **Keywords**: `Linux` `open source` `desktop environment` `operating system` `foundation funding`
-- **Score**: ⭐⭐⭐ (3/5)
+- **Keywords**: `AI, machine learning, data curation, AI training data, SaaS`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
