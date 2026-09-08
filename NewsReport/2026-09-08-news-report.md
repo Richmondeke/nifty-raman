@@ -1,43 +1,67 @@
 # Daily News Report (2026-09-08)
 
-> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
 ## 1. Crusoe: $3 Billion Series F at a $30 Billion valuation
 
-- **Summary**: Crusoe, a cloud-computing provider and data center developer, raised over $3 billion in a Series F round, valuing the company at approximately $30 billion. The funding follows a significant $13 billion, five-year cloud contract with Jane Street to supply GPUs and AI infrastructure. Crusoe has shifted its focus from crypto-mining to building AI infrastructure and cloud services, serving major AI customers like OpenAI, Microsoft, and Meta.
+- **Summary**: Crusoe, an AI data center developer and cloud provider, has reportedly raised $3 billion, tripling its valuation to $30 billion in less than a year. The company, which initially focused on crypto-mining using flared natural gas, has successfully pivoted to providing AI infrastructure. This funding follows a reported $13 billion contract with Jane Street to supply GPUs and AI infrastructure.
 - **Key Points**:
-  1. Investors: Atreides Management, Valor Equity Partners, Mubadala Capital
-  2. Sector keywords: AI infrastructure, data centers, cloud computing, venture capital
+  1. Investors: Atreides Management, Valor Equity Partners (co-leads), Mubadala Capital
+  2. Sector keywords: AI infrastructure, data centers, cloud computing, energy
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/)
-- **Keywords**: `AI infrastructure` `data centers` `cloud computing` `venture capital`
+- **Keywords**: `AI infrastructure` `data centers` `cloud computing` `energy`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. AfterQuery: Undisclosed Series B at a $3.2 Billion valuation
 
-- **Summary**: AfterQuery, an AI model-training startup, reportedly raised a Series B round that valued it at $3.2 billion, becoming Y Combinator's fastest-ever unicorn. This significant valuation jump occurred just five months after its $30 million Series A round at a $300 million valuation. The company specializes in training AI models to perform tasks like professionals by capturing how experts reason through problems, with clients including NVIDIA and Motif Technologies.
+- **Summary**: AI model-training startup AfterQuery has reportedly raised a new round, valuing it at $3.2 billion. This achievement makes it Y Combinator's fastest-ever unicorn, reaching this status just five months after its $30 million Series A. The company focuses on providing human-curated training datasets and reinforcement learning environments to top AI labs.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: AI, model training, data platforms, unicorn, Y Combinator
+  2. Sector keywords: AI training, machine learning, data annotation, unicorn
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/)
-- **Keywords**: `AI` `model training` `data platforms` `unicorn` `Y Combinator`
+- **Keywords**: `AI training` `machine learning` `data annotation` `unicorn`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 3. Mistral: €3 Billion Series D at a €21 Billion valuation
 
-- **Summary**: Mistral, a French AI model manufacturer, has secured €3 billion in a Series D funding round at a post-money valuation of more than €21 billion, marking the largest equity funding round ever completed by a European technology company. The company develops open-weight AI models and a full-stack platform, focusing on sovereign AI and enabling organizations to deploy AI while maintaining control over their data.
+- **Summary**: AI company Mistral has secured a massive €3 billion funding round led by Samsung, which has pushed its valuation to €21 billion. This significant investment underscores Mistral's growing influence and strategic position within the highly competitive artificial intelligence market.
 - **Key Points**:
-  1. Investors: Samsung Electronics, Scaleup Europe Fund (managed by EQT), PSG Equity, Advent, BlackRock (funds and accounts managed by), Grand Duchy of Luxembourg, a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund, Salesforce Ventures
-  2. Sector keywords: AI, large language models, open-source AI, European tech, deep tech
-- **Source**: [Hacker News](https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/)
-- **Keywords**: `AI` `large language models` `open-source AI` `European tech` `deep tech`
+  1. Investors: Samsung (lead)
+  2. Sector keywords: AI, large language models, deep learning, Europe
+- **Source**: [Hacker News](https://techfundingnews.com/mistral-raises-3-billion-series-d-samsung-21b-valuation-europe/)
+- **Keywords**: `AI` `large language models` `deep learning` `Europe`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 4. ARC Ride: $33.3 Million in asset-backed debt and equity
+
+- **Summary**: Kenyan electric mobility startup ARC Ride has raised $33.3 million through a combination of asset-backed debt and equity. The funding will be used to expand its battery-swapping network and electric motorcycle fleet across various African countries, including Kenya, Ghana, South Africa, Tanzania, and Uganda. ARC Ride provides a Battery-as-a-Service infrastructure, allowing riders to swap depleted batteries for charged ones.
+- **Key Points**:
+  1. Investors: Novastar Ventures, Norrsken22 (leads), IFC, British International Investment (BII), Proparco, Musashi Seimitsu, Talanton, Mirova
+  2. Sector keywords: electric mobility, battery swapping, cleantech, logistics
+- **Source**: [TechCabal](https://techcabal.com/2026/09/08/arc-ride-raises-33-3-million/)
+- **Keywords**: `electric mobility` `battery swapping` `cleantech` `logistics`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 5. Flowt: $550 Thousand Pre-seed
+
+- **Summary**: Nairobi-based fintech startup Flowt has raised $550,000 in a pre-seed funding round. The company utilizes artificial intelligence to analyze financial records, including bank and mobile money statements, to assess the creditworthiness of small businesses. This approach aims to provide working capital to African climate-smart businesses that are often overlooked by traditional lenders.
+- **Key Points**:
+  1. Investors: Delta40 Fund I, Impacc, Argidius Foundation
+  2. Sector keywords: fintech, AI, lending, SME finance
+- **Source**: [TechCabal](https://techcabal.com/2026/09/08/flowt-raises-pre-seed-targets-1mn-loan-nook/)
+- **Keywords**: `fintech` `AI` `lending` `SME finance`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
