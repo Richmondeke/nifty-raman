@@ -1,54 +1,42 @@
 # Daily News Report (2026-09-11)
 
-> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Bluecore Energy: $50 Million Seed round
+## 1. Bluecore Energy: $50 Million Seed
 
-- **Summary**: Bluecore Energy, a Long Beach, California-based nuclear startup, secured an oversubscribed $50 million seed round to accelerate the development, testing, and deployment of its floating nuclear energy systems. The company specializes in small modular, water-cooled reactors designed to operate aboard floating barges, targeting ports, utilities, data centers, and offshore infrastructure. This funding follows a $10 million pre-seed round announced when the company emerged from stealth in July.
+- **Summary**: Bluecore Energy is a nuclear startup based in Long Beach, California, developing small modular, water-cooled reactors designed to operate aboard floating barges. These systems aim to provide mobile, zero-emission electricity to ports, critical infrastructure, and potentially AI data centers. This oversubscribed $50 million seed round was secured just two months after its launch and a prior $10 million pre-seed round.
 - **Key Points**:
-  1. Investors: Silverton Partners, Slauson & Co, Harlem Capital, Precursor Ventures, LMNT, Visible Hands VC, Karman Ventures, Chris Larsen, Capital Factory, Share VC, X&, Markham Ventures, Hartbeat Ventures, MaC Ventures, Collab Capital, Vanderbilt, Scribble, Fortson, Borusan, Symphony Ventures, Act One Ventures, Animal Capital, Black Angel Group, Rackhouse Ventures, Joel Embiid, NBAYoungboy, Malik Monk, Taijuan Walker
-  2. Sector keywords: Nuclear Energy, Deep Tech, Energy, Climate Tech, Maritime, SMR
+  1. Investors: Silverton Partners (lead), Slauson & Co, Harlem Capital, Precursor Ventures, LMNT, Visible Hands VC, Karman Ventures, Chris Larsen, Capital Factory, Share VC, X&, Markham Ventures, Hartbeat Ventures, MaC Ventures, Collab Capital, Vanderbilt, Scribble, Fortson, Borusan, Symphony Ventures, Act One Ventures, Animal Capital, Black Angel Group, Rackhouse Ventures, Simu Liu's firm Markham Ventures, Joel Embiid, NBAYoungboy, Malik Monk, Taijuan Walker, and strategic angel investors.
+  2. Sector keywords: nuclear energy, cleantech, deep tech, energy infrastructure, SMR
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/nuclear-startup-bluecore-energy-raises-50m-seed-round-just-two-months-after-launch/)
-- **Keywords**: `Nuclear Energy` `Deep Tech` `Energy` `Climate Tech` `Maritime` `SMR`
+- **Keywords**: `nuclear energy` `cleantech` `deep tech` `energy infrastructure` `SMR`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 2. D.C. United: Undisclosed stake acquired by Collaborative Fund
+## 2. CloudNC: $20 Million Series B extension
 
-- **Summary**: Collaborative Fund, a venture capital firm, has acquired an undisclosed ownership stake in D.C. United, a Major League Soccer team, and its home stadium, Audi Field. The firm's founder, Craig Shapiro, views this investment as a strategic move to provide a showcase and distribution platform for the firm's portfolio startups. This investment highlights a growing trend of venture capital firms investing in professional sports ownership.
+- **Summary**: CloudNC is a UK-based manufacturing software startup that builds AI-powered software called CAM Assist to automate parts of Computer Numerical Control (CNC) machining. This helps machine shops convert part designs into instructions for precision cutting equipment, aiming to address manufacturing bottlenecks. This $20 million extension round brings its total raised amount to $128 million.
 - **Key Points**:
-  1. Investors: Collaborative Fund
-  2. Sector keywords: Sports Tech, Venture Capital, MLS, Stadium Investment, Ownership
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/10/thrive-capital-showed-vcs-the-way-into-pro-sports-ownership-collaborative-fund-is-now-trying-its-own-version-of-the-same-play/)
-- **Keywords**: `Sports Tech` `Venture Capital` `MLS` `Stadium Investment` `Ownership`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 3. CloudNC: $20 Million Series B extension
-
-- **Summary**: CloudNC, a U.K.-based manufacturing software startup, raised a $20 million Series B extension round to expand its AI-driven CNC machining tools and launch a new quoting product. The company's AI software, CAM Assist, automates parts of Computer Numerical Control (CNC) machining. This funding brings their total raised to $128 million and aims to accelerate commercial expansion and product development.
-- **Key Points**:
-  1. Investors: Nimble Ventures, Calculus Venture Capital, Entrepreneur First, LM Ventures
-  2. Sector keywords: Manufacturing, Software, AI, Automation, CNC Machining, Industrial Tech
+  1. Investors: Nimble Ventures (lead), Calculus Venture Capital, Entrepreneur First, LM Ventures
+  2. Sector keywords: manufacturing software, automation, AI, CNC machining, Industry 4.0
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/cloudnc-raises-20m-to-automate-manufacturings-most-pressing-bottlenecks/)
-- **Keywords**: `Manufacturing` `Software` `AI` `Automation` `CNC Machining` `Industrial Tech`
+- **Keywords**: `manufacturing software` `automation` `AI` `CNC machining` `Industry 4.0`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Xapien: $56 Million Series B
+## 3. Xapien: $56 Million Series B
 
-- **Summary**: Xapien, a London-based AI background check and due diligence company, raised $56 million in Series B funding. The company uses AI and natural language processing to automate complex background research and create due diligence reports for wealth managers, corporates, and compliance teams. The funding will be used to expand its operations in the US, including relocating its CEO and other leaders to Boston.
+- **Summary**: Xapien is a London-based AI company that provides software for automated background checks and due diligence. Its platform uses AI and natural language processing to gather and analyze publicly available information, producing reports on reputation, compliance, risk, and business relationships for clients in legal, financial, corporate, and non-profit sectors. This $56 million Series B round will be used to expand its presence, particularly in the US market, where it already generates 50% of its revenue.
 - **Key Points**:
-  1. Investors: Spectrum Equity, YFM Equity Partners
-  2. Sector keywords: AI, Due Diligence, Background Checks, RegTech, SaaS, Compliance
-- **Source**: [Hacker News](https://axios.com/pro/all-deals/2026/09/10/due-diligence-ai-xapien-56-million)
-- **Keywords**: `AI` `Due Diligence` `Background Checks` `RegTech` `SaaS` `Compliance`
+  1. Investors: Spectrum Equity (lead), YFM Equity Partners
+  2. Sector keywords: AI, due diligence, regtech, background checks, compliance
+- **Source**: [Axios](https://axios.com/pro/all-deals/2026/09/10/due-diligence-ai-xapien-56-million)
+- **Keywords**: `AI` `due diligence` `regtech` `background checks` `compliance`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
