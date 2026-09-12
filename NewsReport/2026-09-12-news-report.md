@@ -5,38 +5,38 @@
 
 ---
 
-## 1. Discovery Loop: Undisclosed Growth round at $50 Billion valuation target
+## 1. Discovery Loop: Undisclosed Growth round (targeting $50 Billion valuation)
 
-- **Summary**: Discovery Loop is an AI startup co-founded by former Google chief scientist Jeff Dean and other prominent Google researchers, focused on accelerating scientific discovery across engineering and medicine. The company aims to achieve this by building automated systems capable of running massive parallel experiments. They are reportedly targeting a $50 billion valuation in their latest funding round.
+- **Summary**: Discovery Loop, an AI startup co-founded by former Google chief scientist Jeff Dean and other ex-Google researchers, is reportedly seeking funding at a $50 billion valuation. The company aims to accelerate scientific and engineering discovery through AI by automating the entire cycle of formulating, running, analyzing, and iterating experiments.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: AI, scientific discovery, deeptech, enterprise AI, research
-- **Source**: [Hacker News](https://www.businessinsider.com/jeff-deans-startup-discovery-loop-is-eyeing-a-valuation-2026-9)
-- **Keywords**: `AI, scientific discovery, deeptech, enterprise AI, research`
+  1. Investors: Alphabet (founding investor and cloud provider), Radical Ventures, Khosla Ventures, Lightspeed, Kleiner Perkins, Doerr Capital
+  2. Sector keywords: AI, scientific discovery, deep learning, enterprise AI, research
+- **Source**: [Business Insider](https://news.ycombinator.com/item?id=49659173)
+- **Keywords**: `AI, scientific discovery, deep learning, enterprise AI, research`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Bluecore Energy: $50 Million Seed round
+## 2. Bluecore Energy: $50 Million Seed
 
-- **Summary**: Bluecore Energy is a Long Beach, California-based maritime clean energy startup developing small modular, water-cooled nuclear reactors designed to operate aboard floating barges. These systems aim to provide mobile, zero-emission electricity to power critical infrastructure such as ports, utilities, data centers, and offshore facilities. The company secured an oversubscribed seed round just months after raising a pre-seed round and emerging from stealth.
+- **Summary**: Bluecore Energy, a maritime nuclear energy startup based in the Port of Long Beach, closed an oversubscribed $50 million seed round. This significant capital injection will accelerate the development of its floating nuclear power systems, designed to provide zero-emission energy for ports, critical infrastructure, and potentially AI data centers using compact water-cooled reactors on barges.
 - **Key Points**:
-  1. Investors: Silverton Partners (lead), Slauson & Co., Harlem Capital, Precursor Ventures, LMNT, Visible Hands VC, Karman Ventures, Chris Larsen, Capital Factory, Share VC, X&, Markham Ventures, Hartbeat Ventures, MaC Ventures, Collab Capital, Vanderbilt, Scribble, Fortson, Borusan, Symphony Ventures, Act One Ventures, Animal Capital, Black Angel Group, Rackhouse Ventures, Joel Embiid, NBAYoungboy, Malik Monk, Taijuan Walker
-  2. Sector keywords: nuclear energy, cleantech, deeptech, energy, maritime
+  1. Investors: Silverton Partners (lead), Slauson & Co., MaC Ventures, Collab Capital, Vanderbilt, Scribble, Fortson, Borusan, Symphony Ventures, Act One Ventures, Animal Capital, Black Angel Group, Rackhouse Ventures, Markham Ventures, Simu Liu's firm, Hartbeat Ventures (Kevin Hart's firm), Joel Embiid, NBA YoungBoy, Malik Monk, Taijuan Walker, Chris Larsen (co-founder of Ripple), Harlem Capital, Precursor Ventures, LMNT, Visible Hands VC, Karman Ventures, Capital Factory, Share VC, X&, and strategic angels
+  2. Sector keywords: nuclear energy, cleantech, maritime, AI infrastructure, energy
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/nuclear-startup-bluecore-energy-raises-50m-seed-round-just-two-months-after-launch/)
-- **Keywords**: `nuclear energy, cleantech, deeptech, energy, maritime`
+- **Keywords**: `nuclear energy, cleantech, maritime, AI infrastructure, energy`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 3. CloudNC: $20 Million Series B extension
 
-- **Summary**: CloudNC is a UK-based manufacturing software startup that uses AI to automate manufacturing processes, specifically addressing bottlenecks in CNC machining. Their CAM Assist software helps machine shops convert part designs into instructions for precision cutting equipment. This extension round will fund customer adoption, commercial operations, and the development of new products like Quote Agent.
+- **Summary**: CloudNC, a UK-based manufacturing software startup, secured a $20 million Series B extension round. This funding will support the expansion of its AI-powered CAM Assist software, which automates CNC machining strategies and toolpath creation, and aid in the development of new products like Quote Agent. The company aims to enhance efficiency and throughput for machine shops.
 - **Key Points**:
   1. Investors: Nimble Ventures (lead), Calculus Venture Capital, Entrepreneur First, LM Ventures
-  2. Sector keywords: manufacturing, AI, software, automation, deeptech
+  2. Sector keywords: manufacturing, AI, software, CNC machining, automation
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/cloudnc-raises-20m-to-automate-manufacturings-most-pressing-bottlenecks/)
-- **Keywords**: `manufacturing, AI, software, automation, deeptech`
+- **Keywords**: `manufacturing, AI, software, CNC machining, automation`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
