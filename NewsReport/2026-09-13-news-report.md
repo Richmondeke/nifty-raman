@@ -1,30 +1,42 @@
 # Daily News Report (2026-09-13)
 
-> Curated from TechCrunch and Hacker News. Contains 2 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Bluecore Energy: $50 Million Seed
+## 1. Bluecore Energy: $50 Million Seed Round
 
-- **Summary**: Bluecore Energy is a maritime nuclear energy startup headquartered in the Port of Long Beach, California. The company is developing floating nuclear power systems designed to provide zero-emission energy for ports, critical infrastructure, and potentially AI data centers using small modular reactors mounted on barges.
+- **Summary**: Bluecore Energy, a US-based maritime nuclear energy startup, has raised an oversubscribed $50 million seed funding round just two months after its launch. The company is developing small modular nuclear reactors designed to operate on floating barges, aiming to provide zero-emission energy for various applications including ports and AI data centers. This significant capital injection will accelerate the development, testing, and deployment of their floating nuclear power systems.
 - **Key Points**:
-  1. Investors: Silverton Partners (lead), Slauson & Co., Harlem Capital, Precursor Ventures, LMNT, Visible Hands VC, Karman Ventures, Chris Larsen, Capital Factory, Share Ventures, X&, Markham Ventures, Hartbeat Ventures, MaC Ventures, Collab Capital, Vanderbilt, Scribble, Fortson, Borusan, Symphony Ventures, Act One Ventures, Animal Capital, Black Angel Group, Rackhouse Ventures, Joel Embiid, NBA YoungBoy, Malik Monk, Taijuan Walker, strategic angel investors with experience at Tesla, Uber, Amazon, and Google
-  2. Sector keywords: nuclear energy, clean energy, deep tech, maritime, AI infrastructure
+  1. Investors: Silverton Partners (Lead), MaC Venture Capital, Collab Capital, Act One Ventures, Animal Capital, BAG Collective, Rackhouse Venture Capital, Borusan Ventures, Symphony Ventures, Vanderbilt University, Scribble Ventures, Fortson VC, Harlem Capital, Precursor Ventures, LMNT Ventures, Visible Hands, Capital Factory, Share Ventures, X&, Markham Valley Ventures (Simu Liu's firm), HartBeat Ventures (Kevin Hart's firm), Chris Larsen, Joel Embiid, Malik Monk, Taijuan Walker, Slauson & Co. (returning)
+  2. Sector keywords: nuclear energy, cleantech, deeptech, energy
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/nuclear-startup-bluecore-energy-raises-50m-seed-round-just-two-months-after-launch/)
-- **Keywords**: `nuclear energy, clean energy, deep tech, maritime, AI infrastructure`
+- **Keywords**: `nuclear energy` `cleantech` `deeptech` `energy`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 2. CloudNC: $20 Million Series B extension
+## 2. D.C. United: Collaborative Fund bought into D.C. United and its stadium (Undisclosed Amount)
 
-- **Summary**: CloudNC is a UK-based manufacturing software startup that uses AI to automate precision machining processes with its CAM Assist software. This extension round will support wider customer adoption, commercial expansion, and the development of new products like Quote Agent, which aims to streamline manufacturing quoting and estimating.
+- **Summary**: Collaborative Fund, a venture capital firm, invested in D.C. United, a professional sports team, and its stadium. The firm's founder, Craig Shapiro, sees this investment as a strategic opportunity to showcase the firm's portfolio startups.
 - **Key Points**:
-  1. Investors: Nimble Ventures (lead), Calculus Venture Capital, Entrepreneur First, LM Ventures
-  2. Sector keywords: manufacturing, automation, AI, software, precision machining
+  1. Investors: Collaborative Fund
+  2. Sector keywords: sports, venture capital, investment, media
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/10/thrive-capital-showed-vcs-the-way-into-pro-sports-ownership-collaborative-fund-is-now-trying-its-own-version-of-the-same-play/)
+- **Keywords**: `sports` `venture capital` `investment` `media`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 3. CloudNC: $20 Million Series B extension
+
+- **Summary**: CloudNC, a UK-based manufacturing software startup, has secured a $20 million Series B extension round. The company develops AI-powered CAM Assist software, which automates computer numerical control (CNC) machining workflows, aiming to resolve critical bottlenecks in manufacturing. This funding brings their total raised to $128 million and will be used for commercial expansion and new product development.
+- **Key Points**:
+  1. Investors: Nimble Ventures (Lead), Calculus Venture Capital, Entrepreneur First, LM Capital (Lockheed Martin's venture arm)
+  2. Sector keywords: manufacturing, automation, software, AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/cloudnc-raises-20m-to-automate-manufacturings-most-pressing-bottlenecks/)
-- **Keywords**: `manufacturing, automation, AI, software, precision machining`
+- **Keywords**: `manufacturing` `automation` `software` `AI`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
