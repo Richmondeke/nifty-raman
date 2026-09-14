@@ -5,38 +5,38 @@
 
 ---
 
-## 1. Temporal: $550M Series E at a $12.55B valuation
+## 1. Temporal: $550 Million Series E
 
-- **Summary**: Temporal, an open-source platform that enables developers to build and operate resilient applications, has secured a $550 million Series E round, valuing the company at $12.55 billion. This significant funding aims to meet the escalating demand for reliable AI infrastructure, as companies require their critical workflows, from payments to complex AI agents, to run dependably for extended periods.
+- **Summary**: Temporal is an open-source platform provider that offers durable execution technology. This platform helps companies build and run reliable AI applications and complex workflows, ensuring they survive system failures. The significant Series E funding highlights strong demand for their reliable AI infrastructure.
 - **Key Points**:
-  1. Investors: Lightspeed (co-lead), Wellington Management (co-lead), Growth Equity at Goldman Sachs Alternatives (co-lead), Tiger Global (co-lead), T. Rowe Price, SV Angel, a16z, Sequoia, Index, GIC, Sapphire Ventures, Amplify
-  2. Sector keywords: workflow orchestration, developer tools, AI infrastructure, enterprise software, open source
-- **Source**: [Temporal.io](https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai)
-- **Keywords**: `workflow orchestration, developer tools, AI infrastructure, enterprise software, open source`
+  1. Investors: Lightspeed, Wellington Management, Growth Equity at Goldman Sachs Alternatives, Tiger Global, T. Rowe Price, SV Angel, a16z, Sequoia, Index, GIC, Sapphire Ventures, Amplify
+  2. Sector keywords: workflow automation, distributed systems, software development, AI infrastructure, open-source
+- **Source**: [Hacker News](https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai)
+- **Keywords**: `workflow automation` `distributed systems` `software development` `AI infrastructure` `open-source`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Bluecore Energy: $50 million seed round
+## 2. Bluecore Energy: $50 Million Seed
 
-- **Summary**: Bluecore Energy, a nuclear startup based in Long Beach, closed an oversubscribed $50 million seed round just two months after launching. The company is developing compact, water-cooled nuclear reactors designed to be mounted on floating barges, aiming to provide mobile, zero-emission energy for sectors like maritime ports, critical infrastructure, and the rapidly growing needs of AI data centers.
+- **Summary**: Bluecore Energy is a Long Beach, California-based nuclear startup developing portable nuclear microreactors designed to operate aboard floating barges. These systems aim to provide mobile, zero-emission electricity for maritime uses, ports, and data centers. The oversubscribed seed round will accelerate development, testing, and deployment of their floating nuclear energy systems.
 - **Key Points**:
-  1. Investors: Silverton Partners (lead), Slauson & Co., Harlem Capital, Precursor Ventures, LMNT, Visible Hands, Karman Ventures, Chris Larsen, Capital Factory, Share Ventures, X&, Markham Valley Ventures, HartBeat Ventures, MaC Ventures, Collab Capital, Act One Ventures, Animal Capital, BAG Collective, Rackhouse Venture Capital, Borusan Ventures, Symphony Ventures, Vanderbilt University, Scribble Ventures, Fortson VC
-  2. Sector keywords: nuclear energy, cleantech, energy startup, AI infrastructure, maritime tech
+  1. Investors: Silverton Partners, Slauson & Co., Harlem Capital Partners, Precursor Ventures, Karman Ventures, Capital Factory, Share VC, Hartbeat Ventures, LMNT, Visible Hands VC, X&, Markham Ventures, MaC Ventures, Collab Capital, Vanderbilt, Scribble, Fortson, Borusan, Symphony Ventures, Act One Ventures, Animal Capital, Black Angel Group, Rackhouse Ventures, Chris Larsen, Joel Embiid, NBA YoungBoy, Malik Monk, Taijuan Walker
+  2. Sector keywords: nuclear energy, cleantech, deep tech, maritime energy, SMRs
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/nuclear-startup-bluecore-energy-raises-50m-seed-round-just-two-months-after-launch/)
-- **Keywords**: `nuclear energy, cleantech, energy startup, AI infrastructure, maritime tech`
+- **Keywords**: `nuclear energy` `cleantech` `deep tech` `maritime energy` `SMRs`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. CloudNC: $20 million Series B extension round
+## 3. CloudNC: $20 Million Series B Extension
 
-- **Summary**: CloudNC, a UK-based manufacturing software startup, raised a Series B extension to further scale its AI-powered CAM Assist software. This technology automates CNC machining workflows, aiming to significantly reduce programming time and address labor shortages in the manufacturing sector. The latest funding brings its total lifetime raised amount to $128 million.
+- **Summary**: CloudNC is a UK-based manufacturing software startup that develops AI-powered software, called CAM Assist, to automate parts of Computer Numerical Control (CNC) machining. This extension round will support wider adoption of their software, strengthen go-to-market operations, and facilitate entry into new markets.
 - **Key Points**:
-  1. Investors: Nimble Ventures (lead), Calculus Venture Capital, Entrepreneur First, LM Capital (Lockheed Martin's venture arm)
+  1. Investors: Nimble Ventures, Calculus Venture Capital, Entrepreneur First, LM Ventures
   2. Sector keywords: manufacturing software, automation, AI, industrial tech, CNC machining
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/08/cloudnc-raises-20m-to-automate-manufacturings-most-pressing-bottlenecks/)
-- **Keywords**: `manufacturing software, automation, AI, industrial tech, CNC machining`
+- **Keywords**: `manufacturing software` `automation` `AI` `industrial tech` `CNC machining`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
