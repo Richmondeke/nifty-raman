@@ -1,103 +1,91 @@
 # Daily News Report (2026-09-16)
 
-> Curated from TechCrunch and Hacker News. Contains 8 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 7 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Factory: $200M at $5B valuation
+## 1. Factory: $200 Million at $5 Billion valuation
 
-- **Summary**: Factory is an enterprise AI coding startup that builds autonomous agents, called Droids, to develop, test, and maintain software for businesses. The company's platform, Factory 2.0, extends AI coding agents beyond discrete tasks into coordinated 'software factory' workflows, including code review, security analysis, testing, documentation, and incident response.
+- **Summary**: Factory, an AI coding startup, has raised $200 million, which more than triples its valuation to $5 billion. The company is focused on building autonomous AI agents, referred to as 'Droids', to automate and enhance software development across the entire lifecycle for enterprises.
 - **Key Points**:
-  1. Investors: Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, Clearlake
-  2. Sector keywords: AI, coding agents, enterprise software, devops
-- **Source**: [daily.dev](https://daily.dev/blog/factory-raises-200m-as-it-builds-agents-across-the-software-lifecycle)
-- **Keywords**: `AI` `coding agents` `enterprise software` `devops`
+  1. Investors: Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, Clearlake, Nico Rosberg, Brad Gerstner, Marc Benioff
+  2. Sector keywords: AI, coding, software development, developer tools
+- **Source**: [Hacker News](https://factory.com/news/5-billion-valuation)
+- **Keywords**: `AI` `coding` `software development` `developer tools`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Euclyd: $231 million Series A
+## 2. OpenAI: Considers Pre-IPO Funding Round at More Than $1.2 Trillion Valuation
 
-- **Summary**: Euclyd is a Dutch AI chip startup developing chip systems aimed at reducing the energy consumption and cost of running AI models, particularly for AI inference workloads. The company plans to directly sell rack-based hardware to enterprises and license its technology to chip developers.
+- **Summary**: OpenAI is reportedly considering a pre-IPO funding round that could value the leading artificial intelligence company at over $1.2 trillion. This potential mega-valuation highlights the explosive growth and intense investor interest in advanced generative AI technologies and their market impact.
 - **Key Points**:
-  1. Investors: Samsung, Somerset Capital Partners, Scaleup Europe Fund (managed by EQT), Innovation Industries, EIFO, Imec.xpand, Brabant Development Agency (BOM), Quadri
-  2. Sector keywords: AI chips, semiconductors, AI inference, deeptech
-- **Source**: [Quartz](https://www.quartz.com/news/euclyd-ai-chip-funding-samsung-1851088686)
-- **Keywords**: `AI chips` `semiconductors` `AI inference` `deeptech`
+  1. Investors: Undisclosed
+  2. Sector keywords: AI, generative AI, pre-IPO, valuation
+- **Source**: [Hacker News](https://www.wsj.com/tech/ai/openai-considers-pre-ipo-funding-round-at-more-than-1-2-trillion-valuation-54555295)
+- **Keywords**: `AI` `generative AI` `pre-IPO` `valuation`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Evvy: $40 million Series B
+## 3. Euclyd: $231 Million Series A
 
-- **Summary**: Evvy is a women's health company that focuses on advancing health research using vaginal microbiome data. They aim to provide insights into women's health through their testing and research.
+- **Summary**: Dutch startup Euclyd, an AI chip developer, secured a $231 million Series A funding round, co-led by Samsung. The company is developing new chip architectures specifically for AI inference, aiming to offer alternatives to Nvidia's dominant GPUs by reducing cost and energy consumption.
+- **Key Points**:
+  1. Investors: Samsung, Somerset Capital Partners, Scaleup Europe Fund, Innovation Industries
+  2. Sector keywords: AI chips, semiconductors, hardware, deep tech, AI inference
+- **Source**: [Hacker News](https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html)
+- **Keywords**: `AI chips` `semiconductors` `hardware` `deep tech` `AI inference`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 4. Evvy: $40 Million Series B
+
+- **Summary**: Evvy is a women's health company that announced a $40 million Series B funding round. The company focuses on advancing women’s health research by utilizing data from the vaginal microbiome, aiming to provide personalized insights and care.
 - **Key Points**:
   1. Investors: Catalio Capital Management
-  2. Sector keywords: women's health, biotechnology, microbiome, femtech
+  2. Sector keywords: women's health, biotech, microbiome, healthtech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/)
-- **Keywords**: `women's health` `biotechnology` `microbiome` `femtech`
+- **Keywords**: `women's health` `biotech` `microbiome` `healthtech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. ChipMango: up to $200,000 pre-seed (part of a larger $1.9 million seed round)
+## 5. Listen Labs: Scrubbed $1.5 Billion Series C
 
-- **Summary**: ChipMango is a Nigerian semiconductor design and training startup aiming to build Africa's semiconductor ecosystem through chip design services, engineering education, and localized Edge AI products. Madica's investment is part of a larger $1.9 million seed round led by Atlantica Ventures.
+- **Summary**: AI research startup Listen Labs reportedly cancelled a $1.5 billion Series C funding round, for which it had a signed term sheet from Menlo Ventures. The company decided to scrub the funding in favor of acquisition talks with Salesforce, indicating a significant strategic shift towards a potential major M&A.
 - **Key Points**:
-  1. Investors: Madica, Atlantica Ventures, DFS Labs, Kaleo Ventures
-  2. Sector keywords: semiconductors, AI hardware, deeptech, Nigeria
-- **Source**: [Technext](https://technext.ng/2026/09/15/madica-invests-1-million-in-5-african-startups-including-nigerias-chipmango/)
-- **Keywords**: `semiconductors` `AI hardware` `deeptech` `Nigeria`
+  1. Investors: Menlo Ventures (prospective lead)
+  2. Sector keywords: AI research, M&A, venture capital, enterprise AI
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/)
+- **Keywords**: `AI research` `M&A` `venture capital` `enterprise AI`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 6. AIUC: $40 Million Series A
+
+- **Summary**: The Artificial Intelligence Underwriting Company (AIUC) has raised $40 million in a Series A funding round. The San Francisco-based startup focuses on building 'confidence infrastructure' for frontier AI, providing a framework like SOC 2 certification for AI systems to ensure safety, reliability, and compliance, and tying insurance coverage directly to audit results.
+- **Key Points**:
+  1. Investors: Ribbit Capital, First Harmonic
+  2. Sector keywords: AI infrastructure, AI safety, frontier AI, deep tech
+- **Source**: [Hacker News](https://aiuc.com/updates/series-a-announcement)
+- **Keywords**: `AI infrastructure` `AI safety` `frontier AI` `deep tech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 7. D.C. United: Undisclosed investment
+
+- **Summary**: Collaborative Fund has invested in the professional soccer team D.C. United and its stadium. Firm founder Craig Shapiro described the investment as a strategic move to showcase the firm's portfolio startups.
+- **Key Points**:
+  1. Investors: Collaborative Fund
+  2. Sector keywords: sports investment, venture capital, real estate, media
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/10/thrive-capital-showed-vcs-the-way-into-pro-sports-ownership-collaborative-fund-is-now-trying-its-own-version-of-the-same-play/)
+- **Keywords**: `sports investment` `venture capital` `real estate` `media`
 - **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 5. Talenteo: up to $200,000 pre-seed
-
-- **Summary**: Talenteo is an HR and payroll platform focused on Francophone Africa. The company is based in Algeria and France.
-- **Key Points**:
-  1. Investors: Madica
-  2. Sector keywords: HR tech, fintech, Francophone Africa, SaaS
-- **Source**: [Technext](https://technext.ng/2026/09/15/madica-invests-1-million-in-5-african-startups-including-nigerias-chipmango/)
-- **Keywords**: `HR tech` `fintech` `Francophone Africa` `SaaS`
-- **Score**: ⭐⭐ (2/5)
-
----
-
-## 6. Paysika: up to $200,000 pre-seed
-
-- **Summary**: Paysika is a Cameroon-based neobank that issues payment cards across Central Africa.
-- **Key Points**:
-  1. Investors: Madica
-  2. Sector keywords: fintech, neobank, payments, Central Africa
-- **Source**: [Technext](https://technext.ng/2026/09/15/madica-invests-1-million-in-5-african-startups-including-nigerias-chipmango/)
-- **Keywords**: `fintech` `neobank` `payments` `Central Africa`
-- **Score**: ⭐⭐ (2/5)
-
----
-
-## 7. Delta Oil: up to $200,000 pre-seed
-
-- **Summary**: Delta Oil is an Egyptian startup that aggregates used cooking oil, connecting fragmented collection networks with international buyers. It operates in the circular economy sector.
-- **Key Points**:
-  1. Investors: Madica
-  2. Sector keywords: circular economy, recycling, sustainability, Egypt
-- **Source**: [Technext](https://technext.ng/2026/09/15/madica-invests-1-million-in-5-african-startups-including-nigerias-chipmango/)
-- **Keywords**: `circular economy` `recycling` `sustainability` `Egypt`
-- **Score**: ⭐⭐ (2/5)
-
----
-
-## 8. Bekia: up to $200,000 pre-seed
-
-- **Summary**: Bekia is an Egyptian digital platform that builds the collection layer for Egypt's recycling economy. It has a significant user base and has processed a large volume of recycled waste.
-- **Key Points**:
-  1. Investors: Madica
-  2. Sector keywords: recycling, circular economy, waste management, Egypt
-- **Source**: [Technext](https://technext.ng/2026/09/15/madica-invests-1-million-in-5-african-startups-including-nigerias-chipmango/)
-- **Keywords**: `recycling` `circular economy` `waste management` `Egypt`
-- **Score**: ⭐⭐ (2/5)
 
 ---
 
