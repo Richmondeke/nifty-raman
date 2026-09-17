@@ -1,54 +1,66 @@
 # Daily News Report (2026-09-17)
 
-> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. OpenAI: Undisclosed funding round at $1.2 Trillion valuation
+## 1. OpenAI: Weighs funding round at $1.2T valuation
 
-- **Summary**: OpenAI is reportedly contemplating a new funding round that could value the prominent artificial intelligence company at an astounding $1.2 trillion before it potentially goes public. This significant valuation reflects strong investor confidence in the company's leading position within the rapidly evolving AI landscape.
+- **Summary**: OpenAI is reportedly in early discussions with major investors regarding a new private funding round that could value the company at approximately $1.2 trillion. This potential capital injection aims to strengthen OpenAI's balance sheet ahead of a possible initial public offering.
 - **Key Points**:
   1. Investors: Undisclosed
-  2. Sector keywords: AI, large-language-models, growth-equity, pre-ipo
+  2. Sector keywords: AI, large language models, valuation, pre-IPO
 - **Source**: [Hacker News](https://www.ft.com/content/27509db8-b032-4437-9b2a-e909f466022f)
-- **Keywords**: `AI` `large-language-models` `growth-equity` `pre-ipo`
+- **Keywords**: `AI` `large language models` `valuation` `pre-IPO`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Rune: $40 Million Series A
+## 2. Evvy: $40 million Series B
 
-- **Summary**: Rune has secured $40 million in funding to establish off-grid compute capacity at various renewable energy sites. This strategic move aims to address the significant power requirements of AI data centers by utilizing sustainable and decentralized energy sources.
+- **Summary**: Evvy, a women’s health company, announced a $40 million Series B funding round. The company aims to advance women's health research through the analysis of vaginal microbiome data.
 - **Key Points**:
-  1. Investors: Andreessen Horowitz's Growth Fund, Founders Fund, Lux Capital
-  2. Sector keywords: AI-infrastructure, renewable-energy, cleantech, data-centers
-- **Source**: [Hacker News](https://fastcompany.com/91607727/what-if-ai-data-centers-didnt-need-new-power-plants)
-- **Keywords**: `AI-infrastructure` `renewable-energy` `cleantech` `data-centers`
+  1. Investors: Catalio Capital Management
+  2. Sector keywords: women's health, healthtech, biotech, microbiome
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/)
+- **Keywords**: `women's health` `healthtech` `biotech` `microbiome`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Comp AI: $34 million Series A
+## 3. Rune: $40 million Series A
 
-- **Summary**: Comp AI, a cybersecurity and compliance startup, has announced a $34 million Series A funding round. The company is focused on building a continuously agentic future for security and compliance, leveraging advanced AI capabilities to address enterprise needs.
+- **Summary**: Rune, a modular compute systems company, secured $40 million in Series A funding. The company develops RELIC, a system that installs directly at solar sites to convert wasted solar power into high-performance compute capacity for AI infrastructure, addressing the power bottleneck for data centers.
+- **Key Points**:
+  1. Investors: Spark Capital, Union Square Ventures, Lowercarbon Capital, Activate Capital, Committed Capital, Timeless Partners, Logos Fund
+  2. Sector keywords: AI infrastructure, renewable energy, greentech, data centers
+- **Source**: [Hacker News](https://fastcompany.com/91607727/what-if-ai-data-centers-didnt-need-new-power-plants)
+- **Keywords**: `AI infrastructure` `renewable energy` `greentech` `data centers`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 4. Comp AI: $34 million Series A round
+
+- **Summary**: Comp AI, a cybersecurity and compliance startup, secured a $34 million Series A funding round. The company is focused on developing an agentic future for security and compliance solutions.
 - **Key Points**:
   1. Investors: Roo Capital, Grand Ventures
-  2. Sector keywords: cybersecurity, compliance, AI, enterprise-software
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continuiously-agentic-future-for-security-and-complaince/)
-- **Keywords**: `cybersecurity` `compliance` `AI` `enterprise-software`
+  2. Sector keywords: cybersecurity, compliance, AI, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/)
+- **Keywords**: `cybersecurity` `compliance` `AI` `SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Biochar Industrial Group (BIG): $1.5 million Undisclosed Round
+## 5. Biochar Industrial Group: $1.5 million pre-seed financing
 
-- **Summary**: Biochar Industrial Group (BIG) has successfully raised $1.5 million to advance its mission of converting Africa’s agricultural waste into valuable carbon credits. The capital will also support the expansion of its engineering, operations, logistics, and carbon-verification teams, alongside developing necessary monitoring systems.
+- **Summary**: Biochar Industrial Group (BIG), a Nigerian climate technology company, raised $1.5 million in pre-seed funding. The capital will be used to expand its operations, including hiring staff and building systems to convert Africa's agricultural waste into carbon credits.
 - **Key Points**:
-  1. Investors: New Climate Ventures, Echoing Green, Earth Capital
-  2. Sector keywords: cleantech, carbon-credits, agritech, africa
+  1. Investors: Catalyst Fund, BREEGA, Mulago Foundation
+  2. Sector keywords: cleantech, carbon credits, agritech, sustainability
 - **Source**: [TechCabal](https://techcabal.com/2026/09/17/biochar-industrial-group-raises-1-5-million/)
-- **Keywords**: `cleantech` `carbon-credits` `agritech` `africa`
+- **Keywords**: `cleantech` `carbon credits` `agritech` `sustainability`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
