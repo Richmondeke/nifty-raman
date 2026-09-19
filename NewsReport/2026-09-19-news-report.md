@@ -7,48 +7,48 @@
 
 ## 1. Crusoe: $3.9 Billion Series F
 
-- **Summary**: Crusoe, a vertically-integrated AI infrastructure provider, has raised a substantial $3.9 billion in Series F funding at a $30.9 billion valuation. The company develops massive data centers and modular AI factories, focusing on providing high-performance computing to the AI ecosystem. This funding will be used to scale its existing programs, build out its AI factories, and grow its Crusoe Cloud services to meet the increasing demand for AI compute.
+- **Summary**: Crusoe, an AI infrastructure provider, raised $3.9 billion in a Series F round at a $30.9 billion valuation. The company builds massive data centers and small modular 'AI factories' to power AI workloads, often utilizing flare gas to generate energy. They aim to scale existing programs and build out AI factories, including large vertically-integrated campuses and modular Crusoe Spark units, as well as grow Crusoe Cloud.
 - **Key Points**:
-  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners (co-leads); Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, TPG, 1789 Capital, Activate Capital, Altimeter, ARK Invest, Avenir, Baillie Gifford, BAM Elevate, BDT & MSD Partners, Clal Insurance and Finance, Darsana, DPR Construction, Era Funds, Fidelity Management & Research Company, Fundrise, Galvanize, M37, OIA, Polychain Capital, Ribbit Capital, Robinhood Ventures Fund I (RVI), SemiAnalysis Capital, Salesforce Ventures, Squarepoint Capital, StepStone Group, T. Rowe Price, Tiger Global, Upper90, Van Eck, XN, Zigg Capital.
-  2. Sector keywords: AI infrastructure, data centers, cloud computing, energy, AI factories
+  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners (co-leads); Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, TPG, 1789 Capital, Activate Capital, Altimeter, ARK Invest, Avenir, Baillie Gifford, BAM Elevate, BDT & MSD Partners, Clal Insurance and Finance, Darsana, DPR Construction, Era Funds, Fidelity Management & Research Company, Fundrise, Galvanize, M37, OIA, Polychain Capital, Ribbit Capital, Robinhood Ventures Fund I (RVI), SemiAnalysis, Salesforce Ventures, Squarepoint Capital, StepStone Group, Tiger Global, Upper90, Van Eck, XN, Zigg Capital, and accounts advised by T. Rowe Price Associates.
+  2. Sector keywords: AI infrastructure, data centers, sustainable computing, energy, cloud computing, AI factories
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/)
-- **Keywords**: `AI infrastructure, data centers, cloud computing, energy, AI factories`
+- **Keywords**: `AI infrastructure` `data centers` `sustainable computing` `energy` `cloud computing` `AI factories`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Comp AI: $34 Million Series A
+## 2. Evvy: $40 Million Series B
 
-- **Summary**: Comp AI, a cybersecurity and compliance startup, has successfully raised a $34 million Series A round. The company aims to develop a continuously agentic future for security and compliance, leveraging AI to enhance its offerings. This funding will likely fuel its product development and market expansion efforts.
+- **Summary**: Evvy is a women's health company focused on advancing research using vaginal microbiome data. They secured $40 million in Series B funding led by Catalio Capital Management to expand their efforts.
 - **Key Points**:
-  1. Investors: Roo Capital, Grand Ventures
-  2. Sector keywords: Cybersecurity, compliance, AI, enterprise software
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/)
-- **Keywords**: `Cybersecurity, compliance, AI, enterprise software`
-- **Score**: ⭐⭐⭐ (3/5)
+  1. Investors: Catalio Capital Management
+  2. Sector keywords: women's health, biotech, microbiome, healthtech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/)
+- **Keywords**: `women's health` `biotech` `microbiome` `healthtech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Evvy: $40 Million Series B
+## 3. Comp AI: $34 Million Series A
 
-- **Summary**: Evvy, a women's health company, secured $40 million in Series B funding to advance its research into women's health using vaginal microbiome data. The company aims to provide more insights and solutions in this underserved area. This investment will enable Evvy to expand its research and product development.
+- **Summary**: Comp AI is a cybersecurity and compliance startup developing an agentic future for security and compliance. They raised $34 million in a Series A round led by Roo Capital and Grand Ventures to advance their offerings.
 - **Key Points**:
-  1. Investors: Catalio Capital Management
-  2. Sector keywords: Women's health, healthtech, biotech, microbiome
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/)
-- **Keywords**: `Women's health, healthtech, biotech, microbiome`
+  1. Investors: Roo Capital, Grand Ventures
+  2. Sector keywords: cybersecurity, AI, compliance, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/)
+- **Keywords**: `cybersecurity` `AI` `compliance` `SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
 ## 4. Aeon: $1 Million Seed
 
-- **Summary**: Aeon, an African cybersecurity startup, has raised $1 million in funding led by Terra Industries. The company plans to use this capital to develop its cybersecurity products, expand business development efforts, and convert existing pilot programs with financial services and cloud infrastructure companies into commercial deployments. This investment aims to build Africa's cyber defense layer.
+- **Summary**: Aeon, an African cybersecurity startup, raised $1 million in funding. The company aims to build Africa's cyber defense layer by developing cybersecurity products and expanding its business development, with existing pilots with financial services and cloud infrastructure companies.
 - **Key Points**:
   1. Investors: Terra Industries
-  2. Sector keywords: Cybersecurity, Africa, B2B SaaS, enterprise security
+  2. Sector keywords: cybersecurity, Africa, fintech, B2B SaaS
 - **Source**: [TechCabal](https://techcabal.com/2026/09/18/terra-industries-leads-1m-round-in-aeon/)
-- **Keywords**: `Cybersecurity, Africa, B2B SaaS, enterprise security`
+- **Keywords**: `cybersecurity` `Africa` `fintech` `B2B SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
