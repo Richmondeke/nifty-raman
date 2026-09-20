@@ -7,48 +7,48 @@
 
 ## 1. Crusoe: $3.9 Billion Series F
 
-- **Summary**: Crusoe, an AI infrastructure provider, has secured a $3.9 billion Series F funding round, which triples its valuation to $30.9 billion. The company builds massive data centers and small modular 'AI factories,' focusing on an energy-first strategy to provide AI-optimized cloud platforms. Crusoe's projects include developing data centers for major tech firms like Oracle (for OpenAI) and Microsoft, with a significant emphasis on rapid deployment of computing resources.
+- **Summary**: Crusoe, a vertically-integrated AI infrastructure provider, raised a significant Series F round at a $30.9 billion post-money valuation. The company builds massive data centers and modular 'AI factories' to power AI workloads. The funding will support scaling existing programs and building out its AI factories and Crusoe Cloud.
 - **Key Points**:
-  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners, Founders Fund, GIC, Nvidia Corp., Qatar Investment Authority (QIA), Radical Ventures, TPG, Baillie Gifford, Fidelity Management & Research, Tiger Global, Salesforce Ventures, ARK Invest, Robinhood Ventures Fund
-  2. Sector keywords: AI, data centers, infrastructure, energy, cloud computing
+  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners, Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, TPG
+  2. Sector keywords: AI infrastructure, data centers, clean energy, AI factories
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/)
-- **Keywords**: `AI, data centers, infrastructure, energy, cloud computing`
+- **Keywords**: `AI infrastructure` `data centers` `clean energy` `AI factories`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Comp AI: $34 Million Series A
+## 2. Evvy: $40 Million Series B
 
-- **Summary**: Comp AI, a cybersecurity and compliance startup, has raised a $34 million Series A round. The company is focused on developing solutions for a continuously agentic future in security and compliance. This funding will support its efforts in advancing cybersecurity technologies.
-- **Key Points**:
-  1. Investors: Roo Capital, Grand Ventures
-  2. Sector keywords: cybersecurity, AI, compliance, SaaS
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/)
-- **Keywords**: `cybersecurity, AI, compliance, SaaS`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 3. Evvy: $40 Million Series B
-
-- **Summary**: Evvy, a women's health company, has successfully raised $40 million in a Series B funding round. The company is dedicated to advancing women's health research, particularly through the use of vaginal microbiome data. This investment will enable Evvy to further its research and development efforts in this critical area.
+- **Summary**: Evvy, a women’s health company, raised a Series B round to further women's health research by utilizing vaginal microbiome data. The company is focused on advancing scientific understanding and developing solutions in a critical area of healthcare.
 - **Key Points**:
   1. Investors: Catalio Capital Management
-  2. Sector keywords: women's health, biotech, healthtech, microbiome
+  2. Sector keywords: women's health, biotech, microbiome, healthtech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/)
-- **Keywords**: `women's health, biotech, healthtech, microbiome`
+- **Keywords**: `women's health` `biotech` `microbiome` `healthtech`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 3. Comp AI: $34 Million Series A
+
+- **Summary**: Comp AI, a cybersecurity and compliance startup, secured a Series A round to advance its vision for a continuously agentic future in security and compliance. The company aims to provide innovative solutions in the rapidly evolving cybersecurity landscape.
+- **Key Points**:
+  1. Investors: Roo Capital, Grand Ventures
+  2. Sector keywords: cybersecurity, compliance, AI, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/)
+- **Keywords**: `cybersecurity` `compliance` `AI` `SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Aeon: $1 Million Preseed
+## 4. Aeon: $1 Million Seed
 
-- **Summary**: Aeon, a Nigerian cybersecurity startup, secured $1 million in pre-seed funding to develop Africa's cyber defence layer. The company aims to build cyberdefence solutions for high-trust organizations across the Global South. Aeon offers products like Aeon Edge, a hardware security device, and Aeon Console, an AI-driven platform for monitoring and compliance, and is expanding its business development and commercializing pilots.
+- **Summary**: Aeon, an African cybersecurity startup, secured a $1 million seed round to build Africa’s cyber defense layer. The funding will be used to develop its cybersecurity products, expand business development, and convert existing pilots into commercial deployments with financial services and cloud infrastructure companies.
 - **Key Points**:
-  1. Investors: Terra Industries, Resilience17, DFS Labs, Kaleo Ventures, Seedstars, Ajim Capital
-  2. Sector keywords: cybersecurity, Africa, SaaS, B2B
+  1. Investors: Terra Industries
+  2. Sector keywords: cybersecurity, Africa, fintech, B2B SaaS
 - **Source**: [TechCabal](https://techcabal.com/2026/09/18/terra-industries-leads-1m-round-in-aeon/)
-- **Keywords**: `cybersecurity, Africa, SaaS, B2B`
+- **Keywords**: `cybersecurity` `Africa` `fintech` `B2B SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
