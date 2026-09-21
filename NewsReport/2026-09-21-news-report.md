@@ -1,42 +1,54 @@
 # Daily News Report (2026-09-21)
 
-> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Crusoe: $3.9 billion Series F funding round
+## 1. Crusoe: $3.9 Billion Series F
 
-- **Summary**: Crusoe, a vertically-integrated AI infrastructure provider, secured a $3.9 billion Series F funding round, achieving a post-money valuation of $30.9 billion. The company focuses on building massive data centers and modular 'AI factories' that are powered by clean energy sources. This funding will support its expansion plans for AI cloud services and large-scale, vertically-integrated campuses.
+- **Summary**: Crusoe, also known as Crusoe Energy Systems, is a Denver-based artificial intelligence cloud-computing provider and hyperscale data center developer. The company is building massive data centers and small modular 'AI factories' to address electricity shortages and computing constraints in the generative AI industry. This significant Series F round, valuing the company at $30.9 billion, will fund high-performance data center design and construction, purchase GPUs, and expand its global project development pipeline.
 - **Key Points**:
-  1. Investors: Co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners. Significant backing from new and existing investors including Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, TPG, 1789 Capital, Activate Capital, Altimeter, ARK Invest, Avenir, Baillie Gifford, BAM Elevate, BDT & MSD Partners, Clal Insurance and Finance, Darsana, DPR Construction, Era Funds, Fidelity Management & Research Company, Fundrise, Galvanize, M37, OIA, Polychain Capital, Ribbit Capital, Robinhood Ventures Fund I (RVI), SemiAnalysis Capital, Salesforce Ventures, Squarepoint Capital, StepStone Group, T. Rowe Price, Tiger Global, Upper90, Van Eck, XN, and Zigg Capital.
-  2. Sector keywords: AI infrastructure, data centers, clean energy, cloud computing
+  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners (co-led), Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, TPG, 1789 Capital, Activate Capital, Altimeter, ARK Invest, Avenir, Baillie Gifford, BAM Elevate, BDT & MSD Partners, Clal Insurance and Finance, Darsana, DPR Construction, Era Funds, Fidelity Management & Research Company, Fundrise, Galvanize, M37, Oman Investment Authority (OIA), Polychain Capital, Ribbit Capital, Robinhood Ventures Fund I, SemiAnalysis Capital, Salesforce Ventures, Squarepoint Capital, StepStone Group, T. Rowe Price, Tiger Global, Upper90, Van Eck, XN, Zigg Capital
+  2. Sector keywords: AI-infrastructure, data-centers, energy, cloud-computing, generative-AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/)
-- **Keywords**: `AI infrastructure` `data centers` `clean energy` `cloud computing`
+- **Keywords**: `AI-infrastructure, data-centers, energy, cloud-computing, generative-AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Comp AI: $34 million Series A round
+## 2. OpenAI: Considering a Funding Round at over $1.2 Trillion Valuation
 
-- **Summary**: Comp AI, a cybersecurity and compliance startup, announced a $34 million Series A funding round. The company is focused on developing an agentic future for security and compliance, indicating an advanced, potentially AI-driven approach to these critical areas for businesses.
+- **Summary**: OpenAI is reportedly exploring a new funding round that could value the company at over $1.2 trillion, ahead of a potential initial public offering. This highlights significant investor interest in the leading AI research and deployment company. Discussions are in early stages, with investors initiating approaches to increase their exposure to OpenAI.
 - **Key Points**:
-  1. Investors: Roo Capital, Grand Ventures
-  2. Sector keywords: cybersecurity, AI, compliance, SaaS
+  1. Investors: Undisclosed
+  2. Sector keywords: AI, generative-AI, large-language-models, enterprise-AI, pre-IPO
+- **Source**: [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-15/openai-weighing-funding-round-at-over-1-2-trillion-valuation)
+- **Keywords**: `AI, generative-AI, large-language-models, enterprise-AI, pre-IPO`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Comp AI: $34 Million Series A
+
+- **Summary**: Comp AI is a cybersecurity and compliance startup focused on creating a continuously agentic future for security and compliance. Leveraging AI, the company's solutions aim to streamline and enhance security protocols and regulatory adherence. This Series A funding will likely support product development, technological advancements, and market expansion.
+- **Key Points**:
+  1. Investors: Roo Capital (lead), Grand Ventures
+  2. Sector keywords: cybersecurity, AI, compliance, enterprise-software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/)
-- **Keywords**: `cybersecurity` `AI` `compliance` `SaaS`
+- **Keywords**: `cybersecurity, AI, compliance, enterprise-software`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 3. Evvy: $40 million Series B
+## 4. Evvy: $40 Million Series B
 
-- **Summary**: Evvy, a women’s health company, successfully raised $40 million in a Series B funding round. The company's mission is to further women's health research by utilizing vaginal microbiome data, aiming to advance understanding and solutions in this underserved area.
+- **Summary**: Evvy is a women's health company dedicated to advancing research in women's health through the analysis of vaginal microbiome data. The company's work aims to provide deeper insights into women's health conditions and potential treatments. This Series B funding round will enable Evvy to expand its research initiatives and develop further product offerings.
 - **Key Points**:
-  1. Investors: Catalio Capital Management
-  2. Sector keywords: femtech, women's health, biotech, healthtech
+  1. Investors: Catalio Capital Management (lead)
+  2. Sector keywords: women-health, biotech, healthtech, femtech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/)
-- **Keywords**: `femtech` `women's health` `biotech` `healthtech`
+- **Keywords**: `women-health, biotech, healthtech, femtech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
