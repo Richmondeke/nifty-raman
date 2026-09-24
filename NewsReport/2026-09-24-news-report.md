@@ -1,66 +1,78 @@
 # Daily News Report (2026-09-24)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 6 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Crusoe: $3.9B Series F at $30.9 billion valuation
+## 1. Crusoe: $3.9B Series F at $30.9 Billion Valuation
 
-- **Summary**: Crusoe has raised $3.9 billion in a Series F funding round, valuing the company at $30.9 billion. This substantial investment is intended to fund the expansion of its massive data centers and modular 'AI factories.' The company focuses on vertically integrated AI infrastructure, demonstrating significant growth and investor confidence in its capabilities.
+- **Summary**: Crusoe, a vertically-integrated AI infrastructure provider, raised $3.9 billion in a Series F funding round. The company is building massive data centers and modular AI factories, with this round valuing them at $30.9 billion.
 - **Key Points**:
-  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners (co-leads); Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, TPG, ARK Invest, Salesforce Ventures, T. Rowe Price Associates, Inc. (advised accounts), Tiger Global, Robinhood Ventures Fund I
-  2. Sector keywords: AI infrastructure, data centers, clean energy, heavy compute
+  1. Investors: Atreides Management, Mubadala Capital, Valor Equity Partners (co-leads), and others including Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, TPG
+  2. Sector keywords: data centers, AI infrastructure, energy, cleantech, cloud computing
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/)
-- **Keywords**: `AI infrastructure, data centers, clean energy, heavy compute`
+- **Keywords**: `data centers, AI infrastructure, energy, cleantech, cloud computing`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Hubble Network: $200 Million Series C at $1.6 Billion Valuation
 
-- **Summary**: Hubble Network has closed a $200 million Series C funding round, achieving a $1.6 billion valuation. The company is developing a satellite-based Bluetooth network designed to provide global coverage for all Bluetooth-enabled devices. This significant capital will accelerate its mission to connect billions of everyday devices directly to space.
+- **Summary**: Hubble Network, a company developing a satellite-based Bluetooth connectivity network, raised $200 million in a Series C round. This funding brings its valuation to $1.6 billion, as the startup works to connect billions of everyday Bluetooth devices directly to space.
 - **Key Points**:
   1. Investors: Smith Point Capital (lead), Seraphim, Carthona Capital, Earthshot Ventures, Y Combinator, RPM Ventures
-  2. Sector keywords: satellite communication, IoT, Bluetooth, space tech
-- **Source**: [Hacker News](https://www.businesswire.com/news/home/20260923752755/en/Hubble-Network-Opens-Satellite-Coverage-to-All-Bluetooth-Devices-Raises-%24200-Million-Series-C-at-%241.6-Billion-Valuation)
-- **Keywords**: `satellite communication, IoT, Bluetooth, space tech`
+  2. Sector keywords: satellite communication, IoT, Bluetooth, space tech, connectivity
+- **Source**: [BusinessWire](https://www.businesswire.com/news/home/20260923752755/en/Hubble-Network-Opens-Satellite-Coverage-to-All-Bluetooth-Devices-Raises-%24200-Million-Series-C-at-%241.6-Billion-Valuation)
+- **Keywords**: `satellite communication, IoT, Bluetooth, space tech, connectivity`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Pilgrim: $25M Seed at $150M valuation
+## 3. Morphotonics: €40M undisclosed stage
 
-- **Summary**: Pilgrim has successfully raised $25 million in seed funding at a $150 million valuation. The startup is developing a device for detecting biological threats by combining air sampling and genomic sequencing. This critical technology aims to provide early warning systems against pathogens, with backing from prominent investors.
-- **Key Points**:
-  1. Investors: Buckley Ventures (lead), Peter Thiel, Fred Ehrsam, Logan Graham, Sholto Douglas
-  2. Sector keywords: biotech, defense tech, biological threats, AI
-- **Source**: [Hacker News](https://wsj.com/tech/ai/anthropic-leaders-back-startup-developing-system-to-detect-biological-threats-88ef9f0a)
-- **Keywords**: `biotech, defense tech, biological threats, AI`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 4. Morphotonics: €40M undisclosed stage
-
-- **Summary**: Morphotonics, a deep tech company, has secured €40 million in funding to expand its display technology into data centers. This investment will enable the company to further develop and deploy its specialized technology in new markets, enhancing its presence in critical infrastructure. The funding is expected to support its growth initiatives and technological advancements.
+- **Summary**: Morphotonics is a deep tech company that specializes in display technology. The company raised funding to expand the application of its display technology into data centers.
 - **Key Points**:
   1. Investors: 3M Ventures, Innovation Industries, BOM, Invest-NL
-  2. Sector keywords: deep tech, display technology, data centers, hardware
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/)
-- **Keywords**: `deep tech, display technology, data centers, hardware`
+  2. Sector keywords: display tech, data centers, deep tech, photonics
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-to-expand-its-display-tech-into-data-centers/)
+- **Keywords**: `display tech, data centers, deep tech, photonics`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 5. Sun King: $5 Million investment
+## 4. UfarmX: $1.3M Seed
 
-- **Summary**: Sun King received $5 million in funding from Acumen to expand solar energy access in Zambia. This investment aims to help Zambia close its significant electricity-access gap and reduce its reliance on hydropower. The funding will support the deployment of solar solutions, contributing to sustainable development in the region.
+- **Summary**: UfarmX is a Nigerian fintech startup focused on building AI-powered credit infrastructure for African smallholder farmers. The company assesses creditworthiness using geospatial and socioeconomic data, enabling financial institutions and retailers to extend credit.
+- **Key Points**:
+  1. Investors: Jedar Capital, TEDCO, Techstars, Black Ambition
+  2. Sector keywords: agritech, fintech, AI, credit scoring, Nigeria, African
+- **Source**: [Dealroom](https://dealroom.co/news/ufarmx-raises-1-3m-to-scale-ai-credit-scoring-for-african-smallholder-farmers)
+- **Keywords**: `agritech, fintech, AI, credit scoring, Nigeria, African`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 5. Sun King: $5 Million undisclosed stage
+
+- **Summary**: Sun King, a company dedicated to expanding solar energy access, received $5 million in backing from Acumen. The investment aims to support the company's efforts to increase solar access in Zambia, helping the nation reduce its dependence on hydropower and bridge its electricity-access gap.
 - **Key Points**:
   1. Investors: Acumen
-  2. Sector keywords: solar energy, clean energy, impact investing, Zambia
+  2. Sector keywords: solar energy, cleantech, impact investing, Zambia, off-grid energy
 - **Source**: [TechCabal](https://techcabal.com/2026/09/23/acumen-backs-sun-king-with-5-million/)
-- **Keywords**: `solar energy, clean energy, impact investing, Zambia`
+- **Keywords**: `solar energy, cleantech, impact investing, Zambia, off-grid energy`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 6. Pilgrim: $25M Seed
+
+- **Summary**: Pilgrim has secured a $25 million seed funding round to advance its work on a biological threat detection device. This funding will support the development of technology aimed at identifying and mitigating biological risks.
+- **Key Points**:
+  1. Investors: Undisclosed
+  2. Sector keywords: biotech, defense tech, biological threats, AI, healthtech
+- **Source**: [WSJ](https://wsj.com/tech/ai/anthropic-leaders-back-startup-developing-system-to-detect-biological-threats-88ef9f0a)
+- **Keywords**: `biotech, defense tech, biological threats, AI, healthtech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
