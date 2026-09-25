@@ -5,27 +5,27 @@
 
 ---
 
-## 1. Positron AI: $875 Million Series C/C-1 at $5 Billion Valuation
+## 1. Positron AI: $875 Million Series C at $5 Billion Valuation
 
-- **Summary**: Positron AI, an AI inference hardware company, raised $875 million in a Series C/C-1 financing round at a $5 billion post-money valuation. The company develops specialized hardware accelerators for generative AI applications, focusing on high-throughput processing and reduced power usage. This funding will support the tapeout of its next-generation silicon, Asimov, and the expansion of its data center and production.
+- **Summary**: Positron AI, a startup focused on energy-efficient AI inference hardware, has raised $875 million in Series C financing, achieving a post-money valuation of $5 billion. This funding will support the tapeout of its next-generation Asimov silicon and the production ramp of its Titan inference system. The company aims to make serving AI models dramatically cheaper and more energy-efficient by focusing on memory-first inference systems.
 - **Key Points**:
-  1. Investors: NEA, Atreides Management, Valor Equity Partners, Andra Capital, SemiAnalysis Capital, Jim Clark, DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures, U First Capital, VentureTech Alliance, Hudson River Trading, Cisco Investments, Naver Ventures
-  2. Sector keywords: AI chips, inference hardware, semiconductors, generative AI
-- **Source**: [WSJ](https://www.wsj.com/tech/ai/positron-valued-at-5-billion-in-new-funding-as-cpu-demand-surges-76dde819)
-- **Keywords**: `AI chips` `inference hardware` `semiconductors` `generative AI`
+  1. Investors: NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital, Jim Clark, DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures, U First Capital, VentureTech Alliance, Hudson River Trading, Cisco Investments, Naver Ventures
+  2. Sector keywords: AI hardware, AI chips, inference, semiconductors, deep tech
+- **Source**: [Hacker News](https://www.wsj.com/tech/ai/positron-valued-at-5-billion-in-new-funding-as-cpu-demand-surges-76dde819)
+- **Keywords**: `AI hardware, AI chips, inference, semiconductors, deep tech`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Morphotonics: €40M
+## 2. Morphotonics: €40 Million Series B
 
-- **Summary**: Morphotonics is a deep tech company that raised €40 million to expand its display technology into data centers. This funding will enable the company to further develop its technology and enter new markets.
+- **Summary**: Morphotonics, a Netherlands-based deep tech company specializing in large-area nanoimprint lithography, has raised over €40 million in Series B funding. This capital will be used to scale its manufacturing technology for AI glasses, augmented reality waveguides, and advanced photonic components. The company aims to address manufacturing challenges in these emerging technologies and expand its presence in data centers.
 - **Key Points**:
-  1. Investors: 3M Ventures, Innovation Industries, BOM, Invest-NL
-  2. Sector keywords: display tech, data centers, deep tech, European tech
+  1. Investors: 3M Ventures, Innovation Industries, BOM, Invest-NL, European Innovation Council Fund, Ernij Next, European Investment Bank
+  2. Sector keywords: deep tech, nanoimprint lithography, AI glasses, augmented reality, photonics
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-to-expand-its-display-tech-into-data-centers/)
-- **Keywords**: `display tech` `data centers` `deep tech` `European tech`
-- **Score**: ⭐⭐⭐ (3/5)
+- **Keywords**: `deep tech, nanoimprint lithography, AI glasses, augmented reality, photonics`
+- **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
