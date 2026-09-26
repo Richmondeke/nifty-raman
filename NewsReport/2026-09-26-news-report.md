@@ -5,11 +5,11 @@
 
 ---
 
-## 1. Nscale: $3.36B in convertible financing ahead of US IPO
+## 1. Nscale: $3.36B in convertible financing
 
-- **Summary**: Nscale, a British AI neocloud company, has secured $3.36 billion in convertible financing. This substantial funding is earmarked for the company's extensive buildout of AI data centers. The financing positions Nscale for its upcoming U.S. IPO.
+- **Summary**: Nscale, a British AI neocloud platform, secured $3.36 billion in pre-IPO convertible financing to accelerate its global AI data center buildouts. The funding will support the expansion of its vertically integrated AI cloud platform, which includes power plants, liquid-cooled data centers, and GPU clusters. This significant capital raise positions Nscale to meet the increasing demand for AI cloud services ahead of its planned initial public offering.
 - **Key Points**:
-  1. Investors: Third Point, Nvidia
+  1. Investors: Third Point (lead), NVIDIA, funds managed by Apollo, Citadel, Hudson Bay Capital, Abu Dhabi Investment Council, 8090 Industries, Davidson Kempner Capital Management, Qube Research & Technologies, Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, Irving Investors
   2. Sector keywords: AI, cloud infrastructure, data centers, convertible financing
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/)
 - **Keywords**: `AI, cloud infrastructure, data centers, convertible financing`
@@ -17,14 +17,14 @@
 
 ---
 
-## 2. Morphotonics: €40M to expand its display tech into data centers
+## 2. Morphotonics: €40M
 
-- **Summary**: Morphotonics, a deep tech company, has successfully raised €40 million. This funding round is aimed at expanding the application of its advanced display technology into the data center sector. The company's innovative deep tech solutions are a key focus of this investment.
+- **Summary**: Deep tech company Morphotonics has raised €40 million to expand its advanced display technology. The funding is earmarked for extending its innovative solutions into the data center market. Morphotonics specializes in high-precision micro and nano-imprint lithography for various applications, including consumer electronics and automotive displays.
 - **Key Points**:
   1. Investors: 3M Ventures, Innovation Industries, BOM, Invest-NL
-  2. Sector keywords: Deep tech, display technology, data centers, manufacturing
+  2. Sector keywords: deep tech, display technology, data centers, nanotechnology
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-to-expand-its-display-tech-into-data-centers/)
-- **Keywords**: `Deep tech, display technology, data centers, manufacturing`
+- **Keywords**: `deep tech, display technology, data centers, nanotechnology`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
