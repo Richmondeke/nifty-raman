@@ -5,50 +5,50 @@
 
 ---
 
-## 1. Nscale: $3.36B in convertible financing
+## 1. Nscale: $3.36 Billion in convertible financing
 
-- **Summary**: Nscale is a British AI 'neocloud' company that has secured a massive $3.36 billion in convertible financing ahead of its US IPO. This significant funding round is intended to fuel the company's extensive AI data center buildout.
+- **Summary**: Nscale, a British AI neocloud company, has secured a significant $3.36 billion in convertible financing ahead of its anticipated US IPO. This substantial funding injection is earmarked to propel the company's ambitious plans for a massive buildout of AI data centers, supporting its growth in the AI infrastructure sector.
 - **Key Points**:
   1. Investors: Third Point, Nvidia
-  2. Sector keywords: AI, cloud, data center, convertible debt
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-securities-3-36b-in-convertible-finacing/)
-- **Keywords**: `AI, cloud, data center, convertible debt`
+  2. Sector keywords: AI, cloud infrastructure, data centers, convertible financing
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/)
+- **Keywords**: `AI` `cloud infrastructure` `data centers` `convertible financing`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Instinct: $1B Series C at $10B valuation
+## 2. Instinct: $1 Billion Series C at $10 Billion valuation
 
-- **Summary**: Instinct is a San Francisco-based AI agent startup building a personal agent for everyday life, capable of handling real-world tasks like planning trips, ordering groceries, and managing subscriptions. The company recently raised $1 billion in Series C funding, bringing its valuation to $10 billion.
+- **Summary**: Instinct, a viral AI agent firm, successfully closed a $1 billion Series C funding round, elevating its valuation to $10 billion. This significant investment will enable the company to further develop its personal AI agent, designed to handle a wide range of everyday tasks for users autonomously.
 - **Key Points**:
   1. Investors: Sequoia Capital, Benchmark Capital, Coatue
-  2. Sector keywords: AI, AI agents, personal assistant, consumer AI
-- **Source**: [Hacker News](https://reuters.com/technology/ai-agent-firm-instinct-raises-1-billion-latest-funding-round-2026-09-28)
-- **Keywords**: `AI, AI agents, personal assistant, consumer AI`
+  2. Sector keywords: AI, AI agents, deep tech, personal assistant, unicorn
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/)
+- **Keywords**: `AI` `AI agents` `deep tech` `personal assistant` `unicorn`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Mavi: $4 Million in funding
+## 3. MAVI: $4 Million funding
 
-- **Summary**: Mavi is an accounting staffing company that has emerged from stealth with $4 million in funding. The company aims to address the demand for a new kind of accountant driven by the AI boom by connecting U.S. finance teams with a global network of pre-vetted, AI-proficient finance and accounting professionals.
+- **Summary**: MAVI, an accounting staffing company, has emerged from stealth with $4 million in funding. The company aims to address the growing demand for a new type of accountant driven by the advancements in AI. They specialize in providing staffing solutions to meet these evolving needs in the accounting sector.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: accounting, staffing, AI, finance talent
+  1. Investors: Rethink Capital Partners, SNR
+  2. Sector keywords: accounting, staffing, AI, human capital
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/28/mavi-bets-on-the-ai-boom-creating-demand-for-a-new-kind-of-accountant/)
-- **Keywords**: `accounting, staffing, AI, finance talent`
+- **Keywords**: `accounting` `staffing` `AI` `human capital`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 4. Autoheal: $7.9M seed funding
+## 4. Autoheal: $7.9 Million Seed round
 
-- **Summary**: Autoheal is an AI-native platform engineering startup that has raised $7.9 million in seed funding. The company is pioneering the concept of 'self-improving software factories' by building AI agents that can evaluate and fix other AI agents, with the goal of reducing production incidents and security vulnerabilities.
+- **Summary**: Autoheal has raised a $7.9 million seed round to develop a 'Self Improving Software Factory' that leverages AI agents to evaluate and fix other AI agents. The platform aims to streamline and automate critical post-coding workflows for enterprises, including incident response, vulnerability remediation, and cost control for AI models.
 - **Key Points**:
-  1. Investors: Innovation Endeavors, Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures, Param Hansa Values, Shawn Kung, Sumeet Arora, Anshu Sharma, Savin Goyal, Srikant Gokulnatha
-  2. Sector keywords: AI, software development, platform engineering, automation, enterprise AI
+  1. Investors: Innovation Endeavors (lead), Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures, Param Hansa Values
+  2. Sector keywords: AI, software development, automation, devops, platform engineering
 - **Source**: [Hacker News](https://siliconangle.com/2026/09/28/autoheal-raises-7-9m-to-evaluate-and-fix-ai-agents-with-ai-agents/)
-- **Keywords**: `AI, software development, platform engineering, automation, enterprise AI`
+- **Keywords**: `AI` `software development` `automation` `devops` `platform engineering`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
