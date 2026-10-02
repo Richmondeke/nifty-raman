@@ -5,74 +5,74 @@
 
 ---
 
-## 1. Nscale: $3.36 Billion Convertible Financing
+## 1. Neko Health: $700 Million Series C
 
-- **Summary**: British AI neocloud Nscale secured $3.36 billion in convertible financing to accelerate its extensive AI data center buildout. This funding comes ahead of the company's anticipated U.S. IPO. [cite: 14 from original articles]
+- **Summary**: Neko Health, co-founded by Spotify's Daniel Ek, raised $700 million in a Series C round to further develop its preventative healthcare business, which focuses on full-body scanning. The company's technology offers a new approach to proactive health monitoring, attracting substantial investor confidence in the preventative health sector. The funding will support Neko Health's expansion, including its launch in the US.
 - **Key Points**:
-  1. Investors: Third Point, Nvidia, and others
-  2. Sector keywords: AI, cloud, data centers, convertible debt, IPO, infrastructure
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/)
-- **Keywords**: `AI, cloud, data centers, convertible debt, IPO, infrastructure`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 2. Neko Health: $700 Million Series C
-
-- **Summary**: Neko Health, a health technology company co-founded by Spotify's Daniel Ek, raised $700 million in a Series C funding round, valuing the company at approximately $7 billion. The company offers non-invasive, radiation-free diagnostic scans and plans to expand its preventative healthcare platform into the U.S. market.
-- **Key Points**:
-  1. Investors: Lightspeed Venture Partners, O.G. Venture Partners, Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD, Mark Zuckerberg, Priscilla Chan, Maria Sharapova, will.i.am, Tim Ferriss
-  2. Sector keywords: Healthtech, preventive healthcare, AI, diagnostics, body scanning
+  1. Investors: Lightspeed Venture Partners (Lead), O.G. Venture Partners (Co-lead), Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD, Mark Zuckerberg, Priscilla Chan, OpenAI, Tim Ferriss, Maria Sharapova, will.i.am
+  2. Sector keywords: Healthtech, Preventative Health, Body Scanning, AI
 - **Source**: [TechCrunch](https://techcrunch.com/podcast/the-investor-behind-neko-healths-700m-bet-on-scanning-your-whole-body/)
-- **Keywords**: `Healthtech, preventive healthcare, AI, diagnostics, body scanning`
+- **Keywords**: `Healthtech, Preventative Health, Body Scanning, AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. EliseAI: $350 Million Series F
+## 2. EliseAI: $350 Million Growth financing at $4 Billion valuation
 
-- **Summary**: EliseAI, an AI company specializing in automating complex housing and healthcare systems, raised $350 million in a Series F round, doubling its valuation to $4 billion in a year. The funding will be used to further automate customer operations and expand its engineering, deployment, and sales teams across North American offices, including a new engineering hub in San Francisco.
+- **Summary**: EliseAI, an AI-powered operations platform, has successfully raised $350 million in growth financing, doubling its valuation to $4 billion. The company automates back-office work for landlords and health systems, and this significant funding round will fuel its expansion into healthcare and housing.
 - **Key Points**:
-  1. Investors: Andreessen Horowitz (a16z), Bessemer Venture Partners, Ontario Teachers' Pension Plan, Sapphire Ventures, Navitas Capital
-  2. Sector keywords: AI, enterprise AI, housing, healthcare, automation, SaaS
+  1. Investors: Andreessen Horowitz (a16z) (Co-lead), Bessemer Venture Partners (Co-lead), Ontario Teachers' Pension Plan, Sapphire Ventures, Navitas Capital, Point72 Private Investments
+  2. Sector keywords: AI, Enterprise AI, SaaS, Proptech, Healthtech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/29/a16z-backed-eliseai-raises-350m-doubles-valuation-to-4b/)
-- **Keywords**: `AI, enterprise AI, housing, healthcare, automation, SaaS`
+- **Keywords**: `AI, Enterprise AI, SaaS, Proptech, Healthtech`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Nscale: $3.36 Billion in convertible financing
+
+- **Summary**: Nscale, a British AI neocloud company, has secured $3.36 billion in convertible financing as it prepares for a US IPO. This substantial funding is designated to fuel the company's extensive buildout of AI data centers. The investment positions Nscale for significant expansion in the burgeoning AI infrastructure market.
+- **Key Points**:
+  1. Investors: Third Point, Nvidia
+  2. Sector keywords: AI Infrastructure, Cloud, Data Centers, Pre-IPO
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/)
+- **Keywords**: `AI Infrastructure, Cloud, Data Centers, Pre-IPO`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 4. Satlyt: $8 Million Seed funding
+
+- **Summary**: Satlyt, a pioneering software company, secured $8 million in seed funding to advance its vision of transforming satellites into virtual AI data centers. The company aims to enhance onboard data processing by running AI workloads directly on satellites, reducing the need to transmit raw data to Earth. This strategic move promises to redefine satellite data utility and unlock new applications for satellite operators and software developers.
+- **Key Points**:
+  1. Investors: non sibi ventures (Lead), TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Demos Capital, BAG Collective, Gaingels, Askya, AXIAN Investment
+  2. Sector keywords: Space Tech, AI Infrastructure, Data Centers, Satellite, Deep Tech
+- **Source**: [TechCabal](https://techcabal.com/2026/10/01/the-plan-to-build-virtual-data-centres-in-space-just-got-8-million-backing/)
+- **Keywords**: `Space Tech, AI Infrastructure, Data Centers, Satellite, Deep Tech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. MAVI: $4 Million Seed
+## 5. MAVI: $4 Million Seed round
 
-- **Summary**: MAVI, an AI-powered talent marketplace, emerged from stealth with $4 million in seed funding. The company aims to address the growing U.S. accounting shortage by connecting American businesses with AI-proficient global accounting talent, focusing on mid-to-senior level finance professionals.
+- **Summary**: MAVI, an accounting staffing company, has emerged from stealth with $4 million in seed funding. The company operates an AI-powered talent marketplace to connect U.S. companies with AI-proficient global accounting and finance professionals. MAVI aims to address the growing shortage of skilled accounting talent capable of leveraging AI tools in enterprise workflows.
 - **Key Points**:
-  1. Investors: Harlem Capital
-  2. Sector keywords: AI, accounting, talent marketplace, HR tech, fintech
+  1. Investors: Harlem Capital (Lead)
+  2. Sector keywords: Accounting, AI, Staffing, Fintech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/28/mavi-bets-on-the-ai-boom-creating-demand-for-a-new-kind-of-accountant/)
-- **Keywords**: `AI, accounting, talent marketplace, HR tech, fintech`
+- **Keywords**: `Accounting, AI, Staffing, Fintech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 5. Satlyt: $8 Million Seed
+## 6. Rasa World: $8.15 Million Seed Round
 
-- **Summary**: Satlyt, a satellite software company, raised $8 million in seed funding to advance artificial intelligence and data-processing capabilities aboard spacecraft. The company's technology aims to enable satellites to process information in orbit, thereby reducing communication constraints and speeding up access to crucial data.
+- **Summary**: Rasa World, a concert business, has received $8.15 million in a seed funding round. This investment highlights a trend among venture capitalists to fund experiential sectors as a strategic hedge against the increasing dominance of AI. The company is focused on the live events industry.
 - **Key Points**:
-  1. Investors: non sibi ventures, TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Askya Investment Partners, Demos, BAG Collective, Gaingels, Axian Investment, existing backers
-  2. Sector keywords: Space, AI, data centers, satellite, infrastructure, deep tech
-- **Source**: [TechCabal](https://techcabal.com/2026/10/01/the-plan-to-build-virtual-data-centres-in-space-just-got-8-million-backing/)
-- **Keywords**: `Space, AI, data centers, satellite, infrastructure, deep tech`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 6. Doxx.net: $38 Million Series A
-
-- **Summary**: Miami-based networking startup Doxx.net secured $38 million in Series A funding to launch the open beta of its Agentic Defined Networking (ADN) platform. This platform allows individuals and AI agents to establish private, secure networks with built-in DNS-level threat protection and peer-to-peer communication.
-- **Key Points**:
-  1. Investors: Andreessen Horowitz (a16z), Animo Ventures, Focal.vc
-  2. Sector keywords: Cybersecurity, VPN, AI agents, privacy, networking, web3
-- **Source**: [Refresh Miami](https://refreshmiami.com/news/doxx-net-raises-38m-to-put-ai-agents-on-a-shorter-leash/)
-- **Keywords**: `Cybersecurity, VPN, AI agents, privacy, networking, web3`
+  1. Investors: Undisclosed
+  2. Sector keywords: Entertainment, Live Events, Venture Capital, AI Hedge
+- **Source**: [Business Insider](https://www.businessinsider.com/vcs-funding-rasa-world-concerts-as-a-hedge-against-ai-2026-9)
+- **Keywords**: `Entertainment, Live Events, Venture Capital, AI Hedge`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
