@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Investor - Weekly Roundup (October 02, 2026)</title>
+    <style type="text/css">
+        body {
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8FAFC; /* Light gray for outer background */
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        a {
+            text-decoration: none;
+            color: #7ed957; /* Bright grass green for links */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            border: 1px solid #E2E8F0; /* Light border for the main container */
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .header {
+            background-color: #0F172A; /* Deep rich slate blue */
+            padding: 30px 20px 20px 20px;
+            text-align: center;
+        }
+        .header-date, .header-subtitle {
+            font-family: 'Garamond', 'Georgia', serif;
+            color: #FFFFFF;
+            margin: 0;
+        }
+        .header-date {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .header-subtitle {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        .content-block {
+            padding: 25px 30px;
+            border-bottom: 1px solid #EFF6FF; /* Very light border */
+        }
+        .content-block:last-of-type {
+            border-bottom: none;
+        }
+        .section-title {
+            font-family: 'Garamond', 'Georgia', serif;
+            font-size: 26px;
+            color: #0F172A;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-left: 4px solid #7ed957; /* Green accent */
+            padding-left: 15px;
+            line-height: 1.2;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #475569; /* Slate gray for body text */
+            margin-bottom: 15px;
+        }
+        .deal-card {
+            border: 1px solid #7ed957; /* Green border for deal cards */
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+        }
+        .deal-card h3 {
+            font-family: 'Georgia', serif;
+            font-size: 19px;
+            color: #0F172A;
+            margin-top: 0;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .deal-card strong {
+            color: #0F172A;
+        }
+        .deal-card p {
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 8px;
+        }
+        .deal-directory-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #E2E8F0; /* Light dashed separator */
+        }
+        .deal-directory-item:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .deal-directory-item strong {
+            color: #0F172A;
+            font-size: 15px;
+        }
+        .deal-directory-item span {
+            font-size: 14px;
+            color: #475569;
+        }
+        .sponsorship-card {
+            background-color: #0F172A; /* Deep rich slate blue */
+            color: #FFFFFF;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .sponsorship-card h3 {
+            font-family: 'Garamond', 'Georgia', serif;
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #7ed957; /* Green highlight */
+        }
+        .sponsorship-card p {
+            color: #E2E8F0;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .sponsorship-button {
+            display: inline-block;
+            background-color: #7ed957; /* Green button */
+            color: #0F172A;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            border: 1px solid #7ed957;
+            transition: background-color 0.3s ease;
+        }
+        .sponsorship-button:hover {
+            background-color: #6bbd49; /* Slightly darker green on hover */
+        }
+        .event-card {
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #FFFFFF;
+        }
+        .event-card h4 {
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            color: #0F172A;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .event-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 15px 0;
+        }
+        .event-card li {
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 5px;
+        }
+        .event-card .book-button {
+            display: inline-block;
+            background-color: #7ed957;
+            color: #0F172A;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 1px solid #7ed957;
+        }
+        .footer {
+            background-color: #0F172A;
+            color: #A0AEC0; /* Lighter slate gray for footer text */
+            padding: 25px 30px;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 0 0 12px 12px;
+        }
+        .footer a {
+            color: #7ed957;
+            text-decoration: underline;
+        }
+        .footer p {
+            color: #A0AEC0;
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body style="font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #F8FAFC; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F8FAFC;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+                    <!-- Header -->
+                    <tr>
+                        <td class="header" style="background-color: #0F172A; padding: 30px 20px 20px 20px; text-align: center;">
+                            <img src="cid:logo_image" alt="The Investor" style="height: 125px; display: block; margin: 0 auto 10px auto; max-width: 100%; -ms-interpolation-mode: bicubic;">
+                            <p class="header-date" style="font-family: 'Garamond', 'Georgia', serif; color: #FFFFFF; margin: 0; font-size: 24px; font-weight: bold; margin-bottom: 5px;">October 02, 2026 Edition</p>
+                            <p class="header-subtitle" style="font-family: 'Garamond', 'Georgia', serif; color: #FFFFFF; margin: 0; font-size: 16px; opacity: 0.8;">Weekly private capital & events briefing</p>
+                        </td>
+                    </tr>
+
+                    <!-- Weekly Roundup Intro -->
+                    <tr>
+                        <td class="content-block" style="padding: 25px 30px; border-bottom: 1px solid #EFF6FF;">
+                            <h2 class="section-title" style="font-family: 'Garamond', 'Georgia', serif; font-size: 26px; color: #0F172A; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #7ed957; padding-left: 15px; line-height: 1.2;">Hi there, Richmond from The Investor</h2>
+                            <p style="font-size: 15px; line-height: 1.6; color: #475569; margin-bottom: 15px;">What a week it's been! If you blinked, you might have missed a few billion-dollar rounds. This past week clearly showed that AI isn't just a buzzword; it's a full-blown infrastructure race and a new frontier for almost every sector. We're seeing massive capital pouring into building the foundational layers for AI, from data centers to specialized chips, alongside significant investments in practical applications like healthtech and enterprise automation.</p>
+                            <p style="font-size: 15px; line-height: 1.6; color: #475569; margin-bottom: 15px;">It's a strong signal that investors are betting big on companies that can either power the AI revolution or leverage it to transform traditional industries. And hey, even venture capital firms themselves are raising monster funds specifically for AI. So, grab a coffee, and let's dive into the deals that shaped the week!</p>
+                        </td>
+                    </tr>
+
+                    <!-- Top Investor / Dealmaker of the Week -->
+                    <tr>
+                        <td class="content-block" style="padding: 25px 30px; border-bottom: 1px solid #EFF6FF;">
+                            <h2 class="section-title" style="font-family: 'Garamond', 'Georgia', serif; font-size: 26px; color: #0F172A; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #7ed957; padding-left: 15px; line-height: 1.2;">Top Investor of the Week: Bessemer Venture Partners</h2>
+                            <img src="cid:investor_image" alt="Top Investor" style="width: 100%; max-width: 600px; display: block; margin: 0 auto 15px auto; border-radius: 8px; -ms-interpolation-mode: bicubic;">
+                            <p style="font-size: 15px; line-height: 1.6; color: #475569; margin-bottom: 15px;">This week, our hats are off to **Bessemer Venture Partners**. They not only co-led a hefty $350 million Series F round for EliseAI, doubling its valuation to $4 billion, but they also announced a staggering **$5.75 billion** additional capital raise specifically for AI investments. That's a serious commitment to the future of artificial intelligence!</p>
+                            <p style="font-size: 15px; line-height: 1.6; color: #475569; margin-bottom: 15px;">Bessemer's strategic focus on AI-native companies, driven by what they describe as unprecedented growth rates, positions them as a key player in shaping the next generation of tech. Their dual approach of backing high-growth AI companies and deploying massive funds into the sector makes them a standout dealmaker this week.</p>
+                        </td>
+                    </tr>
+
+                    <!-- Major Deals of the Week -->
+                    <tr>
+                        <td class="content-block" style="padding: 25px 30px; border-bottom: 1px solid #EFF6FF;">
+                            <h2 class="section-title" style="font-family: 'Garamond', 'Georgia', serif; font-size: 26px; color: #0F172A; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #7ed957; padding-left: 15px; line-height: 1.2;">Major Deals of the Week</h2>
+                            
+                            <div class="deal-card" style="border: 1px solid #7ed957; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #FFFFFF; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 19px; color: #0F172A; margin-top: 0; margin-bottom: 8px; line-height: 1.3;">Nscale: <span style="color: #7ed957;">$3.36 Billion Convertible Financing</span></h3>
+                                <p style="font-size: 14px; color: #475569; margin-bottom: 8px;"><strong>Investors:</strong> Third Point, Nvidia, Apollo, Citadel, Hudson Bay Capital, Abu Dhabi Investment Council, and more.</p>
+                                <p style="font-size: 14px; line-height: 1.5; color: #475569; margin-bottom: 0;">This British AI neocloud company is fueling its massive AI data center buildout with convertible financing ahead of an anticipated U.S. IPO. It's clear the AI infrastructure race is on, and Nscale is positioning itself at the forefront of this capital-intensive expansion.</p>
+                            </div>
+
+                            <div class="deal-card" style="border: 1px solid #7ed957; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #FFFFFF; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 19px; color: #0F172A; margin-top: 0; margin-bottom: 8px; line-height: 1.3;">Instinct: <span style="color: #7ed957;">$1 Billion Series C</span></h3>
+                                <p style="font-size: 14px; color: #475569; margin-bottom: 8px;"><strong>Investors:</strong> Sequoia Capital, Benchmark Capital, Coatue.</p>
+                                <p style="font-size: 14px; line-height: 1.5; color: #475569; margin-bottom: 0;">Valued at $10 billion, Instinct is developing a personal AI agent designed to handle complex everyday tasks autonomously. This mega-round underscores the growing belief in the power of AI agents to simplify our lives.</p>
+                            </div>
+
+                            <div class="deal-card" style="border: 1px solid #7ed957; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #FFFFFF; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 19px; color: #0F172A; margin-top: 0; margin-bottom: 8px; line-height: 1.3;">Neko Health: <span style="color: #7ed957;">$700 Million Series C</span></h3>
+                                <p style="font-size: 14px; color: #475569; margin-bottom: 8px;"><strong>Investors:</strong> Lightspeed Venture Partners, O.G. Venture Partners, Atomico, Mark Zuckerberg, Priscilla Chan, Maria Sharapova, will.i.am, Tim Ferriss, OpenAI, and more.</p>
+                                <p style="font-size: 14px; line-height: 1.5; color: #475569; margin-bottom: 0;">Co-founded by Spotify's Daniel Ek, Neko Health is expanding its preventative healthcare platform into the U.S. with non-invasive diagnostic scans. A huge vote of confidence in proactive, tech-driven health solutions.</p>
+                            </div>
+
+                            <div class="deal-card" style="border: 1px solid #7ed957; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #FFFFFF; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 19px; color: #0F172A; margin-top: 0; margin-bottom: 8px; line-height: 1.3;">EliseAI: <span style="color: #7ed957;">$350 Million Series F</span></h3>
+                                <p style="font-size: 14px; color: #475569; margin-bottom: 8px;"><strong>Investors:</strong> Andreessen Horowitz (a16z), Bessemer Venture Partners, Ontario Teachers' Pension Plan, Sapphire Ventures, Navitas Capital.</p>
+                                <p style="font-size: 14px; line-height: 1.5; color: #475569; margin-bottom: 0;">Doubling its valuation to $4 billion, EliseAI is automating complex housing and healthcare systems with its enterprise AI solutions. It's a testament to the strong demand for AI in streamlining operational workflows.</p>
+                            </div>
+
+                            <div class="deal-card" style="border: 1px solid #7ed957; border-radius: 8px; padding: 20px; margin-bottom: 0; background-color: #FFFFFF; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 19px; color: #0F172A; margin-top: 0; margin-bottom: 8px; line-height: 1.3;">Efficient Computer: <span style="color: #7ed957;">$97 Million Series B</span></h3>
+                                <p style="font-size: 14px; color: #475569; margin-bottom: 8px;"><strong>Investors:</strong> TQ Ventures, Eclipse, Union Square Ventures, Giant Ventures, Toyota Ventures, and more.</p>
+                                <p style="font-size: 14px; line-height: 1.5; color: #475569; margin-bottom: 0;">This Pittsburgh-based startup is developing energy-efficient processor architectures for AI, aiming for significant reductions in energy consumption for data centers. Deep tech making waves in sustainable computing.</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Deal Directory (Early Stage & Others) -->
+                    <tr>
+                        <td class="content-block" style="padding: 25px 30px; border-bottom: 1px solid #EFF6FF;">
+                            <h2 class="section-title" style="font-family: 'Garamond', 'Georgia', serif; font-size: 26px; color: #0F172A; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #7ed957; padding-left: 15px; line-height: 1.2;">Deal Directory: Early Stage & Other Notable Rounds</h2>
+
+                            <div style="margin-bottom: 15px;">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin-top: 0; margin-bottom: 10px;">Funds & Capital Raises:</h3>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">OpenAI:</strong> <span style="font-size: 14px; color: #475569;">Targeting $30 Billion in New Funding (at $1.4T valuation)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Protego Ventures:</strong> <span style="font-size: 14px; color: #475569;">$125 Million Debut Fund (for Israeli defense tech)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Lightspeed:</strong> <span style="font-size: 14px; color: #475569;">Targets $250 Million for New India Fund (early-stage AI)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">BAG Ventures:</strong> <span style="font-size: 14px; color: #475569;">$11.3 Million Fund I (early-stage enterprise AI)</span>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 15px;">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin-top: 0; margin-bottom: 10px;">Growth Stage & Series Rounds:</h3>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Doxx.net:</strong> <span style="font-size: 14px; color: #475569;">$38 Million Series A (Cybersecurity, Agentic Defined Networking)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Restate:</strong> <span style="font-size: 14px; color: #475569;">$20 Million Series A (Durable execution infrastructure for AI agents)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Morphotonics:</strong> <span style="font-size: 14px; color: #475569;">Over €40 Million (~$45M) Series B (Deep tech, nanoimprint lithography for AI glasses/data centers)</span>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 0;">
+                                <h3 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin-top: 0; margin-bottom: 10px;">Seed Stage:</h3>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Satlyt:</strong> <span style="font-size: 14px; color: #475569;">$8 Million Seed (AI in space, virtual data centers)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Autoheal:</strong> <span style="font-size: 14px; color: #475569;">$7.9 Million Seed (Self-improving software factory for AI agents)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">MAVI:</strong> <span style="font-size: 14px; color: #475569;">$4 Million Seed (AI-powered talent marketplace for accounting)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #E2E8F0;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Ororo Waste:</strong> <span style="font-size: 14px; color: #475569;">$1 Million Seed (Circular economy, used cooking oil in Nigeria)</span>
+                                </div>
+                                <div class="deal-directory-item" style="margin-bottom: 0; padding-bottom: 0; border-bottom: none;">
+                                    <strong style="color: #0F172A; font-size: 15px;">Magnitude:</strong> <span style="font-size: 14px; color: #475569;">YC S25 Seed (Self-optimizing inference engine for AI agents)</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Sponsorship Showcase -->
+                    <tr>
+                        <td style="padding: 25px 30px; border-bottom: 1px solid #EFF6FF;">
+                            <div class="sponsorship-card" style="background-color: #0F172A; color: #FFFFFF; border-radius: 8px; padding: 25px; text-align: center; margin-top: 25px;">
+                                <h3 style="font-family: 'Garamond', 'Georgia', serif; font-size: 22px; margin-top: 0; margin-bottom: 15px; color: #7ed957;">Looking to Amplify Your Reach?</h3>
+                                <p style="color: #E2E8F0; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">Sponsor The Investor Weekly Briefing and get your message in front of thousands of active VCs, HNWIs, and Family Office decision-makers. Connect with the people who matter.</p>
+                                <a href="mailto:ekerichmond@gmail.com?subject=Sponsorship%20Inquiry%20-%20The%20Investor%20Weekly" class="sponsorship-button" style="display: inline-block; background-color: #7ed957; color: #0F172A; padding: 12px 25px; border-radius: 5px; font-weight: bold; font-size: 16px; text-decoration: none; border: 1px solid #7ed957;">Apply for Sponsorship</a>
+                                <p style="color: #E2E8F0; font-size: 13px; line-height: 1.6; margin-top: 20px; margin-bottom: 0;">Contact richmondeke@gmail.com to learn about our sponsorship tiers.</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- HNWI & Family Office Events of the Week -->
+                    <tr>
+                        <td class="content-block" style="padding: 25px 30px; border-bottom: 1px solid #EFF6FF;">
+                            <h2 class="section-title" style="font-family: 'Garamond', 'Georgia', serif; font-size: 26px; color: #0F172A; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #7ed957; padding-left: 15px; line-height: 1.2;">HNWI & Family Office Events of the Week</h2>
+                            
+                            <div class="event-card" style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 20px; margin-bottom: 15px; background-color: #FFFFFF;">
+                                <h4 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin-top: 0; margin-bottom: 10px;">The Future of AI & Wealth: Investment Summit 2026</h4>
+                                <ul style="list-style: none; padding: 0; margin: 0 0 15px 0;">
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Date:</strong> November 15-16, 2026</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Location:</strong> The Ritz-Carlton, Laguna Niguel, CA</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Audience:</strong> HNWIs, Family Offices, Institutional Investors, Select VCs</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Description:</strong> Explore cutting-edge AI investment opportunities, deep tech innovation, and strategies for wealth preservation and growth in the age of AI. Featuring keynote speakers from leading AI companies and private equity firms.</li>
+                                </ul>
+                                <a href="mailto:events@theinvestor.com?subject=Inquiry%20-%20AI%20Wealth%20Summit" class="book-button" style="display: inline-block; background-color: #7ed957; color: #0F172A; padding: 8px 15px; border-radius: 5px; font-size: 14px; font-weight: bold; text-decoration: none; border: 1px solid #7ed957;">Book Seat</a>
+                            </div>
+
+                            <div class="event-card" style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 20px; margin-bottom: 15px; background-color: #FFFFFF;">
+                                <h4 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin-top: 0; margin-bottom: 10px;">Sustainable Wealth & Impact Investing Forum</h4>
+                                <ul style="list-style: none; padding: 0; margin: 0 0 15px 0;">
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Date:</strong> October 28-29, 2026</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Location:</strong> Geneva, Switzerland</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Audience:</strong> European Family Offices, Philanthropists, Impact Investors</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Description:</strong> A focused forum on sustainable investment strategies, ESG integration, and impact opportunities across cleantech, healthtech, and renewable energy sectors. Network with peers and thought leaders.</li>
+                                </ul>
+                                <a href="mailto:events@theinvestor.com?subject=Inquiry%20-%20Impact%20Investing%20Forum" class="book-button" style="display: inline-block; background-color: #7ed957; color: #0F172A; padding: 8px 15px; border-radius: 5px; font-size: 14px; font-weight: bold; text-decoration: none; border: 1px solid #7ed957;">Book Seat</a>
+                            </div>
+
+                            <div class="event-card" style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 20px; margin-bottom: 0; background-color: #FFFFFF;">
+                                <h4 style="font-family: 'Georgia', serif; font-size: 18px; color: #0F172A; margin-top: 0; margin-bottom: 10px;">Private Capital Deal Flow Dinner: Health & Frontier Tech</h4>
+                                <ul style="list-style: none; padding: 0; margin: 0 0 15px 0;">
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Date:</strong> November 8, 2026</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Location:</strong> The Shard, London, UK</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Audience:</strong> UK & European HNWIs, Family Offices, Growth Equity VCs</li>
+                                    <li style="font-size: 14px; color: #475569; margin-bottom: 5px;"><strong>Description:</strong> An intimate, closed-door dinner presenting curated deal flow in health technology, advanced diagnostics, and other frontier tech sectors. Opportunities for direct investment and co-syndication.</li>
+                                </ul>
+                                <a href="mailto:events@theinvestor.com?subject=Inquiry%20-%20Deal%20Flow%20Dinner" class="book-button" style="display: inline-block; background-color: #7ed957; color: #0F172A; padding: 8px 15px; border-radius: 5px; font-size: 14px; font-weight: bold; text-decoration: none; border: 1px solid #7ed957;">Book Seat</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Premium Footer -->
+                    <tr>
+                        <td class="footer" style="background-color: #0F172A; color: #A0AEC0; padding: 25px 30px; font-size: 12px; text-align: center; border-radius: 0 0 12px 12px;">
+                            <p style="color: #A0AEC0; font-size: 12px; line-height: 1.5; margin-bottom: 8px;">&copy; 2026 The Investor. All rights reserved.</p>
+                            <p style="color: #A0AEC0; font-size: 12px; line-height: 1.5; margin-bottom: 8px;">This briefing is for informational purposes only and does not constitute investment advice. Please consult with a qualified financial professional before making any investment decisions.</p>
+                            <p style="color: #A0AEC0; font-size: 12px; line-height: 1.5; margin-bottom: 0;">You are receiving this email because you subscribed to The Investor weekly briefing. <a href="#" style="color: #7ed957; text-decoration: underline;">Unsubscribe</a> | <a href="#" style="color: #7ed957; text-decoration: underline;">Manage Preferences</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
