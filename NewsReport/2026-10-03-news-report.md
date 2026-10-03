@@ -1,66 +1,90 @@
 # Daily News Report (2026-10-03)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 7 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. EliseAI: $350M Series F, doubles valuation to $4B
+## 1. Neko Health: $700 Million Series C
 
-- **Summary**: EliseAI, an AI company specializing in automating operations for housing and healthcare systems, has raised $350 million in a Series F funding round. This significant investment has doubled its valuation to $4 billion within a year, reflecting strong investor confidence in its specialized AI agents. The capital will be used to accelerate product development and expand its engineering and sales teams across North America.
+- **Summary**: Neko Health, co-founded by Spotify's Daniel Ek, raised a $700 million Series C round at a valuation near $7 billion to expand its preventative health scanning platform into the US. The company uses proprietary technology for comprehensive, non-invasive body assessments designed to catch potential health issues early.
 - **Key Points**:
-  1. Investors: Andreessen Horowitz (a16z), Bessemer Venture Partners, Ontario Teachers' Pension Plan, Sapphire Ventures, Navitas Capital
-  2. Sector keywords: AI, Proptech, Healthtech, Enterprise AI
-- **Source**: [TechCrunch](https://techcrunch.com/2026/09/29/a16z-backed-eliseai-raises-350m-doubles-valuation-to-4b/)
-- **Keywords**: `AI, Proptech, Healthtech, Enterprise AI`
+  1. Investors: Lightspeed Venture Partners (lead), O.G. Venture Partners (co-lead), Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD, Mark Zuckerberg and Priscilla Chan, OpenAI, Tim Ferriss, Maria Sharapova, will.i.am, Alexis Ohanian, Gary Vaynerchuk, Steven Bartlett, Katie Haun, Zoë Saldaña, Alex Tew, Michael Acton-Smith, Jessie Inchauspé, Raj Shamani, Sir Matthew Vaughn, Thierry Henry, Danny Meyer, Jimmy Iovine
+  2. Sector keywords: healthtech, preventative care, body scanning, AI, Europe
+- **Source**: [TechCrunch](https://techcrunch.com/podcast/the-investor-behind-neko-healths-700m-bet-on-scanning-your-whole-body/)
+- **Keywords**: `healthtech` `preventative care` `body scanning` `AI` `Europe`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Protego Ventures: $125M Fund I
+## 2. EliseAI: $350 Million Series F
 
-- **Summary**: Protego Ventures, recognized as the first and largest dedicated defense tech venture capital fund in Israel, has successfully closed its inaugural fund at $125 million. Co-founded by Lital Leshem and Lee Moser, the firm focuses on investing in early-growth Israeli companies that possess battlefield-proven technologies, particularly in autonomous systems, AI, sensors, and navigation in contested environments.
+- **Summary**: EliseAI, an AI company automating complex housing and healthcare systems, raised $350 million in a Series F round. This funding doubled its valuation to $4 billion, signifying strong growth and investor confidence in its specialized AI solutions for property management and healthcare administration.
 - **Key Points**:
-  1. Investors: Ares Management
-  2. Sector keywords: Venture Capital, Defense Tech, Israel, AI
+  1. Investors: Andreessen Horowitz (lead), Bessemer Venture Partners (lead), Ontario Teachers' Pension Plan, Sapphire Ventures, Navitas Capital
+  2. Sector keywords: AI, enterprise software, growth equity, proptech, healthtech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/09/29/a16z-backed-eliseai-raises-350m-doubles-valuation-to-4b/)
+- **Keywords**: `AI` `enterprise software` `growth equity` `proptech` `healthtech`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. IHS Towers: $2.2 Billion acquisition by MTN
+
+- **Summary**: MTN's significant takeover of IHS Towers, valued at $2.2 billion, is moving forward after gaining approval from the South Africa Competition Commission. The deal includes conditions to ensure fair access to the tower infrastructure for other mobile operators.
+- **Key Points**:
+  1. Investors: MTN (Acquirer)
+  2. Sector keywords: M&A, telecommunications, infrastructure, Africa
+- **Source**: [TechCabal](https://techcabal.com/2026/10/02/mtn-ihs-towers-2-2-billion-deal-south-africa-competition-commission-approval/)
+- **Keywords**: `M&A` `telecommunications` `infrastructure` `Africa`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 4. Protego Ventures: $125 Million Debut Fund
+
+- **Summary**: Protego Ventures, the first and largest dedicated defense tech VC in Israel, closed its debut fund at $125 million. The fund will invest in Israeli defense technology startups, with individual investments typically ranging from $5 million to $15 million for early-growth companies.
+- **Key Points**:
+  1. Investors: Executives associated with Ares Management (LPs)
+  2. Sector keywords: venture capital, defense tech, Israel, fund close
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/29/protego-ventures-closes-debut-125-million-fund-for-israeli-defense-tech/)
-- **Keywords**: `Venture Capital, Defense Tech, Israel, AI`
+- **Keywords**: `venture capital` `defense tech` `Israel` `fund close`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Satlyt: $8 million Seed backing
+## 5. BAG Ventures: $11.3 Million Fund I
 
-- **Summary**: Satlyt, a space-tech startup co-founded by Rama Afullo, has secured $8 million in seed funding to develop software that allows satellites to process data and run AI in orbit. The company's innovative approach aims to transform existing satellite hardware into a distributed AI network, significantly reducing the need to transmit vast amounts of raw data back to Earth and enhancing the efficiency of space computing.
+- **Summary**: BAG Ventures, an early-stage venture firm co-founded by former Google and CapitalG executives, closed its debut Fund I at $11.3 million. The fund aims to invest in enterprise AI startups, leveraging a network of over 150 limited partners who are senior tech leaders and operators.
 - **Key Points**:
-  1. Investors: non sibi ventures, TLCOM, Antler, Launch Africa Ventures, Enza Capital, Axian Investment, Askya Investment Partners, Slauson & Co., Gaingels, Demos, BAG Collective
-  2. Sector keywords: Space Tech, AI Infrastructure, Satellite, Edge Computing
-- **Source**: [TechCabal](https://techcabal.com/2026/10/01/the-plan-to-build-virtual-data-centres-in-space-just-got-8-million-backing/)
-- **Keywords**: `Space Tech, AI Infrastructure, Satellite, Edge Computing`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 4. BAG Ventures: $11.3M Fund I
-
-- **Summary**: BAG Ventures, an early-stage venture firm co-founded by former Google and CapitalG executives, has closed its debut Fund I at $11.3 million. The fund is backed by 150 limited partners and focuses on investing in pre-seed and seed-stage enterprise AI startups. It leverages an extensive network of tech operators to provide strategic support and access to its portfolio companies.
-- **Key Points**:
-  1. Investors: Google (anchoring LP), John Rogers, Jeff Dean, Ken Chenault, 150 Limited Partners
-  2. Sector keywords: Venture Capital, AI, Fund, Enterprise AI
+  1. Investors: Google (anchor LP), Loop Capital, John Rogers, Jeff Dean, Ken Chenault, and 150 total LPs (85% senior leadership titles, 25%+ technical backgrounds from Google, Amazon, NVIDIA, Snowflake, General Motors, Vanguard)
+  2. Sector keywords: venture capital, AI, fund close, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/30/bag-ventures-sets-its-eyes-deeper-into-the-ai-stack/)
-- **Keywords**: `Venture Capital, AI, Fund, Enterprise AI`
+- **Keywords**: `venture capital` `AI` `fund close` `enterprise AI`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
-## 5. MAVI: $4 million Seed
+## 6. MAVI: $4 Million Seed
 
-- **Summary**: MAVI, a new accounting staffing company, has emerged from stealth mode with $4 million in seed funding. The platform is designed to connect U.S. companies with global accounting talent proficient in AI tools. MAVI aims to address the growing shortage of AI-fluent accounting professionals by providing a marketplace for experienced international finance and accounting experts.
+- **Summary**: MAVI, an AI-powered marketplace connecting U.S. companies with global finance and accounting talent, emerged from stealth with $4 million in seed funding. The company aims to address the shortage of AI-proficient accounting talent by sourcing and onboarding experienced professionals.
 - **Key Points**:
-  1. Investors: Harlem Capital, Rethink Capital
-  2. Sector keywords: AI, Fintech, HR Tech, Accounting
+  1. Investors: Harlem Capital (lead)
+  2. Sector keywords: AI, accounting, staffing, HR tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/28/mavi-bets-on-the-ai-boom-creating-demand-for-a-new-kind-of-accountant/)
-- **Keywords**: `AI, Fintech, HR Tech, Accounting`
+- **Keywords**: `AI` `accounting` `staffing` `HR tech`
+- **Score**: ⭐⭐⭐ (3/5)
+
+---
+
+## 7. Satlyt: $8 Million Seed
+
+- **Summary**: Satlyt, a startup with joint headquarters in Nairobi, Kenya, and Sunnyvale, California, raised an $8 million seed round. The company develops software to enable satellites to process data and run AI onboard, aiming to create virtual AI data centers in space.
+- **Key Points**:
+  1. Investors: non sibi ventures (lead), TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Askya Investment Partners, Demos, BAG Collective, Gaingels, Axian Investment
+  2. Sector keywords: space tech, AI, data centers, satellite technology, Africa
+- **Source**: [TechCabal](https://techcabal.com/2026/10/01/the-plan-to-build-virtual-data-centres-in-space-just-got-8-million-backing/)
+- **Keywords**: `space tech` `AI` `data centers` `satellite technology` `Africa`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
