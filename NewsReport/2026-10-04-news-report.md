@@ -7,48 +7,48 @@
 
 ## 1. Neko Health: $700 Million Series C
 
-- **Summary**: Neko Health, co-founded by Spotify founder Daniel Ek, has secured $700 million in Series C funding. The preventive health technology company focuses on shifting healthcare from treating disease to preventing it through comprehensive, non-invasive body assessments powered by proprietary technology. The funding will support the company's expansion into the United States and accelerate its research and development efforts.
+- **Summary**: Neko Health, co-founded by Spotify's Daniel Ek, raised $700 million in a Series C round to expand its preventive health platform. The company offers comprehensive full-body scans to detect health issues early, aiming to shift healthcare towards prevention. The funds will be used to launch services in the US and advance its diagnostic technology.
 - **Key Points**:
-  1. Investors: Led by Lightspeed Venture Partners and co-led by O.G. Venture Partners. Participants include Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD, Mark Zuckerberg, Priscilla Chan, Tim Ferriss, Maria Sharapova, and will.i.am.
-  2. Sector keywords: healthtech, preventative health, body scanning, AI, medical diagnostics
+  1. Investors: Lightspeed Venture Partners (Lead), O.G. Venture Partners (Co-lead), Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, BDT & MSD, Mark Zuckerberg, Priscilla Chan, OpenAI, Tim Ferriss, Maria Sharapova, will.i.am.
+  2. Sector keywords: healthtech, preventative healthcare, body scanning, AI, diagnostics
 - **Source**: [TechCrunch](https://techcrunch.com/podcast/the-investor-behind-neko-healths-700m-bet-on-scanning-your-whole-body/)
-- **Keywords**: `healthtech, preventative health, body scanning, AI, medical diagnostics`
+- **Keywords**: `healthtech` `preventative healthcare` `body scanning` `AI` `diagnostics`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. EliseAI: $350 Million Series F
 
-- **Summary**: EliseAI, an AI company focused on automating complex housing and healthcare systems, has raised $350 million, doubling its valuation to $4 billion. The company has surpassed $200 million in annual recurring revenue and its platform powers a significant portion of U.S. apartments. The new capital will be used to expand its engineering, deployment, and sales teams, and establish a second engineering hub in San Francisco.
+- **Summary**: EliseAI, an AI platform that automates back-office operations for housing and healthcare sectors, raised $350 million in a Series F round. This funding doubled its valuation to $4 billion. The company aims to solve inefficiencies in these industries by handling tasks like leasing, resident services, scheduling, and insurance verification through AI agents.
 - **Key Points**:
-  1. Investors: Co-led by Andreessen Horowitz (a16z) and Bessemer Venture Partners. Participants include Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.
-  2. Sector keywords: AI, enterprise AI, proptech, healthtech, SaaS
+  1. Investors: Andreessen Horowitz (a16z) (Co-lead), Bessemer Venture Partners (Co-lead), Ontario Teachers' Pension Plan, Sapphire Ventures, Navitas Capital.
+  2. Sector keywords: AI, enterprise AI, proptech, healthtech, automation, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/29/a16z-backed-eliseai-raises-350m-doubles-valuation-to-4b/)
-- **Keywords**: `AI, enterprise AI, proptech, healthtech, SaaS`
+- **Keywords**: `AI` `enterprise AI` `proptech` `healthtech` `automation` `SaaS`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 3. Satlyt: $8 Million Seed
 
-- **Summary**: Satlyt, a Kenyan-American-founded space-tech startup, has secured $8 million in seed funding. The company is developing software that enables satellites to process data and run AI onboard, aiming to create virtual AI data centers in space. This technology is designed to reduce the need for raw data transmission to Earth, providing faster and more efficient in-orbit data analysis.
+- **Summary**: Satlyt, a satellite software company, raised $8 million in seed funding to expand AI computing and data-processing capabilities in space. The company develops technology for satellites to process information in orbit, reducing reliance on ground-based analysis. Its longer-term objective is to coordinate computing resources across multiple satellites.
 - **Key Points**:
-  1. Investors: Led by Non Sibi Ventures. Participants include TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Askya Investment Partners, Demos, BAG Collective, Gaingels, and Axian Investment.
-  2. Sector keywords: space tech, AI infrastructure, data centers, satellite technology
+  1. Investors: non sibi ventures (Lead), TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Askya Investment Partners, Demos, BAG Collective, Gaingels, Axian Investment.
+  2. Sector keywords: space tech, AI infrastructure, satellite software, data processing, deeptech
 - **Source**: [TechCabal](https://techcabal.com/2026/10/01/the-plan-to-build-virtual-data-centres-in-space-just-got-8-million-backing/)
-- **Keywords**: `space tech, AI infrastructure, data centers, satellite technology`
+- **Keywords**: `space tech` `AI infrastructure` `satellite software` `data processing` `deeptech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 4. MAVI: $4 Million Seed
 
-- **Summary**: MAVI, an accounting staffing company, has emerged from stealth with $4 million in seed funding. The company operates an AI-powered marketplace that connects U.S. companies with global accounting and finance professionals proficient in AI tools. MAVI aims to address the shortage of AI-fluent accounting talent and also handles cross-border hiring logistics.
+- **Summary**: MAVI, an accounting staffing company, emerged from stealth with $4 million in seed funding. The company operates an AI-powered marketplace connecting US companies with AI-proficient accounting and finance professionals from abroad, addressing a growing shortage of skilled talent in the accounting sector.
 - **Key Points**:
-  1. Investors: Led by Harlem Capital.
-  2. Sector keywords: AI, accounting, staffing, fintech, talent marketplace
+  1. Investors: Harlem Capital (Lead).
+  2. Sector keywords: accounting, staffing, AI, talent marketplace, fintech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/09/28/mavi-bets-on-the-ai-boom-creating-demand-for-a-new-kind-of-accountant/)
-- **Keywords**: `AI, accounting, staffing, fintech, talent marketplace`
+- **Keywords**: `accounting` `staffing` `AI` `talent marketplace` `fintech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
