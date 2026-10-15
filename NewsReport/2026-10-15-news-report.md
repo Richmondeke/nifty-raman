@@ -1,54 +1,42 @@
 # Daily News Report (2026-10-15)
 
-> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 3 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
 ## 1. Modal: $750 Million Series D
 
-- **Summary**: Modal, a cloud company that enables developers to run AI models and code, has raised a significant $750 million Series D round. The company has achieved an annualized run rate (ARR) exceeding $1 billion, showcasing strong growth and demand for its serverless compute infrastructure. Modal provides on-demand access to GPU computing power and has developed its own file system, container software, and scheduler to handle complex AI workloads.
+- **Summary**: Modal is an AI cloud startup that provides infrastructure for running and training AI models and code for developers. The company offers services like 'Sandboxes' for executing LLM-generated code in isolated environments and has achieved rapid growth, surpassing $1 billion in annualized run rate.
 - **Key Points**:
-  1. Investors: Accel (lead), Kleiner Perkins, Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, Bain Capital Ventures
-  2. Sector keywords: AI-infrastructure, cloud-computing, serverless, enterprise-software, GPU-compute
-- **Source**: [Modal.com Blog](https://modal.com/blog/1-billion-annualized-run-rate-series-d)
-- **Keywords**: `AI-infrastructure` `cloud-computing` `serverless` `enterprise-software` `GPU-compute`
+  1. Investors: Accel (led), Kleiner Perkins, Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, Bain Capital Ventures
+  2. Sector keywords: AI-infrastructure, cloud-computing, enterprise-AI, machine-learning
+- **Source**: [modal.com](https://modal.com/blog/1-billion-annualized-run-rate-series-d)
+- **Keywords**: `AI-infrastructure, cloud-computing, enterprise-AI, machine-learning`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Volantis: $88 Million Series A
 
-- **Summary**: Volantis has raised an $88 million Series A round to develop a new photonic architecture for AI inference, aiming to overcome the 'memory wall' in computing. The San Francisco-based semiconductor startup is building light-based connections between AI processors and memory to enhance data transfer, a critical factor for high-performance computing and advanced AI workloads.
+- **Summary**: Volantis, a San Francisco-based semiconductor startup, secured Series A funding to develop a new photonic architecture for AI inference. Their A-1 system aims to address the memory bottleneck in AI computing by significantly boosting memory capacity and bandwidth through optical connections, designed to support large AI models.
 - **Key Points**:
-  1. Investors: Lachy Groom (co-lead), Abstract Ventures (co-lead), John Doerr, VXI Capital, Triatomic, Susa Ventures, Dwarkesh Patel, Naveen Rao, Sholto Douglas, Sam Altman, Alex Wang, Trevor Blackwell
-  2. Sector keywords: photonics, semiconductors, AI-infrastructure, high-performance-computing, hardware
-- **Source**: [volantissemi.ai Blog](https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post)
-- **Keywords**: `photonics` `semiconductors` `AI-infrastructure` `high-performance-computing` `hardware`
+  1. Investors: Lachy Groom (co-led), Abstract Ventures (co-led), John Doerr, VXI Capital, Triatomic, Susa Ventures, Dwarkesh Patel, Naveen Rao, Sholto Douglas, Sam Altman, Alex Wang, Trevor Blackwell
+  2. Sector keywords: AI-hardware, photonics, semiconductors, deep-tech, AI-inference
+- **Source**: [volantissemi.ai](https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post)
+- **Keywords**: `AI-hardware, photonics, semiconductors, deep-tech, AI-inference`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Vesta: $30 Million Series B
+## 3. Satlyt: $8 Million Seed
 
-- **Summary**: Vesta is an AI-native software startup that assists lenders in originating mortgages by deploying 'swarms of agents.' This technology aims to streamline and automate various aspects of the mortgage lending process, from document review to underwriting decisions, to improve efficiency and reduce costs.
+- **Summary**: Satlyt is a Kenyan-American startup developing software to transform satellites into virtual AI data centers. Their technology enables satellites to process data and run AI in orbit, thereby reducing the need for extensive data downlink to Earth and enhancing the efficiency of in-space computing. The company maintains joint headquarters in Nairobi, Kenya, and Sunnyvale, CA.
 - **Key Points**:
-  1. Investors: Conversion Capital (lead), Citi Ventures, Andreessen Horowitz, Pennymac, New American Funding, nbkc Bank, FirstKey Mortgage, Navitas Capital, Zigg Capital, Parker89
-  2. Sector keywords: AI, fintech, mortgage, enterprise-software, automation
-- **Source**: [TechCrunch](https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/)
-- **Keywords**: `AI` `fintech` `mortgage` `enterprise-software` `automation`
-- **Score**: ⭐⭐⭐ (3/5)
-
----
-
-## 4. Satlyt: $8 Million Seed
-
-- **Summary**: Satlyt, founded by a former Google and SpaceX product manager, has secured $8 million in seed funding to develop software that runs artificial intelligence directly on satellites. This approach aims to process data in orbit, reducing the reliance on limited communication bandwidth to Earth and enabling faster analysis and deployment of AI applications in space.
-- **Key Points**:
-  1. Investors: non sibi ventures (lead), TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Askya Investment Partners, Demos, BAG Collective, Gaingels, Axian Investment, existing backers
-  2. Sector keywords: AI, space-tech, satellite-technology, edge-ai
+  1. Investors: non sibi ventures (led), TLCOM, Antler, Slauson & Co., Launch Africa Ventures, Enza Capital, Askya Investment Partners, Demos, BAG Collective, Gaingels, Axian Investment
+  2. Sector keywords: AI, space-tech, satellites, edge-computing, African-tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/13/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/)
-- **Keywords**: `AI` `space-tech` `satellite-technology` `edge-ai`
+- **Keywords**: `AI, space-tech, satellites, edge-computing, African-tech`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
