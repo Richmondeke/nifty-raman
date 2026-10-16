@@ -5,26 +5,26 @@
 
 ---
 
-## 1. Ramp: $1.85 Billion Growth Round
+## 1. Ramp: $1.85 Billion funding round, post-money valuation of $60 Billion
 
-- **Summary**: Ramp, a fintech startup specializing in corporate cards and spend-management, has secured a significant $1.85 billion funding round. This latest investment pushes the company's valuation to an impressive $60 billion. Ramp's offerings include corporate cards, expense automation, bill pay, procurement, and AI-driven finance tooling.
+- **Summary**: Ramp is a fintech startup providing a finance automation platform, including corporate cards, expense management, and bill payments. This significant funding round propels its valuation to $60 billion, highlighting its rapid growth and impact in streamlining business finances for enterprises.
 - **Key Points**:
-  1. Investors: Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, Avenir Growth, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, Coatue, D.E. Shaw
-  2. Sector keywords: Fintech, Corporate Finance, Expense Management, AI-driven Finance
-- **Source**: [Hacker News](https://www.reuters.com/technology/fintech-firm-ramp-raises-185-billion-60-billion-valuation-2026-10-15/)
-- **Keywords**: `Fintech` `Corporate Finance` `Expense Management` `AI-driven Finance`
+  1. Investors: Undisclosed
+  2. Sector keywords: fintech, corporate cards, expense management, finance automation
+- **Source**: [Hacker News (via Reuters)](https://www.reuters.com/technology/fintech-firm-ramp-raises-185-billion-60-billion-valuation-2026-10-15/)
+- **Keywords**: `fintech` `corporate cards` `expense management` `finance automation`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Opsin: $21 Million in funding
+## 2. Opsin: $21 Million
 
-- **Summary**: Opsin, an AI governance and cybersecurity company, has raised $21 million in funding. The company aims to expand its platform for monitoring, managing, and securing autonomous AI agents used by enterprises. This investment will support continued product development to help security teams identify AI agents, understand their functions, and detect dangerous behavior.
+- **Summary**: Opsin is a company focused on risk protection, having raised $21 million to expand its risk protection layer. The funding will likely be used to enhance its technology and broaden its market reach, addressing critical security needs for businesses.
 - **Key Points**:
-  1. Investors: SYN Ventures, Race Capital
-  2. Sector keywords: Cybersecurity, AI Governance, Risk Management, Enterprise Security
-- **Source**: [Hacker News](https://www.opsinsecurity.com/blog/opsin-raises-21m-to-expand-its-risk-protection-layer)
-- **Keywords**: `Cybersecurity` `AI Governance` `Risk Management` `Enterprise Security`
+  1. Investors: Undisclosed
+  2. Sector keywords: cybersecurity, risk protection, security, SaaS
+- **Source**: [Hacker News (via Opsin Security Blog)](https://www.opsinsecurity.com/blog/opsin-raises-21m-to-expand-its-risk-protection-layer)
+- **Keywords**: `cybersecurity` `risk protection` `security` `SaaS`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
