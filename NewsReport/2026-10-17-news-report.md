@@ -5,14 +5,14 @@
 
 ---
 
-## 1. TrustedRouter: $1.25 Million Seed
+## 1. TrustedRouter: $1.25 Million Seed Round
 
-- **Summary**: TrustedRouter is a Miami-based AI infrastructure and API orchestration startup that raised seed funding to develop a unified API router and intelligent infrastructure platform. The company enables users to access and route queries across more than 600 AI models from various providers through a single OpenAI-compatible API. A key differentiator is its focus on data privacy and security, offering verifiable trust paths for enterprises when sending sensitive data through AI intermediaries.
+- **Summary**: TrustedRouter, an AI infrastructure startup based in Miami, has raised $1.25 million in seed funding. The company provides a unified API router and intelligent infrastructure platform that enables users to access and orchestrate over 600 AI models from various providers through a single OpenAI-compatible endpoint. Its core value proposition focuses on privacy and security, routing requests through an attested confidential-computing gateway that does not log prompt or output content.
 - **Key Points**:
-  1. Investors: Sam Lessin (Slow Ventures), Slow Ventures, Bill Tai, Linda Avey, George Xing, Peter Livingston (Unpopular Ventures), Katelyn Donnelly (Avalanche VC), Gert Lanckriet, Holmes Wilson, Tory Reiss, Daniel Imberman, Michael Staton, Jason Fang, Capitoria Ventures.
-  2. Sector keywords: AI, AI Infrastructure, API Orchestration, Machine Learning, Data Privacy, LLM
+  1. Investors: Sam Lessin of Slow Ventures, Bill Tai, Linda Avey, George Xing, Peter Livingston of Unpopular Ventures, Katelyn Donnelly of Avalanche VC, Gert Lanckriet, Holmes Wilson, Tory Reiss, Daniel Imberman, Michael Staton, Jason Fang, Capitoria Ventures, and other technical and angel investors
+  2. Sector keywords: AI infrastructure, API orchestration, LLM, confidential computing, developer tools, seed funding
 - **Source**: [Semafor](https://www.semafor.com/article/10/16/2026/openrouter-challenger-closes-seed-round)
-- **Keywords**: `AI, AI Infrastructure, API Orchestration, Machine Learning, Data Privacy, LLM`
+- **Keywords**: `AI infrastructure` `API orchestration` `LLM` `confidential computing` `developer tools` `seed funding`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
