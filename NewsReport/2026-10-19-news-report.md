@@ -7,48 +7,48 @@
 
 ## 1. Tenstorrent: $1.5 Billion Series E at $6.2 Billion valuation
 
-- **Summary**: Tenstorrent, an AI computing company led by CEO Jim Keller, has successfully closed a $1.5 billion Series E funding round, valuing the company at $6.2 billion. The capital will be used to deploy its Galaxy servers at scale, support open-weight models across large language models and video generation, and advance its AI and CPU IP licensing.
+- **Summary**: Tenstorrent, an AI computing company led by CEO Jim Keller, has closed a substantial $1.5 billion Series E funding round, which values the company at $6.2 billion. The company specializes in developing advanced AI processors and high-performance computing solutions based on RISC-V architecture with an open-source software stack. The newly acquired capital will be utilized to deploy its Galaxy servers at scale, support open-weight models, and further advance its AI and CPU intellectual property.
 - **Key Points**:
-  1. Investors: Lead Investors: Trace Capital, Innovation X. Participating Investors: Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets.
-  2. Sector keywords: AI hardware, semiconductors, high-performance computing, deep tech
+  1. Investors: Trace Capital (lead), Innovation X (lead), Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets
+  2. Sector keywords: AI-hardware, semiconductors, high-performance-computing, deep-learning
 - **Source**: [Hacker News](https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e)
-- **Keywords**: `AI hardware, semiconductors, high-performance computing, deep tech`
+- **Keywords**: `AI-hardware, semiconductors, high-performance-computing, deep-learning`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Town: $108 Million Series B at a $1 Billion valuation
+## 2. Town: $108 Million Series B
 
-- **Summary**: Town, a San Francisco startup, has raised $108 million in Series B funding, valuing the company at $1 billion. The company provides each person at work with an AI work assistant, with the new funding enabling these assistants to collaborate by asking each other questions and handing off tasks.
+- **Summary**: Town, a San Francisco-based startup, has raised $108 million in Series B funding, valuing the company at $1 billion. The company develops AI work assistants, called "Townies," which are designed to enhance team productivity by connecting to individuals' digital workspaces. These AI assistants can also facilitate collaboration between themselves across teams and with external contacts. Town publicly launched in June 2026 with a $55 million Series A.
 - **Key Points**:
-  1. Investors: Lead Investors: Forerunner Ventures, Menlo Ventures. Participating Investors: a16z, First Round Capital, Better Tomorrow Ventures, Precedent.vc, Scribble Ventures, Serena Ventures, Sparked Ventures, Brendan Foody, Josh Silverman, Romain Huet, Scott Belsky, Steve Bartel, Taro Fukuyama, Angel Investors.
-  2. Sector keywords: AI, enterprise software, productivity, collaboration
+  1. Investors: Forerunner Ventures (co-lead), Menlo Ventures (co-lead), a16z, First Round Capital, Better Tomorrow Ventures, Precedent.vc, Scribble Ventures, Serena Ventures, Sparked Ventures, Brendan Foody (angel), Josh Silverman (angel), Romain Huet (angel), Scott Belsky (angel), Steve Bartel (angel), Taro Fukuyama (angel), Varun Anand (angel)
+  2. Sector keywords: AI, productivity, enterprise-software, team-collaboration
 - **Source**: [Hacker News](https://www.town.com/operate-at-the-speed-of-ai)
-- **Keywords**: `AI, enterprise software, productivity, collaboration`
+- **Keywords**: `AI, productivity, enterprise-software, team-collaboration`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 3. Abby Care: $82 Million Series C
 
-- **Summary**: Abby Care, an AI-powered care-at-home platform, has raised $82 million in Series C financing. The company empowers family members to become trained and paid caregivers for individuals with complex medical needs. This funding will support expansion into new markets, further investment in AI and clinical research, and the development of health plan partnerships.
+- **Summary**: Abby Care, a home care startup, has successfully raised $82 million in Series C funding. This funding aims to expand the company's innovative model, which involves training and compensating family members to become certified caregivers. Founded in 2022 by Havi Nguyen, Abby Care functions as a Medicaid provider, collaborating with health plans to facilitate in-home care and help address critical staffing shortages within the U.S. healthcare system.
 - **Key Points**:
-  1. Investors: Lead Investor: Transformation Capital. Participating Investors: CVS Health Ventures, Frist Cressey Ventures, Pivotal Ventures (new investors), Khosla Ventures, Thrive Capital, Sequoia Capital (returning investors).
-  2. Sector keywords: healthtech, elder care, caregiving, AI, social impact
+  1. Investors: Transformation Capital (lead), CVS Health Ventures, Frist Cressey Ventures, Pivotal Ventures, Khosla Ventures, Thrive Capital, Sequoia
+  2. Sector keywords: healthtech, elderly-care, caregiving, social-impact
 - **Source**: [Hacker News](https://fortune.com/2026/10/15/startup-abby-care-raises-82-million-to-turn-family-members-into-paid-caregivers/)
-- **Keywords**: `healthtech, elder care, caregiving, AI, social impact`
+- **Keywords**: `healthtech, elderly-care, caregiving, social-impact`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. Molagri: $5.8 Million Seed
+## 4. Molagri: $5.8 Million Preseed and Seed
 
-- **Summary**: Molagri, a Toronto-based agricultural biotechnology startup, has secured $5.8 million in seed funding. The company is developing 'updatable' precision biopesticides that can target specific insect pests and adapt as resistance emerges, aiming to provide farmers with more selective crop protection tools.
+- **Summary**: Toronto-based Molagri has secured $5.8 million in combined pre-seed and seed funding. The company is developing "updatable" biopesticides, which are precision pest control solutions utilizing engineered non-infectious virus-like particles (VLPs). Their technology aims to target specific insect pests and adapt as these pests develop resistance, with an initial focus on pests in tree nuts and tree fruits.
 - **Key Points**:
-  1. Investors: Lead Investor: Convective Capital. Participating Investors: Superorganism, Y Combinator, Julian Capital, Paul Graham (angel investor).
-  2. Sector keywords: agritech, biotechnology, biopesticides, sustainable agriculture
+  1. Investors: Convective Capital (lead for seed), Julian Capital (lead for pre-seed), Superorganism, Y Combinator, Robinhood Ventures, Paul Graham (angel)
+  2. Sector keywords: agritech, biotechnology, pesticides, sustainable-agriculture
 - **Source**: [Hacker News](https://agfundernews.com/molagri-raises-5-8m-to-build-updatable-biopesticides)
-- **Keywords**: `agritech, biotechnology, biopesticides, sustainable agriculture`
+- **Keywords**: `agritech, biotechnology, pesticides, sustainable-agriculture`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
