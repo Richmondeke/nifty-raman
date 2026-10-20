@@ -5,38 +5,38 @@
 
 ---
 
-## 1. Tenstorrent: $1.5 Billion Series E
+## 1. Tenstorrent: $1.5 Billion Series E at $6.2 Billion valuation
 
-- **Summary**: Tenstorrent, an Nvidia challenger, has raised $1.5 billion in a Series E round to scale its open-weight AI chips and remain independent. The funding values the company at $6.2 billion. This investment will enable the company to further expand its development of open-weight AI chips and challenge established players like Nvidia.
+- **Summary**: Tenstorrent, a developer of advanced AI chips and an Nvidia challenger, secured $1.5 billion in a Series E funding round, propelling its valuation to $6.2 billion. The company aims to use this capital to deploy its Galaxy servers at scale, continue serving open-weight models across LLMs and video generation, and advance the AI and CPU IP it licenses to customers designing their own silicon. The funding allows Tenstorrent to remain independent after drawing acquisition interest earlier in the year.
 - **Key Points**:
   1. Investors: Trace Capital, Innovation X, Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets
-  2. Sector keywords: AI chips, AI hardware, semiconductors, open-weight AI
+  2. Sector keywords: AI chips, Semiconductors, AI-infrastructure, Hardware
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/)
-- **Keywords**: `AI chips` `AI hardware` `semiconductors` `open-weight AI`
+- **Keywords**: `AI chips, Semiconductors, AI-infrastructure, Hardware`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Town: $108 Million Series B
 
-- **Summary**: Town, an AI assistant startup, secured a $108 million Series B round, achieving a unicorn valuation just four months after its launch. The company aims to empower teams to operate at the speed of AI.
+- **Summary**: AI assistant startup Town achieved a unicorn valuation just four months after its launch, securing a $108 million Series B round. The company focuses on developing AI assistants designed to help teams operate more efficiently and at the speed of AI.
 - **Key Points**:
   1. Investors: Forerunner Ventures, Menlo Ventures
-  2. Sector keywords: AI assistant, enterprise AI, productivity software, SaaS
+  2. Sector keywords: AI, AI assistant, SaaS, Productivity
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/)
-- **Keywords**: `AI assistant` `enterprise AI` `productivity software` `SaaS`
+- **Keywords**: `AI, AI assistant, SaaS, Productivity`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Molagri: $5.8 Million Seed
+## 3. Molagri: $5.8 Million Pre-seed and Seed funding
 
-- **Summary**: Molagri has raised $5.8 million in pre-seed and seed funding to develop innovative "updatable" biopesticides. The company focuses on creating advanced solutions for sustainable agriculture and pest control by designing biopesticides that can adapt as pests develop resistance.
+- **Summary**: Toronto-based startup Molagri has raised $5.8 million in combined pre-seed and seed funding to develop a new generation of 'precision biopesticides'. These biopesticides are designed to target specific insect pests and adapt as they develop resistance, addressing critical challenges in crop protection such as pest resistance and unintended damage from broad-spectrum products.
 - **Key Points**:
-  1. Investors: Convective Capital, Superorganism, Y Combinator, Julian Capital, Paul Graham (angel)
-  2. Sector keywords: agritech, biopesticides, biotechnology, sustainable agriculture
-- **Source**: [AgFunderNews](https://agfundernews.com/molagri-raises-5-8m-to-build-updatable-biopesticides)
-- **Keywords**: `agritech` `biopesticides` `biotechnology` `sustainable agriculture`
+  1. Investors: Convective Capital, Superorganism, Y Combinator, Julian Capital, Paul Graham
+  2. Sector keywords: Agtech, Biopesticides, Biotech, Sustainability
+- **Source**: [Hacker News](https://agfundernews.com/molagri-raises-5-8m-to-build-updatable-biopesticides)
+- **Keywords**: `Agtech, Biopesticides, Biotech, Sustainability`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
