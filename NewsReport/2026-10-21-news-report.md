@@ -1,66 +1,78 @@
 # Daily News Report (2026-10-21)
 
-> Curated from TechCrunch and Hacker News. Contains 5 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 6 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Tenstorrent: $1.5 Billion Series E at $6.2 Billion valuation
+## 1. Tenstorrent: $1.5 Billion Series E
 
-- **Summary**: Tenstorrent, a company focused on scaling open-weight AI chips, raised $1.5 billion in a Series E funding round. This investment values the company at $6.2 billion and aims to help them remain independent after attracting acquisition interest.
+- **Summary**: Tenstorrent, an AI chip company that competes with Nvidia, has raised a significant Series E round. The funding will be used to scale its open-weight AI chips and deploy Galaxy servers, enabling the company to remain independent amidst market competition.
 - **Key Points**:
-  1. Investors: Trace Capital, Innovation X, Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets
-  2. Sector keywords: AI chips, semiconductors, AI hardware, deep learning
+  1. Investors: Lead Investors: Trace Capital, Innovation X. Participating Investors: Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets
+  2. Sector keywords: AI chips, semiconductors, AI hardware, open-weight AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/)
-- **Keywords**: `AI chips, semiconductors, AI hardware, deep learning`
+- **Keywords**: `AI chips, semiconductors, AI hardware, open-weight AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Town: $108 Million Series B at unicorn valuation
+## 2. Town: $108 Million Series B
 
-- **Summary**: Town, an AI assistant startup, achieved a unicorn valuation just four months after its launch. The company secured $108 million in a Series B funding round.
+- **Summary**: Town, an AI assistant startup, achieved a unicorn valuation just four months after its launch, securing a $108 million Series B round. This rapid growth and substantial funding highlight strong investor confidence in its AI technology and market potential.
 - **Key Points**:
   1. Investors: Forerunner Ventures, Menlo Ventures
-  2. Sector keywords: AI, AI assistant, unicorn, SaaS
+  2. Sector keywords: AI assistant, AI, SaaS, unicorn
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/)
-- **Keywords**: `AI, AI assistant, unicorn, SaaS`
+- **Keywords**: `AI assistant, AI, SaaS, unicorn`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 3. Daytona: $60 Million Series B at $1 Billion valuation
+## 3. Blacksmith: $66 Million Series C
 
-- **Summary**: Daytona, a startup building the 'agentic cloud,' raised $60 million in a Series B funding round, valuing the company at $1 billion. The company provides an execution layer for AI agents, offering quickly deployable virtual machines.
+- **Summary**: Blacksmith, an infrastructure platform for building and testing code, has raised $66 million in Series C funding, reaching a $1 billion valuation. The company provides high-performance cloud runners and caching tools to accelerate continuous integration (CI) workloads, crucial for modern software development, especially with the rise of AI-generated code.
 - **Key Points**:
-  1. Investors: FirstMark Growth (Lead), Qualcomm Ventures, Samsung Next, Okta Ventures, Patrick Collison, Tobi Lutke, Aravind Srinivas, Eric Yuan, Olivier Pomel, Adam D'Angelo, Brendan Foody
-  2. Sector keywords: agentic cloud, AI infrastructure, cloud computing, SaaS
-- **Source**: [Hacker News](https://fortune.com/2026/10/20/daytona-startup-building-the-agentic-cloud-valued-at-1-billion-in-latest-funding-round/)
-- **Keywords**: `agentic cloud, AI infrastructure, cloud computing, SaaS`
+  1. Investors: Lead Investor: Sequoia Capital. Participating Investors: Premji Invest, Peak XV Partners, GV, Y Combinator
+  2. Sector keywords: CI/CD, cloud infrastructure, developer tools, DevOps, AI validation
+- **Source**: [Hacker News](https://www.blacksmith.sh/blog/series-c)
+- **Keywords**: `CI/CD, cloud infrastructure, developer tools, DevOps, AI validation`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 4. Alter: Undisclosed Preseed funding (YC S25)
+## 4. Daytona: $60 Million Series B
 
-- **Summary**: Alter, a startup providing access control for multi-user agents, announced its launch as part of the Y Combinator S25 batch, indicating pre-seed funding from the accelerator.
+- **Summary**: Daytona, a startup building the 'agentic cloud' for AI agents, raised $60 million in Series B funding, valuing the company at $1 billion. This investment will enable Daytona to scale its specialized cloud infrastructure, providing instant-starting, persistent, and secure environments for AI agents to write code, browse the web, and execute tasks.
+- **Key Points**:
+  1. Investors: Lead Investor: FirstMark Growth. Participating Investors: Patrick Collison (Stripe), Tobi Lütke (Shopify), Aravind Srinivas (Perplexity), Eric Yuan (Zoom), Olivier Pomel (Datadog), Adam D'Angelo (Quora), Brendan Foody (Mercor), Qualcomm Ventures, Samsung Next, Okta Ventures
+  2. Sector keywords: agentic cloud, AI, cloud computing, developer tools, AI agents
+- **Source**: [Hacker News](https://twitter.com/AGTPinsights/status/2112579215233360124)
+- **Keywords**: `agentic cloud, AI, cloud computing, developer tools, AI agents`
+- **Score**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+## 5. Alter: Undisclosed Seed
+
+- **Summary**: Alter, a Y Combinator S25-backed startup, is developing access control solutions specifically designed for multi-user agents. This addresses a growing need for secure and managed interactions within agent-based AI systems.
 - **Key Points**:
   1. Investors: Y Combinator
-  2. Sector keywords: access control, multi-user agents, AI, security
+  2. Sector keywords: access control, AI agents, security, developer tools
 - **Source**: [Hacker News](https://alterauth.com/)
-- **Keywords**: `access control, multi-user agents, AI, security`
+- **Keywords**: `access control, AI agents, security, developer tools`
 - **Score**: ⭐⭐ (2/5)
 
 ---
 
-## 5. Respan: Undisclosed Preseed funding (YC W24)
+## 6. Respan: Undisclosed Seed
 
-- **Summary**: Respan, an open-source Rust AI gateway built around plugins, announced its launch as part of the Y Combinator W24 batch, signifying pre-seed funding from the accelerator.
+- **Summary**: Respan, a Y Combinator W24 startup, is building an open-source AI gateway in Rust with a plugin-based architecture. This aims to offer flexible and powerful tools for integrating and managing AI functionalities.
 - **Key Points**:
   1. Investors: Y Combinator
-  2. Sector keywords: AI gateway, open-source, Rust, plugins, AI infrastructure
+  2. Sector keywords: AI gateway, open-source, Rust, developer tools
 - **Source**: [Hacker News](https://news.ycombinator.com/item?id=50167583)
-- **Keywords**: `AI gateway, open-source, Rust, plugins, AI infrastructure`
+- **Keywords**: `AI gateway, open-source, Rust, developer tools`
 - **Score**: ⭐⭐ (2/5)
 
 ---
