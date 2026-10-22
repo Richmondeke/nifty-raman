@@ -7,60 +7,60 @@
 
 ## 1. Legora: $550 Million Series E
 
-- **Summary**: Legora, a legal AI startup, announced a $550 million Series E round, valuing it at $8.8 billion. The company provides an agentic operating system for legal professionals, focusing on expanding its geographic footprint and its offering to include multi-step work agents. Legora has experienced rapid growth, surpassing $200 million in annual recurring revenue (ARR).
+- **Summary**: Legora, a legal AI startup, has raised a $550 million Series E round, valuing the company at $8.8 billion. The company develops an agentic operating system (aOS) for legal professionals, used by law firms and corporate legal teams to automate and streamline legal work. The funding will support expansion in North America, Europe, and Asia-Pacific, and further investment in its aOS platform.
 - **Key Points**:
   1. Investors: Atreides Management (lead), Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, J.P Morgan, Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, Sands Capital
-  2. Sector keywords: legaltech, AI, enterprise-software, venture-capital
+  2. Sector keywords: Legal AI, AI, SaaS, Enterprise Software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/)
-- **Keywords**: `legaltech, AI, enterprise-software, venture-capital`
+- **Keywords**: `Legal AI` `AI` `SaaS` `Enterprise Software`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Tenstorrent: $1.5 Billion Series E
 
-- **Summary**: Tenstorrent, an AI computing company and Nvidia challenger, raised $1.5 billion in a Series E funding round, bringing its valuation to $6.2 billion. The company plans to use the capital to scale its Galaxy servers, serve open-weight models for LLMs and video generation, and advance its AI and CPU IP licensing.
+- **Summary**: Tenstorrent, a company focused on open-weight AI chips and computing systems, raised $1.5 billion in a Series E funding round, bringing its valuation to $6.2 billion. This significant investment allows the company to remain independent amidst acquisition interest and scale its Galaxy AI server deployments globally. The funding will also support the development of its licensable AI and CPU designs.
 - **Key Points**:
-  1. Investors: Trace Capital (lead), Innovation X (lead), Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets, Valor Equity Partners, Export Development Canada, Hyundai Motor Group, Samsung Securities, LG Electronics, Bezos Expeditions
-  2. Sector keywords: AI, semiconductors, hardware, deep-tech
+  1. Investors: Trace Capital (lead), Innovation X (lead), Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets
+  2. Sector keywords: AI Hardware, Semiconductors, AI Chips, Deep Tech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/)
-- **Keywords**: `AI, semiconductors, hardware, deep-tech`
+- **Keywords**: `AI Hardware` `Semiconductors` `AI Chips` `Deep Tech`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Blacksmith: $66 Million Series C
+## 3. Town: $108 Million Series B
 
-- **Summary**: Blacksmith, a platform designed to help companies build and test AI code more effectively, closed a $66 million Series C round. This funding round propelled the company to a unicorn valuation of $1 billion.
+- **Summary**: AI assistant startup Town achieved a unicorn valuation just four months after its launch, following a $108 million Series B funding round. The investment was co-led by Forerunner Ventures and Menlo Ventures. Town focuses on developing innovative AI assistant solutions to enhance productivity and user experience.
 - **Key Points**:
-  1. Investors: Sequoia (lead)
-  2. Sector keywords: AI, developer-tools, enterprise-software, devops
-- **Source**: [TechCrunch](https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/)
-- **Keywords**: `AI, developer-tools, enterprise-software, devops`
-- **Score**: ⭐⭐⭐⭐ (4/5)
+  1. Investors: Forerunner Ventures, Menlo Ventures
+  2. Sector keywords: AI Assistants, SaaS, Consumer AI, Productivity
+- **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/)
+- **Keywords**: `AI Assistants` `SaaS` `Consumer AI` `Productivity`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 4. Town: $108 Million Series B
+## 4. Blacksmith: $66 Million Series C
 
-- **Summary**: AI assistant startup Town achieved a unicorn valuation just four months after its launch, following a $108 million Series B funding round. The company focuses on personal AI assistant technology.
+- **Summary**: Blacksmith, a platform that enables companies to more effectively build and test AI code, announced a $66 million Series C funding round. The investment, led by Sequoia, values the company at $1 billion, granting it unicorn status. Blacksmith's technology aims to improve the efficiency and reliability of AI code development.
 - **Key Points**:
-  1. Investors: Forerunner Ventures (co-lead), Menlo Ventures (co-lead)
-  2. Sector keywords: AI, productivity, personal-assistant, consumer-tech
-- **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/)
-- **Keywords**: `AI, productivity, personal-assistant, consumer-tech`
+  1. Investors: Sequoia
+  2. Sector keywords: AI, Developer Tools, AI-infrastructure, SaaS
+- **Source**: [TechCrunch](https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/)
+- **Keywords**: `AI` `Developer Tools` `AI-infrastructure` `SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 5. Mach9: $34 Million Series A
 
-- **Summary**: Mach9 raised $34 million in Series A funding after pivoting its focus to AI-powered CAD software for civil engineering. The company's AI-driven tools automate mapping and design, aiming to accelerate workflows and reduce costs in construction and infrastructure projects.
+- **Summary**: Mach9 has successfully raised $34 million in a Series A funding round after pivoting its focus to AI CAD software for civil engineering. The company's software transforms survey imagery and laser scans into engineering-ready design drafts, significantly speeding up project delivery and reducing costs. This funding will be used to expand its AI software for surveying and civil engineering.
 - **Key Points**:
-  1. Investors: First Round Capital (co-lead), Bessemer Venture Partners (co-lead), Prudence, Quiet Capital
-  2. Sector keywords: AI, CAD, software, engineering-tech, construction-tech
-- **Source**: [TechCrunch](https://techcrunch.com/2026/10/21/mach9-raises-34m-after-pivoting-to-ai-cad-software/)
-- **Keywords**: `AI, CAD, software, engineering-tech, construction-tech`
+  1. Investors: First Round Capital (lead), Bessemer Venture Partners (lead), Prudence, Quiet Capital
+  2. Sector keywords: AI, CAD Software, Design Tools, Enterprise Software
+- **Source**: [Hacker News](https://techcrunch.com/2026/10/21/mach9-raises-34m-after-pivoting-to-ai-cad-software/)
+- **Keywords**: `AI` `CAD Software` `Design Tools` `Enterprise Software`
 - **Score**: ⭐⭐⭐ (3/5)
 
 ---
