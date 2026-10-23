@@ -5,35 +5,35 @@
 
 ---
 
-## 1. Warhound: $200M funding
+## 1. Warhound: $200 Million Seed Funding
 
-- **Summary**: Warhound, co-founded by Ben Lamm and Palmer Luckey, has emerged from stealth with $200 million in funding at a $1.2 billion valuation. The company focuses on genetically engineering dogs for military and law enforcement applications, equipping them with advanced gear from Anduril. This aims to enhance capabilities for defense and security operations by using Colossal's gene-editing and cloning technology on Belgian Malinois and German Shepherd cell lines to breed dogs better suited to bomb detection and search missions.
+- **Summary**: Warhound, co-founded by Ben Lamm and Palmer Luckey, has emerged from stealth with $200 million in seed funding. The company aims to genetically engineer dogs for military and law enforcement, integrating cybernetics technology to enhance their health and performance and reduce reliance on foreign suppliers for working dogs. The startup is based in Dallas, TX, and is valued at $1.2 billion.
 - **Key Points**:
-  1. Investors: In-Q-Tel, Sequoia, 8VC
-  2. Sector keywords: defense tech, bioengineering, AI, robotics, military
+  1. Investors: In-Q-Tel, Sequoia Capital, ARK Invest, Franklin Templeton, 8VC, USIT, Bob Nelsen, Breyer Capital, CAZ Investments, Neogenesis, Builders VC, Lux Capital
+  2. Sector keywords: biotech, defense tech, AI, robotics, genetic engineering
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/)
-- **Keywords**: `defense tech, bioengineering, AI, robotics, military`
+- **Keywords**: `biotech, defense tech, AI, robotics, genetic engineering`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Legora: $550M Series E
+## 2. Legora: $550 Million Series E at $8.8 Billion valuation
 
-- **Summary**: Legora, a legal AI startup, has successfully closed a $550 million Series E funding round, which now values the company at $8.8 billion. The company is focused on applying artificial intelligence to the legal sector, offering solutions for workflow tasks like document review, drafting, research, and workflow management for legal professionals. This significant valuation reflects strong investor confidence in its growth and market impact.
+- **Summary**: Legora, a legal AI startup, has raised a significant $550 million in its Series E funding round, boosting its valuation to $8.8 billion. The company provides an agentic operating system for legal professionals, aiming to embed AI across high-stakes tasks like document review, legal research, and contract drafting. Legora, founded in Stockholm, Sweden, has seen rapid growth, with its annual recurring revenue surpassing $200 million.
 - **Key Points**:
-  1. Investors: Atreides Management (lead), Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, J.P. Morgan, Bessemer Venture Partners, Menlo, Accel, Benchmark, General Catalyst, ICONIQ, Salesforce Ventures
-  2. Sector keywords: legal tech, AI, enterprise software, SaaS
+  1. Investors: Atreides Management (Lead), Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, J.P. Morgan, Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, Sands Capital
+  2. Sector keywords: legal tech, AI, SaaS, enterprise software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/)
-- **Keywords**: `legal tech, AI, enterprise software, SaaS`
+- **Keywords**: `legal tech, AI, SaaS, enterprise software`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Tenstorrent: $1.5 billion Series E
+## 3. Tenstorrent: $1.5 Billion Series E round at $6.2 Billion valuation
 
-- **Summary**: Tenstorrent, a company developing open-weight AI chips, has raised $1.5 billion in a Series E round, pushing its valuation to $6.2 billion. This significant funding round was secured to allow the company to remain independent amidst prior acquisition interest from companies like Intel and Qualcomm. Tenstorrent aims to challenge Nvidia by scaling its advanced AI chip technology for various applications, including its Galaxy servers for running AI models and licensing its chip designs.
+- **Summary**: Tenstorrent, an AI chip startup challenging Nvidia, has secured $1.5 billion in a Series E funding round, bringing its valuation to $6.2 billion. This substantial investment is aimed at scaling its open-weight AI chips and maintaining its independence amidst prior acquisition interest. The company develops RISC-V-based AI processors, systems, and IP for developers, enterprises, and sovereign infrastructure.
 - **Key Points**:
-  1. Investors: Trace Capital (lead), Innovation X (co-lead), Cadence Ventures, Eclipse, Fidelity Management & Research Company, SanDisk, T. Rowe Price, Agostinelli Group, ARK Invest, Brett Barna, Maverick Silicon, Morgan Stanley, Protagonist, Tether Investments, Troluce Capital, Virtu Financial, XTX Markets
+  1. Investors: Trace Capital (Co-lead), Innovation X Advisors (Co-lead), Cadence Ventures, Maverick Silicon Fund, Morgan Stanley, Protagonist Management LLC, Sandisk Corporation, T. Rowe Price Group, Inc., Tether Investments, S.A. De C.V., Troluce Capital Advisors, LLC, Virtu Financial, Inc., Agostinelli Group, ARK Investment Management LLC, Eclipse Operations, LLC, Fidelity Management & Research Company LLC, XTX Markets Limited, Brett Barna
   2. Sector keywords: AI chips, semiconductors, hardware, AI infrastructure
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/)
 - **Keywords**: `AI chips, semiconductors, hardware, AI infrastructure`
@@ -41,38 +41,38 @@
 
 ---
 
-## 4. Town: $108 million Series B
+## 4. Town: $108 Million Series B round
 
-- **Summary**: Town, an AI assistant startup, achieved a unicorn valuation just four months after its launch, securing a $108 million Series B funding round. The round was co-led by prominent venture capital firms Forerunner Ventures and Menlo Ventures. This rapid growth and substantial funding highlight the strong market demand and investor confidence in its AI-powered assistant technology.
+- **Summary**: AI assistant startup Town has rapidly achieved a unicorn valuation just four months after its launch. This impressive growth is highlighted by a $108 million Series B funding round. The company focuses on developing advanced AI assistant capabilities, signaling strong market demand and investor confidence in its technology.
 - **Key Points**:
-  1. Investors: Forerunner Ventures (co-lead), Menlo Ventures (co-lead)
-  2. Sector keywords: AI, AI assistant, consumer AI, SaaS
+  1. Investors: Forerunner Ventures (Co-lead), Menlo Ventures (Co-lead)
+  2. Sector keywords: AI assistant, SaaS, AI, productivity
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/)
-- **Keywords**: `AI, AI assistant, consumer AI, SaaS`
+- **Keywords**: `AI assistant, SaaS, AI, productivity`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 5. DeepSeek: $15 Billion funding
+## 5. DeepSeek: $15 Billion latest funding round
 
-- **Summary**: DeepSeek, a Chinese AI startup, has raised approximately $15 billion (100 billion yuan) in its latest funding round, positioning itself to challenge leading U.S. AI laboratories like OpenAI and Anthropic. This significant investment, described as one of China's largest financing rounds, is aimed at fueling its advancements in AI and preparing for a potential public listing.
+- **Summary**: Chinese AI startup DeepSeek has concluded a massive fundraising round, securing approximately $15 billion (100 billion yuan). This significant capital injection aims to fuel its ambition to directly challenge leading US AI research labs such as OpenAI and Anthropic. The Hangzhou-based company has reportedly doubled its initial fundraising target, underscoring intense investor interest as China vies for leadership in the global AI race.
 - **Key Points**:
-  1. Investors: CATL, Tencent (among the biggest investors), Midea, Meituan, Geely, GigaDevice, Boyu Capital, CPE, Legend Capital, IDG Capital (existing shareholder), Monolith Management (existing shareholder), Shixiang (existing shareholder), Stony Creek Capital
-  2. Sector keywords: AI, large language models, AI research, China tech
-- **Source**: [Hacker News](https://www.reuters.com/world/asia-pacific/deepseek-raises-15-billion-challenge-leading-us-labs-bloomberg-news-reports-2026-10-22/)
-- **Keywords**: `AI, large language models, AI research, China tech`
+  1. Investors: Contemporary Amperex Technology (CATL), Tencent Holdings, GigaDevice, Meituan, Geely, Midea, Boyu Capital, CPE, Legend Capital, Stony Creek Capital, IDG Capital, NetEase, Monolith Management, Shixiang
+  2. Sector keywords: AI, large language models, AI research, deep learning
+- **Source**: [Hacker News](https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs)
+- **Keywords**: `AI, large language models, AI research, deep learning`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 6. Blacksmith: $66 million Series C
+## 6. Blacksmith: $66 Million Series C round led by Sequoia at $1 Billion valuation
 
-- **Summary**: Blacksmith, a platform designed to help companies build and test AI code more effectively, has achieved a unicorn valuation following a $66 million Series C funding round. The round was led by Sequoia, underscoring significant investor interest in its specialized tools for AI development and testing. The company's focus on AI code quality and efficiency makes it a key player in the evolving AI infrastructure landscape.
+- **Summary**: Blacksmith, a platform that enables companies to effectively build and test AI code, has achieved a unicorn valuation of $1 billion. This milestone follows a $66 million Series C funding round led by Sequoia, underscoring strong investor confidence in its AI development tools. The company focuses on enhancing the efficiency of AI code creation and evaluation for businesses.
 - **Key Points**:
-  1. Investors: Sequoia (lead)
-  2. Sector keywords: AI development, AI infrastructure, developer tools, SaaS
+  1. Investors: Sequoia (Lead)
+  2. Sector keywords: AI development, developer tools, SaaS, AI infrastructure
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/)
-- **Keywords**: `AI development, AI infrastructure, developer tools, SaaS`
+- **Keywords**: `AI development, developer tools, SaaS, AI infrastructure`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
