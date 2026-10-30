@@ -1,91 +1,79 @@
 # Daily News Report (2026-10-30)
 
-> Curated from TechCrunch and Hacker News. Contains 7 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 6 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. ADT: $15.3 Billion Acquisition
+## 1. Thrive Holdings: Acquires ADT for $15.3 Billion
 
-- **Summary**: OpenAI-backed Thrive Holdings is acquiring ADT for $15.3 billion. The deal aims to integrate AI into ADT's home security business, positioning Thrive Holdings as a major player in the smart home and security sector by leveraging artificial intelligence capabilities.
+- **Summary**: OpenAI-backed Thrive Holdings has acquired ADT for $15.3 billion. The acquisition aims to integrate AI into the home security business, leveraging advanced artificial intelligence to enhance security solutions. This major deal signifies a significant push to modernize the home security sector with AI technology.
 - **Key Points**:
-  1. Investors: Thrive Holdings (Acquirer), OpenAI (backer of acquirer)
-  2. Sector keywords: AI, home security, M&A, enterprise AI
+  1. Investors: OpenAI (backer of Thrive Holdings)
+  2. Sector keywords: M&A, AI, Home Security, Acquisition
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/)
-- **Keywords**: `AI` `home security` `M&A` `enterprise AI`
+- **Keywords**: `M&A` `AI` `Home Security` `Acquisition`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Oxide Computer Company: Undisclosed funding at $6 Billion valuation
+## 2. Hyperexponential: Acquired by Guidewire for $1.7 Billion in cash
 
-- **Summary**: Oxide Computer Company, a developer of specialized enterprise computing hardware and software, reportedly closed a funding round that values the company at $6 billion. The specific amount raised in this round was not publicly disclosed.
+- **Summary**: Guidewire has acquired Hyperexponential for $1.7 billion in cash. This acquisition is intended to integrate AI agents into the insurance industry, specifically to assist humans in underwriting, analyzing, and making pricing decisions. The deal is expected to close next year and will enhance Guidewire's offerings with advanced AI capabilities.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: enterprise hardware, cloud infrastructure, data center, computing
-- **Source**: [Hacker News](https://www.youtube.com/watch?v=K1LXpEVAMDM)
-- **Keywords**: `enterprise hardware` `cloud infrastructure` `data center` `computing`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 3. Cohere: Initial close of Series E, targeting up to CAD $7 Billion at CAD $35.7 Billion valuation, undisclosed initial amount raised
-
-- **Summary**: Cohere, a Canadian AI firm focused on sovereign AI systems for regulated industries and governments, announced the initial close of its Series E round. The round targets up to CAD $7 billion and values the company at CAD $35.7 billion, with funds earmarked for advancing AI models, developing verticalized solutions, and investing in compute infrastructure.
-- **Key Points**:
-  1. Investors: Schwarz Group (Lead Investor), Bell Ventures, Bullhound Capital, Government of Canada, Inovia Capital, NVIDIA, Prosperity7 Ventures
-  2. Sector keywords: AI, sovereign AI, large language models, enterprise AI, government investment
-- **Source**: [BetaKit](https://betakit.com/canada-to-invest-up-to-1-6-billion-in-ai-firm-cohere/)
-- **Keywords**: `AI` `sovereign AI` `large language models` `enterprise AI` `government investment`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 4. Dream: $17 Million Seed
-
-- **Summary**: Dream, launched by former Palantir executives, has secured $17 million in seed funding from a16z. The company is focused on developing AI world models for the construction industry, leveraging extensive building data and real-world physics to create sophisticated simulations.
-- **Key Points**:
-  1. Investors: a16z (Andreessen Horowitz)
-  2. Sector keywords: AI, construction tech, enterprise AI, world models
-- **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
-- **Keywords**: `AI` `construction tech` `enterprise AI` `world models`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 5. Hyperexponential: $1.7 Billion Acquisition
-
-- **Summary**: Guidewire is acquiring Hyperexponential for $1.7 billion in cash. This acquisition is set to enhance Guidewire's offerings by integrating AI agents into insurance underwriting, analysis, and pricing decisions, fostering human-AI collaboration in the insurance sector.
-- **Key Points**:
-  1. Investors: Guidewire (Acquirer)
-  2. Sector keywords: M&A, insurtech, AI, enterprise software
+  1. Investors: Guidewire (acquiring company)
+  2. Sector keywords: M&A, AI, Insurance, Acquisition
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/)
-- **Keywords**: `M&A` `insurtech` `AI` `enterprise software`
+- **Keywords**: `M&A` `AI` `Insurance` `Acquisition`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Oxide Computer Company: $445 Million Series D at a $6 Billion valuation
+
+- **Summary**: Oxide Computer Company, which provides on-premises cloud computing systems, has raised $445 million in a Series D funding round, bringing its valuation to $6 billion. The company offers a rack-scale integrated system with purpose-built hardware and open-source software, aiming to provide hyperscale cloud capabilities within an organization's own data center. This funding will be used to scale manufacturing, as demand for its systems currently exceeds production capacity.
+- **Key Points**:
+  1. Investors: Eclipse (lead), US Innovative Technology Fund (USIT), Riot Ventures, Jane Street, Atreides Management, AMD Ventures
+  2. Sector keywords: On-Premise Cloud, Cloud Infrastructure, Hardware, Enterprise Tech, AI Infrastructure
+- **Source**: [Hacker News](https://www.youtube.com/watch?v=K1LXpEVAMDM)
+- **Keywords**: `On-Premise Cloud` `Cloud Infrastructure` `Hardware` `Enterprise Tech` `AI Infrastructure`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 4. Cohere: $7 Billion Series E at $36 Billion valuation
+
+- **Summary**: Cohere, an AI firm specializing in large language models for enterprise applications, has secured a $7 billion Series E investment, reaching a $36 billion valuation. The Canadian government is participating in this significant funding round, underscoring the strategic importance of Cohere's AI technology. This substantial capital injection will further fuel its growth and development in the competitive AI landscape.
+- **Key Points**:
+  1. Investors: Canada (government investment)
+  2. Sector keywords: AI, Large Language Models, Enterprise AI, Series E
+- **Source**: [BetaKit](https://betakit.com/canada-to-invest-up-to-1-6-billion-in-ai-firm-cohere/)
+- **Keywords**: `AI` `Large Language Models` `Enterprise AI` `Series E`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 5. Dream: $17 Million from a16z
+
+- **Summary**: Dream, a new company founded by ex-Palantir executives, has launched with $17 million in funding from a16z. The startup is focused on building AI world models specifically for the construction industry. These models are trained on extensive building data, aiming to revolutionize how construction projects are planned and executed.
+- **Key Points**:
+  1. Investors: a16z
+  2. Sector keywords: AI, Construction, World Models, Seed
+- **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
+- **Keywords**: `AI` `Construction` `World Models` `Seed`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 6. Simantic: Undisclosed Preseed (YC F26)
+## 6. Simantic: YC F26 (Seed)
 
-- **Summary**: Simantic, a startup from the Y Combinator Winter 2026 batch, has launched with a focus on firmware simulation for AI agents. The company aims to provide essential tools for testing and developing AI agent firmware in simulated environments.
+- **Summary**: Simantic, a Y Combinator F26 batch startup, provides firmware simulation for AI agents. This enables developers to test and refine AI agent behavior in simulated hardware environments before deployment. The company aims to accelerate the development and reliability of AI agents through robust simulation.
 - **Key Points**:
   1. Investors: Y Combinator
-  2. Sector keywords: AI, firmware, simulation, developer tools
+  2. Sector keywords: AI Agents, Firmware Simulation, Y Combinator, Seed
 - **Source**: [Hacker News](https://news.ycombinator.com/item?id=50291116)
-- **Keywords**: `AI` `firmware` `simulation` `developer tools`
-- **Score**: ⭐⭐ (2/5)
-
----
-
-## 7. Acecore: $10 Thousand Prize
-
-- **Summary**: Acecore won a $10,000 prize at the Moonshot by TechCabal event. This award represents a significant early-stage recognition and a financial boost for the startup, highlighting its potential within the African tech ecosystem.
-- **Key Points**:
-  1. Investors: Moonshot by TechCabal (Awarder)
-  2. Sector keywords: prize, early-stage, African startup, competition
-- **Source**: [TechCabal](https://techcabal.com/2026/10/30/techcabal-daily-acecore-wins-10000-at-moonshot/)
-- **Keywords**: `prize` `early-stage` `African startup` `competition`
-- **Score**: ⭐ (1/5)
+- **Keywords**: `AI Agents` `Firmware Simulation` `Y Combinator` `Seed`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
