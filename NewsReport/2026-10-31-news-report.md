@@ -1,91 +1,55 @@
 # Daily News Report (2026-10-31)
 
-> Curated from TechCrunch and Hacker News. Contains 7 fundraising deals.
+> Curated from TechCrunch and Hacker News. Contains 4 fundraising deals.
 > Generated automatically via GitHub Actions.
 
 ---
 
-## 1. Thrive Holdings (acquiring ADT): $15.3 Billion Acquisition
+## 1. Thrive Holdings: $15.3 Billion Acquisition of ADT
 
-- **Summary**: OpenAI-backed Thrive Holdings is acquiring home security giant ADT in a $15.3 billion deal. The acquisition aims to integrate advanced artificial intelligence capabilities into ADT's home security services, signaling a strategic move to modernize the industry with AI technology.
+- **Summary**: OpenAI-backed Thrive Holdings is acquiring ADT for $15.3 billion. The acquisition aims to integrate AI capabilities into the home security business, signaling a major move to modernize the sector with advanced artificial intelligence. This deal is set to transform home security services by leveraging AI.
 - **Key Points**:
-  1. Investors: OpenAI (backer of Thrive Holdings)
-  2. Sector keywords: AI, Acquisition, Home Security, PropTech
+  1. Investors: OpenAI (backed Thrive Holdings)
+  2. Sector keywords: M&A, AI, Home Security
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/)
-- **Keywords**: `AI, Acquisition, Home Security, PropTech`
+- **Keywords**: `M&A` `AI` `Home Security`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. OpenAI: $11 Billion Growth round (initially targeted $30 Billion)
+## 2. Hyperexponential: $1.7 Billion Acquisition by Guidewire
 
-- **Summary**: OpenAI has successfully raised approximately $11 billion in its latest funding round, achieving a valuation of $1.25 trillion. This substantial capital injection, though less than its initial $30 billion target, will be directed towards further developing its cutting-edge AI technologies and expanding its critical infrastructure.
+- **Summary**: Guidewire is set to acquire Hyperexponential for $1.7 billion in cash. This acquisition is anticipated to enhance Guidewire's capabilities by incorporating AI agents. These agents will work alongside human professionals to improve underwriting, analysis, and pricing decisions, particularly within the insurance sector.
 - **Key Points**:
-  1. Investors: UAE investors (including MGX), Coatue, Founders Fund, Sequoia Capital, Andreessen Horowitz, Softbank
-  2. Sector keywords: AI, Generative AI, Growth, Mega-round, SaaS
-- **Source**: [WSJ](https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5)
-- **Keywords**: `AI, Generative AI, Growth, Mega-round, SaaS`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 3. Oxide Computer Company: $445 Million Series D at a $6 Billion Valuation
-
-- **Summary**: Oxide Computer Company, a California-based firm specializing in on-premises cloud systems, has secured $445 million in a Series D funding round, bringing its valuation to $6 billion. The company creates rack-scale integrated systems combining hardware and open-source software, providing cloud-like automation for enterprise data centers. The new capital will primarily fund increased manufacturing capacity and component procurement to meet surging customer demand, especially for AI workloads.
-- **Key Points**:
-  1. Investors: Eclipse (lead), AMD Ventures, Atreides Management, US Innovative Technology Fund (USIT), Riot Ventures, Jane Street
-  2. Sector keywords: Cloud Computing, Hardware, Data Center, AI Infrastructure, Enterprise Tech
-- **Source**: [Channel Dive](https://channel-dive.com/news/oxide-funding-series-d-ai-on-premises-cloud/)
-- **Keywords**: `Cloud Computing, Hardware, Data Center, AI Infrastructure, Enterprise Tech`
-- **Score**: ⭐⭐⭐⭐⭐ (5/5)
-
----
-
-## 4. Dream: $17 Million from a16z
-
-- **Summary**: Dream, a new startup launched by ex-Palantir executives, has secured $17 million in funding from Andreessen Horowitz (a16z). The company aims to build AI 'world models' specifically for the construction industry, leveraging extensive building data to incorporate real physics and construction standards.
-- **Key Points**:
-  1. Investors: a16z (Andreessen Horowitz)
-  2. Sector keywords: AI, ConstructionTech, SaaS, DeepTech
-- **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
-- **Keywords**: `AI, ConstructionTech, SaaS, DeepTech`
-- **Score**: ⭐⭐⭐⭐ (4/5)
-
----
-
-## 5. Hyperexponential (acquired by Guidewire): $1.7 Billion Acquisition
-
-- **Summary**: Guidewire has announced its acquisition of Hyperexponential for $1.7 billion in cash. This strategic move is intended to bolster Guidewire's offerings by integrating AI agents, which will be used to assist humans in critical underwriting, analysis, and pricing decisions within the insurance sector.
-- **Key Points**:
-  1. Investors: N/A
-  2. Sector keywords: M&A, InsurTech, AI, Enterprise Software
+  1. Investors: Undisclosed
+  2. Sector keywords: M&A, Insurtech, AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/)
-- **Keywords**: `M&A, InsurTech, AI, Enterprise Software`
+- **Keywords**: `M&A` `Insurtech` `AI`
+- **Score**: ⭐⭐⭐⭐⭐ (5/5)
+
+---
+
+## 3. Dream: $17 Million Seed
+
+- **Summary**: Dream, a new startup founded by former Palantir executives, has launched with $17 million in funding from a16z. The company is focused on building AI world models for the construction industry. Their technology is trained on extensive building data, integrating real physics and construction standards.
+- **Key Points**:
+  1. Investors: a16z
+  2. Sector keywords: AI, Construction Tech, SaaS, Deep Tech
+- **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
+- **Keywords**: `AI` `Construction Tech` `SaaS` `Deep Tech`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
-## 6. Undisclosed Silent Speech Startup: $1.3 Million from YC
+## 4. The Subvocal Company: $1.3 Million Pre-Seed
 
-- **Summary**: A Y Combinator-funded startup, whose name is not disclosed in the article, has raised $1.3 million to develop silent speech technology. The funding supports the company's efforts to create innovative solutions in the speech technology space, despite a developer on X reportedly replicating a free version of the technology.
+- **Summary**: The Subvocal Company, co-founded by Aarush Yadav and Arnav Kumar, secured approximately $1.3 million in pre-seed funding. The startup is developing a wearable device that enables silent speech interaction with computers by decoding silently mouthed speech into text and commands. This technology aims to facilitate discreet and efficient communication with AI agents and computing devices.
 - **Key Points**:
-  1. Investors: Y Combinator
-  2. Sector keywords: AI, SpeechTech, Seed, Hardware
+  1. Investors: Y Combinator, Afore Capital, angel investors
+  2. Sector keywords: AI, Speech Tech, Wearable Tech, Human-Computer Interaction
 - **Source**: [StartupFortune](https://startupfortune.com/a-startup-raised-13-million-for-silent-speech-glasses-and-a-developer-built-the-free-version-in-nine-minutes/)
-- **Keywords**: `AI, SpeechTech, Seed, Hardware`
-- **Score**: ⭐⭐ (2/5)
-
----
-
-## 7. Acecore: $10,000 Prize at Moonshot
-
-- **Summary**: Acecore, an African startup, has won a $10,000 prize at the Moonshot event. This award represents early-stage capital and recognition for the company, highlighting its potential within the African tech ecosystem.
-- **Key Points**:
-  1. Investors: N/A (Prize)
-  2. Sector keywords: Prize, Early Stage, Africa, Startup
-- **Source**: [TechCabal](https://techcabal.com/2026/10/30/techcabal-daily-acecore-wins-10000-at-moonshot/)
-- **Keywords**: `Prize, Early Stage, Africa, Startup`
-- **Score**: ⭐ (1/5)
+- **Keywords**: `AI` `Speech Tech` `Wearable Tech` `Human-Computer Interaction`
+- **Score**: ⭐⭐⭐ (3/5)
 
 ---
 
