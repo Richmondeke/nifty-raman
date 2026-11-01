@@ -5,38 +5,38 @@
 
 ---
 
-## 1. ADT: $15.3 Billion Acquisition by Thrive Holdings
+## 1. Thrive Holdings (acquiring ADT): $15.3 Billion Acquisition
 
-- **Summary**: Thrive Holdings, a company backed by OpenAI, is acquiring ADT in a $15.3 billion deal. The acquisition aims to integrate AI capabilities into ADT's existing home security business, signifying a move towards advanced, AI-driven solutions in the security sector.
+- **Summary**: OpenAI-backed Thrive Holdings is acquiring home security giant ADT in a substantial $15.3 billion deal. The strategic acquisition aims to infuse advanced artificial intelligence capabilities into ADT's existing home security infrastructure. This move represents a significant push to modernize and innovate the home security sector through AI integration.
 - **Key Points**:
-  1. Investors: OpenAI (backer of acquirer Thrive Holdings)
-  2. Sector keywords: M&A, Home Security, AI, Acquisition
+  1. Investors: OpenAI (backer of Thrive Holdings)
+  2. Sector keywords: AI, home security, M&A, enterprise AI
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/)
-- **Keywords**: `M&A` `Home Security` `AI` `Acquisition`
+- **Keywords**: `AI` `home security` `M&A` `enterprise AI`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Hyperexponential: $1.7 Billion Acquisition by Guidewire
+## 2. Hyperexponential: $1.7 Billion Acquisition
 
-- **Summary**: Guidewire has acquired London-based insurtech Hyperexponential for $1.7 billion in cash. Hyperexponential, founded in 2017, provides AI-native underwriting and pricing software (hx Renew) for commercial insurance. The acquisition aims to integrate AI agents into Guidewire's offerings to enhance underwriting, analysis, and pricing decisions in the insurance sector.
+- **Summary**: Guidewire is acquiring Hyperexponential for $1.7 billion in an all-cash deal. This acquisition is anticipated to close next year and aims to integrate AI agents into Guidewire's operations. The integration will assist human teams in making more informed decisions regarding underwriting, analysis, and pricing within the insurance sector.
 - **Key Points**:
-  1. Investors: Guidewire (Acquirer); Previous investors include Battery Ventures (lead Series B), Andreessen Horowitz (a16z) (Series B), Highland Europe (lead Series A, participated in Series B).
-  2. Sector keywords: M&A, Insurtech, AI, SaaS, Enterprise Software
+  1. Investors: Undisclosed
+  2. Sector keywords: Insurtech, AI, M&A, enterprise software
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/)
-- **Keywords**: `M&A` `Insurtech` `AI` `SaaS` `Enterprise Software`
+- **Keywords**: `Insurtech` `AI` `M&A` `enterprise software`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Dream: $17 Million Seed from a16z
+## 3. Dream: $17 Million Seed
 
-- **Summary**: Dream, a new startup founded by former Palantir executives, has launched with $17 million in funding from Andreessen Horowitz (a16z). The company is focused on building AI world models specifically for the construction industry, utilizing real physics and construction standards trained on extensive building data.
+- **Summary**: Dream, a new startup launched by former Palantir executives, has secured $17 million in funding from Andreessen Horowitz (a16z). The company is focused on developing AI world models specifically for the construction industry. These models are designed to learn from over 100 million square feet of building data, ensuring they are grounded in real-world physics and construction standards.
 - **Key Points**:
   1. Investors: a16z (Andreessen Horowitz)
-  2. Sector keywords: AI, Construction Tech, World Models, SaaS
+  2. Sector keywords: AI, construction tech, enterprise software, seed funding
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
-- **Keywords**: `AI` `Construction Tech` `World Models` `SaaS`
+- **Keywords**: `AI` `construction tech` `enterprise software` `seed funding`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
