@@ -5,38 +5,38 @@
 
 ---
 
-## 1. Thrive Holdings: $15.3 Billion Acquisition of ADT
+## 1. ADT: $15.3 Billion Acquisition by Thrive Holdings
 
-- **Summary**: OpenAI-backed Thrive Holdings has acquired ADT for $15.3 billion. This significant deal aims to integrate advanced AI capabilities into the home security sector. The acquisition is expected to close in the first quarter of 2027.
+- **Summary**: Thrive Holdings, backed by OpenAI, is acquiring ADT in a $15.3 billion deal. This acquisition aims to integrate advanced AI capabilities into the home security business, leveraging Thrive Holdings' technological expertise.
 - **Key Points**:
-  1. Investors: Apollo Global Management
-  2. Sector keywords: M&A, AI, home security, deep tech
+  1. Investors: Thrive Holdings (Acquirer), OpenAI (Thrive Holdings backer)
+  2. Sector keywords: M&A, Home Security, AI, Acquisitions
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/)
-- **Keywords**: `M&A` `AI` `home security` `deep tech`
+- **Keywords**: `M&A, Home Security, AI, Acquisitions`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 2. Hyperexponential: $1.7 Billion Acquisition by Guidewire
 
-- **Summary**: Guidewire has acquired Hyperexponential for $1.7 billion in an all-cash deal. This acquisition aims to incorporate AI agents into Guidewire's operations, particularly for enhancing underwriting, analysis, and pricing decisions in the insurance sector.
+- **Summary**: Guidewire has acquired Hyperexponential for $1.7 billion in an all-cash deal. This acquisition is set to enhance Guidewire's offerings by integrating AI agents, which will assist humans in underwriting, analyzing, and pricing decisions within the insurance sector.
 - **Key Points**:
-  1. Investors: Undisclosed
-  2. Sector keywords: M&A, Insurtech, AI, enterprise software
+  1. Investors: Guidewire (Acquirer)
+  2. Sector keywords: M&A, Insurtech, AI, Acquisitions
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/)
-- **Keywords**: `M&A` `Insurtech` `AI` `enterprise software`
+- **Keywords**: `M&A, Insurtech, AI, Acquisitions`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 3. Dream: $17 Million Seed
+## 3. Dream: $17 Million Seed Round
 
-- **Summary**: Dream, founded by former Palantir executives, has secured $17 million in funding to develop AI world models tailored for the construction industry. Their technology leverages over 100 million square feet of building data to learn real physics and construction standards.
+- **Summary**: Dream, a startup founded by former Palantir executives, has launched with $17 million in seed funding from Andreessen Horowitz (a16z). The company is focused on building AI world models specifically for the construction industry, utilizing extensive building data for training.
 - **Key Points**:
   1. Investors: a16z
-  2. Sector keywords: AI, construction tech, world models, enterprise AI
+  2. Sector keywords: AI, Construction Tech, World Models, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
-- **Keywords**: `AI` `construction tech` `world models` `enterprise AI`
+- **Keywords**: `AI, Construction Tech, World Models, SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
