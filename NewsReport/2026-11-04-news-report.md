@@ -5,50 +5,50 @@
 
 ---
 
-## 1. ADT: $15.3 billion acquisition
+## 1. Thrive Holdings: $15.3 Billion Acquisition of ADT
 
-- **Summary**: OpenAI-backed Thrive Holdings has acquired ADT for $15.3 billion. The acquisition aims to integrate AI into the home security business.
+- **Summary**: OpenAI-backed Thrive Holdings is acquiring ADT in a $15.3 billion deal. The acquisition is set to integrate artificial intelligence capabilities into the home security business, representing a significant strategic move to modernize and enhance security services with AI technology.
 - **Key Points**:
   1. Investors: OpenAI (backer of Thrive Holdings)
-  2. Sector keywords: M&A, AI, home security, proptech
+  2. Sector keywords: AI, Home Security, Acquisition, M&A, PropTech
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/)
-- **Keywords**: `M&A, AI, home security, proptech`
+- **Keywords**: `AI, Home Security, Acquisition, M&A, PropTech`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
-## 2. Fal: $1.65 Billion Across Series E and F
+## 2. Fal: $1.65 Billion Series E and F
 
-- **Summary**: Fal, an AI infrastructure company, secured $1.65 billion in funding across its Series E and F rounds. This substantial investment was led by top-tier venture capital firms Sequoia and Bessemer.
+- **Summary**: Fal, a generative-media infrastructure company, raised a substantial $1.65 billion across its Series E and F funding rounds. The company provides a platform that enables developers to run and scale AI models for image, video, and audio generation with high performance and API access. Fal aims to expand its infrastructure, invest in its workforce, and dedicate resources to new research and creative form development.
 - **Key Points**:
-  1. Investors: Sequoia, Bessemer
-  2. Sector keywords: AI infrastructure, large language models, developer tools
-- **Source**: [Hacker News](https://fal.ai/blog/series-e-f)
-- **Keywords**: `AI infrastructure, large language models, developer tools`
+  1. Investors: Sequoia Capital, Bessemer Venture Partners, NVIDIA, Sound Ventures, T. Rowe Price
+  2. Sector keywords: AI, Generative AI, AI Infrastructure, Media Production, Developer Tools, SaaS
+- **Source**: [Hacker News](https://www.youtube.com/watch?v=pPzJ1wE8Lnw)
+- **Keywords**: `AI, Generative AI, AI Infrastructure, Media Production, Developer Tools, SaaS`
 - **Score**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
 ## 3. Trajectory: $45 Million Series A
 
-- **Summary**: Trajectory, a San Francisco-based startup founded by former Google DeepMind and Apple employees, raised $45 million in Series A funding at a $300 million valuation. The company develops a platform that enables non-technical experts to continuously train and improve AI models using real-world feedback, making specialized AI deployment faster and cheaper.
+- **Summary**: Trajectory, a one-year-old startup, raised $45 million in Series A funding. The company's platform aims to make AI model training accessible to nontechnical experts by automating the process of continuous learning from feedback, allowing models to improve at specialized tasks over time. They target fields like law and finance, enabling domain experts to refine AI models without deep technical knowledge.
 - **Key Points**:
-  1. Investors: Sequoia Capital, Nvidia, Bessemer Venture Partners, Bain Capital Ventures
-  2. Sector keywords: AI, machine learning, AI tools, enterprise software, continuous learning, AI infrastructure
+  1. Investors: Sequoia, Nvidia, Bessemer Venture Partners, Bain Capital Ventures
+  2. Sector keywords: AI, Machine Learning, AI Training, Enterprise AI, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/)
-- **Keywords**: `AI, machine learning, AI tools, enterprise software, continuous learning, AI infrastructure`
+- **Keywords**: `AI, Machine Learning, AI Training, Enterprise AI, SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
 
 ## 4. Dream: $17 Million Seed
 
-- **Summary**: Launched by former Palantir executives, Dream raised $17 million from a16z to develop AI world models for the construction industry. The platform is trained on vast amounts of building data, grounded in real physics and construction standards.
+- **Summary**: Dream, a startup founded by ex-Palantir executives, launched with $17 million in seed funding. The company focuses on building AI 'world models' for the construction industry, trained on over 100 million square feet of building data. These models are designed to understand real physics and construction standards to automate building design and engineering.
 - **Key Points**:
-  1. Investors: a16z (Andreessen Horowitz)
-  2. Sector keywords: AI, construction tech, world models, enterprise AI
+  1. Investors: a16z, SV Angel, XYZ, Zigg Capital
+  2. Sector keywords: AI, Construction Tech, World Models, AEC, SaaS
 - **Source**: [TechCrunch](https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/)
-- **Keywords**: `AI, construction tech, world models, enterprise AI`
+- **Keywords**: `AI, Construction Tech, World Models, AEC, SaaS`
 - **Score**: ⭐⭐⭐⭐ (4/5)
 
 ---
